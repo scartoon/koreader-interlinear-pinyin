@@ -119,8 +119,13 @@ local function context(items, i)
 end
 
 -- The word that decided a reading, with each word's pinyin, for the popup.
+-- A special word brings its own pinyin and note.
 local function word_info(data, match)
     if not match then return nil end
+    if match.special then
+        return { word = match.word, pinyin = table.concat(match.special.syllables, " "),
+                 note = match.special.note, start = match.start, len = match.len, others = {} }
+    end
     local function pinyin(word)
         local syllables = data:word(word)
         return syllables and table.concat(syllables, " ")
@@ -135,22 +140,25 @@ end
 --[[--
 Annotations for the current page, ready for the overlay:
   { {text="tāo", box={x,y,w,h}, rank=4396, word="饕", char="饕",
-     match={word=, pinyin=, start=, len=, others=} or nil,
-     context={left={...}, right={...}}}, ... }
-plus stats { items=, annotated= }.
+     match={word=, pinyin=, start=, len=, others=, note=} or nil,
+     context={left={...}, right={...}}, special=true or nil}, ... }
+plus stats { items=, annotated=, special= }.
+special: loaded special words (Data.loadSpecial), or nil when that setting is off.
 ]]
-function Page.build(document, page, data, threshold, uncertain)
+function Page.build(document, page, data, threshold, uncertain, special)
     local items = Page.collect(document, page)
-    local stats = { items = #items, annotated = 0 }
+    local stats = { items = #items, annotated = 0, special = 0 }
     local glosses = {}
-    for _, a in ipairs(Resolve.annotate(data, items, threshold, uncertain)) do
+    for _, a in ipairs(Resolve.annotate(data, items, threshold, uncertain, special)) do
         local item = items[a.index]
         local box = boxes_for(document, item)
         if box then
             glosses[#glosses + 1] = {
                 text = a.reading, box = box, rank = a.rank, word = item.text, char = item.text,
                 match = word_info(data, a.match), context = context(items, a.index),
+                special = a.special,
             }
+            if a.special then stats.special = stats.special + 1 end
         end
     end
     stats.annotated = #glosses

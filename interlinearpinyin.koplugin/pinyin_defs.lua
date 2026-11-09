@@ -206,13 +206,14 @@ local function group(entries, chosen)
 end
 Defs.group = group
 
-local function word_section(defs, word, pinyin)
+local function word_section(defs, word, pinyin, note)
     local found = defs:lookup(word)
     return {
         text = word,
         pinyin = pinyin,
         groups = found and group(found.entries, pinyin and { pinyin } or nil) or {},
         found = found and true or false,
+        note = note,
     }
 end
 
@@ -261,13 +262,14 @@ Defs.find_word = find_word
 What the popup shows for a tapped annotation.
 
   gloss: { char="宛", text="yuān" (the pinyin drawn, maybe "chéng/shèng"),
-           match = { word="大宛", pinyin="dà yuān", others={ {word=, pinyin=} } } or nil,
+           match = { word="大宛", pinyin="dà yuān", others={ {word=, pinyin=} },
+                     note="..." (special words, tools/special_curated.tsv) } or nil,
            context = { left={...}, right={...} } }
 
 Returns {
   char = "宛", char_found = bool,
   readings = { {pinyin=, chosen=bool, senses={...}}, ... },
-  word = { text=, pinyin=, groups={...}, found=bool } or nil,
+  word = { text=, pinyin=, groups={...}, found=bool, note= } or nil,
   others = { same as word, ... },
   word_from_resolver = bool,
 }
@@ -284,7 +286,7 @@ function Defs.describe(defs, gloss)
     model.word_from_resolver = match ~= nil
     if not match then match = find_word(defs, gloss) end
     if match then
-        model.word = word_section(defs, match.word, match.pinyin)
+        model.word = word_section(defs, match.word, match.pinyin, match.note)
         for _, o in ipairs(match.others or {}) do
             model.others[#model.others + 1] = word_section(defs, o.word, o.pinyin)
         end
@@ -292,10 +294,10 @@ function Defs.describe(defs, gloss)
     return model
 end
 
--- True when neither the character nor the word has a CC-CEDICT entry: the
--- plugin then skips its popup and uses KOReader's dictionary lookup.
+-- True when neither the character nor the word has a CC-CEDICT entry (or a
+-- note): the plugin then skips its popup and uses KOReader's dictionary lookup.
 function Defs.empty(model)
-    return not model.char_found and not (model.word and model.word.found)
+    return not model.char_found and not (model.word and (model.word.found or model.word.note))
 end
 
 --[[--
@@ -328,7 +330,8 @@ function Defs.render(model, bold_start, bold_end)
         add("")
         add(label .. B .. w.text .. b .. (w.pinyin and ("  " .. w.pinyin) or ""))
         if not w.found then
-            add("no definition in CC-CEDICT")
+            -- A special word CC-CEDICT lacks (冒顿) has a hand-written note.
+            add(w.note or "no definition in CC-CEDICT")
             return
         end
         local several = #w.groups > 1

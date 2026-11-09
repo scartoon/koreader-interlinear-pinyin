@@ -7,7 +7,7 @@ GPL-3.0, by GangYe293) in November 2026 and reduced to pinyin only.
 Kept from WordGloss: the paint-layer approach, the line-height injection and
 the style-sheet hook. New: the Chinese character/word tables and reading logic.
 
-  pinyin_data.lua     loads data/chars.tsv and data/words.tsv
+  pinyin_data.lua     loads data/chars.tsv and data/words.tsv (and data/special.tsv)
   pinyin_resolve.lua  which characters to annotate, and which reading
   pinyin_page.lua     walks the page through the engine, gets screen boxes
   pinyin_overlay.lua  draws the pinyin
@@ -36,7 +36,7 @@ local InterlinearPinyin = WidgetContainer:extend{
     is_doc_only = true,
 }
 
-InterlinearPinyin.VERSION = "0.4.0"
+InterlinearPinyin.VERSION = "0.5.0"
 
 local PREFIX = "interlinearpinyin_"
 local THRESHOLDS = { 1500, 2500, 3500, 5000, 7000 }
@@ -86,6 +86,18 @@ function InterlinearPinyin:getUncertainMode()
     return mode
 end
 
+-- Mark unusual readings of common characters (单于 chán yú): data/special.tsv.
+function InterlinearPinyin:isSpecialEnabled()
+    return self:getSetting("special", true) == true
+end
+
+-- "bold" (default) or "underline"; not in the menu.
+function InterlinearPinyin:getSpecialStyle()
+    local style = self:getSetting("special_style", "bold")
+    if style ~= "underline" and style ~= "none" then style = "bold" end
+    return style
+end
+
 function InterlinearPinyin:isTapEnabled()
     return self:getSetting("tap_definitions", true) == true
 end
@@ -123,6 +135,20 @@ function InterlinearPinyin:loadData()
     end
     self.data = data
     return data
+end
+
+-- The special words, or nil when that setting is off (nothing is loaded then).
+function InterlinearPinyin:loadSpecial()
+    if not self:isSpecialEnabled() then return nil end
+    if self.special then return self.special end
+    local special, err = Data.loadSpecial(self.path .. "/data")
+    if not special then
+        logger.warn("interlinearpinyin: no special readings:", err)
+        self._special_error = err
+        return nil
+    end
+    self.special = special
+    return special
 end
 
 function InterlinearPinyin:onReaderReady()
@@ -426,7 +452,9 @@ function InterlinearPinyin:refreshPage()
     local ok, err = pcall(function()
         local font_size = document:getFontSize()
         local page = document:getCurrentPage()
-        local glosses, stats = Page.build(document, page, data, self:getThreshold(), self:getUncertainMode())
+        local glosses, stats = Page.build(document, page, data, self:getThreshold(), self:getUncertainMode(),
+            self:loadSpecial())
+        self.overlay.special_style = self:getSpecialStyle()
         self.overlay.font_size = math.max(8, math.floor(font_size * self:getSizePercent() / 100 + 0.5))
         self.overlay:setGlosses(glosses, font_size)
         self._last_stats = stats
@@ -536,6 +564,15 @@ function InterlinearPinyin:addToMainMenu(menu_items)
                 sub_item_table = uncertain_items,
             },
             {
+                text = _("Mark unusual readings of common characters (names, historical terms)"),
+                help_text = _("Common characters are not annotated, but some take a rare reading in particular names and terms: 单于 chán yú, 冒顿 mò dú, 可汗 kè hán, 会稽 kuài jī. With this on, those characters get pinyin (in bold) when they appear in such a word."),
+                checked_func = function() return plugin:isSpecialEnabled() end,
+                callback = function()
+                    plugin:saveSetting("special", not plugin:isSpecialEnabled())
+                    plugin:refreshPage()
+                end,
+            },
+            {
                 text = _("Tap annotated character for definitions"),
                 help_text = _("Tap a character that has pinyin above it (or the pinyin) to see its CC-CEDICT definitions and those of the word it is part of. Other taps, long-press and text selection work as usual."),
                 checked_func = function() return plugin:isTapEnabled() end,
@@ -553,8 +590,16 @@ function InterlinearPinyin:addToMainMenu(menu_items)
                     if plugin._data_error then
                         lines[#lines + 1] = T(_("Data not loaded: %1"), plugin._data_error)
                     elseif stats then
-                        lines[#lines + 1] = T(_("This page: %1 characters read, %2 annotated"),
-                            stats.items, stats.annotated)
+                        lines[#lines + 1] = T(_("This page: %1 characters read, %2 annotated (%3 unusual readings)"),
+                            stats.items, stats.annotated, stats.special or 0)
+                    end
+                    local special = plugin.special
+                    if plugin:isSpecialEnabled() and special then
+                        lines[#lines + 1] = T(_("Unusual readings: %1 words, %2 overlap guards; loaded in %3 ms, %4 KB"),
+                            special.count, special.guard_count or 0, string.format("%.0f", special.load_ms or 0),
+                            string.format("%.0f", special.kb or 0))
+                    elseif plugin._special_error then
+                        lines[#lines + 1] = T(_("Unusual readings not loaded: %1"), plugin._special_error)
                     end
                     UIManager:show(InfoMessage:new{ text = table.concat(lines, "\n") })
                 end,

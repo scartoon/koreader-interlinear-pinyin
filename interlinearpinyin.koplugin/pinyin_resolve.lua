@@ -82,6 +82,65 @@ function Resolve.word_reading(data, items, i)
     return nil
 end
 
+------------------------------------------------------------------------
+-- Unusual readings of common characters ("special words", data/special.tsv)
+------------------------------------------------------------------------
+
+-- Is the special word at items[s..e] blocked by an overlapping ordinary word
+-- that is the likelier reading (订单 in 订单于3日发货 blocks 单于), or by a
+-- longer word containing it with another reading (九华山 blocks 华山)? Which
+-- word blocks which, and at what offset, is decided when the data is built
+-- (tools/special_words.py); here it is only looked up.
+local function blocked(special, items, entry, s, e)
+    local guard = special.guard
+    for a = s - 3, e do
+        for b = math.max(a + 1, s), math.min(a + 3, e + 3) do
+            -- items[a..b] crosses an edge (starts before s and ends inside, or
+            -- starts inside and ends after e) or contains the whole word.
+            local crosses = (a < s and b < e) or (a > s and b > e and a <= e)
+            local contains = a <= s and b >= e and (a < s or b > e)
+            if (crosses or contains) and contiguous(items, a, b) then
+                local parts = {}
+                for k = a, b do parts[#parts + 1] = items[k].text end
+                if guard[table.concat(parts) .. "\t" .. entry.word .. "\t" .. (a - s)] then return true end
+            end
+        end
+    end
+    return false
+end
+
+-- The special word covering items[i], or nil: { entry=, start=, pos= } with
+-- pos the index of items[i] in the word. When several cover it, the longest
+-- wins, then the more frequent, then the leftmost.
+function Resolve.special_at(special, items, i)
+    if not special or not items[i] or not single_char(items[i].text) then return nil end
+    local best
+    for start = math.max(1, i - special.max_len + 1), i do
+        local list = items[start] and special.by_first[items[start].text]
+        if list then
+            for _, entry in ipairs(list) do
+                local n = #entry.chars
+                local stop = start + n - 1
+                if stop >= i and contiguous(items, start, stop) then
+                    local same = true
+                    for k = 2, n do
+                        if items[start + k - 1].text ~= entry.chars[k] then
+                            same = false
+                            break
+                        end
+                    end
+                    if same and not (best and (n < #best.entry.chars
+                            or (n == #best.entry.chars and entry.freq <= best.entry.freq)))
+                            and not blocked(special, items, entry, start, stop) then
+                        best = { entry = entry, start = start, pos = i - start + 1 }
+                    end
+                end
+            end
+        end
+    end
+    return best
+end
+
 -- What to do when a character's reading is uncertain (see Resolve.reading).
 Resolve.UNCERTAIN_BOTH = "both"   -- "chéng/shèng", most likely first
 Resolve.UNCERTAIN_BEST = "best"   -- the most likely reading alone (may differ from the default)
@@ -90,17 +149,32 @@ Resolve.UNCERTAIN_SKIP = "skip"   -- no annotation
 -- Reading for items[i] and the character's rank (0 = unranked), or nil when
 -- the character is not annotated (common, not a Han character, or uncertain
 -- with mode "skip"). A third value, when a dictionary word decided the
--- reading: { word=, start=, len=, others={ {word=, start=}, ... } }.
+-- reading: { word=, start=, len=, others={ {word=, start=}, ... } } (with
+-- special= the special.tsv entry for a special word). A fourth value is true
+-- when the reading is an unusual one from a special word: the character is
+-- then annotated however common it is (its rank may be nil).
 --
--- In order: the longest dictionary word around it; a context rule for the
+-- In order: a special word (when `special` is given); the longest dictionary
+-- word around it; a context rule for the
 -- character right before or after it; its default reading. For a character
 -- whose default is known to be unreliable (data:uncertainty), the two most
 -- likely readings are shown together, the most likely alone, or nothing,
 -- depending on `uncertain`.
-function Resolve.reading(data, items, i, uncertain)
+function Resolve.reading(data, items, i, uncertain, special)
     local item = items[i]
     if not item or not single_char(item.text) then return nil end
     local rank, default = data:char(item.text)
+    local sp = special and Resolve.special_at(special, items, i)
+    if sp then
+        local entry = sp.entry
+        local marked = entry.marks[sp.pos]
+        if marked or rank then
+            return entry.syllables[sp.pos], rank,
+                { word = entry.word, start = sp.start, len = #entry.chars, others = {}, special = entry },
+                marked
+        end
+        return nil
+    end
     if not rank then return nil end
     local reading, word, start, others = Resolve.word_reading(data, items, i)
     if reading then
@@ -129,27 +203,34 @@ Annotations for the on-page items.
 
   threshold: characters ranked above this (or unranked) are annotated.
   uncertain: Resolve.UNCERTAIN_BOTH (default), _BEST or _SKIP; see Resolve.reading.
+  special: loaded special words (Data.loadSpecial) or nil. A character whose
+    reading in a special word is unusual is annotated whatever its rank,
+    with special=true; a rare character inside a special word takes the
+    special word's reading.
 
 Each character is annotated only the first time it appears on the page with a
 given reading: later repeats are left bare, but a repeat with a different
 reading (刨 páo in 刨根, then bào in 刨子) is annotated again.
 
-Returns { {index=i, reading="tāo", rank=4396, match=...}, ... } in page
-order; match is the word that decided the reading (see Resolve.reading), or nil.
+Returns { {index=i, reading="tāo", rank=4396, match=..., special=bool}, ... }
+in page order; match is the word that decided the reading (see
+Resolve.reading), or nil.
 ]]
-function Resolve.annotate(data, items, threshold, uncertain)
+function Resolve.annotate(data, items, threshold, uncertain, special)
     local out, seen = {}, {}
     for i, item in ipairs(items) do
         if item.on_page ~= false then
-            local reading, rank, match = Resolve.reading(data, items, i, uncertain)
-            if reading and (rank == 0 or rank > threshold) then
+            local reading, rank, match, marked = Resolve.reading(data, items, i, uncertain, special)
+            if reading and (marked or rank == 0 or (rank and rank > threshold)) then
                 local key = item.text .. "\t" .. reading
                 if not seen[key] then
                     seen[key] = true
                     -- Rarity used to decide what to drop when a line is crowded:
                     -- unranked characters count as rarest.
-                    out[#out + 1] = { index = i, reading = reading, rank = (rank == 0) and math.huge or rank,
-                                      match = match }
+                    -- Unusual readings are kept like the rarest characters.
+                    out[#out + 1] = { index = i, reading = reading,
+                                      rank = (marked or rank == 0) and math.huge or rank,
+                                      match = match, special = marked or nil }
                 end
             end
         end

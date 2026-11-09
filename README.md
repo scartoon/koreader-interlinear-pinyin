@@ -16,6 +16,7 @@ Status: **0.4.0**, tested on a Boox Go 7 (Android, 300 dpi) with KOReader v2026.
 - When it can't tell, it says so instead of guessing: a character whose reading is genuinely uncertain gets both likely readings, most likely first (镝 alone: *dí/dī*). About 1% of annotations in ordinary text are pairs. You can switch this to the best guess, or to no annotation, in the menu.
 - Shows the character's own tone where everyday speech uses a neutral tone: 刺猬 gives *wèi* over 猬, not *wei*.
 - Annotates each character once per page: if 郡 appears five times on a page, only the first gets *jùn*. A repeat with a different reading is annotated again (刨 *páo* in 刨根, then *bào* in 刨子).
+- Marks unusual readings of common characters in names and historical terms, in **bold**: 冒顿单于 gets ***mò dú chán*** over 冒顿单 (and nothing over 于), 可汗 ***kè hán***, 会稽 ***kuài***. See [Unusual readings](#unusual-readings-of-common-characters).
 - Tap a character that has pinyin above it (or the pinyin itself) to see what it means. See [Tap for definitions](#tap-for-definitions).
 - Makes room between lines only while it is on. Turning it off restores the book's own spacing (KOReader re-lays out the book, which takes a moment).
 
@@ -33,6 +34,16 @@ The pinyin goes in the space between lines, so the plugin sets a line height tha
 
 - Books with tight or default spacing get noticeably more pages; how many depends on the pinyin size.
 - Books that already set generous spacing can end up with *tighter* lines and fewer pages, because the plugin replaces the book's line height rather than adding to it. (A test book with `line-height: 2` went from 2,560 to 2,321 pages.)
+
+## Unusual readings of common characters
+
+Common characters are never annotated, but some take a rare reading in particular words, mostly historical names, titles and places: 单于 *chán yú*, 冒顿 *mò dú*, 龟兹 *qiū cí*, 尉迟 *yù chí*, 仆射 *pú yè*, 番禺 *pān yú*, 燕京 *yān jīng*. With **Mark unusual readings of common characters** on (the default), the plugin knows about 190 such words (65 hand-checked, about 120 found automatically; `data/special.tsv` has 284 forms counting traditional ones) and annotates, in bold, only the characters whose reading there differs from their usual one. A rare character inside such a word is annotated as usual, with the word's reading. Tapping one shows the word in the popup; for words CC-CEDICT lacks (冒顿, 金日磾), a short note instead.
+
+The list is partly hand-checked (`tools/special_curated.tsv`, 65 words, which always wins) and partly automatic: words from CC-CEDICT and pypinyin in which a character takes a reading it uses less than 3% of the time (10% for Chinese historical names and places), leaving out neutral tones, erhua, 一/不 tone sandhi, dialect and Taiwan readings, colloquial variants, loanwords and foreign names.
+
+Common characters make accidental matches likely: 订单于3日发货 contains 单于 but is 订单 + 于. A special word is skipped when an overlapping ordinary word is the far likelier reading of the text (comparing the two splits, 订单|于 against 订|单于, by word frequency) or when a longer dictionary word contains it with another reading (九华山 *Jiǔhuá* contains 华山 *Huà*). On the test book this marks 130 unusual readings in 537,000 characters, all correct on review; in 8.4 million characters of modern fiction and non-fiction it marked 52, also all correct (华山论剑, 燕京大学, 虚与委蛇). One known miss: 他中了解元, which the guard reads as 了解 + 元.
+
+Turning the option off loads nothing. On a Boox Go 7 the list loads in about 20 ms and takes about 1.2 MB.
 
 ## Tap for definitions
 
@@ -73,8 +84,9 @@ To try it without a book of your own, copy [`samples/guwen.epub`](samples/guwen.
 | Which characters | Frequency threshold (see above) |
 | Pinyin size | 35–55% of the body text size (default 40%) |
 | When the reading is uncertain | Show both readings (default) / show the most likely reading / don't annotate |
+| Mark unusual readings of common characters | On (default) / off. See [Unusual readings](#unusual-readings-of-common-characters) |
 | Tap annotated character for definitions | On (default) / off. See [Tap for definitions](#tap-for-definitions) |
-| Status | Version, and how many characters on the current page were read and annotated |
+| Status | Version, how many characters on the current page were read and annotated, and the unusual-readings list's size and load cost |
 
 ## How it works
 
@@ -91,7 +103,7 @@ Definitions for the tap popup are in `defs.tsv` (about 7.7 MB): CC-CEDICT's entr
 
 The hit test (`pinyin_hit.lua`) uses the overlay's own placement of the pinyin, so only what is drawn can be tapped. The tap zone follows KOReader's ReaderHighlight: one full-screen "tap" zone that is asked before page turns and lets the tap through whenever it isn't on drawn pinyin.
 
-`chars.tsv`, `words.tsv` and `defs.tsv` are built by `tools/build_data.py` from the dictionaries; `rules.tsv` and `uncertain.tsv` by `tools/learn_from_cpp.py`. Hand-checked corrections go in `tools/overrides.tsv`, which wins over everything: default readings, and words to add, fix or remove. Each entry says why, so the file can be reviewed.
+`chars.tsv`, `words.tsv`, `defs.tsv`, `special.tsv` and `special_guard.tsv` are built by `tools/build_data.py` from the dictionaries (the last two through `tools/special_words.py`; `tools/generated/special_review.tsv` lists every entry and why it qualified); `rules.tsv` and `uncertain.tsv` by `tools/learn_from_cpp.py`. Hand-checked corrections go in `tools/overrides.tsv`, which wins over everything: default readings, and words to add, fix or remove. Each entry says why, so the file can be reviewed.
 
 ### Accuracy
 
@@ -109,7 +121,7 @@ CPP's labels are not always right either (黄陂 is labelled *bēi* rather than 
 ## Known limitations
 
 - A character that stands alone, outside any dictionary word or context rule, gets its most frequent reading, or both readings when that is uncertain. This matters most in classical Chinese, where single-character words are common.
-- Only rare characters are annotated, so an unusual reading of a common character is never shown (单于 *chányú*, 可汗 *kèhán*). `tests/eval_known_unhandled.tsv` lists such cases.
+- Unusual readings of common characters are shown only for words on the list (see above); a common character used alone with a rare reading is not marked. `tests/eval_known_unhandled.tsv` lists known misses.
 - Words split by markup (e.g. a character in its own `<span>`) are not matched across the boundary.
 - The plugin replaces the book's line height instead of keeping it when it is already large enough (see [Line spacing](#line-spacing)).
 - When a line is too crowded for all its pinyin, the most common characters' pinyin is dropped first. If that drops a character's first appearance on the page, later repeats are not annotated instead.
@@ -130,6 +142,7 @@ python3 tools/build_data.py --cedict cedict_1_0_ts_utf-8_mdbg.txt.gz   # chars.t
                                                                     # (--only defs: defs.tsv alone)
 python3 tools/learn_from_cpp.py                                     # rules.tsv, uncertain.tsv (CPP train split)
 python3 tools/eval_readings.py                                      # CPP test split; tests/eval_cases.tsv must all pass
+python3 tools/scan_special.py BOOK.epub                             # unusual readings a book gets, per chapter
 ```
 
 The CPP dataset is downloaded when needed into `~/.cache/interlinear-pinyin/` and is not part of this repository. Its repository is Apache-2.0 but states no separate licence for the sentences, which according to the paper were collected from Chinese Wikipedia (whose text is CC BY-SA), so the sentences are not redistributed here; only rules and statistics learned from them are. `learn_from_cpp.py` reads only its train split, `eval_readings.py` only its test split.

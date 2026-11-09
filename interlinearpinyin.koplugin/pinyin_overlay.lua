@@ -26,6 +26,9 @@ local Overlay = Widget:extend{
     text_height = nil,  -- body font size in pixels, to find the glyph band in the line box
     gap = 1,            -- pixels between pinyin and the character below it
     dim = nil,
+    -- How an unusual reading of a common character (gloss.special) is set
+    -- apart from ordinary pinyin: "bold", "underline" or "none".
+    special_style = "bold",
 }
 
 function Overlay:init()
@@ -94,8 +97,9 @@ function Overlay:plan(max_x)
     local measured = {}
     for _, item in ipairs(self.glosses or {}) do
         if item.box and item.text and item.text ~= "" then
+            local bold = item.special and self.special_style == "bold" or false
             local ok, size = pcall(RenderText.sizeUtf8Text, RenderText, 0, max_x, face,
-                item.text, true, false)
+                item.text, true, bold)
             if ok and size then
                 measured[#measured + 1] = {
                     text = item.text, box = item.box, rank = item.rank,
@@ -123,8 +127,15 @@ function Overlay:paintTo(bb, x, y)
         local item = entry.item
         local descent, ascent = self._descent or 0, self._ascent or self.font_size
         local baseline = Layout.pinyinBaseline(item.box, self.text_height, ascent, descent, self.gap)
-        pcall(RenderText.renderUtf8Text, RenderText, bb,
-            x + math.floor(entry.x), y + math.floor(baseline), face, item.text, true, false, color)
+        local px, py = x + math.floor(entry.x), y + math.floor(baseline)
+        local bold = item.gloss.special and self.special_style == "bold" or false
+        pcall(RenderText.renderUtf8Text, RenderText, bb, px, py, face, item.text, true, bold, color)
+        if item.gloss.special and self.special_style == "underline" then
+            -- A thin rule just under the baseline (through descenders), clear
+            -- of the character below.
+            local thick = math.max(1, math.floor(self.font_size / 14))
+            pcall(bb.paintRect, bb, px, py + 1, math.floor(item.w or 0), thick, color)
+        end
     end
 end
 

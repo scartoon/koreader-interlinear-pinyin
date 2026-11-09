@@ -33,8 +33,15 @@ Runs the plugin's own Lua code (pinyin_data.lua, pinyin_resolve.lua).
    each reading occurs was tried, but the dictionary-based reading shares are
    too noisy: they put 蹲 at 44% cún.)
 
-3. tests/eval_cases.tsv (must all pass) and tests/eval_known_unhandled.tsv
+3. Unusual readings (data/special.tsv): every test-split sentence whose
+   labelled character is marked by a special word, common characters
+   included, and how often the special reading agrees with the label.
+
+4. tests/eval_cases.tsv (must all pass) and tests/eval_known_unhandled.tsv
    (reported only), at --threshold.
+
+The plugin is run with special words on (its default) when the copy being
+evaluated has them; --no-special turns them off.
 """
 import argparse
 import os
@@ -126,6 +133,31 @@ def overall_estimate(rows, threshold, freq, chars, shares):
     return right / total, pairs / total, skipped / total
 
 
+def special_report(plugin, shares):
+    """Point 3 of the module docstring."""
+    if plugin.special is None:
+        print("  Unusual readings: none (this copy of the plugin has no data/special.tsv, or --no-special)")
+        return
+    n = ok = 0
+    wrong = Counter()
+    for text, pos, ch, label in cpp_dataset.load("test"):
+        hit = plugin.special_at(text, pos)
+        if not hit or not hit[2]:
+            continue
+        word, reading, _ = hit
+        default, dict_shares = shares.get(ch, (None, {}))
+        label = normalize_label(label, set(dict_shares) | {reading} | ({default} if default else set()))
+        n += 1
+        if label == reading:
+            ok += 1
+        else:
+            wrong[(word, ch, reading, label)] += 1
+    print(f"  Unusual readings marked on the test split: {n}, agreeing with the label: {ok}"
+          + (f" ({100 * ok / n:.1f}%)" if n else ""))
+    for (word, ch, reading, label), k in wrong.most_common(10):
+        print(f"    {word}: {ch} shown {reading}, labelled {label} ({k}x)")
+
+
 def check_cases(plugin, path, threshold, label):
     total = passed = 0
     failures = []
@@ -157,9 +189,10 @@ def main():
                     help="for the rules comparison, error samples and regression lists (default 2500)")
     ap.add_argument("--errors", type=int, default=0, help="show this many sample errors")
     ap.add_argument("--no-cpp", action="store_true", help="only the regression lists")
+    ap.add_argument("--no-special", action="store_true", help="unusual readings (data/special.tsv) off")
     args = ap.parse_args()
 
-    plugin = Plugin(args.plugin)
+    plugin = Plugin(args.plugin, special=not args.no_special)
     if not args.no_cpp:
         shares = load_shares()
         rows = {mode: run_test(plugin, shares, mode) for mode in ("both", "best", "skip")}
@@ -177,7 +210,7 @@ def main():
         # Rules on/off at --threshold.
         plugin.lua.execute("local d = ...; d.rules = {}", plugin.data)
         no_rules = {mode: run_test(plugin, shares, mode) for mode in ("both", "best")}
-        plugin = Plugin(args.plugin)
+        plugin = Plugin(args.plugin, special=not args.no_special)
         n, _, ok_best, _ = summarize(rows["best"], args.threshold)
         _, _, ok_best_nr, _ = summarize(no_rules["best"], args.threshold)
         _, _, ok_both, pairs = summarize(rows["both"], args.threshold)
@@ -215,6 +248,8 @@ def main():
                     shown_n += 1
                     if shown_n >= args.errors:
                         break
+        print()
+        special_report(plugin, shares)
         print()
 
     check_cases(plugin, os.path.join(ROOT, "tests", "eval_cases.tsv"), args.threshold, "Regression list")

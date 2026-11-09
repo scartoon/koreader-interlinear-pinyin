@@ -1,0 +1,93 @@
+# Hand-checked unusual readings of common characters (see tools/special_words.py).
+# These always win over the automatic list.
+#
+#   word <TAB> pinyin (one syllable per character) <TAB> short note shown in the
+#   popup when CC-CEDICT has no entry <TAB> sources that give this reading
+#
+# The pinyin "-" keeps a word out of the automatic list instead.
+# Simplified forms; build_data.py adds the traditional form. Entries with no
+# source column are in neither CC-CEDICT nor pypinyin's phrase list and follow
+# the standard dictionary reading (现代汉语词典 / 新华字典 convention).
+# Contested readings are left out (阿房宫 ē/ā páng, 叶公 shè/yè, 樊於期 jī/qī,
+# 范雎 jū/suī, 车师 chē/jū) or the dispute is given in the note.
+
+# Xiongnu, steppe and Western Regions
+单于	chán yú	title of the Xiongnu ruler	CC-CEDICT, pypinyin
+冒顿	mò dú	Modu, Xiongnu ruler (d. 174 BC)	pypinyin
+阏氏	yān zhī	title of a Xiongnu ruler's consort	CC-CEDICT
+呼韩邪	hū hán yé	Huhanye, Xiongnu chanyu (d. 31 BC)
+月氏	yuè zhī	the Yuezhi, people of Central Asia (Han era); also read ròu zhī	CC-CEDICT, pypinyin
+大月氏	dà yuè zhī	the Greater Yuezhi; also read dà ròu zhī	CC-CEDICT
+龟兹	qiū cí	Kucha, Silk Road kingdom	CC-CEDICT, pypinyin
+吐谷浑	tǔ yù hún	Tuyuhun, people and state (4th-7th c.)	CC-CEDICT, pypinyin
+可汗	kè hán	khan	CC-CEDICT, pypinyin
+可敦	kè dūn	khatun, wife of a khan
+大宛	dà yuān	Dayuan (Ferghana), Han-era state	CC-CEDICT
+身毒	juān dú	old name for India; also read yuān dú
+沮渠	jū qú	two-character surname (Northern Liang rulers)
+
+# People
+冒顿单于	mò dú chán yú	Modu Chanyu, Xiongnu ruler (d. 174 BC)
+金日磾	jīn mì dī	Jin Midi, Han official of Xiongnu origin (134-86 BC)
+郦食其	lì yì jī	Li Yiji, adviser to Liu Bang (d. 204 BC)	pypinyin
+审食其	shěn yì jī	Shen Yiji, Han official (d. 177 BC)
+伍员	wǔ yún	Wu Yun (Wu Zixu), Spring and Autumn statesman
+句践	gōu jiàn	Goujian, King of Yue (also written 勾践)
+皋陶	gāo yáo	Gao Yao, legendary minister of Shun
+曹参	cáo shēn	Cao Shen, Han chancellor (d. 190 BC)
+曾参	zēng shēn	Zeng Shen (Zengzi), disciple of Confucius	CC-CEDICT
+赵衰	zhào cuī	Zhao Cui, minister of Jin (Spring and Autumn)
+夫差	fū chāi	Fuchai, King of Wu (d. 473 BC)
+乐毅	yuè yì	Yue Yi, general of Yan (Warring States)	pypinyin
+乐进	yuè jìn	Yue Jin, general under Cao Cao
+华佗	huà tuó	Hua Tuo, physician (Eastern Han)	CC-CEDICT, pypinyin
+华歆	huà xīn	Hua Xin, Three Kingdoms official
+华雄	huà xióng	Hua Xiong, general under Dong Zhuo
+刘禅	liú shàn	Liu Shan, last emperor of Shu Han	CC-CEDICT
+尉缭	yù liáo	Wei Liao (Yu Liao), Qin strategist
+召公	shào gōng	Duke of Shao (Western Zhou)
+万俟	mò qí	two-character surname	CC-CEDICT, pypinyin
+尉迟	yù chí	two-character surname	CC-CEDICT, pypinyin
+令狐	líng hú	two-character surname	CC-CEDICT, pypinyin
+
+# Titles and terms
+仆射	pú yè	title of a senior official (Han to Song)
+洗马	xiǎn mǎ	tutor-attendant to the crown prince (official title)	CC-CEDICT
+解元	jiè yuán	top candidate in the provincial imperial examination	CC-CEDICT, pypinyin
+绿林	lù lín	Lulin rebels; outlaws (绿林好汉)	CC-CEDICT, pypinyin
+禅让	shàn ràng	abdication in favour of a worthier ruler	CC-CEDICT, pypinyin
+封禅	fēng shàn	imperial sacrifices to Heaven and Earth on Mount Tai	CC-CEDICT, pypinyin
+否极泰来	pǐ jí tài lái	bad luck gives way to good (idiom)	CC-CEDICT, pypinyin
+
+# Places, states and peoples
+会稽	kuài jī	Kuaiji, commandery and mountain in Zhejiang
+高句丽	gāo gōu lí	Goguryeo, Korean kingdom (37 BC-668 AD)	CC-CEDICT
+句吴	gōu wú	the state of Wu (Spring and Autumn)
+番禺	pān yú	Panyu, in Guangzhou	CC-CEDICT, pypinyin
+洪洞	hóng tóng	Hongtong, county in Shanxi	CC-CEDICT
+燕国	yān guó	the state of Yan (Zhou to Warring States)	CC-CEDICT
+燕王	yān wáng	King of Yan; Prince of Yan
+燕赵	yān zhào	the states of Yan and Zhao; Hebei	CC-CEDICT, pypinyin
+燕山	yān shān	Yan Mountains, north of Beijing	CC-CEDICT, pypinyin
+燕京	yān jīng	old name for Beijing	CC-CEDICT, pypinyin
+燕然	yān rán	Yanran Mountains (Khangai, Mongolia), Han-era name
+朝歌	zhāo gē	Zhaoge, last Shang capital	CC-CEDICT
+栎阳	yuè yáng	Yueyang, early Qin capital
+琅邪	láng yá	Langya, commandery in Shandong (also 琅琊)
+莫邪	mò yé	Moye, legendary sword (干将莫邪)
+六安	lù ān	Lu'an, city in Anhui	CC-CEDICT, pypinyin
+丽水	lí shuǐ	Lishui, city in Zhejiang	CC-CEDICT, pypinyin
+台州	tāi zhōu	Taizhou, city in Zhejiang	CC-CEDICT, pypinyin
+铅山	yán shān	Yanshan, county in Jiangxi	CC-CEDICT, pypinyin
+东阿	dōng ē	Dong'e, county in Shandong	CC-CEDICT, pypinyin
+乐亭	lào tíng	Laoting, county in Hebei	CC-CEDICT, pypinyin
+单县	shàn xiàn	Shan County, Shandong	CC-CEDICT
+涡阳	guō yáng	Guoyang, county in Anhui	CC-CEDICT
+
+# Kept out of the automatic list (pinyin "-")
+阿房宫	-	contested: ē páng / ā fáng / ē fáng
+里脊肉	-	pypinyin gives lǐ jí; the word is lǐ ji (neutral tone)
+陈天华	-	CC-CEDICT gives Huà; the name is Chén Tiānhuá
+华龙	-	CC-CEDICT gives Huà; the district is Huálóng
+华龙区	-	CC-CEDICT gives Huà; the district is Huálóng
+伯颜	-	contested: CC-CEDICT gives Bà yán, usually Bó yán (Mongol general Bayan)

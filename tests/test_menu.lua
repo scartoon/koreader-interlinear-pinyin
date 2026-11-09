@@ -57,7 +57,7 @@ local function walk(items)
     end
 end
 walk(entry.sub_item_table)
-assert(count == 6 + 5 + 5 + 3, "unexpected menu size " .. count)
+assert(count == 7 + 5 + 5 + 3, "unexpected menu size " .. count)
 
 -- Choosing a threshold saves it and the label follows.
 entry.sub_item_table[2].sub_item_table[1].callback()
@@ -71,6 +71,19 @@ assert(plugin:getUncertainMode() == "best", "uncertain mode not saved")
 assert(entry.sub_item_table[4].text_func():find("best guess"))
 entry.sub_item_table[4].sub_item_table[3].callback()
 assert(plugin:getUncertainMode() == "skip")
+
+-- "Mark unusual readings": on by default; off loads nothing.
+local special_item = entry.sub_item_table[5]
+assert(special_item.text:find("unusual readings of common characters"), special_item.text)
+assert(plugin:isSpecialEnabled() and special_item.checked_func(), "unusual readings on by default")
+assert(plugin:loadSpecial(), "special words load when on")
+plugin.special = nil
+special_item.callback()
+assert(not plugin:isSpecialEnabled() and not special_item.checked_func())
+assert(plugin:loadSpecial() == nil and plugin.special == nil, "nothing loaded when off")
+special_item.callback()
+assert(plugin:isSpecialEnabled())
+assert(plugin:getSpecialStyle() == "bold")
 
 -- Line-height: room for 1.2x the pinyin plus 2px either side in the gap
 -- between lines, undoing KOReader's line-spacing scale.

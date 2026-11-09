@@ -43,6 +43,7 @@ CC-CEDICT: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
 """
 
 import argparse
+import functools
 import gzip
 import os
 import re
@@ -50,6 +51,7 @@ import unicodedata
 from collections import Counter, defaultdict
 
 import wordfreq
+import special_words
 from importlib.metadata import version
 from pypinyin.phrases_dict import phrases_dict
 from pypinyin.pinyin_dict import pinyin_dict
@@ -145,7 +147,7 @@ def refers_to(sense, form):
         re.search(r"variant of|^see |^used in", sense) is not None
 
 
-def write_defs(entries, annotatable, word_freq, path):
+def write_defs(entries, annotatable, word_freq, path, extra_forms=()):
     """defs.tsv: CC-CEDICT entries for every annotatable character and every
     2-4 character word containing one (see the module docstring)."""
     by_key = defaultdict(list)   # key -> [[marked pinyin, [senses]], ...] in CC-CEDICT order
@@ -155,7 +157,7 @@ def write_defs(entries, annotatable, word_freq, path):
         for form in forms:
             if not 1 <= len(form) <= MAX_WORD_LEN or not all(is_han(ch) for ch in form):
                 continue
-            if not any(annotatable(ch) for ch in form):
+            if not any(annotatable(ch) for ch in form) and form not in extra_forms:
                 continue
             pinyin = " ".join(numbered_to_marked(s)[:1].upper() + numbered_to_marked(s)[1:]
                               if s[:1].isupper() else numbered_to_marked(s) for s in syls)
@@ -218,6 +220,7 @@ def main():
     ap.add_argument("--cedict", required=True)
     ap.add_argument("--out", default="interlinearpinyin.koplugin/data")
     ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.tsv"))
+    ap.add_argument("--curated", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "special_curated.tsv"))
     ap.add_argument("--shares-out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                                          "generated", "reading_shares.tsv"))
     ap.add_argument("--only", choices=["all", "defs"], default="all",
@@ -271,11 +274,18 @@ def main():
     # 3. Readings per character, weighted by how often the words using each
     #    reading occur. Neutral tones only count when nothing else exists.
     weights = defaultdict(Counter)
+    # The same, counted in simplified forms only and in traditional forms only:
+    # 乾 is qián in simplified text but mostly gān (干) in traditional.
+    script_weights = {"simp": defaultdict(Counter), "trad": defaultdict(Counter)}
     neutral = defaultdict(Counter)
     single_entry_reading = {}
     for trad, simp, syls, _ in entries:
         wf = freq.get(simp, 0.0) + 1e-9
         syls = [s.lower() for s in syls]
+        for script, form in (("simp", simp), ("trad", trad)):
+            for ch, syl in zip(form, syls):
+                if is_han(ch) and not is_neutral(syl):
+                    script_weights[script][ch][syl] += wf
         for form in {trad, simp}:
             for ch, syl in zip(form, syls):
                 if not is_han(ch):
@@ -302,11 +312,6 @@ def main():
     def annotatable(ch):
         r = rank_of(ch)
         return r == 0 or r > MIN_ANNOTATABLE_RANK
-
-    os.makedirs(args.out, exist_ok=True)
-    write_defs(entries, annotatable, word_freq, os.path.join(args.out, "defs.tsv"))
-    if args.only == "defs":
-        return
 
     all_chars = set(weights) | set(neutral) | set(single_entry_reading)
     all_chars |= {chr(cp) for cp in pinyin_dict if is_han(chr(cp))}
@@ -436,21 +441,32 @@ def main():
             for ch, syl in zip(form, syls):
                 if is_han(ch) and not is_neutral(syl.lower()):
                     (minor_only if is_minor else major)[ch].add(numbered_to_marked(syl.lower()))
-    share_rows = []
-    for ch in sorted(poly):
+    phrases_with = defaultdict(list)   # char -> pypinyin phrases containing it, in order
+    for phrase in py_phrases:
+        for ch in set(phrase):
+            phrases_with[ch].append(phrase)
+
+    def default_of(ch):
+        """Default reading of any character, annotatable or not."""
+        return defaults.get(ch) or default_reading(ch)
+
+    @functools.lru_cache(maxsize=None)
+    def shares_of(ch, script=None):
+        """reading -> share of ch's use in ordinary text (see above). Works for
+        any character, not only the annotatable polyphonic ones. script
+        "simp" or "trad" counts only CC-CEDICT words written in that script."""
         w = Counter()
-        for syl, f in weights[ch].items():
+        for syl, f in (script_weights[script] if script else weights)[ch].items():
             marked = numbered_to_marked(syl)
             if marked in minor_only[ch] and marked not in major[ch]:
                 continue
             w[marked] += f
-        for phrase, syls in py_phrases.items():
-            if ch in phrase:
-                for c, syl in zip(phrase, fix_neutral(phrase, syls)):
-                    if c == ch and not is_toneless(syl) and syl not in w:
-                        w[syl] += word_freq(phrase) / 1e9 + 1e-9
-        default = defaults[ch]
-        if default not in w:
+        for phrase in phrases_with[ch]:
+            for c, syl in zip(phrase, fix_neutral(phrase, py_phrases[phrase])):
+                if c == ch and not is_toneless(syl) and syl not in w:
+                    w[syl] += word_freq(phrase) / 1e9 + 1e-9
+        default = default_of(ch)
+        if default and default not in w:
             w[default] = 0.0
         total = sum(w.values()) or 1.0
         shares = {r: f / total for r, f in w.items()}
@@ -458,8 +474,29 @@ def main():
             rest = sum(v for r, v in shares.items() if r != default)
             shares = {r: (0.9 if r == default else (0.1 * v / rest if rest else 0.0))
                       for r, v in shares.items()}
-        ordered = sorted(shares.items(), key=lambda kv: -kv[1])
-        share_rows.append((ch, default, " ".join(f"{r}:{v:.4f}" for r, v in ordered)))
+        return shares
+
+    share_rows = []
+    for ch in sorted(poly):
+        ordered = sorted(shares_of(ch).items(), key=lambda kv: -kv[1])
+        share_rows.append((ch, defaults[ch], " ".join(f"{r}:{v:.4f}" for r, v in ordered)))
+    # 8. Unusual readings of common characters in names and historical terms
+    #    (data/special.tsv, data/special_guard.tsv); see special_words.py.
+    special = special_words.build(
+        entries=entries, py_phrases=py_phrases, shares_of=shares_of, default_of=default_of,
+        word_freq=word_freq, wordfreq_dict=freq, curated_path=args.curated)
+
+    # defs.tsv also covers the special words and their characters, so the
+    # popup has something to show for 单于 although 单 and 于 are common.
+    special_forms = {row.word for row in special.rows}
+    special_chars = {ch for row in special.rows for ch, m in zip(row.word, row.marks) if m}
+    os.makedirs(args.out, exist_ok=True)
+    write_defs(entries, annotatable, word_freq, os.path.join(args.out, "defs.tsv"),
+               extra_forms=special_forms | special_chars)
+    if args.only == "defs":
+        return
+    special.write(args.out, os.path.join(os.path.dirname(args.shares_out), "special_review.tsv"))
+
     os.makedirs(os.path.dirname(args.shares_out), exist_ok=True)
     with open(args.shares_out, "w", encoding="utf-8") as f:
         f.write("# char\tdefault\treading:share ... (generated by tools/build_data.py)\n")

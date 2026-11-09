@@ -41,3 +41,28 @@
 # Must not be marked: common readings
 去银行取钱	行=-
 音乐很好听	乐=-
+
+# Unusual readings of common characters (data/special.tsv; only the
+# characters whose reading differs from their default are marked)
+冒顿单于	冒=mò 顿=dú 单=chán
+郦食其	郦=lì 食=yì 其=jī
+吐谷浑	谷=yù
+太子洗马	洗=xiǎn
+洪洞县	洞=tóng
+绿林好汉	绿=lù
+否极泰来	否=pǐ
+大月氏	氏=zhī
+龟兹	龟=qiū 兹=cí
+尉迟恭	尉=yù
+番禺	番=pān
+可汗	可=kè 汗=hán
+会稽	会=kuài
+句践	句=gōu
+金日磾	日=mì 磾=dī
+伍员	员=yún
+事情很简单于是我们走了	单=- 于=-
+冒顿单于是匈奴的首领	冒=mò 顿=dú 单=chán 于=-
+单于率领骑兵	单=chán 于=-
+订单于3日发货	单=- 于=-
+名单于今日公布	单=- 于=-
+他去洗马桶	洗=-
