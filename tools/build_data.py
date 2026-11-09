@@ -14,6 +14,9 @@ Outputs (tab-separated UTF-8 text, parsed by the plugin at load time):
                    that contain a polyphonic character which can ever be annotated.
                    Words come from CC-CEDICT and from pypinyin's phrase list.
 
+tools/overrides.tsv holds hand-checked readings that win over both sources:
+one character replaces its default reading, 2-4 characters add or replace a word.
+
 Usage:
   pip install wordfreq pypinyin
   python3 tools/build_data.py --cedict cedict_1_0_ts_utf-8_mdbg.txt.gz --out interlinearpinyin.koplugin/data
@@ -125,11 +128,34 @@ def load_cedict(path):
     return entries
 
 
+def load_overrides(path):
+    """form -> list of marked syllables, from tools/overrides.tsv."""
+    out = {}
+    with open(path, encoding="utf-8") as f:
+        for n, line in enumerate(f, 1):
+            line = line.rstrip("\n")
+            if not line.strip() or line.startswith("#"):
+                continue
+            fields = line.split("\t")
+            if len(fields) < 2:
+                raise SystemExit(f"{path}:{n}: expected form<TAB>reading")
+            form, reading = fields[0], unicodedata.normalize("NFC", fields[1])
+            syls = reading.split()
+            if len(syls) != len(form) or not all(is_han(ch) for ch in form):
+                raise SystemExit(f"{path}:{n}: {form} has {len(form)} characters but {len(syls)} syllables")
+            if form in out:
+                raise SystemExit(f"{path}:{n}: {form} listed twice")
+            out[form] = syls
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cedict", required=True)
     ap.add_argument("--out", default="interlinearpinyin.koplugin/data")
+    ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.tsv"))
     args = ap.parse_args()
+    overrides = load_overrides(args.overrides)
 
     freq = wordfreq.get_frequency_dict("zh")  # simplified-only keys
 
@@ -215,6 +241,9 @@ def main():
         if reading:
             rows.append((ch, rank_of(ch), reading))
     rows.sort(key=lambda r: (r[1] == 0, r[1], r[0]))
+    # Hand-checked default readings.
+    char_overrides = {form: syls[0] for form, syls in overrides.items() if len(form) == 1}
+    rows = [(ch, rank, char_overrides.get(ch, reading)) for ch, rank, reading in rows]
 
     defaults = {ch: reading for ch, _, reading in rows}
 
@@ -298,6 +327,12 @@ def main():
                 stats["disagree: took pypinyin (neutral tone)"] += 1
             else:
                 stats["disagree: kept CC-CEDICT"] += 1
+
+    # Hand-checked words win over both sources.
+    for form, syls in overrides.items():
+        if len(form) > 1:
+            stats["overrides: " + ("replaced" if form in words else "added")] += 1
+            words[form] = [syls, False, None]
 
     neutral_fixed = set()
     word_rows = []

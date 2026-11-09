@@ -416,7 +416,7 @@ Q勁	q jìn	0
 下乘	xià shèng	0
 下劲	xià jìn	0
 下卷	xià juàn	447
-下咽	xià yān	224
+下咽	xià yàn	224
 下咽癌	xià yān ái	0
 下塌	xià tā	19
 下塞上聋	xià sāi shàng lóng	0
@@ -3904,6 +3904,8 @@ Q勁	q jìn	0
 包浆	bāo jiāng	0
 包漿	bāo jiāng	0
 包紮	bāo zā	1318
+包荫	bāo yìn	0
+包蔭	bāo yìn	0
 包谷	bāo gǔ	87
 匆卒	cōng cù	0
 化为乌有	huà wéi wū yǒu	794
@@ -7830,7 +7832,9 @@ Q勁	q jìn	0
 封神榜	fēng shén bǎng	692
 封禅	fēng shàn	295
 封禪	fēng shàn	295
+封荫	fēng yìn	0
 封蓋	fēng gài	269
+封蔭	fēng yìn	0
 封豕长蛇	fēng shǐ cháng shé	0
 封豨修蛇	fēng xī xiū shé	0
 射石饮羽	shè shí yǐn yǔ	0
@@ -9130,7 +9134,9 @@ Q勁	q jìn	0
 徐志摩	xú zhì mó	646
 徐熙媛	xú xī yuán	51
 徐繼畬	xú jì yú	0
+徐繼畲	xú jì yú	13
 徐继畬	xú jì yú	0
+徐继畲	xú jì yú	13
 徑情直遂	jìng qíng zhí suì	0
 徒裼	tú xī	0
 得不偿丧	dé bù cháng sàng	0
@@ -9355,6 +9361,8 @@ Q勁	q jìn	0
 恩將仇報	ēn jiāng chóu bào	302
 恩眄	ēn miǎn	0
 恩膏	ēn gāo	0
+恩荫	ēn yìn	0
+恩蔭	ēn yìn	0
 恩賈梅納	ēn jiǎ méi nà	71
 恩贾梅纳	ēn jiǎ méi nà	71
 恫吓	dòng hè	851
@@ -16220,6 +16228,7 @@ Q勁	q jìn	0
 温岭	wēn lǐng	562
 温岭市	wēn lǐng shì	138
 温席扇枕	wēn xí shān zhěn	0
+温庭筠	wēn tíng yún	132
 温情脉脉	wēn qíng mò mò	35
 温文尔雅	wēn wén ěr yǎ	288
 温枕扇席	wēn zhěn shān xí	0
@@ -16349,6 +16358,7 @@ Q勁	q jìn	0
 溫宿	wēn sù	123
 溫宿縣	wēn sù xiàn	72
 溫尼伯	wēn ní bó	263
+溫庭筠	wēn tíng yún	132
 溫情脈脈	wēn qíng mò mò	35
 溫文爾雅	wēn wén ěr yǎ	288
 溫雅	wēn yǎ	105
@@ -19424,6 +19434,8 @@ Q勁	q jìn	0
 祖母綠	zǔ mǔ lǜ	162
 祖母绿	zǔ mǔ lǜ	162
 祖籍	zǔ jí	1230
+祖荫	zǔ yìn	0
+祖蔭	zǔ yìn	0
 祖鳥	zǔ niǎo	0
 祖鳥類	zǔ niǎo lèi	0
 祖鸟	zǔ niǎo	0
@@ -22871,8 +22883,11 @@ Q勁	q jìn	0
 荫凉	yìn liáng	79
 荫子封妻	yìn zǐ fēng qī	0
 荫庇	yìn bì	46
+荫户	yìn hù	0
 荫翳	yīn yì	0
 荫蔽	yìn bì	105
+荫补	yìn bǔ	0
+荫附	yìn fù	0
 药师佛	yào shī fó	87
 药笼中物	yào lóng zhōng wù	0
 药膏	yào gāo	1349
@@ -23571,8 +23586,11 @@ Q勁	q jìn	0
 蔚起	wèi qǐ	12
 蔡李佛	cài lǐ fó	76
 蔥綠	cōng lǜ	65
+蔭戶	yìn hù	0
 蔭涼	yìn liáng	79
 蔭蔽	yìn bì	105
+蔭補	yìn bǔ	0
+蔭附	yìn fù	0
 蔽塞	bì sè	0
 蔽明塞聪	bì míng sè cōng	0
 蔽聪塞明	bì cōng sè míng	0
@@ -26229,7 +26247,8 @@ Q勁	q jìn	0
 遛弯儿	liù wān r	12
 遛彎	liù wān	100
 遛彎兒	liù wān r	12
-遛早儿	liú zǎo er	0
+遛早儿	liù zǎo r	0
+遛早兒	liù zǎo r	0
 遛狗	liù gǒu	741
 遝冈复岭	tà gāng fù lǐng	0
 遠東山雀	yuǎn dōng shān què	0
@@ -27308,6 +27327,7 @@ Q勁	q jìn	0
 門檻	mén kǎn	14791
 門洞	mén dòng	479
 門縫	mén fèng	372
+門蔭	mén yìn	0
 閉卷考試	bì juàn kǎo shì	27
 閉塞	bì sè	2344
 閉殼肌	bì ké jī	0
@@ -27398,6 +27418,7 @@ Q勁	q jìn	0
 门槛	mén kǎn	14791
 门洞	mén dòng	479
 门缝	mén fèng	372
+门荫	mén yìn	0
 门衰祚薄	mén shuāi zuò báo	0
 门钉	mén dīng	35
 门静脉	mén jìng mài	141

@@ -14,3 +14,5 @@ pypinyin phrases merged in (first reading of each syllable; where both sources h
 and disagree, CC-CEDICT is kept unless it differs only by a neutral tone); neutral tones on
 annotatable characters replaced by the character's toned reading with the same letters;
 each word's frequency (per billion words, from wordfreq) added as a third column.
+
+Hand-checked corrections in `tools/overrides.tsv` are applied last and win over both sources.

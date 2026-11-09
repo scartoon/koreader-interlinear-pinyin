@@ -92,6 +92,13 @@ expect("一只刺猬", 3500, "猬=wèi")
 -- Words from pypinyin's phrase list that CC-CEDICT lacks or reads differently.
 expect("澹台灭明", 3500, "澹=tán")
 
+-- Hand-checked overrides (tools/overrides.tsv).
+expect("食不下咽", 2500, "咽=yàn")
+expect("温庭筠的词", 3500, "筠=yún")            -- default reading corrected
+expect("筠连县", 3500, "筠=jūn")                 -- the place name keeps jūn
+expect("以门荫为官", 2500, "荫=yìn")
+expect("林荫大道", 2500, "荫=yīn")
+
 -- Punctuation breaks a word: 侥。幸 must not match 侥幸.
 expect("僬侥。幸", 3500, "僬=jiāo 侥=yáo")
 

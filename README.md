@@ -57,7 +57,7 @@ Readings come from two tables in `interlinearpinyin.koplugin/data/`:
 - `chars.tsv`: every annotatable character with its frequency rank and default (most frequent) reading.
 - `words.tsv`: 2–4 character words containing a character with more than one reading, with each word's frequency. The longest word around a character decides its reading; among words of the same length, the more frequent one. The words come from CC-CEDICT and from pypinyin's phrase list, which adds names and literary words such as 冒顿 *mò dú* and 澹台 *tán tái*.
 
-Rebuild them with `tools/build_data.py` (instructions in the script).
+Rebuild them with `tools/build_data.py` (instructions in the script). Hand-checked corrections go in `tools/overrides.tsv`, which wins over both sources.
 
 ## Known limitations
 

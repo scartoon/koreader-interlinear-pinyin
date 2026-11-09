@@ -1,0 +1,37 @@
+# Hand-checked readings, applied by tools/build_data.py after CC-CEDICT and
+# pypinyin, so these always win.
+#
+#   form <TAB> reading (tone marks, one syllable per character, space-separated) <TAB> note
+#
+# One character: replaces that character's default reading in chars.tsv.
+# Two to four characters: adds the word to words.tsv or replaces its reading.
+# Give simplified and traditional forms on separate lines where they differ.
+# Add an entry only when sure of it, with the reason.
+
+# --- Default readings ---
+筠	yún	"skin of bamboo", and in names (温庭筠); jūn only in the place name 筠连, which has its own entry
+
+# --- Words ---
+下咽	xià yàn	to swallow (食不下咽); CC-CEDICT has xià yān
+遛早儿	liù zǎo r	morning stroll (cf. 遛弯儿 liù); pypinyin has liú
+遛早兒	liù zǎo r
+温庭筠	wēn tíng yún	Tang poet
+溫庭筠	wēn tíng yún
+徐继畲	xú jì yú	Qing official, usually written 徐继畬 (xú jì yú, in CC-CEDICT); 畲 is a common variant spelling of his name
+徐繼畲	xú jì yú
+门荫	mén yìn	office by hereditary privilege; 荫 yìn = protection/privilege (vs. yīn, shade)
+門蔭	mén yìn
+恩荫	ēn yìn	same sense
+恩蔭	ēn yìn
+封荫	fēng yìn	same sense
+封蔭	fēng yìn
+荫补	yìn bǔ	same sense
+蔭補	yìn bǔ
+祖荫	zǔ yìn	ancestors' protection
+祖蔭	zǔ yìn
+包荫	bāo yìn	sheltering households from tax (包荫户)
+包蔭	bāo yìn
+荫附	yìn fù	to attach oneself to a powerful family for protection
+蔭附	yìn fù
+荫户	yìn hù	sheltered household (same sense as 包荫户)
+蔭戶	yìn hù
