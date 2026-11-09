@@ -29,6 +29,7 @@ stub("ffi/blitbuffer", { COLOR_BLACK = 0 })
 stub("ui/font", {})
 stub("ui/rendertext", {})
 stub("ui/size", { span = { horizontal_small = 2 } })
+stub("device", { screen = { scaleBySize = function(_, v) return v end } })
 
 local settings = {}
 G_reader_settings = {
@@ -61,6 +62,13 @@ assert(count == 4 + 5 + 5, "unexpected menu size " .. count)
 -- Choosing a threshold saves it and the label follows.
 entry.sub_item_table[2].sub_item_table[1].callback()
 assert(entry.sub_item_table[2].text_func():find("1500"), "threshold label not updated")
+
+-- Line-height: room for 1.2x the pinyin plus 2px either side in the gap
+-- between lines, undoing KOReader's line-spacing scale.
+local lh = Plugin.lineHeightFor(64, 40, 100)
+assert(math.abs(lh - (1 + (64 * 0.4 * 1.2 + 4) / 64)) < 1e-9, "line height " .. lh)
+assert(math.abs(Plugin.lineHeightFor(64, 40, 85) - lh / 0.85) < 1e-9, "line spacing not compensated")
+assert(Plugin.lineHeightFor(64, 80, 50) == 3.0, "line height not capped")
 
 G_reader_settings = nil
 print("menu: ok")

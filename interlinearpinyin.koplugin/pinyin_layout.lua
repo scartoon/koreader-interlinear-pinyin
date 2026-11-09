@@ -97,4 +97,23 @@ function Layout.textBand(box, text_height)
     return box.y + half_leading, box.y + box.h - half_leading
 end
 
+--[[--
+Baseline for the pinyin above a character.
+
+The bottom of the pinyin (descenders included) sits `gap` pixels above the top
+of the character. The pinyin may use the whole space between this line's
+characters and the line above's, which is both half-leadings, not only the
+part inside this line box. Its top never rises past the line above's
+characters (the same half-leading above this line box); if there is not enough
+room it is pushed down onto its own character rather than onto the line above.
+]]
+function Layout.pinyinBaseline(box, text_height, ascent, descent, gap)
+    local text_top = Layout.textBand(box, text_height)
+    local half_leading = text_top - box.y
+    local baseline = text_top - gap - descent
+    local min_baseline = box.y - half_leading + gap + ascent
+    if baseline < min_baseline then baseline = min_baseline end
+    return baseline
+end
+
 return Layout

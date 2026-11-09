@@ -85,9 +85,12 @@ function Page.collect(document, page)
     return items
 end
 
--- Screen boxes for one item; nil when it is not on screen.
+-- Screen box for one item; nil when it is not on screen.
+-- get_segments must be true: in word mode crengine returns the box of every
+-- word the range touches, and the range end (`we`) is the start of the next
+-- CJK character, so each box would also cover the following character.
 local function boxes_for(document, item)
-    local boxes = call(document, "getScreenBoxesFromPositions", item.ws, item.we, false)
+    local boxes = call(document, "getScreenBoxesFromPositions", item.ws, item.we, true)
     for _, box in ipairs(boxes or {}) do
         if box and box.w and box.w > 0 and box.h and box.h > 0 then
             return box

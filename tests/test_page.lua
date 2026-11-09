@@ -28,7 +28,11 @@ local function fake_document(text, page_starts)
     function doc:getPrevVisibleChar(xp) if xp > 1 then return xp - 1 end end
     function doc:compareXPointers(a, b) if b > a then return 1 elseif b == a then return 0 else return -1 end end
     function doc:getTextFromXPointers(a, b) return table.concat(c, "", a, b - 1) end
-    function doc:getScreenBoxesFromPositions(a) return { { x = a * 10, y = 0, w = 10, h = 20 } } end
+    function doc:getScreenBoxesFromPositions(a, b, get_segments)
+        -- Word mode would also cover the next character (see boxes_for).
+        assert(get_segments == true, "boxes must be requested with get_segments=true")
+        return { { x = a * 10, y = 0, w = 10, h = 20 } }
+    end
     return doc
 end
 

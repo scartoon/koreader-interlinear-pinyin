@@ -132,7 +132,13 @@ function InterlinearPinyin:onPosUpdate() self:refreshPage() end
 
 function InterlinearPinyin:onDocumentRerendered()
     if self.overlay then self.overlay.placed = nil end
-    UIManager:nextTick(function() self:refreshPage() end)
+    UIManager:nextTick(function()
+        -- KOReader handles SetLineSpace itself and does not pass the event on,
+        -- so notice a line-spacing change here, after its re-layout. Re-apply
+        -- the style only when it changed (refreshDocumentStyles checks).
+        if self:isEnabled() then self:refreshDocumentStyles() end
+        self:refreshPage()
+    end)
 end
 InterlinearPinyin.onDocumentPartiallyRerendered = InterlinearPinyin.onDocumentRerendered
 
@@ -144,49 +150,66 @@ end
 -- Line spacing: room for the pinyin between lines
 ------------------------------------------------------------------------
 
--- CSS line-height adds half its extra space above each line and half below, so
--- to fit pinyin of height h above the characters we need (lh - 1) / 2 >= h / F.
+-- KOReader's "line spacing" setting (percent). crengine multiplies every line
+-- height by it, including ones set in CSS.
+function InterlinearPinyin:lineSpacingPercent()
+    local ui = self.ui
+    local configurable = (ui and ui.font and ui.font.configurable)
+        or (ui and ui.document and ui.document.configurable)
+    local pct = configurable and tonumber(configurable.line_spacing)
+    if not pct or pct <= 0 then return 100 end
+    return pct
+end
+
+-- Line-height (in em, as written in CSS) that leaves room for the pinyin.
+--
+-- The pinyin is drawn in the whole gap between the characters of one line and
+-- those of the line above: CSS splits the extra height (lh - 1) em into half
+-- above and half below each line, so that gap is the full (lh - 1) em. It must
+-- hold the pinyin itself (about 1.2x its font size counting tone marks and
+-- descenders) plus GAP pixels on each side. crengine then scales the result by
+-- the line-spacing percentage, so divide by it to get what we actually need.
+function InterlinearPinyin.lineHeightFor(font_size, size_pct, spacing_pct)
+    font_size = math.max(1, tonumber(font_size) or 16)
+    local pinyin_px = font_size * size_pct / 100
+    local need = pinyin_px * 1.2 + 2 * GAP
+    local lh = (1 + need / font_size) / ((spacing_pct or 100) / 100)
+    return math.max(1.0, math.min(3.0, lh))
+end
+
 function InterlinearPinyin:gapCss(document)
     local font_size = 16
     local ok, size = pcall(function() return document:getFontSize() end)
     if ok and tonumber(size) then font_size = tonumber(size) end
-    local pinyin_px = font_size * self:getSizePercent() / 100
-    local need = pinyin_px * 1.1 + GAP
-    local lh = 1 + 2 * need / math.max(1, font_size)
-    lh = math.max(1.5, math.min(3.0, lh))
+    local lh = InterlinearPinyin.lineHeightFor(font_size, self:getSizePercent(), self:lineSpacingPercent())
     return string.format("p,li,dd,dt,blockquote,div,td,pre{line-height:%.2f !important;}", lh)
 end
 
 function InterlinearPinyin:styleSignature()
     return tostring(self:isEnabled()) .. "|" .. tostring(self:getSizePercent())
+        .. "|" .. tostring(self:lineSpacingPercent())
 end
 
 -- Re-apply the style sheet when our settings change. The CSS itself is added
 -- by hookStyleSheet, so KOReader's own re-layouts keep it too.
+--
+-- document:setStyleSheet alone only records the CSS; the book is laid out
+-- again only on UpdatePos. ApplyStyleSheet is KOReader's own way to do both:
+-- ReaderTypeset re-sets its CSS plus the style tweaks (through our hook) and
+-- sends UpdatePos. Before the reader is ready (onReadSettings) UpdatePos is a
+-- no-op and the first layout picks the style up.
 function InterlinearPinyin:refreshDocumentStyles()
     local document = self.ui and self.ui.document
-    local typeset = self.ui and self.ui.typeset
-    if not document or not typeset or not document.setStyleSheet then return false end
+    if not document or not self.ui.typeset or not document.setStyleSheet then return false end
     local signature = self:styleSignature()
     if document._interlinearpinyin_signature == signature then return true end
     document._interlinearpinyin_signature = signature
-    local css = typeset.css or document.default_css or ""
-    local tweaks = self.ui.styletweak and self.ui.styletweak:getCssText() or ""
-    local ok = pcall(function() document:setStyleSheet(css, tweaks) end)
+    local ok, err = pcall(function() self.ui:handleEvent(Event:new("ApplyStyleSheet")) end)
     if not ok then
+        logger.warn("interlinearpinyin: applying style sheet failed:", tostring(err))
         document._interlinearpinyin_signature = nil
         return false
     end
-    UIManager:nextTick(function()
-        local ui = self.ui
-        if not ui or not ui.view then return end
-        pcall(function()
-            local page = document:getCurrentPage()
-            if page then ui:handleEvent(Event:new("PageUpdate", page)) end
-            ui.view:recalculate()
-            ui:handleEvent(Event:new("InitScrollPageStates"))
-        end)
-    end)
     return true
 end
 
