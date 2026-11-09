@@ -256,7 +256,7 @@ end
 function InterlinearPinyin:addToMainMenu(menu_items)
     local plugin = self
     local threshold_items = {}
-    for _, value in ipairs(THRESHOLDS) do
+    for _i, value in ipairs(THRESHOLDS) do
         threshold_items[#threshold_items + 1] = {
             text = T(_("Outside the %1 most common"), value),
             checked_func = function() return plugin:getThreshold() == value end,
@@ -269,7 +269,7 @@ function InterlinearPinyin:addToMainMenu(menu_items)
         }
     end
     local size_items = {}
-    for _, pct in ipairs(SIZES) do
+    for _i, pct in ipairs(SIZES) do
         size_items[#size_items + 1] = {
             text = T(_("%1% of text size"), pct),
             checked_func = function() return plugin:getSizePercent() == pct end,
