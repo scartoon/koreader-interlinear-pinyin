@@ -99,6 +99,58 @@ expect("筠连县", 3500, "筠=jūn")                 -- the place name keeps j�
 expect("以门荫为官", 2500, "荫=yìn")
 expect("林荫大道", 2500, "荫=yīn")
 
+-- Default readings corrected from the CPP train split (tools/overrides.tsv).
+expect("李晟是唐朝名将", 3500, "晟=shèng")
+expect("吃文蛤", 2500, "蛤=gé")
+expect("一只癞蛤蟆", 2500, "癞=lài 蛤=há 蟆=má")   -- the word keeps há
+expect("盐谷町", 2500, "町=tǐng")
+expect("姓翟的人", 3500, "翟=zhái")
+-- Word fixes from the train review.
+expect("脯氨酸", 2500, "脯=fǔ 氨=ān")
+expect("树枝分杈", 3500, "杈=chà")
+-- Context rule learned from train (幢 after a numeral), and the pair shown
+-- for 幢 when nothing decides.
+expect("一幢房子", 2500, "幢=zhuàng")
+expect("那幢", 2500, "幢=zhuàng")                -- hand-checked default, train agrees
+-- Uncertain characters: both readings, most likely first.
+expect("姓覃", 3500, "覃=qín/tán")
+expect("叫鸣镝", 3500, "镝=dí")                 -- word (overrides.tsv); 镝 alone is a pair
+
+-- Resolution order and the three "uncertain" modes, on made-up data.
+do
+    local fake = setmetatable({
+        chars = { ["甲"] = { 3000, "a1" } },
+        words = { ["丁甲"] = { "x", "w1" } }, word_freq = {},
+        rules = { ["甲"] = { ["L乙"] = { "l2", 5 }, ["R丙"] = { "r3", 9 } } },
+        uncertain = { ["甲"] = { 0.4, "b2", "a1" } },
+        max_word_len = 2,
+    }, getmetatable(data))
+    local function items(text)
+        local t = {}
+        for ch in text:gmatch("[%z\1-\127\194-\244][\128-\191]*") do
+            t[#t + 1] = { text = ch, joined = #t > 0, on_page = true }
+        end
+        return t
+    end
+    local function at(text, mode)
+        local list = items(text)
+        for i, it in ipairs(list) do
+            if it.text == "甲" then return (Resolve.reading(fake, list, i, mode)) end
+        end
+    end
+    assert(at("甲", "both") == "b2/a1", "pair, most likely first")
+    assert(at("甲", "best") == "b2", "best guess is the most likely reading")
+    assert(at("甲", "skip") == nil, "skip leaves it bare")
+    assert(at("甲") == "b2/a1", "default mode is both")
+    assert(at("乙甲", "both") == "l2", "left rule beats uncertainty")
+    assert(at("甲丙", "skip") == "r3", "right rule")
+    assert(at("乙甲丙") == "r3", "rules disagree: more examples wins")
+    assert(at("丁甲") == "w1", "a dictionary word beats a rule")
+    local split = items("乙甲")
+    split[2].joined = false   -- punctuation in between
+    assert(Resolve.reading(fake, split, 2, "best") == "b2", "rules need a joined neighbour")
+end
+
 -- Punctuation breaks a word: 侥。幸 must not match 侥幸.
 expect("僬侥。幸", 3500, "僬=jiāo 侥=yáo")
 

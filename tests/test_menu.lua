@@ -57,11 +57,20 @@ local function walk(items)
     end
 end
 walk(entry.sub_item_table)
-assert(count == 4 + 5 + 5, "unexpected menu size " .. count)
+assert(count == 5 + 5 + 5 + 3, "unexpected menu size " .. count)
 
 -- Choosing a threshold saves it and the label follows.
 entry.sub_item_table[2].sub_item_table[1].callback()
 assert(entry.sub_item_table[2].text_func():find("1500"), "threshold label not updated")
+
+-- "When the reading is uncertain": default both, choices saved.
+assert(plugin:getUncertainMode() == "both")
+assert(entry.sub_item_table[4].text_func():find("show both"))
+entry.sub_item_table[4].sub_item_table[2].callback()
+assert(plugin:getUncertainMode() == "best", "uncertain mode not saved")
+assert(entry.sub_item_table[4].text_func():find("best guess"))
+entry.sub_item_table[4].sub_item_table[3].callback()
+assert(plugin:getUncertainMode() == "skip")
 
 -- Line-height: room for 1.2x the pinyin plus 2px either side in the gap
 -- between lines, undoing KOReader's line-spacing scale.

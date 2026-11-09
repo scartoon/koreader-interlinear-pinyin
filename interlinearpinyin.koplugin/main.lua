@@ -1,6 +1,6 @@
 --[[--
-Interlinear Pinyin: shows pinyin above rare Chinese characters, like the
-Kindle's pinyin display. The book file is never modified.
+Interlinear Pinyin: shows pinyin above rare Chinese characters. The book file
+is never modified.
 
 Forked from WordGloss (https://github.com/GangYe293/wordgloss.koplugin,
 GPL-3.0, by GangYe293) in November 2026 and reduced to pinyin only.
@@ -23,6 +23,7 @@ local _ = require("gettext")
 local T = require("ffi/util").template
 
 local Data = require("pinyin_data")
+local Resolve = require("pinyin_resolve")
 local Page = require("pinyin_page")
 local Overlay = require("pinyin_overlay")
 
@@ -31,7 +32,7 @@ local InterlinearPinyin = WidgetContainer:extend{
     is_doc_only = true,
 }
 
-InterlinearPinyin.VERSION = "0.2.0"
+InterlinearPinyin.VERSION = "0.3.0"
 
 local PREFIX = "interlinearpinyin_"
 local THRESHOLDS = { 1500, 2500, 3500, 5000, 7000 }
@@ -69,6 +70,16 @@ end
 
 function InterlinearPinyin:getThreshold()
     return tonumber(self:getSetting("threshold", DEFAULT_THRESHOLD)) or DEFAULT_THRESHOLD
+end
+
+-- What to show when a character's reading is uncertain: Resolve.UNCERTAIN_BOTH
+-- ("chéng/shèng", the default), _BEST or _SKIP.
+function InterlinearPinyin:getUncertainMode()
+    local mode = self:getSetting("uncertain", Resolve.UNCERTAIN_BOTH)
+    if mode ~= Resolve.UNCERTAIN_BEST and mode ~= Resolve.UNCERTAIN_SKIP then
+        mode = Resolve.UNCERTAIN_BOTH
+    end
+    return mode
 end
 
 function InterlinearPinyin:getSizePercent()
@@ -258,7 +269,7 @@ function InterlinearPinyin:refreshPage()
     local ok, err = pcall(function()
         local font_size = document:getFontSize()
         local page = document:getCurrentPage()
-        local glosses, stats = Page.build(document, page, data, self:getThreshold())
+        local glosses, stats = Page.build(document, page, data, self:getThreshold(), self:getUncertainMode())
         self.overlay.font_size = math.max(8, math.floor(font_size * self:getSizePercent() / 100 + 0.5))
         self.overlay:setGlosses(glosses, font_size)
         self._last_stats = stats
@@ -310,6 +321,31 @@ function InterlinearPinyin:addToMainMenu(menu_items)
         }
     end
 
+    local uncertain_items = {}
+    local uncertain_labels = {
+        { Resolve.UNCERTAIN_BOTH, _("Show both readings (chéng/shèng)") },
+        { Resolve.UNCERTAIN_BEST, _("Show the most likely reading") },
+        { Resolve.UNCERTAIN_SKIP, _("Don't annotate") },
+    }
+    local uncertain_short = {
+        [Resolve.UNCERTAIN_BOTH] = _("show both"),
+        [Resolve.UNCERTAIN_BEST] = _("best guess"),
+        [Resolve.UNCERTAIN_SKIP] = _("don't annotate"),
+    }
+    for _i, entry in ipairs(uncertain_labels) do
+        local mode, label = entry[1], entry[2]
+        uncertain_items[#uncertain_items + 1] = {
+            text = label,
+            checked_func = function() return plugin:getUncertainMode() == mode end,
+            radio = true,
+            keep_menu_open = true,
+            callback = function(touchmenu)
+                plugin:saveSetting("uncertain", mode)
+                plugin:refreshPage()
+            end,
+        }
+    end
+
     menu_items.interlinearpinyin = {
         text = _("Interlinear pinyin"),
         sorting_hint = "tools",
@@ -333,6 +369,13 @@ function InterlinearPinyin:addToMainMenu(menu_items)
                     return T(_("Pinyin size: %1% of text"), plugin:getSizePercent())
                 end,
                 sub_item_table = size_items,
+            },
+            {
+                text_func = function()
+                    return T(_("When the reading is uncertain: %1"), uncertain_short[plugin:getUncertainMode()])
+                end,
+                help_text = _("Some characters have more than one common reading and nothing nearby tells which one is meant. The plugin can show the two most likely readings (most likely first), only the most likely one, or nothing."),
+                sub_item_table = uncertain_items,
             },
             {
                 text = _("Status"),

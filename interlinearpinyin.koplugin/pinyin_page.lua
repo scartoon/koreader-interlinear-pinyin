@@ -104,11 +104,11 @@ Annotations for the current page, ready for the overlay:
   { {text="tāo", box={x,y,w,h}, rank=4396, char="饕"}, ... }
 plus stats { items=, annotated= }.
 ]]
-function Page.build(document, page, data, threshold)
+function Page.build(document, page, data, threshold, uncertain)
     local items = Page.collect(document, page)
     local stats = { items = #items, annotated = 0 }
     local glosses = {}
-    for _, a in ipairs(Resolve.annotate(data, items, threshold)) do
+    for _, a in ipairs(Resolve.annotate(data, items, threshold, uncertain)) do
         local item = items[a.index]
         local box = boxes_for(document, item)
         if box then

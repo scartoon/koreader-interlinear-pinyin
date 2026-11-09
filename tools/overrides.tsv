@@ -11,6 +11,29 @@
 # --- Default readings ---
 筠	yún	"skin of bamboo", and in names (温庭筠); jūn only in the place name 筠连, which has its own entry
 
+# Checked against the CPP train split: a strong majority there (>= 20 examples,
+# >= 70%) AND the standard modern reading. The minority readings keep their
+# words (in brackets), which win over the default.
+晟	shèng	names (李晟); chéng is rare
+幢	zhuàng	classifier for buildings (一幢楼); chuáng is a banner (经幢, 幢幢: words)
+町	tǐng	Japanese towns (盐谷町); dīng is rare
+翟	zhái	surname; dí is a pheasant / 墨翟 (word)
+炅	jiǒng	bright; guì is a rare surname reading
+蛤	gé	clams (文蛤, 蛤蜊); há only in 蛤蟆 (word)
+肖	xiāo	surname; xiào in 肖像, 生肖, 惟妙惟肖 (words)
+趟	tàng	classifier (一趟); tāng = to wade (趟水: word)
+仔	zǎi	young animal, lad (仔猪, 打工仔); zǐ in 仔细 (word)
+陂	bēi	slope, pond (standard first reading); pí only in 黄陂 (word)
+蚌	bàng	mussel; bèng only in 蚌埠 (word)
+扛	káng	to carry on the shoulder; gāng in 扛鼎 (word)
+哦	ò	interjection "oh"; é in 吟哦 (word)
+鬲	lì	ancient tripod cauldron; gé is a surname/place
+阇	dū	gate tower, and in transliterations (阇耶跋摩); shé in 阇梨 (word)
+钌	liǎo	ruthenium; liào is rare
+挣	zhèng	to earn, to break free (挣钱, 挣脱); zhēng in 挣扎 (word)
+刹	chà	Buddhist temple (古刹), 刹那 (word); shā in 刹车 (word)
+漂	piāo	to float; piào in 漂亮, piǎo in 漂白 (words)
+
 # --- Words ---
 下咽	xià yàn	to swallow (食不下咽); CC-CEDICT has xià yān
 遛早儿	liù zǎo r	morning stroll (cf. 遛弯儿 liù); pypinyin has liú
@@ -35,3 +58,42 @@
 蔭附	yìn fù
 荫户	yìn hù	sheltered household (same sense as 包荫户)
 蔭戶	yìn hù
+
+# --- Word readings checked against the CPP train split (only where CPP agrees
+#     with standard Mandarin; CPP is often wrong, e.g. 黄陂 is Huángpí,
+#     挣脱 zhèng, 钻井 zuān, 封禅 shàn, so those are left alone) ---
+脯氨酸	fǔ ān suān	proline; 脯 fǔ (pú is 胸脯)
+作坊	zuō fáng	坊 fáng = workshop (作坊, 磨坊); fāng = lane/neighbourhood
+工作坊	gōng zuò fáng	workshop
+楞严	léng yán	Śūraṅgama (楞严经)
+楞嚴	léng yán
+葛洲坝	gě zhōu bà	place name: 葛 gě
+葛洲壩	gě zhōu bà
+呵叻	hē lè	Nakhon Ratchasima (Korat)
+疏散	shū sàn	to evacuate (shū sǎn "scattered" is rare)
+散落	sàn luò	to fall scattered
+柏柏尔	bó bó ěr	Berber (transliteration: bó)
+柏柏爾	bó bó ěr
+柏克莱	bó kè lái	Berkeley (transliteration: bó)
+柏克萊	bó kè lái
+产仔	chǎn zǎi	to give birth to young (仔 zǎi)
+產仔	chǎn zǎi
+胸闷	xiōng mèn	tightness in the chest (闷 mèn)
+胸悶	xiōng mèn
+隔扇	gé shàn	partition panel (扇 shàn, noun)
+草垛	cǎo duò	haystack (垛 duò = pile)
+磨碎	mó suì	to grind up (磨 mó; mò is a mill)
+拿撒勒	ná sā lè	Nazareth
+分杈	fēn chà	to branch (杈 chà)
+屈折	qū zhé	inflection (linguistics); pypinyin has shé
+予取予求	yǔ qǔ yǔ qiú	予 yǔ = give; pypinyin has yú
+垫圈	diàn quān	washer; pypinyin has juàn
+墊圈	diàn quān
+纤手	xiān shǒu	slender hand; pypinyin has qiàn
+纖手	xiān shǒu
+咱家	zán jiā	our family (zá jiā is an old self-reference in opera, rare)
+冯河	féng hé	place and personal name; the idiom 暴虎冯河 (píng) has its own entry
+馮河	féng hé
+劈成	-	pypinyin's pǐ; 劈成两半 is usually pī, which is 劈's default
+鸣镝	míng dí	whistling arrow (镝 dí = arrowhead; dī is dysprosium)
+鳴鏑	míng dí

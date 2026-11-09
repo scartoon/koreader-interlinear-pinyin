@@ -1,0 +1,29 @@
+# Known, not handled: what tools/eval_readings.py should show for these, but
+# the plugin does not (yet). They are reported, not required to pass.
+#
+#   sentence <TAB> expected annotations (char=reading, or char=- for "not marked")
+#
+# Unusual readings of common characters ("trap words"): the plugin only
+# annotates rare characters, so the common characters here are never marked.
+冒顿单于	冒=mò 顿=dú 单=chán
+郦食其	郦=lì 食=yì 其=jī
+
+吐谷浑	谷=yù
+太子洗马	洗=xiǎn
+他中了解元	解=jiè
+洪洞县	洞=tóng
+绿林好汉	绿=lù
+否极泰来	否=pǐ
+大月氏	氏=zhī
+龟兹	龟=qiū 兹=cí
+尉迟恭	尉=yù
+番禺	番=pān
+可汗	可=kè 汗=hán
+会稽	会=kuài
+句践	句=gōu
+金日磾	日=mì 磾=dī
+伍员	员=yún
+
+# A 单于 that is really 简单 + 于是 must not be marked (relevant once trap
+# words exist; passes trivially today)
+事情很简单于是我们走了	单=- 于=-

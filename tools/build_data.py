@@ -15,7 +15,14 @@ Outputs (tab-separated UTF-8 text, parsed by the plugin at load time):
                    Words come from CC-CEDICT and from pypinyin's phrase list.
 
 tools/overrides.tsv holds hand-checked readings that win over both sources:
-one character replaces its default reading, 2-4 characters add or replace a word.
+one character replaces its default reading, 2-4 characters add or replace a word
+(or remove it, with the reading "-").
+
+Also writes tools/generated/reading_shares.tsv (not used by the plugin):
+  char <TAB> default reading <TAB> reading:share ... (most common first)
+for every polyphonic annotatable character: how its readings split in ordinary
+text, estimated from the frequency of the words that use each reading. Used by
+tools/learn_from_cpp.py and tools/eval_readings.py.
 
 Usage:
   pip install wordfreq pypinyin
@@ -35,79 +42,19 @@ import wordfreq
 from pypinyin.phrases_dict import phrases_dict
 from pypinyin.pinyin_dict import pinyin_dict
 
+from pinyin_util import (is_erhua, is_han, is_neutral, is_toneless, numbered_to_marked,
+                         only_neutral_differs, strip_tone)
+
 # Characters ranked at or above this are never annotated by any menu setting,
 # so the data files leave them out.
 MIN_ANNOTATABLE_RANK = 1000
 MAX_WORD_LEN = 4
 
+# Single-character CC-CEDICT entries that do not describe an ordinary modern
+# reading (for the reading-share estimate only).
+MINOR_DEF_RE = re.compile(r"^\((dialect|archaic|old|literary|onom\.)\)|^(old |archaic |)variant of|"
+                          r"^see [^/]*\]$|^used in [^/]*\]$")
 LINE_RE = re.compile(r"^(\S+) (\S+) \[([^\]]*)\] /(.*)/\s*$")
-VOWELS = "aeiouü"
-MARKS = {
-    "a": "āáǎà", "e": "ēéěè", "i": "īíǐì",
-    "o": "ōóǒò", "u": "ūúǔù", "ü": "ǖǘǚǜ",
-}
-
-
-def is_han(ch):
-    cp = ord(ch)
-    return (0x3400 <= cp <= 0x4DBF or 0x4E00 <= cp <= 0x9FFF or
-            0xF900 <= cp <= 0xFAFF or 0x20000 <= cp <= 0x3134F)
-
-
-def numbered_to_marked(syl):
-    """'lu:4' -> 'lǜ', 'zhuang4' -> 'zhuàng', 'ma5' -> 'ma'."""
-    syl = syl.lower().replace("u:", "ü").replace("v", "ü")
-    tone = 5
-    if syl and syl[-1].isdigit():
-        tone = int(syl[-1])
-        syl = syl[:-1]
-    if tone in (5, 0) or not syl:
-        return syl
-    # Standard placement: a or e take the mark; in "ou" the o does;
-    # otherwise the last vowel.
-    if "a" in syl:
-        idx = syl.index("a")
-    elif "e" in syl:
-        idx = syl.index("e")
-    elif "ou" in syl:
-        idx = syl.index("o")
-    else:
-        idx = max((i for i, c in enumerate(syl) if c in VOWELS), default=-1)
-        if idx < 0:  # 'm2', 'ng2', 'r5' ...
-            return syl
-    return syl[:idx] + MARKS[syl[idx]][tone - 1] + syl[idx + 1:]
-
-
-def is_neutral(syl):
-    return not syl[-1:].isdigit() or syl[-1] in "50"
-
-
-def is_erhua(syl):
-    return syl.lower() in ("r", "r5")
-
-
-TONE_MARKS = "\u0304\u0301\u030c\u0300"  # macron, acute, caron, grave (not ü's diaeresis)
-
-
-def strip_tone(marked):
-    """'lǜ' -> 'lü', 'zhuàng' -> 'zhuang'."""
-    nfd = unicodedata.normalize("NFD", marked)
-    return unicodedata.normalize("NFC", "".join(c for c in nfd if c not in TONE_MARKS))
-
-
-def is_toneless(marked):
-    return strip_tone(marked) == marked
-
-
-def only_neutral_differs(cedict_syls, pypinyin_syls):
-    """True when the readings differ only where CC-CEDICT has a neutral tone and
-    pypinyin has the same syllable with a tone (刺猬 cì wei / cì wèi)."""
-    if len(cedict_syls) != len(pypinyin_syls) or cedict_syls == pypinyin_syls:
-        return False
-    for c, p in zip(cedict_syls, pypinyin_syls):
-        if c != p and not (is_toneless(c) and not is_toneless(p) and strip_tone(p) == c):
-            return False
-    return True
 
 
 def load_cedict(path):
@@ -140,6 +87,13 @@ def load_overrides(path):
             if len(fields) < 2:
                 raise SystemExit(f"{path}:{n}: expected form<TAB>reading")
             form, reading = fields[0], unicodedata.normalize("NFC", fields[1])
+            if reading == "-":
+                if len(form) < 2:
+                    raise SystemExit(f"{path}:{n}: only words can be removed")
+                if form in out:
+                    raise SystemExit(f"{path}:{n}: {form} listed twice")
+                out[form] = None
+                continue
             syls = reading.split()
             if len(syls) != len(form) or not all(is_han(ch) for ch in form):
                 raise SystemExit(f"{path}:{n}: {form} has {len(form)} characters but {len(syls)} syllables")
@@ -154,6 +108,8 @@ def main():
     ap.add_argument("--cedict", required=True)
     ap.add_argument("--out", default="interlinearpinyin.koplugin/data")
     ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.tsv"))
+    ap.add_argument("--shares-out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                         "generated", "reading_shares.tsv"))
     args = ap.parse_args()
     overrides = load_overrides(args.overrides)
 
@@ -242,7 +198,7 @@ def main():
             rows.append((ch, rank_of(ch), reading))
     rows.sort(key=lambda r: (r[1] == 0, r[1], r[0]))
     # Hand-checked default readings.
-    char_overrides = {form: syls[0] for form, syls in overrides.items() if len(form) == 1}
+    char_overrides = {form: syls[0] for form, syls in overrides.items() if len(form) == 1 and syls}
     rows = [(ch, rank, char_overrides.get(ch, reading)) for ch, rank, reading in rows]
 
     defaults = {ch: reading for ch, _, reading in rows}
@@ -330,7 +286,9 @@ def main():
 
     # Hand-checked words win over both sources.
     for form, syls in overrides.items():
-        if len(form) > 1:
+        if len(form) > 1 and syls is None:
+            stats["overrides: removed"] += 1 if words.pop(form, None) else 0
+        elif len(form) > 1:
             stats["overrides: " + ("replaced" if form in words else "added")] += 1
             words[form] = [syls, False, None]
 
@@ -341,6 +299,50 @@ def main():
         fixed = fix_neutral(form, syls)
         neutral_fixed.update(ch for ch, a, b in zip(form, syls, fixed) if a != b)
         word_rows.append((form, " ".join(fixed), word_freq(form, simp)))
+
+    # 7. How each polyphonic character's readings split in ordinary text:
+    #    summed frequency of the CC-CEDICT words using each toned reading, plus
+    #    readings only pypinyin's phrases have. Readings whose only support is
+    #    a single-character entry marked dialect, archaic or a variant (甭 bèng,
+    #    "(dialect) very") are left out unless nothing else is left. A
+    #    hand-checked default (overrides.tsv) gets a 90% share.
+    minor_only = defaultdict(set)    # char -> readings seen only in minor entries
+    major = defaultdict(set)
+    for trad, simp, syls, defs in entries:
+        is_minor = len(simp) == 1 and MINOR_DEF_RE.search(defs)
+        for form in {trad, simp}:
+            for ch, syl in zip(form, syls):
+                if is_han(ch) and not is_neutral(syl.lower()):
+                    (minor_only if is_minor else major)[ch].add(numbered_to_marked(syl.lower()))
+    share_rows = []
+    for ch in sorted(poly):
+        w = Counter()
+        for syl, f in weights[ch].items():
+            marked = numbered_to_marked(syl)
+            if marked in minor_only[ch] and marked not in major[ch]:
+                continue
+            w[marked] += f
+        for phrase, syls in py_phrases.items():
+            if ch in phrase:
+                for c, syl in zip(phrase, fix_neutral(phrase, syls)):
+                    if c == ch and not is_toneless(syl) and syl not in w:
+                        w[syl] += word_freq(phrase) / 1e9 + 1e-9
+        default = defaults[ch]
+        if default not in w:
+            w[default] = 0.0
+        total = sum(w.values()) or 1.0
+        shares = {r: f / total for r, f in w.items()}
+        if ch in char_overrides:
+            rest = sum(v for r, v in shares.items() if r != default)
+            shares = {r: (0.9 if r == default else (0.1 * v / rest if rest else 0.0))
+                      for r, v in shares.items()}
+        ordered = sorted(shares.items(), key=lambda kv: -kv[1])
+        share_rows.append((ch, default, " ".join(f"{r}:{v:.4f}" for r, v in ordered)))
+    os.makedirs(os.path.dirname(args.shares_out), exist_ok=True)
+    with open(args.shares_out, "w", encoding="utf-8") as f:
+        f.write("# char\tdefault\treading:share ... (generated by tools/build_data.py)\n")
+        for row in share_rows:
+            f.write("\t".join(row) + "\n")
 
     os.makedirs(args.out, exist_ok=True)
     with open(os.path.join(args.out, "chars.tsv"), "w", encoding="utf-8") as f:

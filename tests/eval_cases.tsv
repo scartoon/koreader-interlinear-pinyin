@@ -1,0 +1,43 @@
+# Fixed regression list for tools/eval_readings.py.
+#
+#   sentence <TAB> expected annotations
+#
+# Expected: space-separated char=reading for what should be drawn, or char=-
+# for a character that must NOT be annotated. Each case is checked at the
+# threshold given with --threshold (default 2500), with uncertain readings
+# shown as pairs ("chéng/shèng"). Every case here is expected to pass; cases
+# the plugin knows it does not handle are in eval_known_unhandled.tsv.
+
+# Overlapping words (frequency tie-break)
+声音很大宛如雷鸣	宛=wǎn
+张骞出使大宛	骞=qiān 宛=yuān
+# Neutral tones
+一只刺猬	猬=wèi
+# Words from pypinyin's phrase list
+澹台灭明	澹=tán
+# Hand-checked overrides
+食不下咽	咽=yàn
+温庭筠的词	筠=yún
+筠连县	筠=jūn
+以门荫为官	荫=yìn
+林荫大道	荫=yīn
+
+# Default readings corrected in tools/overrides.tsv (checked on the CPP train split)
+李晟是唐朝名将	晟=shèng
+三幢大楼	幢=zhuàng
+盐谷町	町=tǐng
+姓翟的人	翟=zhái
+吃文蛤	蛤=gé
+一只癞蛤蟆	蛤=há 蟆=má 癞=lài
+蚌埠市	蚌=bèng 埠=bù
+# Context rule learned from train: 幢 after a numeral
+一幢房子	幢=zhuàng
+# Word fixes from the train review
+脯氨酸	脯=fǔ
+一个草垛	垛=duò
+楞严经	楞=léng
+树枝分杈	杈=chà
+
+# Must not be marked: common readings
+去银行取钱	行=-
+音乐很好听	乐=-

@@ -41,34 +41,76 @@ local function contiguous(items, a, b)
     return true
 end
 
--- Reading of items[i] taken from the longest dictionary word around it, or nil.
+-- Reading of items[i] taken from the longest dictionary word around it (and
+-- that word), or nil.
 -- When several words of that length cover it (大宛 and 宛如 in 很大宛如), the
 -- more frequent word wins; the leftmost one on a tie.
 function Resolve.word_reading(data, items, i)
     local max_len = math.min(data.max_word_len or 4, 4)
     for len = max_len, 2, -1 do
-        local best, best_freq
+        local best, best_freq, best_word
         for start = i - len + 1, i do
             local stop = start + len - 1
             if contiguous(items, start, stop) then
                 local parts = {}
                 for k = start, stop do parts[#parts + 1] = items[k].text end
-                local syllables, freq = data:word(table.concat(parts))
+                local word = table.concat(parts)
+                local syllables, freq = data:word(word)
                 freq = freq or 0
                 if syllables and #syllables == len and (not best or freq > best_freq) then
-                    best, best_freq = syllables[i - start + 1], freq
+                    best, best_freq, best_word = syllables[i - start + 1], freq, word
                 end
             end
         end
-        if best then return best end
+        if best then return best, best_word end
     end
     return nil
+end
+
+-- What to do when a character's reading is uncertain (see Resolve.reading).
+Resolve.UNCERTAIN_BOTH = "both"   -- "chéng/shèng", most likely first
+Resolve.UNCERTAIN_BEST = "best"   -- the most likely reading alone (may differ from the default)
+Resolve.UNCERTAIN_SKIP = "skip"   -- no annotation
+
+-- Reading for items[i] and the character's rank (0 = unranked), or nil when
+-- the character is not annotated (common, not a Han character, or uncertain
+-- with mode "skip").
+--
+-- In order: the longest dictionary word around it; a context rule for the
+-- character right before or after it; its default reading. For a character
+-- whose default is known to be unreliable (data:uncertainty), the two most
+-- likely readings are shown together, the most likely alone, or nothing,
+-- depending on `uncertain`.
+function Resolve.reading(data, items, i, uncertain)
+    local item = items[i]
+    if not item or not single_char(item.text) then return nil end
+    local rank, default = data:char(item.text)
+    if not rank then return nil end
+    local reading = Resolve.word_reading(data, items, i)  -- first value only
+    if reading then return reading, rank end
+    if data.rule then
+        local left = item.joined and items[i - 1] and items[i - 1].text or nil
+        local after = items[i + 1]
+        local right = after and after.joined and after.text or nil
+        reading = data:rule(item.text, left, right)
+        if reading then return reading, rank end
+    end
+    local first, second
+    if data.uncertainty then first, second = data:uncertainty(item.text) end
+    if first and second and first ~= second then
+        uncertain = uncertain or Resolve.UNCERTAIN_BOTH
+        if uncertain == Resolve.UNCERTAIN_SKIP then return nil end
+        if uncertain == Resolve.UNCERTAIN_BEST then return first, rank end
+        return first .. "/" .. second, rank
+    end
+    return default, rank
 end
 
 --[[--
 Annotations for the on-page items.
 
   threshold: characters ranked above this (or unranked) are annotated.
+  uncertain: Resolve.UNCERTAIN_BOTH (default), _BEST or _SKIP; see Resolve.reading.
 
 Each character is annotated only the first time it appears on the page with a
 given reading: later repeats are left bare, but a repeat with a different
@@ -76,13 +118,12 @@ reading (刨 páo in 刨根, then bào in 刨子) is annotated again.
 
 Returns { {index=i, reading="tāo", rank=4396}, ... } in page order.
 ]]
-function Resolve.annotate(data, items, threshold)
+function Resolve.annotate(data, items, threshold, uncertain)
     local out, seen = {}, {}
     for i, item in ipairs(items) do
-        if item.on_page ~= false and single_char(item.text) then
-            local rank, reading = data:char(item.text)
-            if rank and (rank == 0 or rank > threshold) then
-                reading = Resolve.word_reading(data, items, i) or reading
+        if item.on_page ~= false then
+            local reading, rank = Resolve.reading(data, items, i, uncertain)
+            if reading and (rank == 0 or rank > threshold) then
                 local key = item.text .. "\t" .. reading
                 if not seen[key] then
                     seen[key] = true
