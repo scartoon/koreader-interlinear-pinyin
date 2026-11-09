@@ -1,12 +1,12 @@
 # koreader-interlinear-pinyin
 
-A KOReader plugin that shows pinyin directly above rare Chinese characters. Turn it on and off from the menu. The book file is never modified.
+A KOReader plugin that shows pinyin directly above rare Chinese characters, and gives their definitions when you tap one. Turn it on and off from the menu. The book file is never modified.
 
 ![Pinyin above the rare characters of 桃花源记 on a Boox Go 7](docs/screenshot.png)
 
 <sub>桃花源记 on a Boox Go 7, showing characters outside the 2,500 most common. The text is in the bundled sample book, [`samples/guwen.epub`](samples/guwen.epub).</sub>
 
-Status: **0.3.0**, tested on a Boox Go 7 (Android, 300 dpi) with KOReader v2026.07.1. Other devices should work but haven't been tried yet; reports are welcome.
+Status: **0.4.0**, tested on a Boox Go 7 (Android, 300 dpi) with KOReader v2026.07.1. Other devices should work but haven't been tried yet; reports are welcome.
 
 ## What it does
 
@@ -16,6 +16,7 @@ Status: **0.3.0**, tested on a Boox Go 7 (Android, 300 dpi) with KOReader v2026.
 - When it can't tell, it says so instead of guessing: a character whose reading is genuinely uncertain gets both likely readings, most likely first (镝 alone: *dí/dī*). About 1% of annotations in ordinary text are pairs. You can switch this to the best guess, or to no annotation, in the menu.
 - Shows the character's own tone where everyday speech uses a neutral tone: 刺猬 gives *wèi* over 猬, not *wei*.
 - Annotates each character once per page: if 郡 appears five times on a page, only the first gets *jùn*. A repeat with a different reading is annotated again (刨 *páo* in 刨根, then *bào* in 刨子).
+- Tap a character that has pinyin above it (or the pinyin itself) to see what it means. See [Tap for definitions](#tap-for-definitions).
 - Makes room between lines only while it is on. Turning it off restores the book's own spacing (KOReader re-lays out the book, which takes a moment).
 
 ### Choosing a threshold
@@ -33,6 +34,29 @@ The pinyin goes in the space between lines, so the plugin sets a line height tha
 - Books with tight or default spacing get noticeably more pages; how many depends on the pinyin size.
 - Books that already set generous spacing can end up with *tighter* lines and fewer pages, because the plugin replaces the book's line height rather than adding to it. (A test book with `line-height: 2` went from 2,560 to 2,321 pages.)
 
+## Tap for definitions
+
+![Tapping 蔓 in 爱莲说: its readings, the one shown first, and buttons to look up 不蔓不枝 or 蔓 in KOReader's dictionaries](docs/popup.png)
+
+<sub>Tapping 蔓 in 爱莲说 (sample book, Boox Go 7). The popup scrolls; the third reading and the phrase 不蔓不枝 are further down.</sub>
+
+A single tap on an annotated character, or on the pinyin above it, opens a small popup with:
+
+- **The character**: every [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) reading with all its senses. The reading drawn above the character comes first, marked *(shown above)*; for an uncertain character both shown readings are marked. Cross-references are made readable ("variant of 够 gòu", "CL: 个 gè").
+- **The word** it belongs to: the same word the plugin used to choose the reading (豁 in 豁然开朗), with its pinyin and senses. If two overlapping words both matched (大宛 / 宛如), the other one is listed too as *also possible*. A word known only from pypinyin's phrase list says "no definition in CC-CEDICT". For a character with only one reading (where no word was needed), the plugin looks for the longest CC-CEDICT word around it the same way (饕 in 饕餮). If there is no word, that section is left out.
+- **Lookup** buttons for the word and for the character, which close the popup and open KOReader's own dictionary lookup, and **Close**. Tapping outside the popup also closes it.
+
+If CC-CEDICT has neither the character nor the word (Japanese forms such as 戦, for example), the plugin skips its popup and goes straight to KOReader's dictionary lookup.
+
+Everything is offline. Only plain taps on characters that currently show pinyin are taken; everything else works as before:
+
+- Taps anywhere else (page turns, corners, menus) and taps on characters without pinyin (including a repeat left bare, or one whose pinyin was dropped on a crowded line) do what they always did.
+- Links win: tapping a link, even on an annotated character, follows it.
+- Highlights win: tapping an annotated character inside one of your highlights opens the highlight's menu, not the definitions.
+- Long-press, text selection and dragging a highlight across annotated characters are untouched: the plugin registers nothing for them.
+
+Turn it off with **Tap annotated character for definitions** in the menu; then the plugin registers no tap handling at all.
+
 ## Install
 
 1. Copy the `interlinearpinyin.koplugin` folder into KOReader's `plugins/` folder. On a Boox or other Android device that is `/storage/emulated/0/koreader/plugins/`; the final path must be `plugins/interlinearpinyin.koplugin/main.lua`.
@@ -49,6 +73,7 @@ To try it without a book of your own, copy [`samples/guwen.epub`](samples/guwen.
 | Which characters | Frequency threshold (see above) |
 | Pinyin size | 35–55% of the body text size (default 40%) |
 | When the reading is uncertain | Show both readings (default) / show the most likely reading / don't annotate |
+| Tap annotated character for definitions | On (default) / off. See [Tap for definitions](#tap-for-definitions) |
 | Status | Version, and how many characters on the current page were read and annotated |
 
 ## How it works
@@ -62,7 +87,11 @@ Readings come from four tables in `interlinearpinyin.koplugin/data/`, tried in t
 3. `chars.tsv`: every annotatable character with its frequency rank and default reading.
 4. `uncertain.tsv`: characters whose default is unreliable when nothing above decides, with their two most likely readings. Confidence blends the training data with the dictionaries' estimate of how often each reading occurs; below 75% the character is listed. (The cutoff was chosen on the training data: at 75%, 98% of these readings are right with about one in five shown as a pair; going higher adds many pairs for little gain.)
 
-`chars.tsv` and `words.tsv` are built by `tools/build_data.py` from the dictionaries; `rules.tsv` and `uncertain.tsv` by `tools/learn_from_cpp.py`. Hand-checked corrections go in `tools/overrides.tsv`, which wins over everything: default readings, and words to add, fix or remove. Each entry says why, so the file can be reviewed.
+Definitions for the tap popup are in `defs.tsv` (about 7.7 MB): CC-CEDICT's entries for every annotatable character and every 2–4 character word containing one, in simplified and traditional forms. It is never loaded. Its lines are sorted, and each lookup is a binary search through the file (about 20 seeks), so nothing is read at startup and memory stays flat. On a Boox Go 7 the first tap takes 16–33 ms from tap to popup built, including opening the file, and adds about 0.3–0.5 MB of Lua memory, mostly the popup's widgets. Loading the whole file into a table instead took 219 ms and 14 MB.
+
+The hit test (`pinyin_hit.lua`) uses the overlay's own placement of the pinyin, so only what is drawn can be tapped. The tap zone follows KOReader's ReaderHighlight: one full-screen "tap" zone that is asked before page turns and lets the tap through whenever it isn't on drawn pinyin.
+
+`chars.tsv`, `words.tsv` and `defs.tsv` are built by `tools/build_data.py` from the dictionaries; `rules.tsv` and `uncertain.tsv` by `tools/learn_from_cpp.py`. Hand-checked corrections go in `tools/overrides.tsv`, which wins over everything: default readings, and words to add, fix or remove. Each entry says why, so the file can be reviewed.
 
 ### Accuracy
 
@@ -97,7 +126,8 @@ Reading accuracy, and rebuilding the data:
 
 ```
 pip install lupa wordfreq pypinyin
-python3 tools/build_data.py --cedict cedict_1_0_ts_utf-8_mdbg.txt.gz   # chars.tsv, words.tsv
+python3 tools/build_data.py --cedict cedict_1_0_ts_utf-8_mdbg.txt.gz   # chars.tsv, words.tsv, defs.tsv
+                                                                    # (--only defs: defs.tsv alone)
 python3 tools/learn_from_cpp.py                                     # rules.tsv, uncertain.tsv (CPP train split)
 python3 tools/eval_readings.py                                      # CPP test split; tests/eval_cases.tsv must all pass
 ```
@@ -116,7 +146,7 @@ The code is licensed under the **GNU General Public License v3.0**; see `LICENSE
 
 The data files in `interlinearpinyin.koplugin/data/` are derived from:
 
-- **[CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)** (readings and words), © MDBG and contributors, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **[CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)** (readings and words, and all the definitions shown in the tap popup), © MDBG and contributors, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - **[wordfreq](https://github.com/rspeer/wordfreq)** by Robyn Speer (character frequencies), data under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - **[pypinyin](https://github.com/mozillazg/python-pinyin)** by mozillazg (its phrase list, for words CC-CEDICT lacks; and fallback readings for characters CC-CEDICT lacks), MIT License.
 

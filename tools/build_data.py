@@ -13,6 +13,15 @@ Outputs (tab-separated UTF-8 text, parsed by the plugin at load time):
                    Only words (2-4 characters, simplified and traditional forms)
                    that contain a polyphonic character which can ever be annotated.
                    Words come from CC-CEDICT and from pypinyin's phrase list.
+  <plugin>/data/defs.tsv    key <TAB> frequency <TAB> pinyin <TAB> senses [<TAB> pinyin <TAB> senses ...]
+                   CC-CEDICT definitions for the tap popup: every annotatable
+                   character and every 2-4 character word containing one, in
+                   simplified and traditional forms. One line per key, lines sorted
+                   by the key's UTF-8 bytes (the plugin binary-searches the file
+                   instead of loading it). pinyin: tone marks, syllables separated
+                   by spaces, capitals kept (names). senses: '/'-separated, with
+                   cross-references made readable ("variant of 够 gòu", "CL: 个 gè").
+                   frequency: the word's frequency as in words.tsv (0 for characters).
 
 tools/overrides.tsv holds hand-checked readings that win over both sources:
 one character replaces its default reading, 2-4 characters add or replace a word
@@ -27,6 +36,8 @@ tools/learn_from_cpp.py and tools/eval_readings.py.
 Usage:
   pip install wordfreq pypinyin
   python3 tools/build_data.py --cedict cedict_1_0_ts_utf-8_mdbg.txt.gz --out interlinearpinyin.koplugin/data
+
+  --only defs writes defs.tsv alone (chars.tsv and words.tsv are left as they are).
 
 CC-CEDICT: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
 """
@@ -75,6 +86,90 @@ def load_cedict(path):
     return entries
 
 
+# Cross-references inside CC-CEDICT senses: 夠|够[gou4], 乘[cheng2], [jue2].
+XREF_RE = re.compile(r"(?:([^\x00-\x7f\s\[\]|,;:()/]+)(?:\|([^\x00-\x7f\s\[\]|,;:()/]+))?)?\[([A-Za-z0-9:, ·]+)\]")
+
+
+def joined_pinyin(numbered):
+    """'shen2 me5' -> 'shénme', 'Xi1 an1' -> "Xī'ān" (apostrophe before a, o, e)."""
+    if "·" in numbered:  # names: 喬治·奧威爾|乔治·奥威尔[Qiao2 zhi4 · Ao4 wei1 er3]
+        return "·".join(joined_pinyin(part) for part in numbered.split("·"))
+    out = []
+    for i, syl in enumerate(numbered.replace(",", " ").split()):
+        capital = syl[:1].isupper()
+        marked = numbered_to_marked(syl)
+        if capital:
+            marked = marked[:1].upper() + marked[1:]
+        if i > 0 and capital:  # a new name word: Dong4 wu4 Nong2 chang3 -> Dòngwù Nóngchǎng
+            marked = " " + marked
+        elif i > 0 and unicodedata.normalize("NFD", marked)[:1].lower() in "aoe":
+            marked = "'" + marked
+        out.append(marked)
+    return "".join(out)
+
+
+def clean_sense(sense, traditional):
+    """Make CC-CEDICT's cross-references readable: 'variant of 夠|够[gou4]' ->
+    'variant of 够 gòu' (or 夠 for a traditional key), 'CL:個|个[ge4],隻|只[zhi1]'
+    -> 'CL: 个 gè, 只 zhī', 'Taiwan pr. [jue2]' -> 'Taiwan pr. jué'."""
+    def repl(m):
+        first, second, py = m.groups()
+        form = (first if traditional or not second else second) if first else ""
+        py = joined_pinyin(py)
+        return f"{form} {py}" if form else py
+    sense = XREF_RE.sub(repl, sense)
+    if sense.startswith("CL:"):
+        sense = "CL: " + ", ".join(p.strip() for p in sense[3:].split(","))
+    return sense.replace("\t", " ").strip()
+
+
+def refers_to(sense, form):
+    """True for a sense that only points at `form` itself: 椉 乘 [cheng2]
+    /old variant of 乘[cheng2]/ describes 椉, not 乘."""
+    return any(form in (m.group(1), m.group(2)) for m in XREF_RE.finditer(sense)) and \
+        re.search(r"variant of|^see |^used in", sense) is not None
+
+
+def write_defs(entries, annotatable, word_freq, path):
+    """defs.tsv: CC-CEDICT entries for every annotatable character and every
+    2-4 character word containing one (see the module docstring)."""
+    by_key = defaultdict(list)   # key -> [[marked pinyin, [senses]], ...] in CC-CEDICT order
+    simp_of = {}
+    for trad, simp, syls, defs in entries:
+        forms = [simp] if trad == simp else [simp, trad]
+        for form in forms:
+            if not 1 <= len(form) <= MAX_WORD_LEN or not all(is_han(ch) for ch in form):
+                continue
+            if not any(annotatable(ch) for ch in form):
+                continue
+            pinyin = " ".join(numbered_to_marked(s)[:1].upper() + numbered_to_marked(s)[1:]
+                              if s[:1].isupper() else numbered_to_marked(s) for s in syls)
+            traditional = form == trad and trad != simp
+            senses = [clean_sense(d, traditional) for d in defs.split("/")
+                      if d.strip() and not refers_to(d, form)]
+            if not senses:
+                continue
+            groups = by_key[form]
+            for group in groups:
+                if group[0] == pinyin:
+                    group[1].extend(x for x in senses if x not in group[1])
+                    break
+            else:
+                groups.append([pinyin, senses])
+            simp_of.setdefault(form, simp)
+    keys = sorted(by_key, key=lambda k: k.encode("utf-8"))
+    with open(path, "w", encoding="utf-8") as f:
+        for key in keys:
+            freq = word_freq(key, simp_of[key]) if len(key) > 1 else 0
+            fields = [key, str(freq)]
+            for pinyin, senses in by_key[key]:
+                fields += [pinyin, "/".join(senses)]
+            f.write("\t".join(fields) + "\n")
+    chars = sum(1 for k in keys if len(k) == 1)
+    print(f"defs.tsv: {len(keys)} keys ({chars} characters, {len(keys) - chars} words), "
+          f"{os.path.getsize(path) / 1e6:.1f} MB")
+
+
 def load_overrides(path):
     """form -> list of marked syllables, from tools/overrides.tsv."""
     out = {}
@@ -110,6 +205,8 @@ def main():
     ap.add_argument("--overrides", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "overrides.tsv"))
     ap.add_argument("--shares-out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                                          "generated", "reading_shares.tsv"))
+    ap.add_argument("--only", choices=["all", "defs"], default="all",
+                    help="defs: write defs.tsv only")
     args = ap.parse_args()
     overrides = load_overrides(args.overrides)
 
@@ -185,6 +282,11 @@ def main():
     def annotatable(ch):
         r = rank_of(ch)
         return r == 0 or r > MIN_ANNOTATABLE_RANK
+
+    os.makedirs(args.out, exist_ok=True)
+    write_defs(entries, annotatable, word_freq, os.path.join(args.out, "defs.tsv"))
+    if args.only == "defs":
+        return
 
     all_chars = set(weights) | set(neutral) | set(single_entry_reading)
     all_chars |= {chr(cp) for cp in pinyin_dict if is_han(chr(cp))}

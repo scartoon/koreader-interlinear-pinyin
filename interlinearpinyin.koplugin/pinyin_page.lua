@@ -37,6 +37,8 @@ function Page.collect(document, page)
     local start_xp = call(document, "getPageXPointer", page)
     if not start_xp then return {} end
     local end_xp = call(document, "getPageXPointer", page + visible_pages(document))
+    -- Past the last page the engine returns "" rather than nil.
+    if end_xp == "" then end_xp = nil end
 
     -- Step back a few words so the first on-page character is not skipped and
     -- has its left-hand context.
@@ -99,9 +101,42 @@ local function boxes_for(document, item)
     return nil
 end
 
+-- Contiguous characters next to items[i] (up to 3 on each side, nearest
+-- last on the left), for the popup's word lookup.
+local function context(items, i)
+    local left, right = {}, {}
+    local k = i
+    while #left < 3 and items[k].joined and items[k - 1] and Resolve.single_char(items[k - 1].text) do
+        k = k - 1
+        table.insert(left, 1, items[k].text)
+    end
+    k = i
+    while #right < 3 and items[k + 1] and items[k + 1].joined and Resolve.single_char(items[k + 1].text) do
+        k = k + 1
+        right[#right + 1] = items[k].text
+    end
+    return { left = left, right = right }
+end
+
+-- The word that decided a reading, with each word's pinyin, for the popup.
+local function word_info(data, match)
+    if not match then return nil end
+    local function pinyin(word)
+        local syllables = data:word(word)
+        return syllables and table.concat(syllables, " ")
+    end
+    local info = { word = match.word, pinyin = pinyin(match.word), start = match.start, len = match.len, others = {} }
+    for _, o in ipairs(match.others or {}) do
+        info.others[#info.others + 1] = { word = o.word, pinyin = pinyin(o.word) }
+    end
+    return info
+end
+
 --[[--
 Annotations for the current page, ready for the overlay:
-  { {text="tāo", box={x,y,w,h}, rank=4396, char="饕"}, ... }
+  { {text="tāo", box={x,y,w,h}, rank=4396, word="饕", char="饕",
+     match={word=, pinyin=, start=, len=, others=} or nil,
+     context={left={...}, right={...}}}, ... }
 plus stats { items=, annotated= }.
 ]]
 function Page.build(document, page, data, threshold, uncertain)
@@ -112,7 +147,10 @@ function Page.build(document, page, data, threshold, uncertain)
         local item = items[a.index]
         local box = boxes_for(document, item)
         if box then
-            glosses[#glosses + 1] = { text = a.reading, box = box, rank = a.rank, word = item.text }
+            glosses[#glosses + 1] = {
+                text = a.reading, box = box, rank = a.rank, word = item.text, char = item.text,
+                match = word_info(data, a.match), context = context(items, a.index),
+            }
         end
     end
     stats.annotated = #glosses

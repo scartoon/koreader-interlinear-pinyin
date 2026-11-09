@@ -35,7 +35,11 @@ local H = {}
 function H.reading(data, text, target, mode)
     local items, i = items_of(text, target)
     if not i then return nil end
-    if Resolve.reading then return Resolve.reading(data, items, i, mode) end
+    if Resolve.reading then
+        -- reading and rank only (0.4.0 adds a third value, the matched word)
+        local reading, rank = Resolve.reading(data, items, i, mode)
+        return reading, rank
+    end
     -- plugin versions before Resolve.reading existed
     local rank, default = data:char(items[i].text)
     if not rank then return nil end

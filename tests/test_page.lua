@@ -53,4 +53,11 @@ local glosses = Page.build(doc, 2, data, 3500)
 local out = {}
 for _, g in ipairs(glosses) do out[#out + 1] = g.word .. "=" .. g.text end
 assert(table.concat(out, " ") == "侥=yáo", "annotations: " .. table.concat(out, " "))
+-- Last page: the engine gives "" for the (missing) next page's start.
+doc = fake_document(text, { 1, 5, "" })
+function doc:getPageXPointer(p) return ({ 1, 9 })[p] or "" end
+glosses = Page.build(doc, 2, data, 3500)
+out = {}
+for _, g in ipairs(glosses) do out[#out + 1] = g.word end
+assert(table.concat(out) == "饕餮", "last page annotations: " .. table.concat(out, " "))
 print("page walking: ok")

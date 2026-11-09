@@ -16,6 +16,7 @@ local RenderText = require("ui/rendertext")
 local Size = require("ui/size")
 local Widget = require("ui/widget/widget")
 
+local Hit = require("pinyin_hit")
 local Layout = require("pinyin_layout")
 
 local Overlay = Widget:extend{
@@ -83,29 +84,40 @@ function Overlay:clear()
     self.placed = nil
 end
 
+-- Horizontal placement of the current glosses (cached until they change).
+-- The paint and the tap hit-test share it, so a tap is tested against
+-- exactly what is drawn.
+function Overlay:plan(max_x)
+    if self.placed then return self.placed end
+    local face = self:face()
+    if not face then return nil end
+    local measured = {}
+    for _, item in ipairs(self.glosses or {}) do
+        if item.box and item.text and item.text ~= "" then
+            local ok, size = pcall(RenderText.sizeUtf8Text, RenderText, 0, max_x, face,
+                item.text, true, false)
+            if ok and size then
+                measured[#measured + 1] = {
+                    text = item.text, box = item.box, rank = item.rank,
+                    w = size.x, gloss = item,
+                }
+            end
+        end
+    end
+    self.placed = Layout.plan(measured, max_x, Size.span.horizontal_small)
+    return self.placed
+end
+
 function Overlay:paintTo(bb, x, y)
     if self.dim or not self.glosses or #self.glosses == 0 then return end
     local face = self:face()
     if not face then return end
 
     local max_x = bb:getWidth()
-    if not self.placed then
-        local measured = {}
-        for _, item in ipairs(self.glosses) do
-            if item.box and item.text and item.text ~= "" then
-                local ok, size = pcall(RenderText.sizeUtf8Text, RenderText, 0, max_x, face,
-                    item.text, true, false)
-                if ok and size then
-                    measured[#measured + 1] = {
-                        text = item.text, box = item.box, rank = item.rank,
-                        w = size.x,
-                    }
-                end
-            end
-        end
-        self.placed = Layout.plan(measured, max_x, Size.span.horizontal_small)
-    end
+    self._max_x = max_x
+    self:plan(max_x)
 
+    self._paint_x, self._paint_y = x, y
     local color = self.color or Blitbuffer.COLOR_BLACK
     for _, entry in ipairs(self.placed) do
         local item = entry.item
@@ -114,6 +126,25 @@ function Overlay:paintTo(bb, x, y)
         pcall(RenderText.renderUtf8Text, RenderText, bb,
             x + math.floor(entry.x), y + math.floor(baseline), face, item.text, true, false, color)
     end
+end
+
+-- The gloss drawn under screen point (x, y), or nil (see pinyin_hit.lua).
+-- Uses the same placement as the paint, so dropped pinyin is not tappable.
+function Overlay:hitTest(x, y)
+    if self.dim or not self.glosses or #self.glosses == 0 then return nil end
+    local max_x = self._max_x
+    if not max_x then
+        local ok, w = pcall(function() return Device.screen:getWidth() end)
+        max_x = ok and w or 10000
+    end
+    local placed = self:plan(max_x)
+    if not placed or #placed == 0 then return nil end
+    local entry = Hit.find(placed, {
+        text_height = self.text_height, ascent = self._ascent or self.font_size,
+        descent = self._descent or 0, gap = self.gap,
+        ox = self._paint_x or 0, oy = self._paint_y or 0,
+    }, x, y)
+    return entry and entry.item.gloss
 end
 
 return Overlay

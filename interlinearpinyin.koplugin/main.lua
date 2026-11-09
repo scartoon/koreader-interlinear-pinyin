@@ -12,6 +12,9 @@ the style-sheet hook. New: the Chinese character/word tables and reading logic.
   pinyin_page.lua     walks the page through the engine, gets screen boxes
   pinyin_overlay.lua  draws the pinyin
   pinyin_layout.lua   keeps neighbouring pinyin from overlapping
+  pinyin_hit.lua      which annotation a tap falls on
+  pinyin_defs.lua     CC-CEDICT definitions (data/defs.tsv) for the tap popup
+  pinyin_popup.lua    the definitions popup
 ]]
 
 local UIManager = require("ui/uimanager")
@@ -26,13 +29,14 @@ local Data = require("pinyin_data")
 local Resolve = require("pinyin_resolve")
 local Page = require("pinyin_page")
 local Overlay = require("pinyin_overlay")
+local Device = require("device")
 
 local InterlinearPinyin = WidgetContainer:extend{
     name = "interlinearpinyin",
     is_doc_only = true,
 }
 
-InterlinearPinyin.VERSION = "0.3.0"
+InterlinearPinyin.VERSION = "0.4.0"
 
 local PREFIX = "interlinearpinyin_"
 local THRESHOLDS = { 1500, 2500, 3500, 5000, 7000 }
@@ -82,6 +86,10 @@ function InterlinearPinyin:getUncertainMode()
     return mode
 end
 
+function InterlinearPinyin:isTapEnabled()
+    return self:getSetting("tap_definitions", true) == true
+end
+
 function InterlinearPinyin:getSizePercent()
     local pct = tonumber(self:getSetting("size_pct", DEFAULT_SIZE)) or DEFAULT_SIZE
     return math.max(20, math.min(80, pct))
@@ -125,6 +133,7 @@ function InterlinearPinyin:onReaderReady()
         if not ok then logger.warn("interlinearpinyin: registerViewModule failed:", tostring(err)) end
     end
     self:hookStyleSheet()
+    self:updateTapZone()
     if not self:isEnabled() then return end
     UIManager:nextTick(function()
         self:refreshDocumentStyles()
@@ -160,6 +169,154 @@ InterlinearPinyin.onDocumentPartiallyRerendered = InterlinearPinyin.onDocumentRe
 
 function InterlinearPinyin:onCloseDocument()
     if self.overlay then self.overlay:clear() end
+    if self.defs then self.defs:close() end
+    self.defs = nil
+end
+
+------------------------------------------------------------------------
+-- Tap an annotated character for its definitions
+------------------------------------------------------------------------
+
+-- One full-screen "tap" zone, following ReaderHighlight's readerhighlight_tap:
+-- it overrides the page-turn, menu, footer and corner tap zones, so it is
+-- asked first, and its handler returns false (letting the tap fall through
+-- to them) unless the tap is on a character that has pinyin drawn on it.
+-- Links and existing highlights keep priority: ReaderLink's tap_link and
+-- ReaderHighlight's readerhighlight_tap are registered before this zone (so
+-- they come first in KOReader's ordering), and the handler also declines a
+-- tap on a link or a highlight in case they did not. Nothing is registered
+-- for hold, hold_pan, swipe, double tap or two-finger gestures, so text
+-- selection is untouched. With the plugin or this option off, nothing is
+-- registered at all.
+local TAP_ZONE_ID = "interlinearpinyin_tap"
+
+function InterlinearPinyin:tapZone()
+    return {
+        id = TAP_ZONE_ID,
+        ges = "tap",
+        screen_zone = { ratio_x = 0, ratio_y = 0, ratio_w = 1, ratio_h = 1 },
+        overrides = {
+            "tap_top_left_corner",
+            "tap_top_right_corner",
+            "tap_left_bottom_corner",
+            "tap_right_bottom_corner",
+            "readerfooter_tap",
+            "readerconfigmenu_ext_tap",
+            "readerconfigmenu_tap",
+            "readermenu_ext_tap",
+            "readermenu_tap",
+            "tap_forward",
+            "tap_backward",
+        },
+        handler = function(ges) return self:onTapAnnotation(ges) end,
+    }
+end
+
+function InterlinearPinyin:updateTapZone()
+    local ui = self.ui
+    if not ui or not ui.registerTouchZones or not Device:isTouchDevice() then return end
+    local want = self:isEnabled() and self:isTapEnabled() and self:isCompatibleDocument()
+    if want and not self._tap_registered then
+        ui:registerTouchZones({ self:tapZone() })
+        self._tap_registered = true
+    elseif not want and self._tap_registered then
+        ui:unRegisterTouchZones({ self:tapZone() })
+        self._tap_registered = false
+    end
+end
+
+function InterlinearPinyin:tapIsOnLink(pos)
+    local document = self.ui.document
+    if not document or not document.getLinkFromPosition then return false end
+    local ok, link = pcall(document.getLinkFromPosition, document, pos)
+    return ok and link ~= nil and link ~= ""
+end
+
+-- Same test as ReaderHighlight:onTap.
+function InterlinearPinyin:tapIsOnHighlight(pos)
+    local view = self.ui.view
+    local boxes = view and view.highlight and view.highlight.visible_boxes
+    if not boxes or #boxes == 0 then return false end
+    local page_pos = view:screenToPageTransform({ x = pos.x, y = pos.y })
+    if not page_pos then return false end
+    for _, box in ipairs(boxes) do
+        local r = box.rect
+        if r and r.x <= page_pos.x and r.y <= page_pos.y
+                and r.x + r.w >= page_pos.x and r.y + r.h >= page_pos.y then
+            return true
+        end
+    end
+    return false
+end
+
+function InterlinearPinyin:onTapAnnotation(ges)
+    if not self:isEnabled() or not self:isTapEnabled() then return false end
+    local highlight = self.ui.highlight
+    -- A tap while selecting text, or in highlight select mode, is ReaderHighlight's.
+    if highlight and (highlight.hold_pos or highlight.select_mode) then return false end
+    local gloss = self.overlay:hitTest(ges.pos.x, ges.pos.y)
+    if not gloss then return false end
+    if self:tapIsOnLink(ges.pos) or self:tapIsOnHighlight(ges.pos) then return false end
+    local ok, err = pcall(self.showDefinitions, self, gloss)
+    if not ok then
+        logger.warn("interlinearpinyin: definitions failed:", tostring(err))
+        return false
+    end
+    return true
+end
+
+-- Opened on the first tap, never at startup; lookups binary-search the file.
+function InterlinearPinyin:getDefs()
+    if self.defs then return self.defs end
+    local Defs = require("pinyin_defs")
+    local defs, err = Defs.open(self.path .. "/data/defs.tsv")
+    if not defs then logger.warn("interlinearpinyin:", err) end
+    self.defs = defs
+    return defs
+end
+
+function InterlinearPinyin:lookupInKOReader(text, box)
+    local dictionary = self.ui and self.ui.dictionary
+    if not dictionary then return end
+    dictionary:onLookupWord(text, false, box and { box } or nil)
+end
+
+function InterlinearPinyin:showDefinitions(gloss)
+    local Defs = require("pinyin_defs")
+    local time = require("ui/time")
+    local t0, mem0 = time.monotonic(), collectgarbage("count")
+    local first = self.defs == nil
+    local defs = self:getDefs()
+    local model = defs and Defs.describe(defs, gloss)
+    local word = model and model.word and model.word.text
+        or (gloss.match and gloss.match.word)
+    if not model or Defs.empty(model) then
+        -- Nothing in CC-CEDICT: straight to KOReader's own dictionaries.
+        self:lookupInKOReader(word or gloss.char, gloss.box)
+        return
+    end
+    local Popup = require("pinyin_popup")
+    local popup
+    local function lookup(text)
+        return function()
+            UIManager:close(popup, "ui", popup.frame.dimen)
+            self:lookupInKOReader(text, gloss.box)
+        end
+    end
+    local row = {}
+    if word then row[#row + 1] = { text = T(_("Lookup %1"), word), callback = lookup(word) } end
+    row[#row + 1] = { text = T(_("Lookup %1"), gloss.char), callback = lookup(gloss.char) }
+    row[#row + 1] = { text = _("Close"), callback = function() popup:onClose() end }
+    popup = Popup:new{
+        title = gloss.char,
+        text = Defs.render(model, Popup.BOLD_START, Popup.BOLD_END),
+        buttons = { row },
+        anchor = gloss.box,
+    }
+    UIManager:show(popup)
+    logger.dbg(string.format("interlinearpinyin: %s definitions for %s: %.1f ms, Lua memory %+.0f KB (now %.0f KB)",
+        first and "first" or "later", gloss.char, time.to_ms(time.monotonic() - t0),
+        collectgarbage("count") - mem0, collectgarbage("count")))
 end
 
 ------------------------------------------------------------------------
@@ -355,6 +512,7 @@ function InterlinearPinyin:addToMainMenu(menu_items)
                 checked_func = function() return plugin:isEnabled() end,
                 callback = function(touchmenu)
                     plugin:saveSetting("enabled", not plugin:isEnabled())
+                    plugin:updateTapZone()
                     plugin:apply(touchmenu)
                 end,
             },
@@ -376,6 +534,15 @@ function InterlinearPinyin:addToMainMenu(menu_items)
                 end,
                 help_text = _("Some characters have more than one common reading and nothing nearby tells which one is meant. The plugin can show the two most likely readings (most likely first), only the most likely one, or nothing."),
                 sub_item_table = uncertain_items,
+            },
+            {
+                text = _("Tap annotated character for definitions"),
+                help_text = _("Tap a character that has pinyin above it (or the pinyin) to see its CC-CEDICT definitions and those of the word it is part of. Other taps, long-press and text selection work as usual."),
+                checked_func = function() return plugin:isTapEnabled() end,
+                callback = function()
+                    plugin:saveSetting("tap_definitions", not plugin:isTapEnabled())
+                    plugin:updateTapZone()
+                end,
             },
             {
                 text = _("Status"),

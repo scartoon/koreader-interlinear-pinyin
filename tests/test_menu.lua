@@ -29,7 +29,7 @@ stub("ffi/blitbuffer", { COLOR_BLACK = 0 })
 stub("ui/font", {})
 stub("ui/rendertext", {})
 stub("ui/size", { span = { horizontal_small = 2 } })
-stub("device", { screen = { scaleBySize = function(_, v) return v end } })
+stub("device", { screen = { scaleBySize = function(_, v) return v end }, isTouchDevice = function() return true end })
 
 local settings = {}
 G_reader_settings = {
@@ -57,7 +57,7 @@ local function walk(items)
     end
 end
 walk(entry.sub_item_table)
-assert(count == 5 + 5 + 5 + 3, "unexpected menu size " .. count)
+assert(count == 6 + 5 + 5 + 3, "unexpected menu size " .. count)
 
 -- Choosing a threshold saves it and the label follows.
 entry.sub_item_table[2].sub_item_table[1].callback()
