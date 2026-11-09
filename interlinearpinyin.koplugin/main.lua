@@ -38,7 +38,12 @@ local THRESHOLDS = { 1500, 2500, 3500, 5000, 7000 }
 local DEFAULT_THRESHOLD = 3500
 local SIZES = { 35, 40, 45, 50, 55 }   -- pinyin size, % of body text size
 local DEFAULT_SIZE = 40
-local GAP = 2                          -- pixels between pinyin and character
+local GAP = 2                          -- pixels reserved above and below the pinyin (line spacing)
+-- Pixels between the bottom of the pinyin's descenders and the estimated top
+-- of the character. The estimate (textBand) sits a few pixels above the real
+-- glyph top, so a small negative value still clears it and brings the pinyin
+-- closer; -1 looked right on a Boox Go 7.
+local DRAW_GAP = -1
 
 ------------------------------------------------------------------------
 -- Settings
@@ -104,7 +109,7 @@ end
 function InterlinearPinyin:onReaderReady()
     if not self:isCompatibleDocument() then return end
     if not self.overlay and self.ui and self.ui.view then
-        self.overlay = Overlay:new{ glosses = {}, gap = GAP }
+        self.overlay = Overlay:new{ glosses = {}, gap = DRAW_GAP }
         local ok, err = pcall(function() self.ui.view:registerViewModule("interlinearpinyin", self.overlay) end)
         if not ok then logger.warn("interlinearpinyin: registerViewModule failed:", tostring(err)) end
     end
