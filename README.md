@@ -42,7 +42,7 @@ The pinyin goes in the space between lines, so the plugin sets a line height tha
 
 A single tap on an annotated character, or on the pinyin above it, opens a small popup with:
 
-- **The character**: every [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) reading with all its senses. The reading drawn above the character comes first, marked *(shown above)*; for an uncertain character both shown readings are marked. Cross-references are made readable ("variant of 够 gòu", "CL: 个 gè").
+- **The character**: every [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict) reading with all its senses. When there are several, the reading drawn above the character comes first, marked *(shown above)*; for an uncertain character both shown readings are marked. Cross-references are made readable ("variant of 够 gòu", "CL: 个 gè").
 - **The word** it belongs to: the same word the plugin used to choose the reading (豁 in 豁然开朗), with its pinyin and senses. If two overlapping words both matched (大宛 / 宛如), the other one is listed too as *also possible*. A word known only from pypinyin's phrase list says "no definition in CC-CEDICT". For a character with only one reading (where no word was needed), the plugin looks for the longest CC-CEDICT word around it the same way (饕 in 饕餮). If there is no word, that section is left out.
 - **Lookup** buttons for the word and for the character, which close the popup and open KOReader's own dictionary lookup, and **Close**. Tapping outside the popup also closes it.
 

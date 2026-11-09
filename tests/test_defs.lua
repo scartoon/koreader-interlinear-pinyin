@@ -77,7 +77,8 @@ assert(g.text == "wǎn" and g.match.word == "宛如", "宛如 wins")
 local model = Defs.describe(defs, g)
 assert(model.readings[1].pinyin == "wǎn" and model.readings[1].chosen, "chosen reading first")
 local text = Defs.render(model)
-assert(text:find("^wǎn   %(shown above%)\nsurname Wan / winding / as if"), text)
+-- One reading (the surname entry merges into wǎn), so no "(shown above)".
+assert(text:find("^wǎn\nsurname Wan / winding / as if"), text)
 assert(text:find("Word: 宛如  wǎn rú\nto be just like"), text)
 assert(text:find("Also possible: 大宛  dà yuān\nancient state of central Asia"), text)
 assert(text:find("Word:") < text:find("Also possible:"))
@@ -124,6 +125,10 @@ assert(not Defs.empty(model), "character still has an entry")
 -- Neither character nor word in CC-CEDICT: KOReader's lookup is used instead.
 model = Defs.describe(defs, { char = "\240\170\154\178", text = "x", match = { word = "\240\170\154\178\240\170\154\178", pinyin = "x x", others = {} } })
 assert(Defs.empty(model), "no data should fall back to KOReader")
+
+-- A single reading is not marked: there is nothing to choose between.
+text = Defs.render(Defs.describe(defs, { char = "饕", text = "tāo", context = { left = {}, right = {} } }))
+assert(text:find("^tāo\n") and not text:find("shown above"), text)
 
 -- Capital tone vowels lower-case properly.
 assert(Defs.lower("Ēr Ǎ") == "ēr ǎ")

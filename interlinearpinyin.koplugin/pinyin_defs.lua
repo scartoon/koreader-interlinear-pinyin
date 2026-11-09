@@ -261,9 +261,11 @@ function Defs.render(model, bold_start, bold_end)
     end
     local MARK = "   (shown above)"
 
+    -- The marker only means something when there is a choice to point at.
+    local several_readings = #model.readings > 1
     for k, g in ipairs(model.readings) do
         if k > 1 then add("") end
-        add(B .. g.pinyin .. b .. (g.chosen and MARK or ""))
+        add(B .. g.pinyin .. b .. ((g.chosen and several_readings) and MARK or ""))
         if #g.senses == 0 then
             add(model.char_found and "no separate CC-CEDICT entry for this reading"
                 or "no CC-CEDICT entry for this character")
