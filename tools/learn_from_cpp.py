@@ -83,7 +83,9 @@ def confidence(default, counts, dict_shares, k):
     prior = dict_shares or {default: 1.0}
     blended = {r: (counts.get(r, 0) + k * prior.get(r, 0.0)) / (n + k) for r in readings}
     # Ties keep the default first.
-    ranked = sorted(readings, key=lambda r: (-blended[r], r != default))
+    # Exact ties (e.g. readings with no examples at all) are broken by the
+    # reading itself, so the output does not depend on set iteration order.
+    ranked = sorted(readings, key=lambda r: (-blended[r], r != default, r))
     return blended.get(default, 0.0), ranked[0], (ranked[1] if len(ranked) > 1 else None)
 
 

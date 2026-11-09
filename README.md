@@ -146,7 +146,7 @@ The code is licensed under the **GNU General Public License v3.0**; see `LICENSE
 
 The data files in `interlinearpinyin.koplugin/data/` are derived from:
 
-- **[CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)** (readings and words, and all the definitions shown in the tap popup), © MDBG and contributors, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **[CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)** (readings and words, and all the definitions shown in the tap popup), © MDBG and contributors, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The current data uses the CC-CEDICT release dated **2026-11-09** (125,397 entries); see [`data/README.md`](interlinearpinyin.koplugin/data/README.md#versions-used) for this and the other sources' versions.
 - **[wordfreq](https://github.com/rspeer/wordfreq)** by Robyn Speer (character frequencies), data under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - **[pypinyin](https://github.com/mozillazg/python-pinyin)** by mozillazg (its phrase list, for words CC-CEDICT lacks; and fallback readings for characters CC-CEDICT lacks), MIT License.
 

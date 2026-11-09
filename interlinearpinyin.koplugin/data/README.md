@@ -9,6 +9,23 @@
 - pypinyin by mozillazg (character readings and its phrase list, `phrases_dict`), MIT License — https://github.com/mozillazg/python-pinyin
 - the CPP polyphone dataset by Kyubyong Park and Seanie Lee (train split only), https://github.com/kakaobrain/g2pM — repository Apache-2.0 with no separate licence for the sentences, which come from Chinese Wikipedia (CC BY-SA); the sentences themselves are not included
 
+## Versions used
+
+All five files were last rebuilt on 2026-11-09 from:
+
+| Source | Version |
+|---|---|
+| CC-CEDICT | release dated **2026-11-09T04:23:50Z**, 125,397 entries (`cedict_1_0_ts_utf-8_mdbg.txt.gz`, SHA-256 `2e8921a90b9abdca2ce78b8a6af104368f848681b7afe8020043f500fbe0238a`), downloaded from mdbg.net on 2026-11-09 |
+| wordfreq | 3.1.1 |
+| pypinyin | 0.55.0 |
+| CPP dataset | train split, as fetched by `tools/learn_from_cpp.py` |
+
+`tools/build_data.py` prints the CC-CEDICT date and entry count (from the file's header) and the
+wordfreq and pypinyin versions; update this table whenever the data is rebuilt. mdbg.net only
+serves the current release, so keep a copy of the file if an exact rebuild matters.
+
+## How the files were made
+
 Changes made: characters ranked by summed word frequency; default reading chosen by the
 frequency of the words using each reading; dictionary limited to 2–4 character words
 containing an annotatable polyphonic character; numbered pinyin converted to tone marks;

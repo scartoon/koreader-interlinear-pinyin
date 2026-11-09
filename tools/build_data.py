@@ -50,6 +50,7 @@ import unicodedata
 from collections import Counter, defaultdict
 
 import wordfreq
+from importlib.metadata import version
 from pypinyin.phrases_dict import phrases_dict
 from pypinyin.pinyin_dict import pinyin_dict
 
@@ -66,6 +67,20 @@ MAX_WORD_LEN = 4
 MINOR_DEF_RE = re.compile(r"^\((dialect|archaic|old|literary|onom\.)\)|^(old |archaic |)variant of|"
                           r"^see [^/]*\]$|^used in [^/]*\]$")
 LINE_RE = re.compile(r"^(\S+) (\S+) \[([^\]]*)\] /(.*)/\s*$")
+
+
+def cedict_header(path):
+    """The '#! key=value' header of a CC-CEDICT file (date, entries, ...)."""
+    opener = gzip.open if path.endswith(".gz") else open
+    header = {}
+    with opener(path, "rt", encoding="utf-8") as f:
+        for line in f:
+            if not line.startswith("#"):
+                break
+            if line.startswith("#! ") and "=" in line:
+                key, value = line[3:].strip().split("=", 1)
+                header[key] = value
+    return header
 
 
 def load_cedict(path):
@@ -221,6 +236,11 @@ def main():
     simp_rank = {ch: i + 1 for i, (ch, _) in enumerate(char_freq.most_common())}
 
     entries = load_cedict(args.cedict)
+    header = cedict_header(args.cedict)
+    # Record this in interlinearpinyin.koplugin/data/README.md when the data is rebuilt.
+    print(f"CC-CEDICT {header.get('date', '(no date in header)')}, {header.get('entries', '?')} entries; "
+          f"wordfreq {getattr(wordfreq, '__version__', None) or version('wordfreq')}, "
+          f"pypinyin {version('pypinyin')}")
 
     # 2. Traditional -> simplified mapping, from CEDICT's aligned pairs.
     t2s_counts = defaultdict(Counter)

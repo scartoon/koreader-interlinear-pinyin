@@ -99,7 +99,6 @@
 㫺	0	xī	old variant of 昔 xī
 㬉	0	nuǎn	old variant of 暖 nuǎn
 㬎	0	xiǎn	old variant of 显 xiǎn
-㮎	0	bēi	variant of 杯 bēi
 㮚	0	lì	old variant of 栗 lì
 㮸	0	sòng	variant of 送 sòng
 㯭	0	lǔ	variant of 櫓 lǔ
@@ -746,6 +745,7 @@
 万人冢	0	wàn rén zhǒng	mass grave; common grave
 万人敌	39	wàn rén dí	a match for ten thousand enemies
 万人空巷	87	wàn rén kōng xiàng	the multitudes come out from everywhere, emptying every alleyway (to celebrate)/the whole town turns out
+万人迷	398	wàn rén mí	someone who attracts widespread adoration; (esp.) a heartthrob
 万代千秋	0	wàn dài qiān qiū	after innumerable ages
 万俟	21	Mò qí	two-character surname Moqi
 万分痛苦	0	wàn fēn tòng kǔ	excruciating
@@ -811,6 +811,8 @@
 三令五申	166	sān lìng wǔ shēn	to order again and again (idiom)
 三伏	129	sān fú	the three annual periods of hot weather, namely 初伏 chūfú, 中伏 zhōngfú and 末伏 mòfú, which run consecutively over a period from mid-July to late August
 三伏天	78	sān fú tiān	see 三伏 sānfú
+三伏貼	0	sān fú tiē	(TCM) herbal patch applied to acupuncture points on designated summer days, traditionally to prevent or alleviate asthma and allergies
+三伏贴	0	sān fú tiē	(TCM) herbal patch applied to acupuncture points on designated summer days, traditionally to prevent or alleviate asthma and allergies
 三侠五义	39	Sān xiá wǔ yì	Sanxia wuyi (lit. Three knight-errants and five righteous one), novel edited from stories of late Qing dynasty pinghua 評話|评话 master storyteller Shi Yukun 石玉昆
 三俠五義	39	Sān xiá wǔ yì	Sanxia wuyi (lit. Three knight-errants and five righteous one), novel edited from stories of late Qing dynasty pinghua 評話|评话 master storyteller Shi Yukun 石玉昆
 三倍	5129	sān bèi	triple; three times as much; threefold
@@ -874,8 +876,8 @@
 三權鼎立	0	sān quán dǐng lì	separation of powers
 三次冪	0	sān cì mì	(math.) cube; power of 3
 三次幂	0	sān cì mì	(math.) cube; power of 3
-三毛猫	0	sān máo māo	tortoiseshell cat/calico cat
-三毛貓	0	sān máo māo	tortoiseshell cat/calico cat
+三毛猫	0	sān máo māo	calico cat (esp. in Japan-related contexts)
+三毛貓	0	sān máo māo	calico cat (esp. in Japan-related contexts)
 三氟化硼	20	sān fú huà péng	boron trifluoride
 三氯化磷	0	sān lǜ huà lín	phosphorous trichloride
 三氯化鐵	0	sān lǜ huà tiě	ferric chloride FeCl3
@@ -946,8 +948,6 @@
 三葉蟲	245	sān yè chóng	(paleontology) trilobite
 三藩之乱	0	sān fān zhī luàn	Three feudatories rebellion against Qing 1673-1681 during the reign of Kangxi
 三藩之亂	0	sān fān zhī luàn	Three feudatories rebellion against Qing 1673-1681 during the reign of Kangxi
-三藩叛乱	0	Sān fān pàn luàn	rebellion against the Qing of 1670s, pacified by Kangxi
-三藩叛亂	0	Sān fān pàn luàn	rebellion against the Qing of 1670s, pacified by Kangxi
 三藩市	295	Sān fān shì	San Francisco (California)
 三號木桿	0	sān hào mù gān	spoon (golf)
 三號電池	0	sān hào diàn chí	C size battery (PRC) (Taiwan equivalent: 二號電池 èrhàodiànchí)/AA battery (Tw) (PRC equivalent: 五號電池 wǔhàodiànchí)
@@ -1038,7 +1038,9 @@
 上坡	550	shàng pō	uphill/upslope/to move upwards/to climb a slope
 上坡段	0	shàng pō duàn	uphill section (of a race)
 上坡路	76	shàng pō lù	uphill road/slope up/fig. upward trend/progress
+上垒	339	shàng lěi	(baseball) to get on base/(slang) to have sex
 上墳	468	shàng fén	to visit a grave
+上壘	339	shàng lěi	(baseball) to get on base/(slang) to have sex
 上夸克	0	shàng kuā kè	up quark (particle physics)
 上奏	0	shàng zòu	(historical) to submit a memorial to the throne; to make a formal submission to the emperor
 上尉	4365	shàng wèi	captain (military rank)
@@ -1648,6 +1650,9 @@
 不衰	468	bù shuāi	unfailing/never weakening/enduring/unstoppable
 不見不散	468	bù jiàn bù sàn	lit. Even if we don't see each other, don't give up and leave (idiom)/fig. Be sure to wait!/See you there!
 不见不散	468	bù jiàn bù sàn	lit. Even if we don't see each other, don't give up and leave (idiom)/fig. Be sure to wait!/See you there!
+不解之仇	0	bù jiě zhī chóu	(idiom) irreconcilable enmity
+不解之緣	251	bù jiě zhī yuán	(idiom) an inseparable bond; a close and lasting connection
+不解之缘	251	bù jiě zhī yuán	(idiom) an inseparable bond; a close and lasting connection
 不触目	0	bù chù mù	unobtrusive
 不觸目	0	bù chù mù	unobtrusive
 不言而喻	1820	bù yán ér yù	(idiom) it goes without saying; it is self-evident
@@ -1923,7 +1928,7 @@
 东侧	12023	dōng cè	east side/east face
 东倒西歪	339	dōng dǎo xī wāi	to lean unsteadily from side to side (idiom)/to sway/(of buildings etc) to lean at a crazy angle
 东兔西乌	0	dōng tù xī wū	lit. the sun setting and the moon rising (idiom)/fig. the passage of time
-东北虎	603	dōng běi hǔ	Amur tiger (Panthera tigris altaica)
+东北虎	603	dōng běi hǔ	Siberian tiger; Amur tiger
 东君	87	Dōng jūn	Lord of the East, the sun God of Chinese mythology
 东吴	2042	Dōng Wú	Eastern Wu (222-280)/the southern state of Wu during the Three Kingdoms period, founded by Sun Quan 孫權|孙权
 东吴大学	275	Dōng wú Dà xué	Soochow University (Suzhou, PRC from 1900-1952)/Soochow University (Taipei, Taiwan since 1954)
@@ -2369,7 +2374,7 @@
 丰姿	60	fēng zī	charm/good looks
 丰宁	170	Fēng níng	see 丰宁满族自治县 Fēngníng Mǎnzú Zìzhìxiàn
 丰宁县	33	Fēng níng Xiàn	see 丰宁满族自治县 Fēngníng Mǎnzú Zìzhìxiàn
-丰富	109648	fēng fù	to enrich/rich/plentiful/abundant
+丰富	109648	fēng fù	rich; plentiful; abundant/to enrich
 丰富多彩	2138	fēng fù duō cǎi	richly colorful
 丰年	977	fēng nián	prosperous year/year with bumper harvest
 丰度	269	fēng dù	abundance
@@ -2644,6 +2649,8 @@
 主祷文	120	zhǔ dǎo wén	Lord's Prayer
 主禱文	120	zhǔ dǎo wén	Lord's Prayer
 主簿	23	zhǔ bù	official registrar (of a county etc) in imperial China
+主粮	69	zhǔ liáng	staple food
+主糧	69	zhǔ liáng	staple food
 主罚	380	zhǔ fá	penalty (kick)
 主罰	380	zhǔ fá	penalty (kick)
 主臥	30	zhǔ wò	master bedroom; primary bedroom
@@ -3181,7 +3188,7 @@
 书刊	2291	shū kān	books and periodicals; publications
 书卷	309	shū juàn	volume/scroll
 书卷奖	0	shū juàn jiǎng	presidential award (received by university students in Taiwan for academic excellence)
-书卷气	78	shū juàn qì	scholarly flavor/educated appearance
+书卷气	78	shū juàn qì	scholarly air; bookish demeanor
 书呆子	1549	shū dāi zi	bookworm/pedant/bookish fool
 书坛	72	shū tán	the calligraphic community
 书挡	0	shū dǎng	bookend
@@ -4035,6 +4042,7 @@
 产粮	120	chǎn liáng	to grow crops/food growing
 产粮区	45	chǎn liáng qū	food growing area
 产粮大省	0	chǎn liáng dà shěng	major agricultural province
+产蛋	47	chǎn dàn	to lay eggs
 产褥期	107	chǎn rù qī	postnatal period/puerperium (period of six weeks after childbirth)
 产褥热	21	chǎn rù rè	postnatal fever/puerperal fever/childbed fever
 产钳	35	chǎn qián	obstetric forceps
@@ -5174,6 +5182,7 @@
 伤心惨目	0	shāng xīn cǎn mù	(idiom) too appalling to look at
 伤心欲绝	182	shāng xīn yù jué	(idiom) to be overcome with grief
 伤心蒿目	0	shāng xīn hāo mù	to grieve/broken-hearted
+伤恸	0	shāng tòng	profound grief; deep sorrow
 伤患	912	shāng huàn	injured person
 伤悲	437	shāng bēi	sad/sorrowful (literary)
 伤悼	18	shāng dào	to grieve for deceased relative/to mourn
@@ -5374,7 +5383,6 @@
 伺隙	10	sì xì	to wait for the opportunity
 伻	0	bēng	to cause
 似懂非懂	95	sì dǒng fēi dǒng	to not really understand/to half-understand
-似雪	0	sì xuě	snowy
 似鯝	0	sì gù	Xenocyprioides, genus of cyprinid fish endemic to China
 似鲴	0	sì gù	Xenocyprioides, genus of cyprinid fish endemic to China
 伽	0	gā	used in the transliteration of Greek letters	jiā	traditionally used as phonetic for "ga"	qié	used to transliterate Sanskrit "gha"
@@ -5563,6 +5571,8 @@
 何應欽	562	Hé Yìng qīn	He Yingqin (1890-1987), senior Guomindang general
 何謂	3236	hé wèi	(literary) what is?/what is the meaning of?
 何谓	3236	hé wèi	(literary) what is?/what is the meaning of?
+何足挂齿	60	hé zú guà chǐ	(idiom) not worth mentioning; don't mention it
+何足掛齒	60	hé zú guà chǐ	(idiom) not worth mentioning; don't mention it
 何首乌	87	hé shǒu wū	Chinese knotweed (Polygonum multiflorum)/fleeceflower root
 何首烏	87	hé shǒu wū	Chinese knotweed (Polygonum multiflorum)/fleeceflower root
 佗	0	tuó	carry on the back
@@ -5876,6 +5886,7 @@
 侅	0	gāi	to give/prepared for included in/embraced in
 來函	776	lái hán	incoming letter/letter from afar/same as 來信 láixìn
 來勁	363	lái jìn	(dialect) to be full of zeal/high-spirited/exhilarating/to stir sb up
+來勢洶洶	490	lái shì xiōng xiōng	(idiom) to bear down fiercely
 來去無蹤	24	lái qù wú zōng	come without a shadow, leave without a footprint (idiom); to come and leave without a trace
 來潮	316	lái cháo	(of water) to rise/rising tide/(of women) to get one's period
 來硬的	0	lái yìng de	to get tough/to use force
@@ -5980,6 +5991,7 @@
 侠客	1175	xiá kè	chivalrous person/knight-errant
 侠气	46	xiá qì	chivalry
 侠盗飞车	0	xiá dào fēi chē	Grand Theft Auto (video game series)
+侠肝义胆	39	xiá gān yì dǎn	(idiom) chivalrous, righteous and courageous
 侢	0	dài	old variant of 戴 dài
 侣	0	lǚ	companion
 侥	0	jiǎo	by mere luck	yáo	used in 僬侥 jiāoyáo
@@ -6017,6 +6029,7 @@
 侧空翻	0	cè kōng fān	aerial cartwheel/side somersault
 侧翻	282	cè fān	(of a vehicle) to roll over; (of a boat) to capsize
 侧耳	138	cè ěr	to bend an ear (to)/to listen
+侧脸	60	cè liǎn	facial profile
 侧芽	43	cè yá	axillary bud
 侧记	282	cè jì	(journalism) supplementary report; sidelight
 侧身	513	cè shēn	(to stand or move) sideways
@@ -6186,6 +6199,7 @@
 俊傑	933	jùn jié	elite/outstanding talent/genius
 俊拔	0	jùn bá	outstandingly talented
 俊杰	933	jùn jié	elite/outstanding talent/genius
+俊男美女	0	jùn nán měi nǚ	good-looking people
 俊秀	447	jùn xiù	well-favored/elegant/pretty
 俊美	724	jùn měi	pretty/handsome
 俊雅	51	jùn yǎ	(literary) elegant; graceful; refined
@@ -6308,6 +6322,7 @@
 保险盒	26	bǎo xiǎn hé	fuse box
 保险箱	1479	bǎo xiǎn xiāng	safe deposit box; safe
 保障	93325	bǎo zhàng	to ensure/to guarantee/to safeguard
+保障房	0	bǎo zhàng fáng	affordable housing
 保障监督	0	bǎo zhàng jiān dū	safeguards
 保障監督	0	bǎo zhàng jiān dū	safeguards
 保險槓	398	bǎo xiǎn gàng	car bumper
@@ -6345,6 +6360,7 @@
 俠氣	46	xiá qì	chivalry
 俠盜飛車	0	xiá dào fēi chē	Grand Theft Auto (video game series)
 俠義	977	xiá yì	chivalrous/chivalry/knight-errantry
+俠肝義膽	39	xiá gān yì dǎn	(idiom) chivalrous, righteous and courageous
 信丰	155	Xìn fēng	see 信丰县 Xìnfēng Xiàn
 信丰县	162	Xìn fēng Xiàn	Xinfeng, a county in Ganzhou City 赣州市 Gànzhōu Shì, Jiangxi
 信仰	63096	xìn yǎng	to believe in (a religion)/firm belief/conviction
@@ -7057,9 +7073,7 @@
 偏将	200	piān jiàng	deputy general
 偏將	200	piān jiàng	deputy general
 偏巧	46	piān qiǎo	by coincidence/it so happened that/fortunately/against expectation
-偏差	6918	piān chā	bias/deviation
-偏差距离	0	piān chā jù lí	offset distance
-偏差距離	0	piān chā jù lí	offset distance
+偏差	6918	piān chā	deviation; bias
 偏师	56	piān shī	military auxiliaries (archaic)
 偏師	56	piān shī	military auxiliaries (archaic)
 偏废	120	piān fèi	to give unequal emphasis to/doing some things at the expense of others
@@ -7127,9 +7141,9 @@
 偏见	13804	piān jiàn	prejudice/bias
 偏角	62	piān jiǎo	angle of drift (navigation)/deflection (from course)/angle of divergence
 偏註	0	piān zhù	to stress in a prejudiced way/to emphasize sth unduly
-偏誤	42	piān wù	bias (statistics)
+偏誤	42	piān wù	bias; error
 偏護	0	piān hù	to protect a croney/to give unprincipled support
-偏误	42	piān wù	bias (statistics)
+偏误	42	piān wù	bias; error
 偏轉	589	piān zhuǎn	deflection (physics)/deviation (away from a straight line)
 偏轉角	0	piān zhuǎn jiǎo	angle of drift (navigation)/deflection (from course)/angle of divergence
 偏转	589	piān zhuǎn	deflection (physics)/deviation (away from a straight line)
@@ -7268,6 +7282,7 @@
 側空翻	0	cè kōng fān	aerial cartwheel/side somersault
 側翻	282	cè fān	(of a vehicle) to roll over; (of a boat) to capsize
 側耳	138	cè ěr	to bend an ear (to)/to listen
+側臉	60	cè liǎn	facial profile
 側臥	129	cè wò	to lie on one's side
 側芽	43	cè yá	axillary bud
 側記	282	cè jì	(journalism) supplementary report; sidelight
@@ -7725,6 +7740,7 @@
 傷患	912	shāng huàn	injured person
 傷悲	437	shāng bēi	sad/sorrowful (literary)
 傷悼	18	shāng dào	to grieve for deceased relative/to mourn
+傷慟	0	shāng tòng	profound grief; deep sorrow
 傷殘	2138	shāng cán	disabled/maimed/crippled/(of objects) damaged
 傷殘人員	35	shāng cán rén yuán	the injured/wounded personnel
 傷毫毛	0	shāng háo máo	see 動毫毛 dòngháomáo
@@ -8179,9 +8195,7 @@
 兆瓦时	0	zhào wǎ shí	megawatt-hour
 兆瓦時	0	zhào wǎ shí	megawatt-hour
 兆瓦特	0	zhào wǎ tè	megawatt
-兆电子伏	0	zhào diàn zǐ fú	mega electron volt (MeV) (unit of energy equal to 1.6 x 10⁻¹³ joules)
 兆赫	631	zhào hè	megahertz
-兆電子伏	0	zhào diàn zǐ fú	mega electron volt (MeV) (unit of energy equal to 1.6 x 10⁻¹³ joules)
 兆頭	1096	zhào tou	omen/portent/sign
 兇	0	xiōng	terrible/fearful
 兇刀	31	xiōng dāo	knife used in a violent crime; murder weapon (knife)
@@ -8288,7 +8302,7 @@
 光洁	479	guāng jié	bright and clean
 光润	54	guāng rùn	glossy/lustrous/sleek
 光溜	28	guāng liu	smooth; slippery
-光滑	4898	guāng huá	glossy; sleek; smooth
+光滑	4898	guāng huá	smooth
 光漆	0	guāng qī	gloss paint; glossy varnish; gloss-finish coating
 光潔	479	guāng jié	bright and clean
 光潤	54	guāng rùn	glossy/lustrous/sleek
@@ -8567,6 +8581,7 @@
 入境随俗	20	rù jìng suí sú	when in Rome, do as the Romans do
 入境隨俗	20	rù jìng suí sú	when in Rome, do as the Romans do
 入夏	166	rù xià	summer sets in
+入梅	35	rù méi	to enter the rainy season
 入樽	0	rù zūn	slam dunk
 入殓	269	rù liàn	to put dead body in coffin
 入殮	269	rù liàn	to put dead body in coffin
@@ -8803,6 +8818,7 @@
 八旬	389	bā xún	80 years; one's eighties/80 days
 八會穴	0	bā huì xué	the eight influential points (acupuncture)
 八极拳	166	bā jí quán	Ba Ji Quan "Eight Extremes Fist" - Martial Art
+八桂	46	Bā guì	(literary) Guangxi
 八極拳	166	bā jí quán	Ba Ji Quan "Eight Extremes Fist" - Martial Art
 八榮八恥	29	Bā Róng Bā Chǐ	Eight Honors and Eight Shames, PRC official moral guidelines
 八段錦	79	bā duàn jǐn	eight-section brocade, a traditional eight-part sequence of qigong exercises
@@ -9070,7 +9086,6 @@
 关庙	52	Guān miào	Guanmiao, a district in Tainan 台南 Táinán, Taiwan
 关押	8128	guān yā	to imprison/to lock up (in jail)
 关栈	18	guān zhàn	bonded warehouse
-关栈费	0	guān zhàn fèi	bonding fee
 关汉卿	224	Guān Hàn qīng	Guan Hanqing (c. 1235-c. 1300), Yuan dynasty dramatist in the 雜劇|杂剧 tradition of musical comedy, one of the Four Great Yuan dramatists 元曲四大家
 关涉	389	guān shè	to relate (to)/to concern/to involve/connection/relationship
 关禁闭	275	guān jìn bì	to put in detention (a soldier, a pupil)
@@ -9503,6 +9518,7 @@
 军团菌病	0	jūn tuán jūn bìng	legionnaires' disease
 军妓	50	jūn jì	military prostitute
 军嫂	132	jūn sǎo	wife of a serviceman; soldier's wife
+军旗	912	jūn qí	military flag
 军曹鱼	0	jūn cáo yú	cobia or black kingfish (Rachycentron canadum)
 军棋	76	jūn qí	land battle chess, Chinese board game similar to Stratego
 军犬	245	jūn quǎn	military dog
@@ -9987,7 +10003,7 @@
 冷氣團	316	lěng qì tuán	(meteorology) cold air mass
 冷氣機	170	lěng qì jī	air conditioner
 冷氣衫	0	lěng qì shān	warm clothes such as padded jacket to be worn in air conditioning (esp. in Hong Kong)
-冷水	3802	lěng shuǐ	cold water/unboiled water/fig. not yet ready (of plans)
+冷水	3802	lěng shuǐ	cold water/unboiled water
 冷水机组	21	lěng shuǐ jī zǔ	chiller
 冷水機組	21	lěng shuǐ jī zǔ	chiller
 冷水江	69	Lěng shuǐ jiāng	see 冷水江市 Lěngshuǐjiāng Shì
@@ -10173,6 +10189,7 @@
 凉粉	339	liáng fěn	liangfen (Chinese dish)/grass jelly (Chinese dish)
 凉茶	1023	liáng chá	Chinese herb tea
 凉菜	339	liáng cài	cold dish
+凉薯	17	liáng shǔ	yam bean (Pachyrhizus erosus)
 凉面	115	liáng miàn	cold noodles
 凉鞋	1778	liáng xié	sandal
 凊	0	qìng	(literary) cold; cool; chilly
@@ -10309,10 +10326,12 @@
 凝睇	0	níng dì	to gaze intently; to stare at
 凝神	263	níng shén	with rapt attention
 凝結	3802	níng jié	to condense/to solidify/to coagulate/clot (of blood)
+凝結核	58	níng jié hé	cloud condensation nucleus
 凝練	324	níng liàn	concise/compact/condensed
 凝縮	52	níng suō	to condense/to concentrate/compression/concentration
 凝练	324	níng liàn	concise/compact/condensed
 凝结	3802	níng jié	to condense/to solidify/to coagulate/clot (of blood)
+凝结核	58	níng jié hé	cloud condensation nucleus
 凝缩	52	níng suō	to condense/to concentrate/compression/concentration
 凝聚	11482	níng jù	to condense/to coagulate/coacervation (i.e. form tiny droplets)/aggregation/coherent
 凝聚力	3467	níng jù lì	cohesion/cohesiveness/cohesive
@@ -10934,6 +10953,8 @@
 分秒必争	178	fēn miǎo bì zhēng	seize every minute and second (idiom); not a minute to lose/every moment counts
 分秒必爭	178	fēn miǎo bì zhēng	seize every minute and second (idiom); not a minute to lose/every moment counts
 分租	162	fēn zū	(of a landlord) to rent out one or more parts of a property/(of a tenant) to sublet one or more parts of a property/(agriculture) sharecropping
+分稅制	182	fēn shuì zhì	tax-sharing system (for allocating tax revenue between central and local governments)
+分税制	182	fēn shuì zhì	tax-sharing system (for allocating tax revenue between central and local governments)
 分竈吃飯	0	fēn zào chī fàn	"meals prepared at separate stoves", slogan of the program of fiscal decentralization that began in the 1980s in the PRC
 分类帐	37	fēn lèi zhàng	a ledger/a spreadsheet
 分縫	0	fēn fèng	part (in one's hair)
@@ -12485,6 +12506,8 @@
 勃利县	79	Bó lì Xiàn	Boli, a county in Qitaihe City 七台河市 Qītáihé Shì, Heilongjiang
 勃利縣	79	Bó lì Xiàn	Boli, a county in Qitaihe City 七臺河市 Qītáihé Shì, Heilongjiang
 勃勃	912	bó bó	thriving/vigorous/exuberant
+勃勃生机	200	bó bó shēng jī	(idiom) exuberant vitality; vibrancy
+勃勃生機	200	bó bó shēng jī	(idiom) exuberant vitality; vibrancy
 勃发	457	bó fā	to sprout up; to flourish; (of war etc) to break out/rapid growth
 勃固	43	Bó gù	Pegu city in south Myanmar (Burma)
 勃固山脈	0	Bó gù shān mài	Pegu Yoma (mountain range) of south central Myanmar (Burma), separating Irrawaddy and Sittang basins
@@ -13008,8 +13031,8 @@
 北京烤鴨	85	Běi jīng kǎo yā	Peking Duck
 北京烤鸭	85	Běi jīng kǎo yā	Peking Duck
 北京猿人	87	Běi jīng yuán rén	Peking ape-man/Homo erectus pekinensis (c. 600,000 BC), discovered in Zhoukoudian 周口店 Zhōukǒudiàn in 1921
-北京瘫	0	Běi jīng tān	"Beijing slouch", sitting posture said to be adopted esp. by Beijingers, popularized by 葛优 Gě Yōu
-北京癱	0	Běi jīng tān	"Beijing slouch", sitting posture said to be adopted esp. by Beijingers, popularized by 葛優 Gě Yōu
+北京瘫	0	Běi jīng tān	(humorous) "Beijing slouch", a stereotypically relaxed, slouched sitting posture associated with Beijing residents, popularized by actor 葛优 Gě Yōu
+北京癱	0	Běi jīng tān	(humorous) "Beijing slouch", a stereotypically relaxed, slouched sitting posture associated with Beijing residents, popularized by actor 葛優 Gě Yōu
 北仑	234	Běi lún	see 北仑区 Běilún Qū
 北仑区	148	Běi lún Qū	Beilun, a district of Ningbo City 宁波市 Níngbō Shì, Zhejiang
 北伐	3981	Běi fá	the Northern Expedition, the Nationalists' campaign of 1926-1928 under Chiang Kai-shek, against the rule of local warlords
@@ -13170,7 +13193,7 @@
 匯川區	47	Huì chuān Qū	Huichuan, a district of Zunyi City 遵義市 Zūnyì Shì, Guizhou
 匯差	51	huì chā	difference in exchange rates in different regions
 匯市	1230	huì shì	foreign exchange market (abbr. for 外匯市場 wàihuìshìchǎng)
-匯攏	0	huì lǒng	to collect/to gather
+匯攏	0	huì lǒng	to gather together; to bring together
 匯映	0	huì yìng	joint screening/consecutive screening of collection of movies
 匯業銀行	0	Huì yè Yín háng	Banco Delta Asia S.A.R.L., Macau
 匯款	4898	huì kuǎn	to remit money/remittance
@@ -13178,7 +13201,7 @@
 匯注	0	huì zhù	to flow into/to converge
 匯流	1175	huì liú	(of rivers etc) to converge/convergence
 匯流環	0	huì liú huán	slip-ring/rotary electrical interface/collector ring
-匯演	1023	huì yǎn	joint performance
+匯演	1023	huì yǎn	showcase of performances by different artists or groups; to participate in such a showcase
 匯率	22909	huì lǜ	exchange rate
 匯票	2188	huì piào	bill of exchange/bank draft
 匯編	4266	huì biān	to compile/collection; compilation
@@ -13586,6 +13609,7 @@
 单亲爸爸	0	dān qīn bà ba	single father
 单人匹马	0	dān rén pǐ mǎ	single-handedly (idiom)
 单人床	148	dān rén chuáng	single bed/CL: 张 zhāng
+单位圆	0	dān wèi yuán	(math.) unit circle
 单侧	389	dān cè	one-sided/unilateral
 单倍体	204	dān bèi tǐ	haploid (single chromosome)
 单刀直入	158	dān dāo zhí rù	(idiom) to get straight to the point
@@ -14554,7 +14578,7 @@
 参拜	2138	cān bài	to formally call on/to worship (a God)/to pay homage to sb
 参禅	174	cān chán	to practice Chan Buddhist meditation/to practice Zen meditation/to sit in meditation
 参茸	43	shēn róng	ginseng and young deer antler (used in TCM)
-参薯	0	shēn shǔ	Dioscorea alata (Kinampay or aromatic purple yam, a sweet root crop)
+参薯	0	shēn shǔ	ube; purple yam (Dioscorea alata)
 参详	39	cān xiáng	to collate and examine critically (texts etc)
 参谋	13183	cān móu	staff officer/to give advice
 参谋总长	363	cān móu zǒng zhǎng	army Chief of Staff
@@ -14574,7 +14598,7 @@
 參拜	2138	cān bài	to formally call on/to worship (a God)/to pay homage to sb
 參禪	174	cān chán	to practice Chan Buddhist meditation/to practice Zen meditation/to sit in meditation
 參茸	43	shēn róng	ginseng and young deer antler (used in TCM)
-參薯	0	shēn shǔ	Dioscorea alata (Kinampay or aromatic purple yam, a sweet root crop)
+參薯	0	shēn shǔ	ube; purple yam (Dioscorea alata)
 參詳	39	cān xiáng	to collate and examine critically (texts etc)
 參謀	13183	cān móu	staff officer/to give advice
 參謀總長	363	cān móu zǒng zhǎng	army Chief of Staff
@@ -15347,8 +15371,6 @@
 古縴道	0	Gǔ Qiàn dào	Old Towpath along the Grand Canal in Zhejiang Province
 古纤道	0	Gǔ Qiàn dào	Old Towpath along the Grand Canal in Zhejiang Province
 古董	3802	gǔ dǒng	curio/antique
-古董滩	0	Gǔ dǒng tān	Gudong desert or Antiques desert at Han dynasty Yangguan pass 阳关 Yángguān, named after many Han dynasty archaeological discoveries
-古董灘	0	Gǔ dǒng tān	Gudong desert or Antiques desert at Han dynasty Yangguan pass 陽關 Yángguān, named after many Han dynasty archaeological discoveries
 古蔺	166	Gǔ lìn	see 古蔺县 Gǔlìn Xiàn
 古蔺县	120	Gǔ lìn Xiàn	Gulin, a county in Luzhou City 泸州市 Lúzhōu Shì, Sichuan
 古藺	166	Gǔ lìn	see 古藺縣 Gǔlìn Xiàn
@@ -15975,7 +15997,6 @@
 吉木薩爾	170	Jí mù sà ěr	see 吉木薩爾縣 Jímùsà'ěr Xiàn
 吉爾伯特	1175	Jí ěr bó tè	Gilbert (name)
 吉田	631	Jí tián	Yoshida (Japanese surname and place name)
-吉电子伏	0	jí diàn zǐ fú	giga electron volt GeV (unit of energy equal to 1.6 x 10⁻¹⁰ joules)
 吉祥	7244	jí xiáng	lucky/auspicious/propitious
 吉祥物	3467	jí xiáng wù	mascot
 吉莫	28	jí mò	(old) name of a kind of leather
@@ -15991,7 +16012,6 @@
 吉隆县	105	Jí lóng Xiàn	Gyirong, a county in Shigatse City 日喀则市 Rìkāzé Shì, Tibet
 吉隆坡	8913	Jí lóng pō	Kuala Lumpur, capital of Malaysia
 吉隆縣	105	Jí lóng Xiàn	Gyirong, a county in Shigatse City 日喀則市 Rìkāzé Shì, Tibet
-吉電子伏	0	jí diàn zǐ fú	giga electron volt GeV (unit of energy equal to 1.6 x 10⁻¹⁰ joules)
 吉魯巴	16	jí lǔ bā	jitterbug (loanword)
 吉鲁巴	16	jí lǔ bā	jitterbug (loanword)
 吊	0	diào	to suspend/to hang up/to hang a person/a string of 100 cash (arch.)/to lament/to condole with
@@ -16133,6 +16153,8 @@
 同床共枕	151	tóng chuáng gòng zhěn	to share the bed/(fig.) to be married
 同床异梦	81	tóng chuáng yì mèng	lit. to share the same bed with different dreams (idiom); ostensible partners with different agendas/strange bedfellows/marital dissension
 同床異夢	81	tóng chuáng yì mèng	lit. to share the same bed with different dreams (idiom); ostensible partners with different agendas/strange bedfellows/marital dissension
+同心圆	501	tóng xīn yuán	concentric circle
+同心圓	501	tóng xīn yuán	concentric circle
 同性恋	33884	tóng xìng liàn	homosexuality/gay person/gay love
 同性恋者	1622	tóng xìng liàn zhě	homosexual/gay person
 同性戀	33884	tóng xìng liàn	homosexuality/gay person/gay love
@@ -16599,6 +16621,7 @@
 启发法	21	qǐ fā fǎ	heuristic method/heuristics
 启奏	120	qǐ zòu	to submit a report to the king/to talk to the king
 启封	120	qǐ fēng	to open sth that has been sealed
+启幕	35	qǐ mù	to open; to inaugurate
 启应祈祷	0	qǐ yìng qí dǎo	Introitus (section of Catholic mass)
 启德机场	36	Qǐ dé Jī chǎng	Kai Tak Airport, international airport of Hong Kong from 1925 to 1998
 启明	447	Qǐ míng	Classical Chinese name for planet Venus in the east before dawn
@@ -18249,7 +18272,7 @@
 商君書	23	Shāng Jūn Shū	The Book of Lord Shang, Legalist text of the 4th century BC
 商品粮	1072	shāng pǐn liáng	commodity grain (grain produced as a commodity rather than for self-sufficiency)
 商品糧	1072	shāng pǐn liáng	commodity grain (grain produced as a commodity rather than for self-sufficiency)
-商圈	1479	shāng quān	commercial district/business district
+商圈	1479	shāng quān	commercial district; business district
 商埠	550	shāng bù	commercial port/trading port/treaty port (old)
 商栈	25	shāng zhàn	inn/caravansary
 商棧	25	shāng zhàn	inn/caravansary
@@ -18332,6 +18355,7 @@
 啟動子	56	qǐ dòng zi	promoter
 啟奏	120	qǐ zòu	to submit a report to the king/to talk to the king
 啟封	120	qǐ fēng	to open sth that has been sealed
+啟幕	35	qǐ mù	to open; to inaugurate
 啟德機場	36	Qǐ dé Jī chǎng	Kai Tak Airport, international airport of Hong Kong from 1925 to 1998
 啟應祈禱	0	qǐ yìng qí dǎo	Introitus (section of Catholic mass)
 啟明	447	Qǐ míng	Classical Chinese name for planet Venus in the east before dawn
@@ -18745,6 +18769,7 @@
 喭	0	yàn	condole with
 單人匹馬	0	dān rén pǐ mǎ	single-handedly (idiom)
 單人床	148	dān rén chuáng	single bed/CL: 張 zhāng
+單位圓	0	dān wèi yuán	(math.) unit circle
 單倍體	204	dān bèi tǐ	haploid (single chromosome)
 單側	389	dān cè	one-sided/unilateral
 單刀直入	158	dān dāo zhí rù	(idiom) to get straight to the point
@@ -19797,8 +19822,8 @@
 回禄	26	huí lù	traditional Fire God/destruction by fire
 回禄之灾	0	Huí lù zhī zāi	(idiom) fire disaster; conflagration
 回稟	23	huí bǐng	to report back to one's superior
-回笼	759	huí lóng	to steam again/to rewarm food in a bamboo steamer/to withdraw currency from circulation
-回籠	759	huí lóng	to steam again/to rewarm food in a bamboo steamer/to withdraw currency from circulation
+回笼	759	huí lóng	to reheat (food) in a steamer/(of currency) to return to the issuing bank
+回籠	759	huí lóng	to reheat (food) in a steamer/(of currency) to return to the issuing bank
 回紇	603	Huí hé	Huihe, ancient name of an ethnic group who were the ancestors of the Uyghurs 維吾爾族 Wéiwú'ěrzú and the Yugurs 裕固族 Yùgùzú
 回繞	38	huí rào	winding
 回纥	603	Huí hé	Huihe, ancient name of an ethnic group who were the ancestors of the Uyghurs 维吾尔族 Wéiwú'ěrzú and the Yugurs 裕固族 Yùgùzú
@@ -19821,7 +19846,7 @@
 回車鍵	110	huí chē jiàn	(computing) enter key; return key (on a keyboard)
 回车符	16	huí chē fú	(computing) "carriage return" character (ASCII code 13)
 回车键	110	huí chē jiàn	(computing) enter key; return key (on a keyboard)
-回转寿司	0	huí zhuǎn shòu sī	conveyor belt sushi (restaurant)
+回转寿司	0	huí zhuǎn shòu sī	conveyor belt sushi
 回返	309	huí fǎn	to return/to go back/to come back
 回避	13490	huí bì	to shun/to avoid (sb)/to skirt/to evade (an issue)/to step back/to withdraw/to recuse (a judge etc)
 回邮信封	0	huí yóu xìn fēng	self-addressed stamped envelope (SASE)
@@ -20047,6 +20072,7 @@
 国粹	631	guó cuì	national essence/quintessence of national culture
 国耻	1380	guó chǐ	national humiliation, refers to Japanese incursions into China in the 1930s and 40s, and more especially to Mukden railway incident of 18th September 1931 九一八事變|九一八事变 and subsequent Japanese annexation of Manchuria
 国脚	776	guó jiǎo	national football team member
+国舅	155	guó jiù	brother of the emperor's wife or consort
 国菜	0	guó cài	national food specialty
 国葬	794	guó zàng	state funeral
 国蠹	0	guó dù	traitor/public enemy
@@ -20092,6 +20118,7 @@
 圆光	32	yuán guāng	radiance emanating from the head/halo
 圆函数	0	yuán hán shù	circular function; trigonometric function
 圆凿方枘	0	yuán záo fāng ruì	see 方枘圆凿 fāngruìyuánzáo
+圆叶葡萄	0	yuán yè pú tao	muscadine (Vitis rotundifolia)
 圆周	776	yuán zhōu	circumference; circle
 圆周率	912	yuán zhōu lǜ	(math.) the ratio of the circumference of a circle to its diameter (π)
 圆圈	3715	yuán quān	circle
@@ -20112,7 +20139,7 @@
 圆晕	0	yuán yùn	concentric circles/circular ripples
 圆月	525	yuán yuè	full moon
 圆柏	13	yuán bǎi	Chinese juniper (Juniperus chinensis)
-圆柱	1698	yuán zhù	column/cylinder
+圆柱	1698	yuán zhù	(geometry) cylinder/column; round pillar
 圆柱体	427	yuán zhù tǐ	cylinder (geometry)
 圆柱形	692	yuán zhù xíng	cylindrical
 圆桌	1995	yuán zhuō	round table
@@ -20217,6 +20244,7 @@
 國粹	631	guó cuì	national essence/quintessence of national culture
 國罵	25	guó mà	curse word/four-letter word/esp. the "national swear word" of China, namely 他媽的 tāmāde
 國腳	776	guó jiǎo	national football team member
+國舅	155	guó jiù	brother of the emperor's wife or consort
 國菜	0	guó cài	national food specialty
 國葬	794	guó zàng	state funeral
 國蠹	0	guó dù	traitor/public enemy
@@ -20283,7 +20311,7 @@
 圓暈	0	yuán yùn	concentric circles/circular ripples
 圓月	525	yuán yuè	full moon
 圓柏	13	yuán bǎi	Chinese juniper (Juniperus chinensis)
-圓柱	1698	yuán zhù	column/cylinder
+圓柱	1698	yuán zhù	(geometry) cylinder/column; round pillar
 圓柱形	692	yuán zhù xíng	cylindrical
 圓柱體	427	yuán zhù tǐ	cylinder (geometry)
 圓桌	1995	yuán zhuō	round table
@@ -20307,6 +20335,7 @@
 圓腹鯡	0	yuán fù fēi	round herring
 圓舞	13	yuán wǔ	round dance
 圓舞曲	245	yuán wǔ qǔ	waltz
+圓葉葡萄	0	yuán yè pú tao	muscadine (Vitis rotundifolia)
 圓融	263	yuán róng	accommodating/(Buddhism) completely integrated
 圓規	234	yuán guī	compass (drafting)
 圓規座	0	Yuán guī zuò	Circinus (constellation)
@@ -20419,8 +20448,6 @@
 土豆丝	105	tǔ dòu sī	julienned potato
 土豆泥	380	tǔ dòu ní	mashed potato
 土豆絲	105	tǔ dòu sī	julienned potato
-土豆網	129	Tǔ dòu Wǎng	Tudou, a Chinese video-sharing website
-土豆网	129	Tǔ dòu Wǎng	Tudou, a Chinese video-sharing website
 土豚	58	tǔ tún	aardvark
 土豪	3020	tǔ háo	local tyrant/local strong man/(slang) nouveau riche
 土豪劣紳	68	tǔ háo liè shēn	local bosses, shady gentry (idiom); dominant local mafia
@@ -20517,6 +20544,7 @@
 在野党	1778	zài yě dǎng	opposition party
 在野黨	1778	zài yě dǎng	opposition party
 圩	0	wéi	dike	xū	(dialect) country fair/country market
+圩田	28	wéi tián	polder
 圪	0	gē	(phonetic)
 圪垯	0	gē da	mound; knoll/swelling or lump on skin; pimple/knot; lump/preoccupation; problem
 圪墶	0	gē da	mound; knoll/swelling or lump on skin; pimple/knot; lump/preoccupation; problem
@@ -20718,6 +20746,10 @@
 坍	0	tān	to collapse
 坍塌	3236	tān tā	to collapse
 坍方	47	tān fāng	to collapse/landslide
+坍縮	117	tān suō	(astronomy) (of a star) to collapse/(physics) (of a wave function) to collapse
+坍縮星	0	tān suō xīng	(astronomy) black hole
+坍缩	117	tān suō	(astronomy) (of a star) to collapse/(physics) (of a wave function) to collapse
+坍缩星	0	tān suō xīng	(astronomy) black hole
 坎	0	kǎn	pit/threshold/one of the Eight Trigrams 八卦 bāguà, symbolizing water/☵/hole
 坎儿	93	kǎn r	critical juncture/key moment
 坎儿井	37	kǎn r jǐng	karez, qanat or "horizontal well" (irrigation and water management system used in Xinjiang, Central Asia and Middle East)
@@ -20753,7 +20785,6 @@
 坏蛋	5012	huài dàn	bad egg/scoundrel/bastard
 坏账	832	huài zhàng	bad debt
 坏透	48	huài tòu	completely bad
-坏鸟	0	huài niǎo	sinister person/unsavory character/broken (not in working order)
 坐不垂堂	0	zuò bù chuí táng	lit. don't sit under the eaves (where tiles may fall from the roof) (idiom); fig. keep out of danger
 坐井觀天	76	zuò jǐng guān tiān	lit. to view the sky from the bottom of a well (idiom); ignorant and narrow-minded
 坐井观天	76	zuò jǐng guān tiān	lit. to view the sky from the bottom of a well (idiom); ignorant and narrow-minded
@@ -20885,7 +20916,7 @@
 坠落	6918	zhuì luò	to fall; to drop
 坠饰	30	zhuì shì	pendant (jewelry)
 坠马	182	zhuì mǎ	to fall off a horse
-坡	0	pō	slope/CL: 个 gè/sloping/slanted
+坡	0	pō	slope; hillside/sloping; inclined
 坡县	0	Pō xiàn	(slang) Singapore
 坡国	0	Pō guó	(coll.) Singapore
 坡國	0	Pō guó	(coll.) Singapore
@@ -21016,7 +21047,7 @@
 垃圾分類	0	lā jī fēn lèi	waste sorting; waste separation
 垃圾堆	2291	lā jī duī	garbage heap
 垃圾工	0	lā jī gōng	garbage collector
-垃圾桶	4571	lā jī tǒng	rubbish bin/trash can/garbage can/Taiwan pr. lèsètǒng
+垃圾桶	4571	lā jī tǒng	trash can; garbage can/Taiwan pr. lě4se4tong
 垃圾电邮	0	lā jī diàn yóu	see 垃圾邮件 lājīyóujiàn
 垃圾筒	62	lā jī tǒng	trashcan
 垃圾箱	851	lā jī xiāng	rubbish can/garbage can/trash can
@@ -21514,8 +21545,8 @@
 堵截	794	dǔ jié	to intercept; to block the passage of; to interdict
 堵擊	43	dǔ jī	to intercept and attack (military)
 堵死	603	dǔ sǐ	to block (a road)/to plug (a hole)/to stop up
-堵車	1549	dǔ chē	traffic jam/(of traffic) to get congested
-堵车	1549	dǔ chē	traffic jam/(of traffic) to get congested
+堵車	1549	dǔ chē	traffic congestion; traffic jam/to be stuck in traffic; (of traffic) to become congested
+堵车	1549	dǔ chē	traffic congestion; traffic jam/to be stuck in traffic; (of traffic) to become congested
 堼	0	hèng	(used in place names)/also pr. fēng
 堽	0	gāng	mound
 堿	0	jiǎn	variant of 碱 jiǎn
@@ -22136,7 +22167,6 @@
 壞蛋	5012	huài dàn	bad egg/scoundrel/bastard
 壞賬	832	huài zhàng	bad debt
 壞透	48	huài tòu	completely bad
-壞鳥	0	huài niǎo	sinister person/unsavory character/broken (not in working order)
 壟	0	lǒng	ridge between fields/crop row; mounded soil forming a ridge in a field/grave mound
 壟斷	30200	lǒng duàn	to monopolize
 壟溝	26	lǒng gōu	furrow (agriculture)
@@ -22173,6 +22203,7 @@
 壮年	1514	zhuàng nián	lit. robust years/prime of life/summer/able-bodied (fit for military service)/mature (talent, garden etc)
 壮志	832	zhuàng zhì	great goal/magnificent aspiration
 壮族	4365	Zhuàng zú	Zhuang ethnic group, the largest ethnic minority in China
+壮汉	575	zhuàng hàn	burly guy
 壮烈	851	zhuàng liè	brave/heroic
 壮硕	214	zhuàng shuò	sturdy/thick and strong
 壮美	741	zhuàng měi	magnificent
@@ -22190,6 +22221,7 @@
 壯年	1514	zhuàng nián	lit. robust years/prime of life/summer/able-bodied (fit for military service)/mature (talent, garden etc)
 壯志	832	zhuàng zhì	great goal/magnificent aspiration
 壯族	4365	Zhuàng zú	Zhuang ethnic group, the largest ethnic minority in China
+壯漢	575	zhuàng hàn	burly guy
 壯烈	851	zhuàng liè	brave/heroic
 壯碩	214	zhuàng shuò	sturdy/thick and strong
 壯美	741	zhuàng měi	magnificent
@@ -22589,7 +22621,7 @@
 多尔衮	692	Duō ěr gǔn	Dorgon (1612-1651), fourteenth son of Nurhaci 努尔哈赤 Nǔ'ěrhāchì, successful general, instrumental in Manchu conquest of China, ruled China as regent 1644-1650 for his nephew Emperor Shunzhi 顺治帝 Shùnzhìdì
 多层大厦	0	duō céng dà shà	multistory building
 多層大廈	0	duō céng dà shà	multistory building
-多巴胺	1047	duō bā àn	dopamine
+多巴胺	1047	duō bā àn	dopamine/also pr. duo1bā1an
 多幕剧	14	duō mù jù	play in several acts/full-length drama
 多幕劇	14	duō mù jù	play in several acts/full-length drama
 多彩	4074	duō cǎi	colorful/flamboyant
@@ -23740,7 +23772,7 @@
 失竊	1349	shī qiè	to lose by theft/to have one's property stolen
 失聪	302	shī cōng	to go deaf; to lose one's hearing/deafness; hearing loss
 失聰	302	shī cōng	to go deaf; to lose one's hearing/deafness; hearing loss
-失衡	5623	shī héng	to unbalance/an imbalance
+失衡	5623	shī héng	to become unbalanced; imbalance (e.g. 供需失衡 gōngxūshīhéng, supply-demand imbalance)
 失語症	162	shī yǔ zhèng	aphasia or aphemia (loss of language)
 失讀症	14	shī dú zhèng	alexia
 失语症	162	shī yǔ zhèng	aphasia or aphemia (loss of language)
@@ -24262,7 +24294,7 @@
 奢华	6166	shē huá	luxurious/sumptuous/lavish
 奢望	2089	shē wàng	an extravagant hope/to have excessive expectations
 奢求	501	shē qiú	to make extravagant demands/an unreasonable request
-奢泰	0	shē tài	extravagant/sumptuous/wasteful
+奢泰	0	shē tài	(literary) extravagant; excessively luxurious
 奢盼	0	shē pàn	an extravagant hope/to have unrealistic expectations
 奢糜	0	shē mí	variant of 奢靡 shēmí
 奢華	6166	shē huá	luxurious/sumptuous/lavish
@@ -24496,6 +24528,8 @@
 奶牛	2754	nǎi niú	milk cow/dairy cow
 奶牛场	102	nǎi niú chǎng	dairy farm
 奶牛場	102	nǎi niú chǎng	dairy farm
+奶牛猫	0	nǎi niú māo	cow cat
+奶牛貓	0	nǎi niú māo	cow cat
 奶狗	0	nǎi gǒu	very young puppy
 奶猫	0	nǎi māo	very young kitten
 奶瓶	933	nǎi píng	baby's feeding bottle
@@ -24505,6 +24539,7 @@
 奶站	0	nǎi zhàn	dairy
 奶粉	11749	nǎi fěn	powdered milk
 奶精	120	nǎi jīng	non-dairy creamer
+奶糖	162	nǎi táng	milk candy
 奶素	0	nǎi sù	(adjective) lacto-vegetarian
 奶罩	158	nǎi zhào	bra/brassière
 奶茶	3090	nǎi chá	milk tea
@@ -25384,6 +25419,7 @@
 婴儿床	214	yīng ér chuáng	crib; baby's bed
 婴儿期	174	yīng ér qī	infancy
 婴儿潮	0	yīng ér cháo	baby boom
+婴儿肥	0	yīng ér féi	baby fat
 婴儿车	661	yīng ér chē	baby carriage/pram/stroller
 婴孩	1549	yīng hái	infant
 婴幼儿	2630	yīng yòu ér	baby
@@ -25663,6 +25699,7 @@
 嬰兒床	214	yīng ér chuáng	crib; baby's bed
 嬰兒期	174	yīng ér qī	infancy
 嬰兒潮	0	yīng ér cháo	baby boom
+嬰兒肥	0	yīng ér féi	baby fat
 嬰兒車	661	yīng ér chē	baby carriage/pram/stroller
 嬰孩	1549	yīng hái	infant
 嬰幼兒	2630	yīng yòu ér	baby
@@ -26989,7 +27026,11 @@
 家貓	331	jiā māo	domestic cat; house cat
 家貧如洗	0	jiā pín rú xǐ	extreme poverty (idiom); destitute/penniless/poor as church mice
 家貲萬貫	0	jiā zī wàn guàn	immensely rich
+家賊	18	jiā zéi	thief within the family; (fig.) the enemy within
+家賊難防	13	jiā zéi nán fáng	(idiom) it is difficult to guard against the enemy within
 家贫如洗	0	jiā pín rú xǐ	extreme poverty (idiom); destitute/penniless/poor as church mice
+家贼	18	jiā zéi	thief within the family; (fig.) the enemy within
+家贼难防	13	jiā zéi nán fáng	(idiom) it is difficult to guard against the enemy within
 家赀万贯	0	jiā zī wàn guàn	immensely rich
 家轎	0	jiā jiào	privately-owned car
 家轿	0	jiā jiào	privately-owned car
@@ -27092,7 +27133,7 @@
 宾客盈门	0	bīn kè yíng mén	guests filled the hall (idiom); a house full of distinguished visitors
 宾川	100	Bīn chuān	see 宾川县 Bīnchuān Xiàn
 宾川县	115	Bīn chuān Xiàn	Binchuan, a county in Dali Bai Autonomous Prefecture 大理白族自治州 Dàlǐ Báizú Zìzhìzhōu, Yunnan
-宾州	2630	Bīn zhōu	Pennsylvania/abbr. for 賓夕法尼亞州|宾夕法尼亚州
+宾州	2630	Bīn zhōu	Pennsylvania (abbr. for 宾夕法尼亚州 Bīnxīfǎníyà Zhōu)
 宾得	76	Bīn dé	Pentax, Japanese optics company
 宾朋	72	bīn péng	guests/invited friends
 宾朋满座	0	bīn péng mǎn zuò	guests filled all the seats (idiom); a house full of distinguished visitors
@@ -27150,7 +27191,7 @@
 宿管	20	sù guǎn	dormitory management (abbr. for 宿舍管理 sùshèguǎnlǐ)/dormitory supervisor
 宿緣	14	sù yuán	(Buddhism) predestined relationship
 宿缘	14	sù yuán	(Buddhism) predestined relationship
-宿舍	20417	sù shè	dormitory/dorm room/living quarters/hostel/CL: 间 jiān
+宿舍	20417	sù shè	dormitory; dorm room; staff or student housing
 宿舍楼	912	sù shè lóu	dormitory building/CL: 幢 zhuàng, 座 zuò
 宿舍樓	912	sù shè lóu	dormitory building/CL: 幢 zhuàng, 座 zuò
 宿草	0	sù cǎo	grass that has grown on a grave since last year/(fig.) grave/to have died long ago/fodder provided to animals for the night
@@ -27351,6 +27392,7 @@
 寒亭区	40	Hán tíng Qū	Hanting, a district of Weifang City 潍坊市 Wéifāng Shì, Shandong
 寒亭區	40	Hán tíng Qū	Hanting, a district of Weifang City 濰坊市 Wéifāng Shì, Shandong
 寒伧	0	hán chen	variant of 寒碜 hánchen
+寒來暑往	28	hán lái shǔ wǎng	(idiom) the seasons change; the years pass by
 寒假	1585	hán jià	winter vacation
 寒傖	0	hán chen	variant of 寒磣 hánchen
 寒光閃閃	0	hán guāng shǎn shǎn	(of a bladed weapon etc) to gleam coldly
@@ -27370,6 +27412,7 @@
 寒戰	708	hán zhàn	shiver
 寒暄	1096	hán xuān	to exchange conventional greetings; to exchange pleasantries
 寒暑假	490	hán shǔ jià	winter and summer vacations
+寒来暑往	28	hán lái shǔ wǎng	(idiom) the seasons change; the years pass by
 寒武爆发	0	hán wǔ bào fā	the Cambrian explosion
 寒武爆發	0	hán wǔ bào fā	the Cambrian explosion
 寒武紀	437	Hán wǔ jì	Cambrian geological period (541-485.4 million years ago)
@@ -27419,7 +27462,6 @@
 寖	0	jìn	old variant of 浸 jìn
 寗	0	níng	old variant of 宁 níng
 寘	0	zhì	to put aside/to put down/to discard
-寙	0	yǔ	bad/useless/weak
 寝	0	qǐn	(bound form) to lie down to sleep or rest/(bound form) bedroom/(bound form) imperial tomb/(literary) to stop; to cease
 寝具	135	qǐn jù	bedding
 寝室	3715	qǐn shì	bedroom/dormitory/CL: 间 jiān
@@ -27680,7 +27722,7 @@
 对帐	0	duì zhàng	variant of 对账 duìzhàng
 对幺	0	duì yāo	pair of aces (in dominoes)/double one
 对弈	589	duì yì	to play go, chess etc
-对折	214	duì zhé	to sell at a 50% discount/to fold in two
+对折	214	duì zhé	to fold in half/50% discount
 对撞	162	duì zhuàng	to collide head-on
 对撞机	661	duì zhuàng jī	a particle collider
 对敌	437	duì dí	to confront/to face the enemy
@@ -27885,8 +27927,10 @@
 尊崇	2692	zūn chóng	to revere/to admire/to honor/to venerate
 尊师	219	zūn shī	revered master
 尊师贵道	0	zūn shī guì dào	to revere the master and his teaching
+尊师重教	145	zūn shī zhòng jiào	to respect teachers and value education
 尊師	219	zūn shī	revered master
 尊師貴道	0	zūn shī guì dào	to revere the master and his teaching
+尊師重教	145	zūn shī zhòng jiào	to respect teachers and value education
 尊意	0	zūn yì	(honorific) your respected opinion/What do you think, your majesty?
 尊敬	22387	zūn jìng	to respect; to revere; to esteem/honorable; distinguished (used on formal occasions before a term of address)
 尊榮	417	zūn róng	honor and glory
@@ -27944,7 +27988,7 @@
 對峙	6457	duì zhì	(of mountains etc) to stand facing each other/(fig.) to confront each other
 對帳	0	duì zhàng	variant of 對賬 duìzhàng
 對弈	589	duì yì	to play go, chess etc
-對摺	214	duì zhé	to sell at a 50% discount/to fold in two
+對折	214	duì zhé	to fold in half/50% discount
 對撞	162	duì zhuàng	to collide head-on
 對撞機	661	duì zhuàng jī	a particle collider
 對敵	437	duì dí	to confront/to face the enemy
@@ -28629,7 +28673,8 @@
 尾數	603	wěi shù	remainder (after rounding a number)/decimal part (of number after the decimal point)/mantissa (i.e. fractional part of common logarithm in math.)/small change/balance (of an account)
 尾期	28	wěi qī	final period/the end (of a term)/the close
 尾梢	0	wěi shāo	the tip/the end/the very end
-尾椎	50	wěi zhuī	coccyx/tailbone
+尾椎	50	wěi zhuī	coccyx; tailbone
+尾椎骨	22	wěi zhuī gǔ	coccyx; tailbone
 尾欠	0	wěi qiàn	balance due/small balance still to pay/final remaining debt
 尾款	93	wěi kuǎn	balance (money remaining due)
 尾气	912	wěi qì	exhaust; emissions
@@ -29206,7 +29251,7 @@
 岁月峥嵘	0	suì yuè zhēng róng	eventful years/momentous times
 岁月流逝	69	suì yuè liú shì	as time goes by (idiom)
 岁末	813	suì mò	end of the year
-岁计余绌	0	suì jì yú chù	annual budgetary surplus or deficit (accountancy)
+岁计余绌	0	suì jì yú chù	(Tw) (government accounting) annual budget surplus or deficit
 岁阑	0	suì lán	late season of a year
 岁静	0	suì jìng	(neologism) (slang) person who willfully ignores societal problems while maintaining a facade of blissful normalcy (derived from 岁月静好 suìyuèjìnghǎo, "it is a time of peace and harmony")
 岂	0	kǎi	old variant of 恺 kǎi/old variant of 凯 kǎi	qǐ	how? (emphatic question)
@@ -29314,6 +29359,7 @@
 岩径	0	yán jìng	mountain path
 岩徑	0	yán jìng	mountain path
 岩手	219	Yán shǒu	Iwate (prefecture in Japan)
+岩棉	25	yán mián	stone wool; mineral wool
 岩流圈	0	yán liú quān	(geology) asthenosphere
 岩浆	3020	yán jiāng	(geology) magma
 岩浆岩	48	yán jiāng yán	igneous rock
@@ -29617,7 +29663,6 @@
 崖海鸦	0	yá hǎi yā	(bird species of China) common murre (Uria aalge)
 崖略	0	yá lüè	(literary) outline; general idea; rough sketch
 崖谷	15	yá gǔ	valley/ravine
-崖限	0	yá xiàn	cliff barring the way/fig. brick wall
 崗	0	gāng	variant of 岡|冈 gāng	gǎng	(bound form) hillock; mound/sentry post; policeman's beat/(bound form) job; post
 崗亭	245	gǎng tíng	sentry box; police box
 崗仁波齊	0	Gǎng rén bō qí	Mt Gang Rinpoche in Tibet/also written 岡仁波齊|冈仁波齐
@@ -29772,8 +29817,9 @@
 嶗	0	láo	name of a mountain in Shandong
 嶗山	794	Láo Shān	Mount Lao, mountain in Qingdao, Shandong	Láo shān	see 嶗山區 Láoshān Qū
 嶗山區	170	Láo shān Qū	Laoshan, a district of Qingdao City 青島市 Qīngdǎo Shì, Shandong
-嶙	0	lín	ranges of hills
+嶙	0	lín	used in 嶙嶙 línlín and 嶙峋 línxún
 嶙峋	186	lín xún	bony (of people)/craggy/rugged (of terrain)/upright (of people)
+嶙嶙	0	lín lín	see 嶙峋 línxún
 嶝	0	dèng	path leading up a mountain
 嶞	0	duò	mountain peak
 嶟	0	zūn	(literary) (of terrain) steep; precipitous
@@ -30729,6 +30775,8 @@
 帷幔	71	wéi màn	drapery/curtain
 帷幕	2455	wéi mù	heavy curtain
 常俸	0	cháng fèng	fixed salary of an official
+常凯申	20	Cháng Kǎi shēn	mocking nickname for 蒋介石 Jiǎng Jièshí, originating from an erroneous back-transliteration of "Chiang Kai-shek"
+常凱申	20	Cháng Kǎi shēn	mocking nickname for 蔣介石 Jiǎng Jièshí, originating from an erroneous back-transliteration of "Chiang Kai-shek"
 常年累月	47	cháng nián lěi yuè	variant of 长年累月 chángniánlěiyuè
 常德丝弦	0	Cháng dé sī xián	Changde sixian, theatrical folk music style with singing in Changde dialect accompanied by traditional string instruments
 常德絲弦	0	Cháng dé sī xián	Changde sixian, theatrical folk music style with singing in Changde dialect accompanied by traditional string instruments
@@ -30853,7 +30901,7 @@
 干呕	98	gān ǒu	to retch
 干咳	182	gān ké	to cough without phlegm/a dry cough
 干哕	0	gān yue	to dry-heave/to retch
-干嘛	38019	gàn má	what are you doing?/whatever for?/why on earth?
+干嘛	38019	gàn má	what are you doing?; what for?; why? (often expressing surprise or annoyance)
 干嚎	0	gān háo	to cry out loud without tears
 干姜	79	gān jiāng	dried ginger
 干娘	148	gān niáng	adoptive mother (traditional adoption, i.e. without legal ramifications)
@@ -31127,7 +31175,7 @@
 幹仗	59	gàn zhàng	to quarrel (dialect)
 幹你娘	0	gàn nǐ niáng	(Tw) (vulgar) fuck you! (literally, "fuck your mother")
 幹勁	1862	gàn jìn	enthusiasm for doing sth
-幹嘛	38019	gàn má	what are you doing?/whatever for?/why on earth?
+幹嘛	38019	gàn má	what are you doing?; what for?; why? (often expressing surprise or annoyance)
 幹渠	363	gàn qú	trunk canal
 幹細胞	3388	gàn xì bāo	stem cell
 幺	0	Yāo	surname Yao	yāo	youngest/most junior/tiny/one (unambiguous spoken form when spelling out numbers, esp. on telephone or in military)/one or ace on dice or dominoes/variant of 吆 yāo, to shout
@@ -31777,6 +31825,7 @@
 延	0	Yán	surname Yan	yán	to prolong/to extend/to delay
 延会	0	yán huì	to postpone a meeting
 延伸	30903	yán shēn	to extend; to stretch; to expand; to spread
+延保	79	yán bǎo	extended warranty
 延发	0	yán fā	(military) delayed action (explosion etc occurring after a predetermined delay)
 延吉	776	Yán jí	see 延吉市 Yánjí Shì
 延吉市	295	Yán jí Shì	Yanji, a county-level city in Yanbian Korean Autonomous Prefecture 延边朝鲜族自治州 Yánbiān Cháoxiǎnzú Zìzhìzhōu, Jilin
@@ -32852,6 +32901,7 @@
 彩排	2630	cǎi pái	dress rehearsal/to have a dress rehearsal
 彩擴	24	cǎi kuò	to enlarge color photos/color film processing
 彩旗	537	cǎi qí	colored flag
+彩椒	0	cǎi jiāo	bell pepper; sweet pepper
 彩民	331	cǎi mín	lottery player
 彩泥	0	cǎi ní	playdough
 彩电	2089	cǎi diàn	color television (abbr. for 彩色电视 cǎisèdiànshì)
@@ -34395,6 +34445,7 @@
 恆河沙數	28	Héng hé shā shù	countless as the grains of sand in the Ganges (idiom)
 恆河猴	0	Héng hé hóu	rhesus macaque (Macaca mulatta)/rhesus monkey/lit. river Ganges monkey of north India
 恆溫	646	héng wēn	constant temperature
+恆溫動物	46	héng wēn dòng wù	homeotherm
 恆溫器	117	héng wēn qì	thermostat
 恆牙	72	héng yá	(dentistry) permanent tooth
 恆生	776	Héng shēng	Hang Seng (the name of a bank in Hong Kong and of the stock market index the bank established)
@@ -34461,12 +34512,12 @@
 恐怖袭击	3020	kǒng bù xí jī	terrorist attack
 恐怖襲擊	3020	kǒng bù xí jī	terrorist attack
 恐怖電影	1479	kǒng bù diàn yǐng	horror movie
-恐惧	44668	kǒng jù	to be frightened/fear/dread
+恐惧	44668	kǒng jù	fear; dread/to fear; to dread
 恐惧症	2951	kǒng jù zhèng	phobia
 恐慌	12023	kǒng huāng	panic/panicky/panic-stricken
 恐慌发作	0	kǒng huāng fā zuò	panic attack
 恐慌發作	0	kǒng huāng fā zuò	panic attack
-恐懼	44668	kǒng jù	to be frightened/fear/dread
+恐懼	44668	kǒng jù	fear; dread/to fear; to dread
 恐懼症	2951	kǒng jù zhèng	phobia
 恐旷症	0	kǒng kuàng zhèng	agoraphobia
 恐曠症	0	kǒng kuàng zhèng	agoraphobia
@@ -34500,6 +34551,7 @@
 恒河沙数	28	Héng hé shā shù	countless as the grains of sand in the Ganges (idiom)
 恒河猴	0	Héng hé hóu	rhesus macaque (Macaca mulatta)/rhesus monkey/lit. river Ganges monkey of north India
 恒温	646	héng wēn	constant temperature
+恒温动物	46	héng wēn dòng wù	homeotherm
 恒温器	117	héng wēn qì	thermostat
 恒牙	72	héng yá	(dentistry) permanent tooth
 恒生	776	Héng shēng	Hang Seng (the name of a bank in Hong Kong and of the stock market index the bank established)
@@ -34843,6 +34895,8 @@
 悖	0	bèi	to go against/to be contrary to/perverse/rebellious
 悖乱	18	bèi luàn	to rebel/sedition/to delude/confused
 悖亂	18	bèi luàn	to rebel/sedition/to delude/confused
+悖时	0	bèi shí	out of step with the times; outdated
+悖時	0	bèi shí	out of step with the times; outdated
 悖晦	0	bèi huì	(coll.) muddleheaded
 悖繆	0	bèi miù	variant of 悖謬 bèimiù
 悖缪	0	bèi miù	variant of 悖谬 bèimiù
@@ -36629,12 +36683,12 @@
 截然	1413	jié rán	sharply; distinctly; radically
 截然不同	4786	jié rán bù tóng	entirely different/different as black and white
 截獲	1318	jié huò	to intercept/to cut off and capture
-截瘫	155	jié tān	paraplegia/paralysis
-截癱	155	jié tān	paraplegia/paralysis
+截瘫	155	jié tān	paraplegia
+截癱	155	jié tān	paraplegia
 截稿	933	jié gǎo	(of a newspaper) to stop accepting incoming articles
 截線	0	jié xiàn	intersecting line
 截线	0	jié xiàn	intersecting line
-截肢	2399	jié zhī	amputation (medicine)/to amputate
+截肢	2399	jié zhī	to amputate (a limb); amputation
 截至	35481	jié zhì	up to (a time)/by (a time)
 截获	1318	jié huò	to intercept/to cut off and capture
 截距	35	jié jù	intercept (the point at which a line crosses the x- or y-axis)
@@ -36719,6 +36773,7 @@
 戴尔	6761	Dài ěr	Dell
 戴帽子	537	dài mào zi	to wear a hat/(fig.) to stigmatize/to be branded as
 戴月披星	0	dài yuè pī xīng	see 披星戴月 pīxīngdàiyuè
+戴森球	0	dài sēn qiú	Dyson sphere
 戴爾	6761	Dài ěr	Dell
 戴盆望天	0	dài pén wàng tiān	lit. viewing the sky with a basin on one's head; it is hard to get a clear view of the sky while carrying a platter on one's head/fig. it is hard to get on in one's career while encumbered by family obligations/one can't perform a major task while bothered by other duties
 戴秉国	155	Dài Bǐng guó	Dai Bingguo (1941-), a Chinese politician and professional diplomat
@@ -37185,7 +37240,9 @@
 打富济贫	0	dǎ fù jì pín	to rob the rich to help the poor (idiom)
 打富濟貧	0	dǎ fù jì pín	to rob the rich to help the poor (idiom)
 打对仗	0	dǎ duì zhàng	to compete
+打对折	0	dǎ duì zhé	to sell at half price; to give a 50% discount
 打對仗	0	dǎ duì zhàng	to compete
+打對折	0	dǎ duì zhé	to sell at half price; to give a 50% discount
 打小算盘	11	dǎ xiǎo suàn pán	lit. to count on a narrow abacus (idiom); petty and scheming selfishly/concerned with petty interests/selfish and uncaring of the interests of others/bean counter
 打小算盤	11	dǎ xiǎo suàn pán	lit. to count on a narrow abacus (idiom); petty and scheming selfishly/concerned with petty interests/selfish and uncaring of the interests of others/bean counter
 打尖	52	dǎ jiān	to stop for a snack while traveling
@@ -37213,6 +37270,7 @@
 打抱不平	229	dǎ bào bù píng	(idiom) to aid sb suffering an injustice; to fight for justice
 打拋	0	dǎ pāo	holy basil (Ocimum tenuiflorum) (loanword from Thai "kaphrao") (used as an attributive in the names of Thai-style "phat kaphrao" dishes to indicate that the main ingredient is stir-fried with basil, as in 打拋豬 dǎpāozhū, stir-fried pork with basil)
 打拋豬	0	dǎ pāo zhū	stir-fried pork with basil; pork phat kaphrao
+打拐	32	dǎ guǎi	to crack down on human trafficking
 打拱	0	dǎ gǒng	to bow with clasped hands
 打拱作揖	0	dǎ gǒng zuò yī	to bow respectfully with clasped hands/to beg humbly
 打拳	191	dǎ quán	to do shadowboxing
@@ -37286,6 +37344,8 @@
 打磨	1549	dǎ mó	to polish; to burnish; to shine
 打禅	0	dǎ chán	to meditate (of Buddhist)
 打禪	0	dǎ chán	to meditate (of Buddhist)
+打秋風	12	dǎ qiū fēng	to cadge money or favors under some pretext
+打秋风	12	dǎ qiū fēng	to cadge money or favors under some pretext
 打稿子	0	dǎ gǎo zi	to produce a draft manuscript
 打穀	26	dǎ gǔ	to thresh
 打穀場	17	dǎ gǔ cháng	threshing floor
@@ -37355,7 +37415,7 @@
 打长途	0	dǎ cháng tú	to make a long distance call
 打闷雷	0	dǎ mèn léi	(coll.) to wonder secretly/to make wild conjectures
 打闹	813	dǎ nào	to quarrel; to squabble/to be rowdy; to play boisterously; to engage in horseplay
-打雞血	0	dǎ jī xuè	lit. to inject chicken blood/(coll.) extremely excited or energetic (often used mockingly)
+打雞血	0	dǎ jī xiě	to inject chicken blood/(fig.) to get (oneself or sb) fired up
 打雪仗	91	dǎ xuě zhàng	to have a snowball fight
 打雷	977	dǎ léi	to rumble with thunder/clap of thunder
 打靶	447	dǎ bǎ	target shooting
@@ -37372,7 +37432,7 @@
 打鳥	66	dǎ niǎo	to shoot a bird (with a gun, slingshot etc)/to photograph birds
 打鳴	65	dǎ míng	(of a rooster) to crow
 打鸟	66	dǎ niǎo	to shoot a bird (with a gun, slingshot etc)/to photograph birds
-打鸡血	0	dǎ jī xuè	lit. to inject chicken blood/(coll.) extremely excited or energetic (often used mockingly)
+打鸡血	0	dǎ jī xiě	to inject chicken blood/(fig.) to get (oneself or sb) fired up
 打鸣	65	dǎ míng	(of a rooster) to crow
 打點滴	56	dǎ diǎn dī	to put sb on an intravenous drip
 打鼓	2344	dǎ gǔ	to beat a drum/to play a drum/(fig.) to feel nervous
@@ -37554,6 +37614,7 @@
 扬清激浊	0	yáng qīng jī zhuó	see 激浊扬清 jīzhuóyángqīng
 扬琴	550	yáng qín	yangqin/dulcimer (hammered string musical instrument)
 扬眉	66	yáng méi	to raise eyebrows
+扬眉吐气	550	yáng méi tǔ qì	(idiom) to feel proud and vindicated after a period of frustration or being looked down on
 扬科维奇	0	Yáng kē wéi qí	Jankovic/Yankovic/Yankovich/Jelena Jankovic (1985-), Serbian tennis player
 扬花	23	yáng huā	(of a plant) to shed pollen
 扬菜	0	Yáng cài	Jiangsu cuisine
@@ -37603,7 +37664,7 @@
 扮裝	186	bàn zhuāng	to dress up and make up (like an actor)
 扮裝皇后	0	bàn zhuāng huáng hòu	drag queen; female impersonator
 扮酷	22	bàn kù	to act cool
-扯	0	chě	to pull/to tear/(of cloth, thread etc) to buy/to chat/to gossip/(coll.) (Tw) ridiculous/hokey
+扯	0	chě	to pull; to tug/to tear; to rip/to chat; to gossip/(dialect) to buy a length of cloth (or similar material)/(coll.) (Tw) ridiculous; far-fetched/to pull/to tear
 扯住	52	chě zhù	to grasp firmly
 扯后腿	74	chě hòu tuǐ	to be a drag or hindrance on sb
 扯嗓子	0	chě sǎng zi	to raise one's voice/to speak at the top of one's voice
@@ -38206,7 +38267,7 @@
 抛射物	0	pāo shè wù	projectile
 抛尸	100	pāo shī	(of a murderer) to dump a body
 抛开	3890	pāo kāi	to throw out/to get rid of
-抛弃	27542	pāo qì	to abandon/to discard/to renounce/to dump (sb)
+抛弃	27542	pāo qì	to abandon; to discard; to renounce
 抛掷	275	pāo zhì	to throw; to toss
 抛撒	91	pāo sǎ	to sprinkle
 抛散	0	pāo sàn	to scatter; to disperse
@@ -38569,8 +38630,10 @@
 抽斗	0	chōu dǒu	drawer
 抽时间	120	chōu shí jiān	to (try to) find the time to
 抽時間	120	chōu shí jiān	to (try to) find the time to
+抽条	0	chōu tiáo	(of a plant) to put out new shoots/(of a child or adolescent) to shoot up/(horticulture) desiccation of tree branches during winter or early spring
 抽查	3467	chōu chá	random inspection/to do a spot check
 抽样	2344	chōu yàng	sample; sampling
+抽條	0	chōu tiáo	(of a plant) to put out new shoots/(of a child or adolescent) to shoot up/(horticulture) desiccation of tree branches during winter or early spring
 抽检	646	chōu jiǎn	sampling/spot check/random test
 抽樣	2344	chōu yàng	sample; sampling
 抽檢	646	chōu jiǎn	sampling/spot check/random test
@@ -38796,8 +38859,9 @@
 拉鉤	54	lā gōu	to make a pinky promise
 拉鋸	178	lā jù	a two-man saw/fig. to-and-fro between two sides
 拉鋸戰	427	lā jù zhàn	to-and-fro tussle/closely-fought contest
+拉鍊	2291	lā liàn	zipper
 拉鎖	63	lā suǒ	zipper
-拉鏈	2291	lā liàn	zipper
+拉鏈	2291	lā liàn	variant of 拉鍊 lāliàn
 拉鏈袋	13	lā liàn dài	resealable bag; ziplock bag/bag with a zipper
 拉钩	54	lā gōu	to make a pinky promise
 拉铆枪	0	lā mǎo qiāng	see 铆钉枪 mǎodīngqiāng
@@ -38835,7 +38899,7 @@
 拋撒	91	pāo sǎ	to sprinkle
 拋擲	275	pāo zhì	to throw; to toss
 拋散	0	pāo sàn	to scatter; to disperse
-拋棄	27542	pāo qì	to abandon/to discard/to renounce/to dump (sb)
+拋棄	27542	pāo qì	to abandon; to discard; to renounce
 拋灑	120	pāo sǎ	to drip/to flow out/to sprinkle
 拋物線	724	pāo wù xiàn	parabola
 拋物面	162	pāo wù miàn	(geometry) paraboloid
@@ -38968,7 +39032,7 @@
 拔尖儿	0	bá jiān r	erhua variant of 拔尖 bájiān
 拔尖兒	0	bá jiān r	erhua variant of 拔尖 bájiān
 拔掉	2512	bá diào	to pluck/to pull off/to pull out/to unplug
-拔擢	501	bá zhuó	select the best people for promotion
+拔擢	501	bá zhuó	to select for promotion; to elevate to a higher position
 拔枪	129	bá qiāng	to draw a gun
 拔染	0	bá rǎn	discharge
 拔根	17	bá gēn	(lit. and fig.) to uproot
@@ -40201,12 +40265,10 @@
 捐貲	0	juān zī	variant of 捐資 juānzī
 捐資	1549	juān zī	to contribute funds
 捐贈	15136	juān zèng	to contribute (as a gift)/to donate/benefaction
-捐贈盈餘	0	juān zèng yíng yú	surplus from donation (accountancy)
 捐贈者	468	juān zèng zhě	donor; contributor
 捐赀	0	juān zī	variant of 捐资 juānzī
 捐资	1549	juān zī	to contribute funds
 捐赠	15136	juān zèng	to contribute (as a gift)/to donate/benefaction
-捐赠盈余	0	juān zèng yíng yú	surplus from donation (accountancy)
 捐赠者	468	juān zèng zhě	donor; contributor
 捐躯	575	juān qū	to sacrifice one's life
 捐軀	575	juān qū	to sacrifice one's life
@@ -40508,8 +40570,8 @@
 掉膘	0	diào biāo	to lose weight (of cattle)
 掉鏈子	0	diào liàn zi	to have one's bicycle chain come off/(fig.) to let sb down; to drop the ball; to screw up
 掉链子	0	diào liàn zi	to have one's bicycle chain come off/(fig.) to let sb down; to drop the ball; to screw up
-掉馬甲	0	diào mǎ jiǎ	(Internet slang) to have one’s hidden identity exposed
-掉马甲	0	diào mǎ jiǎ	(Internet slang) to have one’s hidden identity exposed
+掉馬甲	0	diào mǎ jiǎ	(Internet slang) to have one's hidden identity exposed
+掉马甲	0	diào mǎ jiǎ	(Internet slang) to have one's hidden identity exposed
 掊	0	póu	take up in both hands	pǒu	break up/hit
 掌	0	zhǎng	palm of the hand/sole of the foot/paw/horseshoe/to slap/to hold in one's hand/to wield
 掌上压	0	zhǎng shàng yā	(HK, Malaysia) push-up; press-up (exercise)
@@ -40549,9 +40611,13 @@
 掌相	0	zhǎng xiàng	palmistry/features of a palm (in palmistry)
 掌眼	0	zhǎng yǎn	to appraise (an antique, a cultural relic, jewelry etc)
 掌管	7943	zhǎng guǎn	in charge of/to control
+掌紋	155	zhǎng wén	lines and wrinkles on the palm/palm print
+掌纹	155	zhǎng wén	lines and wrinkles on the palm/palm print
 掌聲	9333	zhǎng shēng	applause/CL: 陣 zhèn
 掌聲雷動	170	zhǎng shēng léi dòng	thunderous applause (idiom)
 掌舵	871	zhǎng duò	to steer (a ship)
+掌鏡	562	zhǎng jìng	to operate the camera; to be responsible for photography or cinematography
+掌镜	562	zhǎng jìng	to operate the camera; to be responsible for photography or cinematography
 掌門	2138	zhǎng mén	sect leader (often in wuxia 武俠 wǔxiá fiction)
 掌門人	1288	zhǎng mén rén	(wuxia) sect leader; (fig.) person in charge; head; leader; proprietor
 掌门	2138	zhǎng mén	sect leader (often in wuxia 武侠 wǔxiá fiction)
@@ -40579,6 +40645,8 @@
 掐表	11	qiā biǎo	to use a stopwatch
 掐錶	11	qiā biǎo	to use a stopwatch
 排偶	11	pái ǒu	parallel and antithesis (paired sentences as rhetoric device)
+排兵布阵	0	pái bīng bù zhèn	(idiom) to deploy troops in battle formation; (fig.) to organize and deploy personnel strategically
+排兵布陣	0	pái bīng bù zhèn	(idiom) to deploy troops in battle formation; (fig.) to organize and deploy personnel strategically
 排卵	955	pái luǎn	to ovulate
 排名榜	240	pái míng bǎng	ranking/ordered list/top 20/roll of honor/to come nth out of 100
 排尿	794	pái niào	to urinate
@@ -40598,7 +40666,7 @@
 排气扇	21	pái qì shàn	exhaust fan
 排氣孔	0	pái qì kǒng	an air vent/a ventilation shaft
 排氣扇	21	pái qì shàn	exhaust fan
-排水孔	0	pái shuǐ kǒng	plughole/drainage hole
+排水孔	0	pái shuǐ kǒng	drainage hole
 排水沟	759	pái shuǐ gōu	gutter
 排水渠	46	pái shuǐ qú	drainage
 排水溝	759	pái shuǐ gōu	gutter
@@ -40638,7 +40706,7 @@
 排骨精	0	pái gǔ jīng	(jocular) anorexic girl; a bag of bones
 掔	0	qiān	lead along/substantial
 掖	0	yē	to tuck (into a pocket)/to hide/to conceal	yè	to support by the arm/to help/to promote/at the side/also pr. yì
-掖咕	0	yē gu	to toss aside/to misplace
+掖咕	0	yē gu	(dialect) to put (sth) somewhere carelessly
 掖垣	0	yè yuán	sidewalls of a palace
 掖庭	0	yè tíng	Lateral Courts in the imperial palace (housing concubines and administrative offices)
 掖掖盖盖	0	yē yē gài gài	stealthily/clandestinely
@@ -40744,6 +40812,7 @@
 採花大盜	0	cǎi huā dà dào	notorious rapist; serial rapist
 採花賊	30	cǎi huā zéi	rapist
 採茶	457	cǎi chá	to pick tea leaves
+採蜜	55	cǎi mì	(of bees) to gather nectar/(of people) to collect honey
 探井	74	tàn jǐng	(mining) test pit; exploratory shaft; test well
 探勘	813	tàn kān	to explore/to survey/to prospect (for oil etc)/prospecting
 探囊取物	72	tàn náng qǔ wù	to feel in one's pocket and take sth (idiom); as easy as pie/in the bag
@@ -40802,8 +40871,9 @@
 接觸不良	78	jiē chù bù liáng	loose or defective contact (elec.)
 接觸器	135	jiē chù qì	contactor
 接踵	427	jiē zhǒng	to follow on sb's heels
-接踵而來	1148	jiē zhǒng ér lái	to come one after the other
-接踵而来	1148	jiē zhǒng ér lái	to come one after the other
+接踵而來	1148	jiē zhǒng ér lái	see 接踵而至 jiēzhǒng'érzhì
+接踵而来	1148	jiē zhǒng ér lái	see 接踵而至 jiēzhǒng'érzhì
+接踵而至	891	jiē zhǒng ér zhì	(idiom) to arrive one after another; in rapid succession
 接軌	5370	jiē guǐ	railtrack connection/to integrate into sth/to dock/to connect/to be in step with/to bring into line with/to align
 接轨	5370	jiē guǐ	railtrack connection/to integrate into sth/to dock/to connect/to be in step with/to bring into line with/to align
 接駁	1023	jiē bó	to access/to transfer passengers between two railway lines
@@ -41161,6 +41231,7 @@
 揚清激濁	0	yáng qīng jī zhuó	see 激濁揚清 jīzhuóyángqīng
 揚琴	550	yáng qín	yangqin/dulcimer (hammered string musical instrument)
 揚眉	66	yáng méi	to raise eyebrows
+揚眉吐氣	550	yáng méi tǔ qì	(idiom) to feel proud and vindicated after a period of frustration or being looked down on
 揚科維奇	0	Yáng kē wéi qí	Jankovic/Yankovic/Yankovich/Jelena Jankovic (1985-), Serbian tennis player
 揚穀	0	yáng gǔ	to winnow
 揚聲器	1479	yáng shēng qì	speaker
@@ -41494,8 +41565,6 @@
 搜檢	68	sōu jiǎn	to search out/to check
 搜求	66	sōu qiú	to seek/to look for
 搜狐	19953	Sōu hú	Sohu, Chinese web portal and online media company
-搜狐網	339	Sōu hú Wǎng	Sohu, Chinese web portal and online media company
-搜狐网	339	Sōu hú Wǎng	Sohu, Chinese web portal and online media company
 搜狗	4677	Sōu gǒu	Sogou, Chinese technology company known for its search engine and input method editor
 搜獲	0	sōu huò	to find/to capture (after search)/to uncover (evidence)
 搜神記	112	Sōu shén Jì	In Search of the Supernatural, compilation of legends about spirits, ghosts and other supernatural phenomena, written and compiled by 干寶 Gān Bǎo in Jin dynasty
@@ -41691,7 +41760,7 @@
 搶風航行	0	qiāng fēng háng xíng	to tack against the wind (sailing)
 搶風頭	0	qiǎng fēng tóu	to steal the show/to grab the limelight
 搷	0	chēn	to beat/to winnow
-携	0	xié	to carry/to take along/to bring along/to hold (hands)/also pr. xī
+携	0	xié	to carry; to take along; to bring along/to hold or lead by the hand/also pr. xī
 携家带口	14	xié jiā dài kǒu	see 拖家带口 tuōjiādàikǒu
 携家带眷	26	xié jiā dài juàn	to take all one's family along (idiom); encumbered by a family/tied down by family obligations
 携带	21878	xié dài	to carry (on one's person)/to support (old)/Taiwan pr. xīdài
@@ -42855,6 +42924,7 @@
 攏總	0	lǒng zǒng	altogether; in sum; in all; in total
 攐	0	qiān	variant of 褰, to hold up the hem of clothes/to lift up the skirts
 攒	0	cuán	to bring together	zǎn	to collect/to hoard/to accumulate/to save
+攒动	27	cuán dòng	(of a crowd) to move about in a densely packed mass
 攒劲	0	zǎn jìn	(dialect) to muster strength; to exert oneself; to strive
 攒簇	0	cuán cù	to gather closely together
 攒聚	0	cuán jù	to gather/to assemble
@@ -42909,7 +42979,7 @@
 攙雜	91	chān zá	to mix/to blend/to dilute
 攛	0	cuān	rush/stir up/throw/fling/hurry/rage
 攛掇	59	cuān duo	to urge sb on
-攜	0	xié	to carry/to take along/to bring along/to hold (hands)/also pr. xī
+攜	0	xié	to carry; to take along; to bring along/to hold or lead by the hand/also pr. xī
 攜家帶口	14	xié jiā dài kǒu	see 拖家帶口 tuōjiādàikǒu
 攜家帶眷	26	xié jiā dài juàn	to take all one's family along (idiom); encumbered by a family/tied down by family obligations
 攜帶	21878	xié dài	to carry (on one's person)/to support (old)/Taiwan pr. xīdài
@@ -42927,6 +42997,7 @@
 攟	0	jùn	old variant of 捃 jùn
 攢	0	cuán	to bring together	zǎn	to collect/to hoard/to accumulate/to save
 攢勁	0	zǎn jìn	(dialect) to muster strength; to exert oneself; to strive
+攢動	27	cuán dòng	(of a crowd) to move about in a densely packed mass
 攢簇	0	cuán cù	to gather closely together
 攢聚	0	cuán jù	to gather/to assemble
 攢錢	275	zǎn qián	to save up money
@@ -43027,6 +43098,7 @@
 收屍	646	shōu shī	to collect or retrieve a corpse (for burial or cremation); to claim a body
 收废站	0	shōu fèi zhàn	garbage collection point/trash dump
 收廢站	0	shōu fèi zhàn	garbage collection point/trash dump
+收徒	219	shōu tú	to take on a disciple or apprentice
 收悉	40	shōu xī	(literary) to receive and understand the contents of (a letter)
 收押	871	shōu yā	in custody/to keep sb in detention
 收拢	269	shōu lǒng	to draw to oneself; to gather up; to collect/to fold up (an umbrella, wings etc)/to assemble (a party of persons)/to rope in (some people)
@@ -43064,6 +43136,7 @@
 收租	389	shōu zū	to collect rent
 收稅	1122	shōu shuì	to collect tax
 收税	1122	shōu shuì	to collect tax
+收稿	30	shōu gǎo	to receive a manuscript (for publication)
 收縮	9333	shōu suō	to pull back/to shrink/to contract/(physiology) systole
 收縮壓	129	shōu suō yā	systolic blood pressure
 收繳	2570	shōu jiǎo	to recover (illegally obtained property)/to seize/to capture/to force sb to hand over sth/to levy
@@ -43160,6 +43233,7 @@
 放焰口	15	fàng yàn kǒu	to feed the starving ghosts (i.e. offer sacrifice to protect the departed spirit)
 放煙幕彈	0	fàng yān mù dàn	to spread a smokescreen
 放爆竹	18	fàng bào zhú	to set off firecrackers
+放牛吃草	23	fàng niú chī cǎo	(idiom) to give sb freedom to act without close supervision or interference
 放牛班	36	fàng niú bān	class of underachievers/dunces' class (Tw)
 放牧	2344	fàng mù	to graze (livestock)/to herd (livestock)
 放空挡	0	fàng kōng dǎng	to coast along in neutral gear (in a car)/(coll.) to go commando
@@ -43552,13 +43626,13 @@
 敬业乐群	27	jìng yè lè qún	diligent and sociable (idiom); meticulous in work and dealing cheerfully with one's colleagues
 敬仰	2291	jìng yǎng	to revere/highly esteemed
 敬佩	3802	jìng pèi	to esteem/to admire
-敬備	0	jìng bèi	to respectfully offer
+敬備	0	jìng bèi	(polite) to prepare (refreshments, an offering etc)
 敬启	46	jìng qǐ	respectful closing to a letter
 敬启者	20	jìng qǐ zhě	Dear Sirs/To Whom It May Concern
 敬告	145	jìng gào	to tell respectfully/to announce reverentially
 敬啟	46	jìng qǐ	respectful closing to a letter
 敬啟者	20	jìng qǐ zhě	Dear Sirs/To Whom It May Concern
-敬备	0	jìng bèi	to respectfully offer
+敬备	0	jìng bèi	(polite) to prepare (refreshments, an offering etc)
 敬奉	204	jìng fèng	to worship piously/to present/to dedicate
 敬悉	0	jìng xī	(honorific) revered news/the most valuable information (in your recent letter, book etc)/Thank you for your letter.
 敬惜字紙	0	jìng xī zì zhǐ	to treasure written material as a cultural resource (idiom)
@@ -43774,8 +43848,8 @@
 斃	0	bì	to die/to shoot dead/to reject/to fall forward/(suffix) to death
 斃命	2042	bì mìng	to meet violent death/to get killed
 斄	0	Tái	ancient place name (a Han dynasty town in Shaanxi)/variant of 邰 Tái
-文件夹	3090	wén jiàn jiā	folder/file (paper)
-文件夾	3090	wén jiàn jiā	folder/file (paper)
+文件夹	3090	wén jiàn jiā	file folder/(computing) directory; folder
+文件夾	3090	wén jiàn jiā	file folder/(computing) directory; folder
 文凭	8318	wén píng	diploma
 文化圈	513	wén huà quān	sphere of cultural influence
 文化宫	692	wén huà gōng	cultural palace
@@ -43819,6 +43893,8 @@
 文殊	708	Wén shū	Manjushri, the Bodhisattva of keen awareness
 文殊菩萨	0	Wén shū Pú sà	Manjushri, the Bodhisattva of keen awareness
 文殊菩薩	0	Wén shū Pú sà	Manjushri, the Bodhisattva of keen awareness
+文氏图	0	wén shì tú	Venn diagram
+文氏圖	0	wén shì tú	Venn diagram
 文汇报	2344	Wén huì Bào	Wen Wei Po (Hong Kong newspaper)/Wenhui News (Shanghai newspaper)
 文牍	95	wén dú	paperwork/official documents and letters/(old) secretary
 文牍主义	0	wén dú zhǔ yì	red tape
@@ -44159,7 +44235,7 @@
 断句	302	duàn jù	to pause at appropriate points in reading aloud unpunctuated writing/to punctuate
 断垣残壁	55	duàn yuán cán bì	see 断壁残垣 duànbìcányuán
 断壁残垣	59	duàn bì cán yuán	(lit.) broken walls and crumbling remnants (idiom)/(fig.) scene of devastation; ruins
-断壁颓垣	0	duàn bì tuí yuán	lit. walls reduced to rubble (idiom)/fig. scene of devastation/ruins
+断壁颓垣	0	duàn bì tuí yuán	see 断壁残垣 duànbìcányuán
 断奶	794	duàn nǎi	to wean
 断子绝孙	245	duàn zǐ jué sūn	to die without progeny/(offensive) may you die childless/may you be the last of your family line
 断尾	47	duàn wěi	(zoology) (of a lizard etc) to shed its tail; to autotomize its tail/(animal husbandry) to cut the tail short; to dock the tail
@@ -44200,7 +44276,7 @@
 斯坦贝克	71	Sī tǎn bèi kè	John Steinbeck (1902-1968), US novelist
 斯坦頓	302	Sī tǎn dùn	Stanton (name)
 斯坦顿	302	Sī tǎn dùn	Stanton (name)
-斯塔西	240	Sī tǎ xī	Stacy (name)
+斯塔西	240	Sī tǎ xī	Stasi (secret police and intelligence service of East Germany)/(name) Stacy
 斯宾塞	912	Sī bīn sài	(name) Spencer
 斯宾诺莎	182	Sī bīn nuò shā	Baruch or Benedict Spinoza (1632-1677), rationalist philosopher
 斯密約瑟	0	Sī mì Yuē sè	Joseph Smith, Jr. (1805-1844), founder of the Latter Day Saint movement
@@ -44267,7 +44343,6 @@
 新寵	324	xīn chǒng	current favorite; the latest thing; darling (of the market or the media etc)
 新年前夕	0	xīn nián qián xī	New Year's eve
 新庄	871	Xīn zhuāng	Xinzhuang or Hsinchuang city in New Taipei City 新北市 Xīnběishì, Taiwan
-新庄市	21	Xīn zhuāng shì	Xinzhuang or Hsinchuang city in New Taipei City 新北市 Xīnběishì, Taiwan
 新店溪	23	Xīn diàn xī	Xindian or Hsintian Creek, one of the rivers through Taipei, Taiwan
 新愁旧恨	0	xīn chóu jiù hèn	new worries added to old hatred (idiom); afflicted by problems old and new
 新愁舊恨	0	xīn chóu jiù hèn	new worries added to old hatred (idiom); afflicted by problems old and new
@@ -44303,8 +44378,6 @@
 新津區	0	Xīn jīn Qū	Xinjin, a district of Chengdu City 成都市 Chéngdū Shì, Sichuan
 新浪	24547	Xīn làng	Sina, Chinese web portal and online media company
 新浪微博	0	Xīn làng Wēi bó	Sina Weibo, Chinese microblogging platform
-新浪網	4074	Xīn làng Wǎng	Sina, Chinese web portal and online media company
-新浪网	4074	Xīn làng Wǎng	Sina, Chinese web portal and online media company
 新潟	0	Xīn xì	Niigata (prefecture and city in Japan)
 新潮	2512	xīn cháo	modern/fashionable
 新澤西	2884	Xīn zé xī	New Jersey, US state
@@ -44339,7 +44412,6 @@
 新荣	129	Xīn róng	see 新荣区 Xīnróng Qū
 新荣区	26	Xīn róng Qū	Xinrong, a district of Datong City 大同市 Dàtóng Shì, Shanxi
 新莊	871	Xīn zhuāng	Xinzhuang or Hsinchuang city in New Taipei City 新北市 Xīnběishì, Taiwan
-新莊市	21	Xīn zhuāng shì	Xinzhuang or Hsinchuang city in New Taipei City 新北市 Xīnběishì, Taiwan
 新蔡	339	Xīn cài	see 新蔡县 Xīncài Xiàn
 新蔡县	380	Xīn cài Xiàn	Xincai, a county in Zhumadian City 驻马店市 Zhùmǎdiàn Shì, Henan
 新蔡縣	380	Xīn cài Xiàn	Xincai, a county in Zhumadian City 駐馬店市 Zhùmǎdiàn Shì, Henan
@@ -44382,7 +44454,7 @@
 斷句	302	duàn jù	to pause at appropriate points in reading aloud unpunctuated writing/to punctuate
 斷垣殘壁	55	duàn yuán cán bì	see 斷壁殘垣 duànbìcányuán
 斷壁殘垣	59	duàn bì cán yuán	(lit.) broken walls and crumbling remnants (idiom)/(fig.) scene of devastation; ruins
-斷壁頹垣	0	duàn bì tuí yuán	lit. walls reduced to rubble (idiom)/fig. scene of devastation/ruins
+斷壁頹垣	0	duàn bì tuí yuán	see 斷壁殘垣 duànbìcányuán
 斷奶	794	duàn nǎi	to wean
 斷子絕孫	245	duàn zǐ jué sūn	to die without progeny/(offensive) may you die childless/may you be the last of your family line
 斷尾	47	duàn wěi	(zoology) (of a lizard etc) to shed its tail; to autotomize its tail/(animal husbandry) to cut the tail short; to dock the tail
@@ -44798,6 +44870,7 @@
 无精症	0	wú jīng zhèng	azoospermia (medicine)
 无糖	316	wú táng	sugar free
 无纸化	126	wú zhǐ huà	paperless
+无纺布	78	wú fǎng bù	non-woven fabric; non-woven cloth
 无缘	7586	wú yuán	to have no opportunity/no way (of doing sth)/no chance/no connection/not placed (in a competition)/(in pop lyrics) no chance of love, no place to be together etc
 无缘无故	2754	wú yuán wú gù	(idiom) no cause or reason; completely uncalled for
 无缝	2138	wú fèng	seamless
@@ -45014,6 +45087,8 @@
 旬首	0	xún shǒu	start of a ten day period
 旭	0	xù	dawn/rising sun
 旭日	1000	xù rì	the rising sun
+旭日东升	59	xù rì dōng shēng	(idiom) the morning sun rises in the eastern sky (fig. suggesting vitality and hope)
+旭日東升	59	xù rì dōng shēng	(idiom) the morning sun rises in the eastern sky (fig. suggesting vitality and hope)
 旮	0	gā	used in 旮旯 gālá
 旮旯	132	gā lá	corner/nook/recess/out-of-the-way place
 旮旯儿	0	gā lá r	erhua variant of 旮旯 gālá
@@ -45394,7 +45469,13 @@
 星系盤	0	xīng xì pán	galactic disc
 星罗棋布	372	xīng luó qí bù	scattered about like stars in the sky or chess pieces on a board (idiom); spread all over the place
 星羅棋布	372	xīng luó qí bù	scattered about like stars in the sky or chess pieces on a board (idiom); spread all over the place
+星舰	1318	Xīng jiàn	Starship (SpaceX spacecraft and launch vehicle)
+星艦	1318	Xīng jiàn	Starship (SpaceX spacecraft and launch vehicle)
+星軌	15	xīng guǐ	star trail
+星轨	15	xīng guǐ	star trail
 星辰	3020	xīng chén	stars
+星鏈	0	Xīng liàn	Starlink (SpaceX satellite internet network)
+星链	0	Xīng liàn	Starlink (SpaceX satellite internet network)
 星际争霸	224	Xīng jì Zhēng bà	StarCraft (video game series)
 星際爭霸	224	Xīng jì Zhēng bà	StarCraft (video game series)
 星馬泰	0	Xīng Mǎ Tài	Singapore, Malaysia and Thailand (abbr. for 新加坡 Xīnjiāpō, aka 星洲 Xīngzhōu + 馬來西亞 Mǎláixīyà + 泰國 Tàiguó)
@@ -45428,6 +45509,8 @@
 春光明媚	66	chūn guāng míng mèi	lovely spring sunshine
 春凳	12	chūn dèng	(old) wooden bench
 春卷	617	chūn juǎn	egg roll/spring roll
+春去秋來	20	chūn qù qiū lái	(idiom) the seasons change; the years pass by
+春去秋来	20	chūn qù qiū lái	(idiom) the seasons change; the years pass by
 春夏秋冬	398	chūn xià qiū dōng	the four seasons/spring, summer, autumn and winter
 春大麥	0	chūn dà mài	spring barley
 春大麦	0	chūn dà mài	spring barley
@@ -45798,8 +45881,8 @@
 普洱市	0	Pǔ ěr Shì	Pu'er, prefecture-level city in Yunnan Province 云南省 Yúnnán Shěng
 普洱茶	257	Pǔ ěr chá	Pu'er tea, a type of black tea produced in the Pu'er region of southwestern Yunnan
 普渡	245	pǔ dù	(Buddhism, Daoism) to deliver all sentient beings from suffering/(Tw) a ritual of making offerings, esp. to wandering spirits rather than gods or ancestors (abbr. for 中元普渡 zhōngyuánpǔdù)
-普渡大学	55	Pǔ dù Dà xué	Purdue University
-普渡大學	55	Pǔ dù Dà xué	Purdue University
+普渡大学	55	Pǔ dù Dà xué	Purdue University (Indiana, USA)
+普渡大學	55	Pǔ dù Dà xué	Purdue University (Indiana, USA)
 普立兹奖	0	Pǔ lì zī Jiǎng	Pulitzer Prize (Tw)
 普立茲獎	0	Pǔ lì zī Jiǎng	Pulitzer Prize (Tw)
 普罗扎克	0	Pǔ luó zhā kè	Prozac (also marketed as Fluoxetine)
@@ -46366,9 +46449,11 @@
 暹	0	xiān	sunrise
 暹粒	389	Xiān lì	Siem Reap, Cambodia
 暹罗	1660	Xiān luó	Siam (former name of Thailand)
+暹罗猫	0	xiān luó māo	Siamese cat
 暹罗语	0	Xiān luó yǔ	Siamese (Thai) language
 暹羅	1660	Xiān luó	Siam (former name of Thailand)
 暹羅語	0	Xiān luó yǔ	Siamese (Thai) language
+暹羅貓	0	xiān luó māo	Siamese cat
 暹逻	83	Xiān luó	variant of 暹罗 Xiānluó
 暹邏	83	Xiān luó	variant of 暹羅 Xiānluó
 暻	0	jǐng	bright
@@ -46529,7 +46614,7 @@
 書刊	2291	shū kān	books and periodicals; publications
 書劄	58	shū zhá	letter/also written 書札|书札
 書卷	309	shū juàn	volume/scroll
-書卷氣	78	shū juàn qì	scholarly flavor/educated appearance
+書卷氣	78	shū juàn qì	scholarly air; bookish demeanor
 書卷獎	0	shū juàn jiǎng	presidential award (received by university students in Taiwan for academic excellence)
 書呆子	1549	shū dāi zi	bookworm/pedant/bookish fool
 書壇	72	shū tán	the calligraphic community
@@ -46912,7 +46997,7 @@
 朊毒体	0	ruǎn dú tǐ	prion (molecular biology)
 朊毒體	0	ruǎn dú tǐ	prion (molecular biology)
 朊病毒	36	ruǎn bìng dú	prion (pathogen)
-朋友圈	3890	Péng you quān	Moments (social networking function of smartphone app WeChat 微信 Wēixìn)
+朋友圈	3890	Péng you quān	Moments (social networking function of smartphone app WeChat 微信 Wēixìn)	péng you quān	circle of friends; social circle
 朋比为奸	0	péng bǐ wéi jiān	to conspire/to gang up
 朋比為奸	0	péng bǐ wéi jiān	to conspire/to gang up
 朋馳	31	Péng chí	see 奔馳 Bēnchí
@@ -47269,7 +47354,6 @@
 札馬魯丁	0	Zhá mǎ lǔ dīng	see 紮馬剌丁 Zāmǎládīng
 札马剌丁	0	Zhá mǎ lá dīng	see 扎马剌丁 Zāmǎládīng
 札马鲁丁	0	Zhá mǎ lǔ dīng	see 扎马剌丁 Zāmǎládīng
-朮	0	shù	variant of 术 shù	zhú	variant of 术 zhú
 朮赤	22	Zhú chì	Jöchi (c. 1182–1227) Mongol army commander, eldest of Genghis Khan's four sons
 术赤	22	Zhú chì	Jöchi (c. 1182–1227) Mongol army commander, eldest of Genghis Khan's four sons
 朱	0	Zhū	surname Zhu	zhū	vermilion/(bound form) cinnabar
@@ -47372,7 +47456,7 @@
 机敏	851	jī mǐn	agility
 机智	4074	jī zhì	quick-witted/resourceful
 机杼	32	jī zhù	a loom
-机械	85114	jī xiè	machine/machinery/mechanical/(old) cunning/scheming
+机械	85114	jī xiè	machine; machinery/mechanical/(fig.) rigid; inflexible
 机械人	0	jī xiè rén	(HK) robot
 机械化	8913	jī xiè huà	to mechanize
 机械工	0	jī xiè gōng	a mechanic
@@ -47381,6 +47465,7 @@
 机械师	631	jī xiè shī	mechanic/engineer/machinist/machine operator/CL: 个 gè, 位 wèi
 机械性	257	jī xiè xìng	mechanical
 机械战警	76	Jī xiè Zhàn jǐng	RoboCop (movie)
+机械波	44	jī xiè bō	(physics) mechanical wave
 机械码	0	jī xiè mǎ	machine code
 机械硬盘	0	jī xiè yìng pán	(computing) hard disk drive (HDD)
 机械翻译	0	jī xiè fān yì	machine translation
@@ -47813,6 +47898,7 @@
 来凤县	339	Lái fèng Xiàn	Laifeng, a county in Enshi Tujia and Miao Autonomous Prefecture 恩施土家族苗族自治州 Ēnshī Tǔjiāzú Miáozú Zìzhìzhōu, Hubei
 来函	776	lái hán	incoming letter/letter from afar/same as 来信 láixìn
 来劲	363	lái jìn	(dialect) to be full of zeal/high-spirited/exhilarating/to stir sb up
+来势汹汹	490	lái shì xiōng xiōng	(idiom) to bear down fiercely
 来去无踪	24	lái qù wú zōng	come without a shadow, leave without a footprint (idiom); to come and leave without a trace
 来宾	6026	Lái bīn	see 来宾市 Láibīn Shì	lái bīn	guest/visitor
 来宾市	490	Lái bīn Shì	Laibin, prefecture-level city in Guangxi Zhuang Autonomous Region 广西壮族自治区 Guǎngxī Zhuàngzú Zìzhìqū
@@ -47850,7 +47936,7 @@
 杨柳	759	yáng liǔ	willow tree/poplar and willow/name of traditional tune
 杨树	759	yáng shù	poplar tree/various trees of genus Populus
 杨树菇	0	yáng shù gū	poplar mushroom (Cyclocybe aegerita)
-杨桃	209	yáng táo	carambola/star fruit
+杨桃	209	yáng táo	carambola; star fruit
 杨梅	1318	yáng méi	red bayberry (Myrica rubra), aka Chinese bayberry
 杨森	302	Yáng Sēn	Yang Sen (1884-1977), Sichuan warlord and general
 杨洁篪	851	Yáng Jié chí	Yang Jiechi (1950-), Chinese politician and diplomat, foreign minister of PRC 2007-2013
@@ -47939,7 +48025,7 @@
 東倒西歪	339	dōng dǎo xī wāi	to lean unsteadily from side to side (idiom)/to sway/(of buildings etc) to lean at a crazy angle
 東側	12023	dōng cè	east side/east face
 東兔西烏	0	dōng tù xī wū	lit. the sun setting and the moon rising (idiom)/fig. the passage of time
-東北虎	603	dōng běi hǔ	Amur tiger (Panthera tigris altaica)
+東北虎	603	dōng běi hǔ	Siberian tiger; Amur tiger
 東君	87	Dōng jūn	Lord of the East, the sun God of Chinese mythology
 東吳	2042	Dōng Wú	Eastern Wu (222-280)/the southern state of Wu during the Three Kingdoms period, founded by Sun Quan 孫權|孙权
 東吳大學	275	Dōng wú Dà xué	Soochow University (Suzhou, PRC from 1900-1952)/Soochow University (Taipei, Taiwan since 1954)
@@ -48162,14 +48248,12 @@
 板条箱	35	bǎn tiáo xiāng	crate
 板栗	603	bǎn lì	Chinese chestnut
 板桥	1288	Bǎn qiáo	Banqiao or Panchiao city in Taiwan
-板桥市	85	Bǎn qiáo shì	Banqiao or Panchiao city in New Taipei City 新北市 Xīnběishì, Taiwan
 板桩	0	bǎn zhuāng	sheet pile
 板梁桥	0	bǎn liáng qiáo	plate girder bridge
 板梁橋	0	bǎn liáng qiáo	plate girder bridge
 板條箱	35	bǎn tiáo xiāng	crate
 板樁	0	bǎn zhuāng	sheet pile
 板橋	1288	Bǎn qiáo	Banqiao or Panchiao city in Taiwan
-板橋市	85	Bǎn qiáo shì	Banqiao or Panchiao city in New Taipei City 新北市 Xīnběishì, Taiwan
 板沟	0	bǎn gōu	chalkboard ledge/whiteboard ledge/chalk tray (at the foot of a blackboard)/whiteboard marker tray
 板溝	0	bǎn gōu	chalkboard ledge/whiteboard ledge/chalk tray (at the foot of a blackboard)/whiteboard marker tray
 板滞	17	bǎn zhì	stiff/dull
@@ -48838,8 +48922,8 @@
 柳條	295	liǔ tiáo	willow twig; osier; wicker
 柳條邊	0	liǔ tiáo biān	Willow palisade across Liaoning, 17th century barrier
 柳樹	1549	liǔ shù	willow
-柳橙	132	liǔ chéng	orange (fruit)
-柳橙汁	200	liǔ chéng zhī	orange juice/CL: 瓶 píng, 杯 bēi, 罐 guàn, 盒 hé/see also 橙汁 chéngzhī
+柳橙	132	liǔ chéng	(Tw) orange (fruit)
+柳橙汁	200	liǔ chéng zhī	(Tw) orange juice
 柳毅传	34	Liǔ Yì zhuàn	story of Liu Yi, Tang fantasy fiction by Li Chaowei 李朝威, popular with dramatist of subsequent dynasties
 柳毅傳	34	Liǔ Yì zhuàn	story of Liu Yi, Tang fantasy fiction by Li Chaowei 李朝威, popular with dramatist of subsequent dynasties
 柳永	162	Liǔ Yǒng	Liu Yong (987-1053), Song poet
@@ -48915,7 +48999,7 @@
 柽	0	chēng	tamarisk
 柿	0	shì	persimmon
 柿子	1380	shì zi	persimmon/(Northeastern dialect) tomato
-柿子椒	23	shì zi jiāo	bell pepper, aka sweet pepper
+柿子椒	23	shì zi jiāo	bell pepper; sweet pepper
 柿餅	105	shì bǐng	dried persimmon
 柿饼	105	shì bǐng	dried persimmon
 栀	0	zhī	gardenia/cape jasmine (Gardenia jasminoides)/same as 栀子 zhīzi
@@ -49001,7 +49085,6 @@
 树敌	912	shù dí	to antagonize people/to make an enemy of sb
 树木	13183	shù mù	tree
 树林	9772	Shù lín	Shulin city in New Taipei City 新北市 Xīnběishì, Taiwan	shù lín	woods/grove/forest
-树林市	0	Shù lín shì	Shulin city in New Taipei City 新北市 Xīnběishì, Taiwan
 树枝	4898	shù zhī	branch/twig
 树枝状晶	0	shù zhī zhuàng jīng	(crystallography, metallurgy) dendritic crystal
 树栖	0	shù qī	arboreal/tree-dwelling
@@ -49243,7 +49326,6 @@
 格兰芬多	0	Gé lán fēn duō	Gryffindor (Harry Potter)
 格兰菜	0	gé lán cài	see 芥蓝 gàilán
 格勒	1230	gé lè	(onom.) laughing sound/glug-glug haha!
-格子棉布	0	gé zi mián bù	gingham
 格式塔	0	gé shì tǎ	(loanword) gestalt
 格恩西岛	0	Gé ēn xī dǎo	Guernsey (Channel Islands)
 格恩西島	0	Gé ēn xī dǎo	Guernsey (Channel Islands)
@@ -49324,6 +49406,7 @@
 桂冠	1288	guì guān	laurel (as a symbol of victory or merit)
 桂圆	234	guì yuán	see 龙眼 lóngyǎn
 桂圓	234	guì yuán	see 龍眼 lóngyǎn
+桂子	100	guì zǐ	(literary) osmanthus blossoms
 桂平	437	Guì píng	see 桂平市 Guìpíng Shì
 桂平市	186	Guì píng Shì	Guiping, a county-level city in Guigang City 贵港市 Guìgǎng Shì, Guangxi
 桂木属	0	Guì mù shǔ	genus Artocarpus
@@ -49339,7 +49422,7 @@
 桂系軍閥	0	Guì xì jūn fá	Guangxi warlord faction, from 1911-1930
 桂綸鎂	0	Guì Lún měi	Guey Lun-mei (1983-), Taiwanese actress
 桂纶镁	0	Guì Lún měi	Guey Lun-mei (1983-), Taiwanese actress
-桂花	1549	guì huā	osmanthus flowers/Osmanthus fragrans
+桂花	1549	guì huā	osmanthus (Osmanthus fragrans); its flowers
 桂阳	646	Guì yáng	see 桂阳县 Guìyáng Xiàn
 桂阳县	224	Guì yáng Xiàn	Guiyang, a county in Chenzhou City 郴州市 Chēnzhōu Shì, Hunan
 桂陽	646	Guì yáng	see 桂陽縣 Guìyáng Xiàn
@@ -49584,7 +49667,7 @@
 桴	0	fú	beam/rafter
 桴鼓相应	0	fú gǔ xiāng yìng	lit. the hammer fits the drum (idiom); appropriate relation between the different parts/closely interrelated
 桴鼓相應	0	fú gǔ xiāng yìng	lit. the hammer fits the drum (idiom); appropriate relation between the different parts/closely interrelated
-桶	0	tǒng	bucket/(trash) can/barrel (of oil etc)/CL: 个 gè, 只 zhī
+桶	0	tǒng	bucket; barrel; keg/classifier for bucketfuls, barrelfuls etc
 桶口	0	tǒng kǒu	bunghole/see 桶孔 tǒngkǒng
 桶孔	0	tǒng kǒng	bunghole
 桶装水	24	tǒng zhuāng shuǐ	18.9 liter bottled water (5 gallons)
@@ -49937,9 +50020,9 @@
 棉籤	166	mián qiān	cotton swab
 棉紗	955	mián shā	cotton yarn
 棉絮	186	mián xù	cotton wadding
-棉線	162	mián xiàn	cotton thread/yarn cotton
+棉線	162	mián xiàn	cotton thread
 棉纱	955	mián shā	cotton yarn
-棉线	162	mián xiàn	cotton thread/yarn cotton
+棉线	162	mián xiàn	cotton thread
 棉花	16982	mián hua	cotton
 棉花棒	0	mián huā bàng	cotton swab/cotton bud
 棉花糖	0	mián huā táng	cotton candy/candyfloss/marshmallow
@@ -50175,7 +50258,6 @@
 棚户	186	péng hù	shacks/shack-dwellers/slum-dwellers
 棚户区	708	péng hù qū	shantytown
 棚架	302	péng jià	trellis/scaffolding
-棚架格子	0	péng jià gé zi	trellis latticework
 棚頂	138	péng dǐng	canopy/roof/ceiling
 棚顶	138	péng dǐng	canopy/roof/ceiling
 棜	0	yù	tray for carrying sacrificial meats
@@ -50318,7 +50400,7 @@
 植皮	110	zhí pí	to graft skin/skin grafting
 植脂末	0	zhí zhī mò	non-dairy creamer powder
 植苗	44	zhí miáo	tree planting
-植被	5495	zhí bèi	vegetation/plant cover
+植被	5495	zhí bèi	vegetation
 植髮	62	zhí fà	to get a hair transplant
 椎	0	chuí	hammer; mallet (variant of 槌 chuí)/variant of 捶 chuí	zhuī	(bound form) vertebra
 椎間盤	229	zhuī jiān pán	intervertebral disk
@@ -50417,7 +50499,7 @@
 楊月清	0	Yáng Yuè qīng	Yang Yueqing, Chinese-Canadian woman documentary film director
 楊朱	13	Yáng Zhū	Yang Zhu (c. 440-360 BC), Chinese philosopher advocating ethical egoism
 楊柳	759	yáng liǔ	willow tree/poplar and willow/name of traditional tune
-楊桃	209	yáng táo	carambola/star fruit
+楊桃	209	yáng táo	carambola; star fruit
 楊梅	1318	yáng méi	red bayberry (Myrica rubra), aka Chinese bayberry
 楊森	302	Yáng Sēn	Yang Sen (1884-1977), Sichuan warlord and general
 楊業	525	Yáng Yè	Yang Ye (died 986), Chinese military general of the Northern Han and the Northern Song dynasties, defended the Song against invasion by the Liao 遼 Liáo
@@ -51152,7 +51234,6 @@
 樹敵	912	shù dí	to antagonize people/to make an enemy of sb
 樹木	13183	shù mù	tree
 樹林	9772	Shù lín	Shulin city in New Taipei City 新北市 Xīnběishì, Taiwan	shù lín	woods/grove/forest
-樹林市	0	Shù lín shì	Shulin city in New Taipei City 新北市 Xīnběishì, Taiwan
 樹枝	4898	shù zhī	branch/twig
 樹枝狀晶	0	shù zhī zhuàng jīng	(crystallography, metallurgy) dendritic crystal
 樹根	1122	shù gēn	tree roots
@@ -51257,17 +51338,16 @@
 橐驼	0	tuó tuó	camel/hunchback
 橐龠	0	tuó yuè	bellows for blowing up the fire in a furnace etc
 橕	0	chēng	a prop/a shore
-橘	0	jú	mandarin orange (Citrus reticulata)/tangerine
+橘	0	jú	(bound form) mandarin orange (Citrus reticulata); tangerine; (loosely) orange
 橘味	0	jú wèi	tangerine flavor/yuri (genre of fiction featuring lesbian romantic or sexual relationships)
-橘子	5754	jú zi	tangerine/CL: 个 gè, 瓣 bàn
+橘子	5754	jú zi	mandarin orange; tangerine; (loosely) orange/CL: 瓣 bàn
 橘子水	12	jú zi shuǐ	orangeade/orange squash/CL: 瓶 píng, 杯 bēi, 罐 guàn, 盒 hé
-橘子汁	43	jú zi zhī	orange juice/CL: 瓶 píng, 杯 bēi, 罐 guàn, 盒 hé/see also 橙汁 chéngzhī
 橘子酱	44	jú zi jiàng	orange jam/marmalade
 橘子醬	44	jú zi jiàng	orange jam/marmalade
-橘录	0	jú lù	classification of orange trees by 12th century Song dynasty botanist Han Yanzhi 韩彦直 Hán Yànzhí
+橘录	0	Jú Lù	Ju Lu, a 12th-century Chinese treatise on citrus fruits and their cultivation by Han Yanzhi 韩彦直 Hán Yànzhí
 橘柑	0	jú gān	tangerine/orange
-橘树	42	jú shù	orange tree
-橘樹	42	jú shù	orange tree
+橘树	42	jú shù	mandarin orange tree
+橘樹	42	jú shù	mandarin orange tree
 橘皮組織	0	jú pí zǔ zhī	cellulite
 橘皮组织	0	jú pí zǔ zhī	cellulite
 橘紅	148	jú hóng	orange (color)/orange peel (used in TCM)
@@ -51277,7 +51357,7 @@
 橘色	1905	jú sè	orange (color)
 橘里橘气	0	jú lǐ jú qì	lesbian-like (i.e. exhibiting lesbian traits) (coined c. 2018)
 橘里橘氣	0	jú lǐ jú qì	lesbian-like (i.e. exhibiting lesbian traits) (coined c. 2018)
-橘錄	0	jú lù	classification of orange trees by 12th century Song dynasty botanist Han Yanzhi 韓彥直 Hán Yànzhí
+橘錄	0	Jú Lù	Ju Lu, a 12th-century Chinese treatise on citrus fruits and their cultivation by Han Yanzhi 韓彥直 Hán Yànzhí
 橘黃色	200	jú huáng sè	tangerine yellow/saffron (color)
 橘黄色	200	jú huáng sè	tangerine yellow/saffron (color)
 橙	0	chéng	orange tree/orange (color)
@@ -51327,7 +51407,7 @@
 機敏	851	jī mǐn	agility
 機智	4074	jī zhì	quick-witted/resourceful
 機杼	32	jī zhù	a loom
-機械	85114	jī xiè	machine/machinery/mechanical/(old) cunning/scheming
+機械	85114	jī xiè	machine; machinery/mechanical/(fig.) rigid; inflexible
 機械人	0	jī xiè rén	(HK) robot
 機械化	8913	jī xiè huà	to mechanize
 機械工	0	jī xiè gōng	a mechanic
@@ -51336,6 +51416,7 @@
 機械師	631	jī xiè shī	mechanic/engineer/machinist/machine operator/CL: 個 gè, 位 wèi
 機械性	257	jī xiè xìng	mechanical
 機械戰警	76	Jī xiè Zhàn jǐng	RoboCop (movie)
+機械波	44	jī xiè bō	(physics) mechanical wave
 機械硬盤	0	jī xiè yìng pán	(computing) hard disk drive (HDD)
 機械碼	0	jī xiè mǎ	machine code
 機械翻譯	0	jī xiè fān yì	machine translation
@@ -52160,6 +52241,7 @@
 步驟	22387	bù zhòu	procedure/step
 步骤	22387	bù zhòu	procedure/step
 武丁	269	Wǔ Dīng	Wu Ding (c. 1250–1192 BC), Shang dynasty king known from oracle bone inscriptions
+武丑	21	wǔ chǒu	(Chinese opera) comic role specializing in martial arts
 武仙座	89	Wǔ xiān zuò	Hercules (constellation)
 武侠	2754	wǔ xiá	martial arts chivalry (Chinese literary, theatrical and cinema genre)/knight-errant
 武侠小说	1698	wǔ xiá xiǎo shuō	a martial arts (wuxia) novel
@@ -52261,7 +52343,7 @@
 歲月崢嶸	0	suì yuè zhēng róng	eventful years/momentous times
 歲月流逝	69	suì yuè liú shì	as time goes by (idiom)
 歲末	813	suì mò	end of the year
-歲計餘絀	0	suì jì yú chù	annual budgetary surplus or deficit (accountancy)
+歲計餘絀	0	suì jì yú chù	(Tw) (government accounting) annual budget surplus or deficit
 歲闌	0	suì lán	late season of a year
 歲靜	0	suì jìng	(neologism) (slang) person who willfully ignores societal problems while maintaining a facade of blissful normalcy (derived from 歲月靜好 suìyuèjìnghǎo, "it is a time of peace and harmony")
 歴	0	lì	old variant of 歷 lì
@@ -52420,7 +52502,7 @@
 残喘	129	cán chuǎn	remaining breath/last gasp
 残垣	46	cán yuán	(literary) ruined walls/ruins
 残垣断壁	138	cán yuán duàn bì	see 断壁残垣 duànbìcányuán
-残垣败壁	0	cán yuán bài bì	see 断壁颓垣 duànbìtuíyuán
+残垣败壁	0	cán yuán bài bì	see 断壁残垣 duànbìcányuán
 残奥	132	Cán Ào	Paralympics/same as Paralympic Games 残奥会 Cán Àohuì
 残奥会	1950	Cán Ào huì	Paralympic Games
 残存	3162	cán cún	to survive/remnant
@@ -52492,7 +52574,7 @@
 殘品	0	cán pǐn	defective goods
 殘喘	129	cán chuǎn	remaining breath/last gasp
 殘垣	46	cán yuán	(literary) ruined walls/ruins
-殘垣敗壁	0	cán yuán bài bì	see 斷壁頹垣 duànbìtuíyuán
+殘垣敗壁	0	cán yuán bài bì	see 斷壁殘垣 duànbìcányuán
 殘垣斷壁	138	cán yuán duàn bì	see 斷壁殘垣 duànbìcányuán
 殘奧	132	Cán Ào	Paralympics/same as Paralympic Games 殘奧會 Cán Àohuì
 殘奧會	1950	Cán Ào huì	Paralympic Games
@@ -53544,6 +53626,7 @@
 水曜日	0	Shuǐ yào rì	Wednesday (used in ancient Chinese astronomy)
 水杉	182	shuǐ shān	metasequoia
 水杨酸	302	shuǐ yáng suān	salicylic acid
+水杯	661	shuǐ bēi	cup; glass
 水果刀	145	shuǐ guǒ dāo	paring knife/fruit knife/CL: 把 bǎ
 水果捞	0	shuǐ guǒ lāo	fruit medley in coconut milk – a chilled dessert consisting of assorted fresh fruits served in sweetened coconut milk, yogurt or fruit syrup
 水果撈	0	shuǐ guǒ lāo	fruit medley in coconut milk – a chilled dessert consisting of assorted fresh fruits served in sweetened coconut milk, yogurt or fruit syrup
@@ -53838,7 +53921,7 @@
 汇总	7079	huì zǒng	to collect and summarize; to aggregate (data, reports etc)
 汇总表	148	huì zǒng biǎo	summary table
 汇报	18621	huì bào	to report/to give an account of/to collect information and report back/report
-汇拢	0	huì lǒng	to collect/to gather
+汇拢	0	huì lǒng	to gather together; to bring together
 汇整	50	huì zhěng	to collect and organize (papers etc)/to archive (data)/to summarize (evidence etc)/summary
 汇映	0	huì yìng	joint screening/consecutive screening of collection of movies
 汇款	4898	huì kuǎn	to remit money/remittance
@@ -53846,7 +53929,7 @@
 汇注	0	huì zhù	to flow into/to converge/annotated collection
 汇流	1175	huì liú	(of rivers etc) to converge/convergence
 汇流环	0	huì liú huán	slip-ring/rotary electrical interface/collector ring
-汇演	1023	huì yǎn	joint performance
+汇演	1023	huì yǎn	showcase of performances by different artists or groups; to participate in such a showcase
 汇点	16	huì diǎn	confluence/a meeting point
 汇率	22909	huì lǜ	exchange rate
 汇票	2188	huì piào	bill of exchange/bank draft
@@ -53892,7 +53975,6 @@
 汏	0	dà	to wash (dialect)
 汐	0	xī	night tides/evening ebbtide/Taiwan pr. xì
 汐止	219	Xī zhǐ	Xizhi or Hsichih city in New Taipei City 新北市 Xīnběishì, Taiwan
-汐止市	0	Xī zhǐ shì	Xizhi or Hsichih city in New Taipei City 新北市 Xīnběishì, Taiwan
 汔	0	qì	near
 汕	0	shàn	bamboo fish trap/used in names of places connected with Shantou 汕头 Shàntóu
 汕头	5754	Shàn tóu	see 汕头市 Shàntóu Shì
@@ -54814,7 +54896,6 @@
 沾化区	0	Zhān huà Qū	Zhanhua, a district of Binzhou City 滨州市 Bīnzhōu Shì, Shandong
 沾唇	0	zhān chún	to moisten one's lips/to sip (wine, tea etc)/esp. used with negatives: never touch a drop of the stuff
 沾染	1202	zhān rǎn	to pollute (often fig.)/to be infected by/to gain a small advantage
-沾染世俗	0	zhān rǎn shì sú	to be corrupted by the ways of the world (idiom)
 沾沾自喜	457	zhān zhān zì xǐ	immeasurably self-satisfied
 沾湿	100	zhān shī	to moisten/to dampen/to be steeped in/to be imbued with
 沾满	2399	zhān mǎn	muddy/covered in (mud, dust, sweat, blood etc)/daubed in
@@ -54967,8 +55048,8 @@
 法壓壺	0	Fǎ yā hú	French press/press pot
 法律制裁	1318	fǎ lǜ zhì cái	legal sanction/prescribed punishment/punishable by law
 法拉盛	603	Fǎ lā shèng	Flushing Chinatown, a predominantly Chinese and Korean neighborhood of Queens, New York City
-法拉第笼	0	Fǎ lā dì lóng	(physics) Faraday cage
-法拉第籠	0	Fǎ lā dì lóng	(physics) Faraday cage
+法拉第笼	0	fǎ lā dì lóng	(physics) Faraday cage
+法拉第籠	0	fǎ lā dì lóng	(physics) Faraday cage
 法援	35	fǎ yuán	legal aid (abbr. for 法律援助 fǎlu:'yuánzhù)
 法杖	224	fǎ zhàng	magic staff
 法棍	26	Fǎ gùn	baguette (bread)
@@ -55133,8 +55214,8 @@
 波提乏	0	Bō tí fá	Potiphar, the captain of the pharaoh's guard (in the account of Joseph in the Book of Genesis)
 波斑鴇	0	bō bān bǎo	(bird species of China) MacQueen's bustard (Chlamydotis macqueenii)
 波斑鸨	0	bō bān bǎo	(bird species of China) MacQueen's bustard (Chlamydotis macqueenii)
-波斯猫	302	Bō sī māo	Persian (cat)
-波斯貓	302	Bō sī māo	Persian (cat)
+波斯猫	302	bō sī māo	Persian cat
+波斯貓	302	bō sī māo	Persian cat
 波旁	631	Bō páng	Bourbon
 波昂	37	Bō áng	Bonn, city in Germany (Tw)
 波札那	0	Bō zhá nà	(Tw) Botswana
@@ -55223,8 +55304,8 @@
 泥濘	2455	ní nìng	muddy/mud
 泥灰	32	ní huī	lime plaster (construction)
 泥炭	617	ní tàn	peat
-泥炭藓	0	ní tàn xiǎn	matted sphagnum moss (Sphagnum palustre)
-泥炭蘚	0	ní tàn xiǎn	matted sphagnum moss (Sphagnum palustre)
+泥炭藓	0	ní tàn xiǎn	sphagnum moss (sometimes specifically Sphagnum palustre, blunt-leaved bogmoss)
+泥炭蘚	0	ní tàn xiǎn	sphagnum moss (sometimes specifically Sphagnum palustre, blunt-leaved bogmoss)
 泥煤	98	ní méi	peat
 泥牛入海	19	ní niú rù hǎi	lit. a clay ox enters the sea (idiom); fig. to disappear with no hope of returning
 泥犁	0	ní lí	(Buddhism) Naraka
@@ -56032,11 +56113,11 @@
 活菩薩	60	huó pú sà	a living Buddha/fig. compassionate person/saint
 活見鬼	316	huó jiàn guǐ	what the hell; preposterous
 活见鬼	316	huó jiàn guǐ	what the hell; preposterous
-活跃	38905	huó yuè	active/lively/excited/to enliven/to brighten up
+活跃	38905	huó yuè	active; lively/to enliven; to stimulate/to be active
 活跃分子	126	huó yuè fèn zǐ	active member; activist
 活蹦乱跳	692	huó bèng luàn tiào	to leap and frisk about (idiom); lively/healthy and active
 活蹦亂跳	692	huó bèng luàn tiào	to leap and frisk about (idiom); lively/healthy and active
-活躍	38905	huó yuè	active/lively/excited/to enliven/to brighten up
+活躍	38905	huó yuè	active; lively/to enliven; to stimulate/to be active
 活躍分子	126	huó yuè fèn zǐ	active member; activist
 活雷鋒	83	huó Léi Fēng	a selfless, helpful person, like the model citizen Lei Feng 雷鋒 Léi Fēng (often used to refer to sb in a joking or teasing way)
 活雷锋	83	huó Léi Fēng	a selfless, helpful person, like the model citizen Lei Feng 雷锋 Léi Fēng (often used to refer to sb in a joking or teasing way)
@@ -56397,9 +56478,7 @@
 浪蝕	0	làng shí	wave erosion
 浪谷	0	làng gǔ	trough of a wave/(fig.) low point; lowest level
 浪費	48978	làng fèi	to waste/to squander
-浪費金錢	0	làng fèi jīn qián	to squander money/to spend extravagantly
 浪费	48978	làng fèi	to waste/to squander
-浪费金钱	0	làng fèi jīn qián	to squander money/to spend extravagantly
 浪跡	257	làng jì	to roam about/to wander without a home
 浪跡天涯	204	làng jì tiān yá	to roam far and wide (idiom)/to travel the world
 浪跡江湖	23	làng jì jiāng hú	to roam far and wide/to drift with the wind
@@ -57205,6 +57284,7 @@
 涼茶	1023	liáng chá	Chinese herb tea
 涼菜	339	liáng cài	cold dish
 涼蓆	263	liáng xí	summer sleeping mat (e.g. of woven split bamboo)/CL: 張 zhāng, 領 lǐng
+涼薯	17	liáng shǔ	yam bean (Pachyrhizus erosus)
 涼鞋	1778	liáng xié	sandal
 涼麵	115	liáng miàn	cold noodles
 涿	0	zhuō	used in place names
@@ -57308,10 +57388,8 @@
 淖	0	Nào	surname Nao	nào	slush/mud
 淘	0	táo	to wash (rice, sand etc in water to remove impurities)/to dredge; to scoop out (sediment or waste)/(dialect) to hunt for and buy (bargains or second-hand goods)/(dialect) naughty; mischievous
 淘宝	8913	Táo bǎo	Taobao, a Chinese online shopping website (abbr. for 淘宝网 Táobǎo Wǎng)
-淘宝网	2455	Táo bǎo Wǎng	Taobao Marketplace, a Chinese website for online shopping
 淘客	0	táo kè	talk (loanword)/chatline of PRC Internet company Taobao, taokshop.com
 淘寶	8913	Táo bǎo	Taobao, a Chinese online shopping website (abbr. for 淘寶網 Táobǎo Wǎng)
-淘寶網	2455	Táo bǎo Wǎng	Taobao Marketplace, a Chinese website for online shopping
 淘析	0	táo xī	to strain/to wash and filter
 淘气	2512	táo qì	naughty/mischievous
 淘氣	2512	táo qì	naughty/mischievous
@@ -57824,6 +57902,8 @@
 添置	933	tiān zhì	to buy/to acquire/to add to one's possessions
 添补	105	tiān bu	to fill (up)/to replenish
 添補	105	tiān bu	to fill (up)/to replenish
+添購	200	tiān gòu	to purchase (sth) in addition
+添购	200	tiān gòu	to purchase (sth) in addition
 添辦	0	tiān bàn	to acquire
 添麻烦	1230	tiān má fan	to cause trouble for sb/to inconvenience
 添麻煩	1230	tiān má fan	to cause trouble for sb/to inconvenience
@@ -58126,9 +58206,7 @@
 渡渡鸟	0	dù dù niǎo	the dodo (extinct bird)
 渡船	912	dù chuán	ferry
 渡輪	2188	dù lún	ferry boat
-渡輪船	0	dù lún chuán	ferry ship
 渡轮	2188	dù lún	ferry boat
-渡轮船	0	dù lún chuán	ferry ship
 渡边	1288	Dù biān	Watanabe (Japanese surname)
 渡过	7586	dù guò	to cross over/to pass through
 渡過	7586	dù guò	to cross over/to pass through
@@ -58279,7 +58357,7 @@
 游隼	0	yóu sǔn	(bird species of China) peregrine falcon (Falco peregrinus)
 渺	0	miǎo	(of an expanse of water) vast/distant and indistinct/tiny or insignificant
 渺乎其微	0	miǎo hū qí wēi	remote and insignificant (idiom)
-渺子	0	miǎo zǐ	muon (particle physics)
+渺子	0	miǎo zǐ	(physics) muon
 渺小	2138	miǎo xiǎo	minute/tiny/negligible/insignificant
 渺无人烟	24	miǎo wú rén yān	remote and uninhabited (idiom); deserted/God-forsaken
 渺无音信	0	miǎo wú yīn xìn	to receive no news whatsoever about sb
@@ -58655,6 +58733,7 @@
 溪壑	0	xī hè	valley/mountain gorge
 溪径	0	xī jìng	path/(fig.) way; channel
 溪徑	0	xī jìng	path/(fig.) way; channel
+溪水	1778	xī shuǐ	creek water
 溪流	1778	xī liú	stream
 溪涧	105	xī jiàn	stream/mountain gorge
 溪湖	120	Xī hú	see 溪湖区 Xīhú Qū
@@ -58865,11 +58944,12 @@
 滎陽市	525	Xíng yáng Shì	Xingyang, a county-level city in Zhengzhou City 鄭州市 Zhèngzhōu Shì, Henan
 滏	0	fǔ	name of a river in Hebei
 滑	0	Huá	surname Hua	huá	to slip; to slide/slippery; smooth/sly; slippery; not to be trusted
+滑丝	0	huá sī	(of a screw) to be stripped
 滑倒	288	huá dǎo	to slip and fall; to lose one's footing and fall
 滑冰	1905	huá bīng	to skate/skating
 滑出	0	huá chū	to slip out
-滑动	3548	huá dòng	to slide/sliding movement
-滑動	3548	huá dòng	to slide/sliding movement
+滑动	3548	huá dòng	to slide; to glide/to swipe; to scroll (on a touchscreen)
+滑動	3548	huá dòng	to slide; to glide/to swipe; to scroll (on a touchscreen)
 滑县	741	Huá Xiàn	Hua County or Huaxian, a county in Anyang City 安阳市 Ānyáng Shì, Henan
 滑块	132	huá kuài	runner block; sliding block/slider (computer interface element)
 滑坡	2951	huá pō	rockslide/landslip/landslide/mudslide/fig. slump/downturn/to decline
@@ -58897,6 +58977,7 @@
 滑稽	7079	huá jī	comical; funny; amusing (old pr. gǔjī)/huaji, a form of comedy performance popular in Shanghai, Jiangsu and Zhejiang
 滑竿	43	huá gān	a kind of sedan chair, usu. made of bamboo and mounted on a pair of long bamboo poles
 滑索	21	huá suǒ	zip line
+滑絲	0	huá sī	(of a screw) to be stripped
 滑縣	741	Huá Xiàn	Hua County or Huaxian, a county in Anyang City 安陽市 Ānyáng Shì, Henan
 滑翔	977	huá xiáng	to glide
 滑翔伞	151	huá xiáng sǎn	paraglider (equipment)/paragliding (sport)
@@ -59327,6 +59408,8 @@
 漂摇	0	piāo yáo	swaying/tottering/unstable
 漂染	85	piǎo rǎn	to bleach and dye
 漂泊	1905	piāo bó	(of a boat) to float; to drift; to lie at anchor/(fig.) to roam; to lead a wandering existence
+漂泊无依	0	piāo bó wú yī	(idiom) to lead an unsettled life with no one to rely on
+漂泊無依	0	piāo bó wú yī	(idiom) to lead an unsettled life with no one to rely on
 漂洋	39	piāo yáng	to cross the ocean
 漂洋过海	490	piāo yáng guò hǎi	(idiom) to cross the ocean; to cross the seas
 漂洋過海	490	piāo yáng guò hǎi	(idiom) to cross the ocean; to cross the seas
@@ -60517,7 +60600,7 @@
 火炮	6457	huǒ pào	cannon/gun/artillery
 火烈鳥	269	huǒ liè niǎo	flamingo
 火烈鸟	269	huǒ liè niǎo	flamingo
-火烛	138	huǒ zhú	fire and candles/household things that burn
+火烛	138	huǒ zhú	anything liable to cause a fire
 火烧	6607	huǒ shāo	to set fire to/to burn down/burning hot/baked cake
 火烧云	33	huǒ shāo yún	nuée ardente/hot cloud of volcanic ash
 火烧火燎	29	huǒ shāo huǒ liǎo	restless with anxiety/to feel unbearably painful or hot
@@ -60531,7 +60614,7 @@
 火燒眉毛	229	huǒ shāo méi mao	lit. the fire burns one's eyebrows (idiom); fig. desperate situation/extreme emergency
 火燒雲	33	huǒ shāo yún	nuée ardente/hot cloud of volcanic ash
 火燙	79	huǒ tàng	burning hot/fiery/to have one's hair permed with hot curling tongs
-火燭	138	huǒ zhú	fire and candles/household things that burn
+火燭	138	huǒ zhú	anything liable to cause a fire
 火爐	1950	huǒ lú	stove
 火牆	309	huǒ qiáng	firewall
 火犁	0	huǒ lí	mechanical plow
@@ -60556,9 +60639,11 @@
 火舌	295	huǒ shé	tongue of flame
 火花塞	245	huǒ huā sāi	spark plug
 火苗	1230	huǒ miáo	flame
+火药桶	72	huǒ yào tǒng	(fig.) powder keg
 火葬	2399	huǒ zàng	to cremate
 火葬场	537	huǒ zàng chǎng	crematorium
 火葬場	537	huǒ zàng chǎng	crematorium
+火藥桶	72	huǒ yào tǒng	(fig.) powder keg
 火蜥蜴	0	huǒ xī yì	salamander
 火辣	2042	huǒ là	painful heat/scorching/rude and forthright/provocative/hot/sexy
 火辣辣	977	huǒ là là	scorching hot/(of a burn or other injury) painful; burning/(of one's mood) agitated; heated; intense/(of a personality) fiery; sharp-tongued/(Tw) (of a woman's figure) smoking hot
@@ -61222,14 +61307,14 @@
 為非作歹	170	wéi fēi zuò dǎi	to break the law and commit crimes (idiom); malefactor/evildoer/to perpetrate outrages
 炻	0	shí	stoneware
 炻器	0	shí qì	stoneware
-炼	0	liàn	to refine/to smelt/variant of 链 liàn, chain
+炼	0	liàn	to refine; to smelt/to heat or forge (in fire)/to polish (wording)
 炼丹	661	liàn dān	to concoct pills of immortality
 炼丹术	72	liàn dān shù	maker of immortality pill/concocting magic pills
 炼之未定	0	liàn zhī wèi dìng	to spend a long time thinking about sth while unable to reach a decision
 炼乳	229	liàn rǔ	to condense milk (by evaporation)/condensed milk
 炼制	447	liàn zhì	(chemistry) to refine
 炼化	389	liàn huà	to refine/refining (e.g. oil, chemicals etc)
-炼句	0	liàn jù	to polish a phrase
+炼句	0	liàn jù	to polish one's phrasing
 炼奶	55	liàn nǎi	condensed milk
 炼字	13	liàn zì	to craft one's words
 炼油	2399	liàn yóu	to refine crude oil/to render animal fat
@@ -61667,7 +61752,8 @@
 烫发	324	tàng fà	perm (hairstyle)
 烫头发	33	tàng tóu fa	perm/to perm hair
 烫平	27	tàng píng	to press (clothes)/to iron out (wrinkles)
-烫手山芋	468	tàng shǒu shān yù	hot potato/problem/trouble/headache
+烫手	245	tàng shǒu	burning hot to touch
+烫手山芋	468	tàng shǒu shān yù	(fig.) hot potato
 烫斗	0	tàng dǒu	clothes iron
 烫衣	30	tàng yī	to iron (clothes)
 烫衣板	0	tàng yī bǎn	ironing board
@@ -61963,6 +62049,7 @@
 無精症	0	wú jīng zhèng	azoospermia (medicine)
 無糖	316	wú táng	sugar free
 無紙化	126	wú zhǐ huà	paperless
+無紡布	78	wú fǎng bù	non-woven fabric; non-woven cloth
 無絲分裂	0	wú sī fēn liè	amitosis
 無緣	7586	wú yuán	to have no opportunity/no way (of doing sth)/no chance/no connection/not placed (in a competition)/(in pop lyrics) no chance of love, no place to be together etc
 無緣無故	2754	wú yuán wú gù	(idiom) no cause or reason; completely uncalled for
@@ -62065,15 +62152,13 @@
 煅石膏	0	duàn shí gāo	plaster of Paris/calcined gypsum
 煆	0	xiā	a raging fire	yā	raging fire
 煇	0	huī	bright/glorious
-煉	0	liàn	to refine/to smelt
+煉	0	liàn	to refine; to smelt/to heat or forge (in fire)
 煉丹	661	liàn dān	to concoct pills of immortality
 煉丹術	72	liàn dān shù	maker of immortality pill/concocting magic pills
 煉之未定	0	liàn zhī wèi dìng	to spend a long time thinking about sth while unable to reach a decision
 煉乳	229	liàn rǔ	to condense milk (by evaporation)/condensed milk
 煉化	389	liàn huà	to refine/refining (e.g. oil, chemicals etc)
-煉句	0	liàn jù	to polish a phrase
 煉奶	55	liàn nǎi	condensed milk
-煉字	13	liàn zì	to craft one's words
 煉油	2399	liàn yóu	to refine crude oil/to render animal fat
 煉油廠	2239	liàn yóu chǎng	oil refinery
 煉焦	617	liàn jiāo	coking/the process of producing coke from coal
@@ -62608,6 +62693,7 @@
 熹	0	xī	bright/warm
 熹平石經	0	Xī píng shí jīng	Xiping steles, calligraphic work on carved steles of the Eastern Han Dynasty (25-220 AD)
 熹平石经	0	Xī píng shí jīng	Xiping steles, calligraphic work on carved steles of the Eastern Han Dynasty (25-220 AD)
+熹微	17	xī wēi	(literary) (of light) faint; pale (esp. of early morning sunlight)
 熾	0	chì	to burn/to blaze/splendid/illustrious
 熾烈	251	chì liè	burning fiercely/flaming/blazing
 熾熱	1318	chì rè	red-hot/glowing/blazing/(fig.) passionate
@@ -62811,7 +62897,8 @@
 燙	0	tàng	to scald/to burn (by scalding)/to blanch (cooking)/to heat (sth) up in hot water/to perm/to iron/scalding hot
 燙傷	1698	tàng shāng	to scald
 燙平	27	tàng píng	to press (clothes)/to iron out (wrinkles)
-燙手山芋	468	tàng shǒu shān yù	hot potato/problem/trouble/headache
+燙手	245	tàng shǒu	burning hot to touch
+燙手山芋	468	tàng shǒu shān yù	(fig.) hot potato
 燙斗	0	tàng dǒu	clothes iron
 燙衣	30	tàng yī	to iron (clothes)
 燙衣板	0	tàng yī bǎn	ironing board
@@ -63225,8 +63312,8 @@
 牙桥	15	yá qiáo	dental bridge
 牙橋	15	yá qiáo	dental bridge
 牙痛	363	yá tòng	toothache
-牙盘	0	yá pán	(bicycle) crankset
-牙盤	0	yá pán	(bicycle) crankset
+牙盘	0	yá pán	(bicycle) chainring; crankset
+牙盤	0	yá pán	(bicycle) chainring; crankset
 牙碜	0	yá chen	gritty (of foodstuffs)/fig. jarring speech
 牙磣	0	yá chen	gritty (of foodstuffs)/fig. jarring speech
 牙祭	0	yá jì	a good meal/sumptuous food
@@ -63513,7 +63600,7 @@
 牵制	4169	qiān zhì	to control/to curb/to restrict/to impede/to pin down (enemy troops)
 牵动	3802	qiān dòng	to affect/to produce a change in sth
 牵头	5888	qiān tóu	to lead (an animal by the head)/to take the lead/to coordinate (a combined operation)/to mediate/a go-between (e.g. marriage broker)
-牵就	0	qiān jiù	to concede/to give up
+牵就	0	qiān jiù	variant of 迁就 qiānjiù
 牵引	8128	qiān yǐn	to pull; to draw (a cart); to tow
 牵引力	398	qiān yǐn lì	motive force/traction
 牵引车	437	qiān yǐn chē	tractor unit; tractor truck; prime mover
@@ -63603,7 +63690,7 @@
 牽	0	qiān	to lead along/to pull (an animal on a tether)/(bound form) to involve/to draw in
 牽制	4169	qiān zhì	to control/to curb/to restrict/to impede/to pin down (enemy troops)
 牽動	3802	qiān dòng	to affect/to produce a change in sth
-牽就	0	qiān jiù	to concede/to give up
+牽就	0	qiān jiù	variant of 遷就 qiānjiù
 牽引	8128	qiān yǐn	to pull; to draw (a cart); to tow
 牽引力	398	qiān yǐn lì	motive force/traction
 牽引車	437	qiān yǐn chē	tractor unit; tractor truck; prime mover
@@ -63860,7 +63947,9 @@
 狐	0	hú	fox
 狐假虎威	93	hú jiǎ hǔ wēi	lit. the fox exploits the tiger's might (idiom); fig. to use powerful connections to intimidate people
 狐女	0	hú nǚ	fox lady/in folk stories, a beautiful girl who will seduce you then reveal herself as a ghost
+狐朋狗党	0	hú péng gǒu dǎng	see 狐朋狗友 húpénggǒuyǒu
 狐朋狗友	87	hú péng gǒu yǒu	a pack of rogues (idiom); a gang of scoundrels
+狐朋狗黨	0	hú péng gǒu dǎng	see 狐朋狗友 húpénggǒuyǒu
 狐步舞	0	hú bù wǔ	fox-trot (ballroom dance) (loanword)
 狐狸	8511	hú li	fox; (fig.) sly or crafty person
 狐狸尾巴	170	hú li wěi ba	lit. fox's tail (idiom); visible sign of evil intentions/to reveal one's evil nature/evidence that reveals the villain
@@ -64286,7 +64375,7 @@
 猪扒	63	zhū pá	see 猪排 zhūpái
 猪拱菌	0	zhū gǒng jūn	Chinese truffle
 猪排	363	zhū pái	pork ribs/pork chop
-猪朋狗友	48	zhū péng gǒu yǒu	dissolute companions/disreputable comrades
+猪朋狗友	48	zhū péng gǒu yǒu	see 狐朋狗友 húpénggǒuyǒu
 猪柳	12	zhū liǔ	pork fillet
 猪栏	74	zhū lán	pigsty; pigpen
 猪水泡病	0	zhū shuǐ pào bìng	swine vesicular disease (SVD)
@@ -64888,6 +64977,7 @@
 玛莎拉	0	mǎ shā lā	(loanword) masala
 玛莎拉蒂	417	Mǎ shā lā dì	Maserati
 玛迪达	0	Mǎ dí dá	Matilda (name)
+玛那	0	mǎ nà	(loanword) mana (supernatural power, esp. in Pacific Island cultures and fantasy games)
 玛雅	5888	Mǎ yǎ	Maya (civilization)
 玛雅人	575	Mǎ yǎ rén	Maya peoples
 玞	0	fū	a kind of jade
@@ -64980,8 +65070,10 @@
 玳瑁	794	dài mào	hawksbill turtle (Eretmochelys imbricata)/tortoiseshell/Taiwan pr. dàimèi
 玳瑁壳	0	dài mào ké	tortoise shell
 玳瑁殼	0	dài mào ké	tortoise shell
+玳瑁猫	0	dài mào māo	tortoiseshell cat
 玳瑁眼鏡	0	dài mào yǎn jìng	hawksbill shell-rimmed eyeglasses/CL: 副 fù
 玳瑁眼镜	0	dài mào yǎn jìng	hawksbill shell-rimmed eyeglasses/CL: 副 fù
+玳瑁貓	0	dài mào māo	tortoiseshell cat
 玶	0	píng	name of one kind of jade
 玷	0	diàn	blemish/disgrace/flaw in jade
 玷污	1995	diàn wū	to stain/to sully/to tarnish
@@ -65520,6 +65612,7 @@
 瑪莎拉	0	mǎ shā lā	(loanword) masala
 瑪莎拉蒂	417	Mǎ shā lā dì	Maserati
 瑪迪達	0	Mǎ dí dá	Matilda (name)
+瑪那	0	mǎ nà	(loanword) mana (supernatural power, esp. in Pacific Island cultures and fantasy games)
 瑪雅	5888	Mǎ yǎ	Maya (civilization)
 瑪雅人	575	Mǎ yǎ rén	Maya peoples
 瑪麗	12589	Mǎ lì	Mary or Marie (name)/Mali
@@ -66000,6 +66093,8 @@
 甜得发腻	0	tián de fā nì	lovey-dovey/cloying/sugary
 甜得發膩	0	tián de fā nì	lovey-dovey/cloying/sugary
 甜心	4467	tián xīn	delighted to oblige/sweetheart
+甜杆	0	tián gǎn	variant of 甜秆 tiángǎn
+甜桿	0	tián gǎn	variant of 甜稈 tiángǎn
 甜椒	145	tián jiāo	sweet pepper
 甜橙	141	tián chéng	sweet orange (Citrus sinensis)
 甜津津	0	tián jīn jīn	sweet and delicious
@@ -66010,6 +66105,8 @@
 甜瓜	631	tián guā	muskmelon
 甜甜圈	0	tián tián quān	doughnut
 甜睡	26	tián shuì	to sleep soundly
+甜秆	0	tián gǎn	sweet sorghum
+甜稈	0	tián gǎn	sweet sorghum
 甜稚	0	tián zhì	sweet and innocent
 甜筒	87	tián tǒng	ice-cream cone
 甜美	6166	tián měi	sweet/pleasant/happy
@@ -66199,6 +66296,7 @@
 產糧	120	chǎn liáng	to grow crops/food growing
 產糧區	45	chǎn liáng qū	food growing area
 產糧大省	0	chǎn liáng dà shěng	major agricultural province
+產蛋	47	chǎn dàn	to lay eggs
 產褥期	107	chǎn rù qī	postnatal period/puerperium (period of six weeks after childbirth)
 產褥熱	21	chǎn rù rè	postnatal fever/puerperal fever/childbed fever
 產鉗	35	chǎn qián	obstetric forceps
@@ -66502,8 +66600,8 @@
 电唱机	85	diàn chàng jī	gramophone/record player
 电唱盘	0	diàn chàng pán	gramophone/record player
 电塔	120	diàn tǎ	electricity pylon/transmission tower
-电子伏	0	diàn zǐ fú	electron volt (unit of energy used in particle physics, approximately 10⁻¹⁹ joules)
-电子伏特	36	diàn zǐ fú tè	electronvolt (eV)
+电子伏	0	diàn zǐ fú	electron volt (eV)
+电子伏特	36	diàn zǐ fú tè	electron volt (eV)
 电子信箱	102	diàn zǐ xìn xiāng	e-mail inbox
 电子手帐	0	diàn zǐ shǒu zhàng	electronic organizer/PDA
 电子榨菜	0	diàn zǐ zhà cài	(slang) entertaining content such as Internet videos and TV shows that people watch while eating
@@ -66522,6 +66620,7 @@
 电杆	263	diàn gān	electric pole/telephone pole	diàn gǎn	electric pole/telegraph pole
 电梯	18197	diàn tī	elevator/escalator/CL: 台 tái, 部 bù
 电梯井	0	diàn tī jǐng	elevator shaft
+电棍	27	diàn gùn	stun baton
 电棒	110	diàn bàng	(coll.) flashlight/(Tw) stun baton/(Tw) hair iron; hair tongs
 电椅	324	diàn yǐ	electric chair (used to execute criminals)
 电汇	562	diàn huì	telegraphic transfer (TT)
@@ -66596,6 +66695,7 @@
 电键	25	diàn jiàn	electric key/switch
 电锯	1072	diàn jù	electric chainsaw
 电镀	933	diàn dù	to electroplate
+电镜	83	diàn jìng	electron microscope (abbr. for 电子显微镜 diànzǐxiǎnwēijìng)
 电闪	105	diàn shǎn	lightning flashes
 电闸	58	diàn zhá	electric switch/circuit breaker
 电阻	4786	diàn zǔ	electrical resistance/resistor
@@ -66609,7 +66709,7 @@
 电驴子	0	diàn lǘ zi	(dialect) motorcycle
 电驿	0	diàn yì	relay (electronics)
 电鳐	0	diàn yáo	(zoology) electric ray
-电鳗	200	diàn mán	electric eel
+电鳗	200	diàn mán	electric eel/often pr. diàn4man
 电鸡	0	diàn jī	(slang) (pejorative) e-bike (from Cantonese)
 男丁	195	nán dīng	adult male
 男人婆	78	nán rén pó	tomboy
@@ -66904,9 +67004,9 @@
 畸形儿	65	jī xíng ér	deformed child/child with birth defect
 畸形兒	65	jī xíng ér	deformed child/child with birth defect
 畸形秀	0	jī xíng xiù	freak show
-畸态	0	jī tài	deformity/birth defect/abnormality
+畸态	0	jī tài	abnormality; deformity
 畸恋	35	jī liàn	improper love affair; unhealthy relationship (age-inappropriate, obsessive, incestuous etc)
-畸態	0	jī tài	deformity/birth defect/abnormality
+畸態	0	jī tài	abnormality; deformity
 畸戀	35	jī liàn	improper love affair; unhealthy relationship (age-inappropriate, obsessive, incestuous etc)
 畸胎	71	jī tāi	a teratism; monster; severely deformed individual
 畸胎瘤	36	jī tāi liú	teratoma (medicine)
@@ -67479,7 +67579,8 @@
 瘦長	372	shòu cháng	slim
 瘦长	372	shòu cháng	slim
 瘦骨伶仃	0	shòu gǔ líng dīng	(idiom) emaciated; scrawny
-瘦骨嶙峋	120	shòu gǔ lín xún	skinny; emaciated (idiom)
+瘦骨嶙峋	120	shòu gǔ lín xún	(idiom) extremely skinny; emaciated
+瘦骨嶙嶙	0	shòu gǔ lín lín	see 瘦骨嶙峋 shòugǔlínxún
 瘦骨棱棱	0	shòu gǔ léng léng	bony/skinny
 瘧	0	nüè	malaria	yào	used in 瘧子 yàozi
 瘧原蟲	501	nüè yuán chóng	plasmodium (malaria parasite)
@@ -67493,10 +67594,11 @@
 瘪三	447	biē sān	(Wu dialect) bum/wretched-looking tramp who lives by begging or stealing
 瘪螺痧	0	biě luó shā	cholera (with dehydration)
 瘪陷	0	biě xiàn	deflated
-瘫	0	tān	paralyzed
+瘫	0	tān	paralyzed/(fig.) limp; incapacitated from weakness or exhaustion
+瘫坐	20	tān zuò	to slump into a sitting position; to sit slumped
 瘫子	41	tān zi	paralyzed person
 瘫痪	12023	tān huàn	(medicine) to suffer paralysis/(fig.) to be paralyzed; to break down; to come to a standstill
-瘫软	162	tān ruǎn	limp/weak
+瘫软	162	tān ruǎn	limp; weak
 瘭	0	biāo	whitlow
 瘮	0	shèn	to terrify
 瘮人	0	shèn rén	scary
@@ -67607,10 +67709,11 @@
 癯	0	qú	thin/emaciated/worn/tired
 癯瘦	0	qú shòu	thin/emaciated
 癰	0	yōng	carbuncle
-癱	0	tān	paralyzed
+癱	0	tān	paralyzed/(fig.) limp; incapacitated from weakness or exhaustion
+癱坐	20	tān zuò	to slump into a sitting position; to sit slumped
 癱子	41	tān zi	paralyzed person
 癱瘓	12023	tān huàn	(medicine) to suffer paralysis/(fig.) to be paralyzed; to break down; to come to a standstill
-癱軟	162	tān ruǎn	limp/weak
+癱軟	162	tān ruǎn	limp; weak
 癲	0	diān	mentally deranged/crazy
 癲狂	676	diān kuáng	deranged/mad/cracked/zany
 癲癇	3715	diān xián	epilepsy
@@ -67855,7 +67958,6 @@
 白朗县	72	Bái lǎng Xiàn	Bainang, a county in Shigatse City 日喀则市 Rìkāzé Shì, Tibet
 白朗縣	72	Bái lǎng Xiàn	Bainang, a county in Shigatse City 日喀則市 Rìkāzé Shì, Tibet
 白木耳	30	bái mù ěr	white fungus (Tremella fuciformis)/snow fungus
-白朮	162	bái zhú	the rhizome of large-headed atractylodes (Atractylodes macrocephaia)
 白朴	50	Bái Pǔ	Bai Pu (1226-1306), Yuan dynasty dramatist in the 雜劇|杂剧 tradition of musical comedy, one of the Four Great Yuan dramatists 元曲四大家
 白杨	646	bái yáng	poplar/CL: 棵 kē
 白杨树	245	bái yáng shù	white poplar (Populus bonatii)
@@ -68537,7 +68639,7 @@
 盂縣	174	Yú Xiàn	Yu County or Yuxian, a county in Yangquan City 陽泉市 Yángquán Shì, Shanxi
 盂蘭盆	0	Yú lán pén	see 盂蘭盆會 Yúlánpénhuì
 盂蘭盆會	17	Yú lán pén huì	Feast of All Souls (fifteenth day of seventh lunar month) (Buddhism)
-盃	0	bēi	variant of 杯 bēi/trophy cup/classifier for certain containers of liquids: glass, cup
+盃	0	bēi	variant of 杯 bēi (e.g. 獎盃 jiǎngbēi, 世界盃 shìjièbēi)
 盅	0	zhōng	handleless cup/goblet
 盆	0	pén	basin/flower pot/unit of volume equal to 12 斗 dǒu and 8 升 shēng, approx 128 liters/CL: 个 gè
 盆友	47	pén yǒu	(Internet slang) friend (pun on 朋友 péngyǒu)
@@ -70140,6 +70242,8 @@
 石拐	21	Shí guǎi	see 石拐区 Shíguǎi Qū
 石拐区	0	Shí guǎi Qū	Shiguai, a district of Baotou City 包头市 Bāotóu Shì, Inner Mongolia
 石拐區	0	Shí guǎi Qū	Shiguai, a district of Baotou City 包頭市 Bāotóu Shì, Inner Mongolia
+石拱桥	126	shí gǒng qiáo	stone arch bridge
+石拱橋	126	shí gǒng qiáo	stone arch bridge
 石斑魚	158	shí bān yú	grouper (Portuguese: garoupa)/also called 鮨/Epinephelinae (subfamily of Serranidae, fish family including grouper)
 石斑鱼	158	shí bān yú	grouper (Portuguese: garoupa)/also called 鮨/Epinephelinae (subfamily of Serranidae, fish family including grouper)
 石斛	417	shí hú	noble dendrobium (Dendrobium nobile)
@@ -70472,7 +70576,6 @@
 砲響	71	pào xiǎng	sound of gunfire/fig. news of momentous events
 砳	0	lè	rocky
 破冰	1072	pò bīng	(fig.) to break the ice; to begin to restore amicable relations
-破冰型艏	0	pò bīng xíng shǒu	icebreaker bow
 破冰舰	0	pò bīng jiàn	icebreaker
 破冰船	316	pò bīng chuán	icebreaker
 破冰艦	0	pò bīng jiàn	icebreaker
@@ -70893,6 +70996,7 @@
 碎紙機	79	suì zhǐ jī	paper shredder
 碎纸机	79	suì zhǐ jī	paper shredder
 碎肉	98	suì ròu	ground meat; mincemeat
+碎花	81	suì huā	ditsy flower pattern (on cloth)
 碎裂	1445	suì liè	to disintegrate/to shatter into small pieces
 碎鑽	0	suì zuàn	small diamonds/melee (small diamonds used in embellishing mountings for larger gems)/splints (sharp-pointed diamond splinters)/clatersal (small diamond splints from which diamond powder is produced by crushing)
 碎钻	0	suì zuàn	small diamonds/melee (small diamonds used in embellishing mountings for larger gems)/splints (sharp-pointed diamond splinters)/clatersal (small diamond splints from which diamond powder is produced by crushing)
@@ -72491,7 +72595,6 @@
 秦	0	Qín	surname Qin/Qin dynasty (221–207 BC) of the first emperor 秦始皇 Qín Shǐhuáng/short name for 陕西 Shǎnxī
 秦二世	269	Qín Èr shì	Qin Ershi (229-207 BC), second Qin emperor
 秦代	537	Qín dài	Qin dynasty (221-207 BC), founded by the first emperor Qin Shihuang 秦始皇 Qín Shǐhuáng, the first dynasty to rule the whole of China
-秦军	646	Qín jūn	the Qin army (model for the terracotta warriors)
 秦吉了	0	qín jí liǎo	(old) see 八哥 bāge
 秦国	2630	Qín guó	the state of Qin, one of the seven states of the Warring States Period (475-220 BC)
 秦國	2630	Qín guó	the state of Qin, one of the seven states of the Warring States Period (475-220 BC)
@@ -72536,7 +72639,6 @@
 秦腔	380	Qín qiāng	Qinqiang, an opera style popular in northwest China, possibly originating in Ming dynasty folk music/Shaanxi opera
 秦艽	43	qín jiāo	large leaf gentian (Gentiana macrophylla)
 秦越人	0	Qín Yuè rén	Qin Yueren (407-310 BC), Warring States physician known for his medical skills
-秦軍	646	Qín jūn	the Qin army (model for the terracotta warriors)
 秦都	55	Qín dū	see 秦都区 Qíndū Qū
 秦都区	36	Qín dū Qū	Qindu, a district of Xianyang City 咸阳市 Xiányáng Shì, Shaanxi
 秦都區	36	Qín dū Qū	Qindu, a district of Xianyang City 咸陽市 Xiányáng Shì, Shaanxi
@@ -73048,6 +73150,7 @@
 穷困	1950	qióng kùn	destitute/wretched poverty
 穷困潦倒	209	qióng kùn liáo dǎo	(idiom) to live in poverty and despair; down and out; destitute and without hope
 穷国	741	qióng guó	poor country
+穷大方	0	qióng dà fang	being generous despite being poor
 穷奢极侈	14	qióng shē jí chǐ	extravagant in the extreme (idiom)
 穷奢极欲	35	qióng shē jí yù	to indulge in a life of luxury (idiom); extreme extravagance
 穷家富路	0	qióng jiā fù lù	(idiom) at home be frugal, but when traveling be prepared to spend
@@ -73331,6 +73434,7 @@
 窝囊气	28	wō nang qì	pent-up frustration/petty annoyances
 窝囊费	0	wō nang fèi	(slang) hard-earned wages (pun on 窝囊废 wōnangfèi)
 窝夫	0	wō fū	waffle (loanword)
+窝头	107	wō tóu	see 窝窝头 wōwotóu
 窝子	398	wō zi	lair/den/stronghold
 窝巢	18	wō cháo	nest
 窝工	20	wō gōng	(of workers) to have no work to do/to be underutilized (due to lack of supplies, poor organization by management etc)
@@ -73397,6 +73501,7 @@
 窩裡鬥	245	wō li dòu	internal strife (family, group, etc)
 窩闊臺	31	Wō kuò tái	Ögedei Khan (1186-1242), a son of Genghis Khan
 窩闊臺汗	0	Wō kuò tái hán	Ögedei Khan (1186-1242), a son of Genghis Khan
+窩頭	107	wō tóu	see 窩窩頭 wōwotóu
 窩點	692	wō diǎn	lair; den (of illegal activities)
 窪	0	wā	depression; low-lying area/low-lying; sunken
 窪地	871	wā dì	low-lying ground; depression
@@ -73413,6 +73518,7 @@
 窮困	1950	qióng kùn	destitute/wretched poverty
 窮困潦倒	209	qióng kùn liáo dǎo	(idiom) to live in poverty and despair; down and out; destitute and without hope
 窮國	741	qióng guó	poor country
+窮大方	0	qióng dà fang	being generous despite being poor
 窮奢極侈	14	qióng shē jí chǐ	extravagant in the extreme (idiom)
 窮奢極欲	35	qióng shē jí yù	to indulge in a life of luxury (idiom); extreme extravagance
 窮家富路	0	qióng jiā fù lù	(idiom) at home be frugal, but when traveling be prepared to spend
@@ -73990,7 +74096,7 @@
 笼嘴	0	lóng zuǐ	muzzle (device)
 笼头	60	lóng tou	headstall/bridle
 笼子	6026	lóng zi	cage; basket; container	lǒng zi	large box; trunk; chest
-笼屉	17	lóng tì	bamboo steamer (for buns or dim sum)
+笼屉	17	lóng tì	steamer basket (often stacked in tiers)
 笼槛	0	lóng jiàn	cage (for animals)
 笼火	0	lóng huǒ	to make a fire
 笼络	759	lǒng luò	to coax/to beguile/to win over
@@ -74131,7 +74237,6 @@
 筘	0	kòu	(a measure of width of cloth)
 筚	0	bì	wicker
 筚路蓝缕	62	bì lù lán lǚ	the hardships of beginning an undertaking (idiom)
-筚门闺窦	0	bì mén guī dòu	wicker door, hole window (idiom); fig. wretched hovel/living in poverty
 筛	0	shāi	(bound form) a sieve/to sieve; to sift; to filter/to eliminate through selection/to warm a pot of rice wine (over a fire or in hot water)/to pour (wine or tea)/(dialect) to strike (a gong)
 筛子	631	shāi zi	sieve/CL: 面 miàn
 筛查	1122	shāi chá	to screen (for disease etc)
@@ -74299,6 +74404,8 @@
 管手管脚	0	guǎn shǒu guǎn jiǎo	to control in every detail/excessive supervision
 管手管腳	0	guǎn shǒu guǎn jiǎo	to control in every detail/excessive supervision
 管扳手	0	guǎn bān shǒu	pipe wrench
+管涌	25	guǎn yǒng	piping (internal erosion of soil caused by water seepage)
+管湧	25	guǎn yǒng	piping (internal erosion of soil caused by water seepage)
 管灯	0	guǎn dēng	fluorescent light
 管燈	0	guǎn dēng	fluorescent light
 管窥	110	guǎn kuī	to look at sth through a bamboo tube/to have a restricted view
@@ -74503,10 +74610,9 @@
 篲	0	huì	variant of 彗 huì
 篳	0	bì	wicker
 篳路藍縷	62	bì lù lán lǚ	the hardships of beginning an undertaking (idiom)
-篳門閨竇	0	bì mén guī dòu	wicker door, hole window (idiom); fig. wretched hovel/living in poverty
 篴	0	dí	flute
 篶	0	yān	black bamboo
-篷	0	péng	sail
+篷	0	péng	covering used for shelter from sun or rain/sail (of a boat)
 篷布	62	péng bù	tarpaulin
 篷盖布	0	péng gài bù	tarpaulin fabric
 篷蓋布	0	péng gài bù	tarpaulin fabric
@@ -74686,7 +74792,7 @@
 籠	0	lóng	enclosing frame made of bamboo, wire etc; cage; basket/steamer basket	lǒng	to envelop; to cover/(used in 籠子 lǒngzi) large box/Taiwan pr. lóng
 籠嘴	0	lóng zuǐ	muzzle (device)
 籠子	6026	lóng zi	cage; basket; container	lǒng zi	large box; trunk; chest
-籠屜	17	lóng tì	bamboo steamer (for buns or dim sum)
+籠屜	17	lóng tì	steamer basket (often stacked in tiers)
 籠檻	0	lóng jiàn	cage (for animals)
 籠火	0	lóng huǒ	to make a fire
 籠絡	759	lǒng luò	to coax/to beguile/to win over
@@ -75161,7 +75267,7 @@
 糕餅	589	gāo bǐng	cakes/pastries
 糕饼	589	gāo bǐng	cakes/pastries
 糕點	2344	gāo diǎn	cakes/pastries
-糖	0	táng	sugar/sweets/candy/CL: 颗 kē, 块 kuài
+糖	0	táng	sugar/sweets/candy/CL: 颗 kē, 块 kuài/carbohydrate; saccharide
 糖分	977	táng fèn	sugar content
 糖原	229	táng yuán	glycogen
 糖友	0	táng yǒu	diabetes sufferer
@@ -75182,7 +75288,7 @@
 糖瓜	29	táng guā	malt sugar candy, a traditional offering to the kitchen god Zaoshen 灶神
 糖甙	0	táng dài	(dated) glycoside
 糖稀	23	táng xī	maltose syrup
-糖类	1175	táng lèi	sugar (chemistry)
+糖类	1175	táng lèi	types of sugar/carbohydrates
 糖粉	148	táng fěn	icing sugar; confectioner's sugar; powdered sugar
 糖精	355	táng jīng	saccharin
 糖脂	44	táng zhī	glycolipid
@@ -75203,7 +75309,7 @@
 糖醋魚	0	táng cù yú	sweet and sour fish
 糖醋鱼	0	táng cù yú	sweet and sour fish
 糖霜	302	táng shuāng	frosting; icing
-糖類	1175	táng lèi	sugar (chemistry)
+糖類	1175	táng lèi	types of sugar
 糖飴	0	táng yí	malt sugar/maltose
 糖饴	0	táng yí	malt sugar/maltose
 糖高粱	0	táng gāo liáng	sweet sorghum
@@ -75538,6 +75644,7 @@
 紋喉鳳鶥	0	wén hóu fèng méi	(bird species of China) stripe-throated yuhina (Yuhina gularis)
 紋喉鵯	0	wén hóu bēi	(bird species of China) stripe-throated bulbul (Pycnonotus finlaysoni)
 紋層	0	wén céng	lamina/lamella/lamination
+紋波	51	wén bō	(electronics) ripple
 紋理	2042	wén lǐ	vein lines (in marble or fingerprint)/grain (in wood etc)
 紋章	741	wén zhāng	coat of arms
 紋絲	28	wén sī	tiny bit/a jot/whisker
@@ -75601,7 +75708,7 @@
 紐子	19	niǔ zi	button
 紐帶	3802	niǔ dài	tie/link/bond
 紐幾內亞	0	Niǔ Jī nèi yà	New Guinea/Papua-New Guinea
-紐扣	1072	niǔ kòu	button
+紐扣	1072	niǔ kòu	button (for clothing)
 紐扣電池	0	niǔ kòu diàn chí	button cell
 紐時	35	Niǔ Shí	New York Times, abbr. for 紐約時報 Niǔ Yuē Shíbào
 紐澤西	12	Niǔ zé xī	New Jersey, USA (Tw)
@@ -75643,6 +75750,7 @@
 純水	355	chún shuǐ	pure water
 純淨	5754	chún jìng	pure/clean/unmixed
 純淨水	224	chún jìng shuǐ	purified water
+純淨物	0	chún jìng wù	(chemistry) pure substance
 純潔	7586	chún jié	pure/clean and honest/to purify
 純熟	661	chún shú	skillful/proficient
 純牛奶	40	chún niú nǎi	pure milk
@@ -75817,6 +75925,7 @@
 紧凑	2951	jǐn còu	compact/terse/tight (schedule)
 紧凑型车	0	jǐn còu xíng chē	compact car model
 紧咬不放	0	jǐn yǎo bù fàng	(idiom) unwilling to let go/like a dog with a bone/dogged
+紧固件	145	jǐn gù jiàn	fastener
 紧张缓和	0	jǐn zhāng huǎn hé	detente
 紧急疏散	0	jǐn jí shū sàn	emergency evacuation
 紧扣	1122	jǐn kòu	to stick closely to (a topic or theme etc)
@@ -76015,8 +76124,8 @@
 細胞學	186	xì bāo xué	cytology
 細胞廣播	0	xì bāo guǎng bō	(Tw) (telecommunications) cell broadcast
 細胞核	692	xì bāo hé	nucleus (of cell)
-細胞毒	34	xì bāo dú	cytotoxin
 細胞毒性	0	xì bāo dú xìng	cytotoxicity
+細胞毒素	0	xì bāo dú sù	cytotoxin
 細胞破碎	0	xì bāo pò suì	(biotechnology) cell disruption
 細胞膜	871	xì bāo mó	cell membrane
 細胞色素	0	xì bāo sè sù	cytochrome
@@ -76468,7 +76577,7 @@
 維尼熊	37	Wéi ní xióng	Winnie the Pooh
 維尼綸	48	wéi ní lún	see 維綸 wéilún
 維岡	17	Wéi gāng	Wigan, town in England
-維恩圖解	0	Wéi ēn tú jiě	Venn diagram
+維恩圖	0	wéi ēn tú	Venn diagram
 維揚	17	Wéi yáng	historical name for Yangzhou 揚州 Yángzhōu
 維氏	30	Wéi shì	Victorinox (Swiss knife brand)
 維爾紐斯	389	Wéi ěr niǔ sī	Vilnius, capital of Lithuania
@@ -76587,6 +76696,7 @@
 緇	0	zī	Buddhists/black silk/dark
 緊俏	204	jǐn qiào	(merchandise) in high demand
 緊咬不放	0	jǐn yǎo bù fàng	(idiom) unwilling to let go/like a dog with a bone/dogged
+緊固件	145	jǐn gù jiàn	fastener
 緊張緩和	0	jǐn zhāng huǎn hé	detente
 緊急疏散	0	jǐn jí shū sàn	emergency evacuation
 緊扣	1122	jǐn kòu	to stick closely to (a topic or theme etc)
@@ -76733,6 +76843,7 @@
 緰	0	yú	net
 緱	0	Gōu	surname Gou	gōu	rope attached to a sword hilt/(archaic) hilt/sword
 緲	0	miǎo	used in 縹緲 piāomiǎo
+練功券	0	liàn gōng quàn	banknote-counting practice note (used for training cash-handling staff)
 練攤	13	liàn tān	(dialect) to run a street stall
 練習冊	51	liàn xí cè	exercise booklet
 緶	0	biàn	braid
@@ -76976,6 +77087,7 @@
 繄	0	yī	interj./sighing sound
 繅	0	sāo	to reel silk from cocoons
 繆	0	Miào	surname Miao	miù	variant of 謬 miù	móu	used in 綢繆 chóumóu	mù	old variant of 穆 mù
+繆子	0	miù zǐ	(physics) muon
 繆巧	0	miù qiǎo	plan/scheme/intelligent/quick-witted
 繆思	79	Miù sī	variant of 繆斯 Miùsī
 繆斯	724	Miù sī	Muse (Greek mythology)
@@ -77167,7 +77279,6 @@
 纜	0	lǎn	cable/hawser/to moor
 纜樁	0	lǎn zhuāng	mooring bollard
 纜索	282	lǎn suǒ	cable/hawser/mooring rope
-纜索吊椅	0	lǎn suǒ diào yǐ	ski-lift
 纜線	407	lǎn xiàn	cable
 纜繩	575	lǎn shéng	cable/hawser/mooring rope
 纜車	2291	lǎn chē	cable car
@@ -77449,6 +77560,7 @@
 纯	0	chún	pure/simple/unmixed/genuine
 纯净	5754	chún jìng	pure/clean/unmixed
 纯净水	224	chún jìng shuǐ	purified water
+纯净物	0	chún jìng wù	(chemistry) pure substance
 纯利	676	chún lì	net profit
 纯利益	0	chún lì yì	net profit; net gain
 纯化	776	chún huà	to purify
@@ -77674,6 +77786,7 @@
 纹喉凤鹛	0	wén hóu fèng méi	(bird species of China) stripe-throated yuhina (Yuhina gularis)
 纹喉鹎	0	wén hóu bēi	(bird species of China) stripe-throated bulbul (Pycnonotus finlaysoni)
 纹层	0	wén céng	lamina/lamella/lamination
+纹波	51	wén bō	(electronics) ripple
 纹理	2042	wén lǐ	vein lines (in marble or fingerprint)/grain (in wood etc)
 纹章	741	wén zhāng	coat of arms
 纹绣	0	wén xiù	cosmetic tattooing; semi-permanent makeup; micropigmentation/embroidery
@@ -77711,7 +77824,7 @@
 纽奥良	257	Niǔ ào liáng	New Orleans, Louisiana
 纽子	19	niǔ zi	button
 纽带	3802	niǔ dài	tie/link/bond
-纽扣	1072	niǔ kòu	button
+纽扣	1072	niǔ kòu	button (for clothing)
 纽扣电池	0	niǔ kòu diàn chí	button cell
 纽时	35	Niǔ Shí	New York Times, abbr. for 纽约时报 Niǔ Yuē Shíbào
 纽泽西	12	Niǔ zé xī	New Jersey, USA (Tw)
@@ -77749,6 +77862,7 @@
 绁	0	xiè	to tie/to bind/to hold on a leash/rope/cord
 绂	0	fú	ribbon for a seal/sash
 练习册	51	liàn xí cè	exercise booklet
+练功券	0	liàn gōng quàn	banknote-counting practice note (used for training cash-handling staff)
 练摊	13	liàn tān	(dialect) to run a street stall
 组合拳	91	zǔ hé quán	a combination of punches/(fig.) a set of measures
 组屋	257	zǔ wū	HDB flats/public apartment flats (in Singapore and Malaysia)
@@ -77792,8 +77906,8 @@
 细胞学	186	xì bāo xué	cytology
 细胞广播	0	xì bāo guǎng bō	(Tw) (telecommunications) cell broadcast
 细胞核	692	xì bāo hé	nucleus (of cell)
-细胞毒	34	xì bāo dú	cytotoxin
 细胞毒性	0	xì bāo dú xìng	cytotoxicity
+细胞毒素	0	xì bāo dú sù	cytotoxin
 细胞破碎	0	xì bāo pò suì	(biotechnology) cell disruption
 细胞膜	871	xì bāo mó	cell membrane
 细胞色素	0	xì bāo sè sù	cytochrome
@@ -78161,7 +78275,7 @@
 维尔纽斯	389	Wéi ěr niǔ sī	Vilnius, capital of Lithuania
 维尼熊	37	Wéi ní xióng	Winnie the Pooh
 维尼纶	48	wéi ní lún	see 维纶 wéilún
-维恩图解	0	Wéi ēn tú jiě	Venn diagram
+维恩图	0	wéi ēn tú	Venn diagram
 维扬	17	Wéi yáng	historical name for Yangzhou 扬州 Yángzhōu
 维氏	30	Wéi shì	Victorinox (Swiss knife brand)
 维珍	891	Wéi zhēn	Virgin (company)
@@ -78330,7 +78444,6 @@
 缆	0	lǎn	cable/hawser/to moor
 缆桩	0	lǎn zhuāng	mooring bollard
 缆索	282	lǎn suǒ	cable/hawser/mooring rope
-缆索吊椅	0	lǎn suǒ diào yǐ	ski-lift
 缆线	407	lǎn xiàn	cable
 缆绳	575	lǎn shéng	cable/hawser/mooring rope
 缆车	2291	lǎn chē	cable car
@@ -78512,6 +78625,7 @@
 缩进	427	suō jìn	to retreat into; to draw back into/(typography) to indent
 缩阴	0	suō yīn	to make the vagina tighter
 缪	0	Miào	surname Miao	miù	variant of 谬 miù	móu	used in 绸缪 chóumóu	mù	old variant of 穆 mù
+缪子	0	miù zǐ	(physics) muon
 缪巧	0	miù qiǎo	plan/scheme/intelligent/quick-witted
 缪思	79	Miù sī	variant of 缪斯 Miùsī
 缪斯	724	Miù sī	Muse (Greek mythology)
@@ -78841,7 +78955,7 @@
 罵娘	389	mà niáng	to curse (at sb); to call sb names
 罵戰	31	mà zhàn	war of words; exchange of verbal attacks
 罵架	0	mà jià	to have a shouting match; to exchange verbal abuse; to quarrel noisily
-罵罵咧咧	501	mà ma liē liē	to swear while talking; to be foul-mouthed
+罵罵咧咧	501	mà ma liē liē	to grumble angrily; to curse and swear
 罵聲	295	mà shēng	scolding/tongue-lashing/(fig.) angry criticism/opprobrium/CL: 片 piàn
 罵街	257	mà jiē	to shout abuses in the street
 罶	0	liǔ	creel/fish basket
@@ -78981,7 +79095,7 @@
 羊拐	0	yáng guǎi	children's game, similar to knucklebones
 羊排	69	yáng pái	lamb chop
 羊栈	0	yáng zhàn	sheep or goat pen
-羊桃	0	yáng táo	variant of 杨桃 yángtáo/carambola/star fruit
+羊桃	0	yáng táo	(dialect) Chinese gooseberry; kiwifruit
 羊棧	0	yáng zhàn	sheep or goat pen
 羊毛	5012	yáng máo	wool; fleece
 羊毛毯	0	yáng máo tǎn	woolen blanket
@@ -80609,6 +80723,7 @@
 肉湯	363	ròu tāng	meat soup/broth
 肉湯麵	0	ròu tāng miàn	noodles in meat soup
 肉燥	17	ròu zào	(Tw) minced pork stewed with soy sauce and spices (served with rice or noodles, or as a filling in buns etc)/Taiwan pr. ròusào
+肉疼	0	ròu téng	physical pain/(coll.) to feel pained at spending or losing money
 肉瘤	490	ròu liú	wart/sarcoma/superfluous/useless
 肉盾	158	ròu dùn	human shield/(gaming) tank; meat shield
 肉眼凡胎	0	ròu yǎn fán tāi	ignoramus (idiom)
@@ -80788,6 +80903,8 @@
 股癬	93	gǔ xuǎn	tinea cruris, fungal skin infection of the groin/dermatomycosis, esp. sexually transmitted/jock itch
 股肱	87	gǔ gōng	trusted aide
 股骨	324	gǔ gǔ	femur
+股骨头	115	gǔ gǔ tóu	(anatomy) femoral head
+股骨頭	115	gǔ gǔ tóu	(anatomy) femoral head
 肢	0	zhī	limb
 肢体	7413	zhī tǐ	limb/limbs and trunk/body
 肢体冲突	490	zhī tǐ chōng tū	physical encounter/fight
@@ -80937,11 +81054,9 @@
 肺痨	107	fèi láo	tuberculosis
 肺癆	107	fèi láo	tuberculosis
 肺癌	3162	fèi ái	lung cancer
-肺結核	2089	fèi jié hé	tuberculosis/TB
-肺結核病	60	fèi jié hé bìng	tuberculosis, TB
+肺結核	2089	fèi jié hé	pulmonary tuberculosis; TB
 肺結節	0	fèi jié jié	(medicine) pulmonary nodule
-肺结核	2089	fèi jié hé	tuberculosis/TB
-肺结核病	60	fèi jié hé bìng	tuberculosis, TB
+肺结核	2089	fèi jié hé	pulmonary tuberculosis; TB
 肺结节	0	fèi jié jié	(medicine) pulmonary nodule
 肺脏	324	fèi zàng	lungs
 肺腑	178	fèi fǔ	bottom of the heart (fig.)
@@ -80986,7 +81101,7 @@
 胁	0	xié	flank (the side of one's torso)/to coerce/to threaten
 胁从犯	0	xié cóng fàn	accomplice under duress; coerced accomplice; induced accomplice
 胁持	174	xié chí	to hold under duress
-胁迫	6918	xié pò	to coerce/to compel/to force
+胁迫	6918	xié pò	to coerce; to compel; to force
 胂	0	shèn	arsine
 胂凡納明	0	shèn fán nà míng	arsphenamine
 胂凡纳明	0	shèn fán nà míng	arsphenamine
@@ -81324,6 +81439,7 @@
 胡锦涛	12023	Hú Jǐn tāo	Hu Jintao (1942-), General Secretary of the CCP 2002-2012, president of the PRC 2003-2013
 胡闹	5248	hú nào	to act willfully and make a scene/to make trouble
 胡雁	0	hú yàn	Tatar goose, wild goose found in territories northwest of China in ancient times
+胡青	0	hú qīng	beard shadow
 胡须	1585	hú xū	beard/CL: 根 gēn, 绺 liǔ
 胡髭	0	hú zī	beard and mustache
 胡鬧	5248	hú nào	to act willfully and make a scene/to make trouble
@@ -81384,7 +81500,8 @@
 胴	0	dòng	large intestine/torso
 胴体	389	dòng tǐ	carcass/naked body
 胴體	389	dòng tǐ	carcass/naked body
-胶	0	jiāo	to glue/glue/gum/rubber
+胶	0	jiāo	glue; gum/to glue; to stick/(bound form) rubber
+胶东	1413	Jiāo dōng	eastern Shandong
 胶乳	83	jiāo rǔ	latex
 胶体	676	jiāo tǐ	colloid
 胶印	219	jiāo yìn	offset printing
@@ -81535,7 +81652,7 @@
 脅	0	xié	flank (the side of one's torso)/to coerce/to threaten
 脅從犯	0	xié cóng fàn	accomplice under duress; coerced accomplice; induced accomplice
 脅持	174	xié chí	to hold under duress
-脅迫	6918	xié pò	to coerce/to compel/to force
+脅迫	6918	xié pò	to coerce; to compel; to force
 脆	0	cuì	brittle/fragile/crisp/crunchy/clear and loud voice/neat
 脆弱	19953	cuì ruò	weak/frail
 脆爽	15	cuì shuǎng	(of food) crispy and tasty/(of a voice or sound) sharp and clear
@@ -81769,7 +81886,6 @@
 脚蹬	105	jiǎo dēng	pedal
 脚蹼	85	jiǎo pǔ	flippers/fins
 脚轮	25	jiǎo lún	caster (attached to the bottom of furniture, trolleys etc)
-脚违例	0	jiǎo wéi lì	foot fault (tennis etc)
 脚钱	0	jiǎo qián	payment to a porter
 脚链	69	jiǎo liàn	ankle bracelet
 脚镣	794	jiǎo liào	fetters/leg-irons
@@ -82263,7 +82379,6 @@
 腳蹬	105	jiǎo dēng	pedal
 腳蹼	85	jiǎo pǔ	flippers/fins
 腳輪	25	jiǎo lún	caster (attached to the bottom of furniture, trolleys etc)
-腳違例	0	jiǎo wéi lì	foot fault (tennis etc)
 腳錢	0	jiǎo qián	payment to a porter
 腳鏈	69	jiǎo liàn	ankle bracelet
 腳鐐	794	jiǎo liào	fetters/leg-irons
@@ -82471,7 +82586,7 @@
 膝袒	0	xī tǎn	to walk on one's knees and bare one's breast (a gesture of deepest apology)
 膞	0	zhuān	(dialect) gizzard
 膟	0	lǜ	sacrificial flesh
-膠	0	jiāo	to glue/glue/gum/rubber
+膠	0	jiāo	glue; gum/to glue; to stick/(bound form) rubber
 膠乳	83	jiāo rǔ	latex
 膠印	219	jiāo yìn	offset printing
 膠卷	2399	jiāo juǎn	roll of film
@@ -82494,6 +82609,7 @@
 膠接	0	jiāo jiē	to splice/a glued joint/a bond
 膠木	37	jiāo mù	bakelite
 膠束	63	jiāo shù	(chemistry) micelle
+膠東	1413	Jiāo dōng	eastern Shandong
 膠棒	14	jiāo bàng	glue stick
 膠水	1380	jiāo shuǐ	glue
 膠泥	148	jiāo ní	clay
@@ -82979,6 +83095,8 @@
 自由刑	0	zì yóu xíng	(law) deprivation of freedom
 自由恋爱	178	zì yóu liàn ài	romantic relationships based on free choice (as opposed to arranged courtship or marriage)
 自由戀愛	178	zì yóu liàn ài	romantic relationships based on free choice (as opposed to arranged courtship or marriage)
+自由搏击	0	zì yóu bó jī	kickboxing
+自由搏擊	0	zì yóu bó jī	kickboxing
 自由散漫	34	zì yóu sǎn màn	easygoing/lax/unconstrained/unruly
 自由泳	1175	zì yóu yǒng	freestyle swimming
 自由潛水	0	zì yóu qián shuǐ	freediving
@@ -83474,6 +83592,7 @@
 舱位	240	cāng wèi	shipping space/cabin berth/cabin seat
 舱外活动	0	cāng wài huó dòng	extravehicular activity (outside space vehicle)/EVA
 舱房	38	cāng fáng	cabin (of an airplane or ship)
+舱门	1514	cāng mén	cabin door; hatch
 舲	0	líng	(literary) small boat with a windowed cabin
 舳	0	zhú	poopdeck/stern of boat
 舴	0	zé	used in 舴艋 zéměng
@@ -83546,6 +83665,7 @@
 艙位	240	cāng wèi	shipping space/cabin berth/cabin seat
 艙外活動	0	cāng wài huó dòng	extravehicular activity (outside space vehicle)/EVA
 艙房	38	cāng fáng	cabin (of an airplane or ship)
+艙門	1514	cāng mén	cabin door; hatch
 艚	0	cáo	seagoing junk
 艜	0	dài	a long narrow vessel with two masts
 艟	0	chōng	used in 艨艟 méngchōng/Taiwan pr. tóng
@@ -83869,12 +83989,14 @@
 芝麻包	0	zhī ma bāo	sesame bun
 芝麻官	138	zhī ma guān	low ranking official/petty bureaucrat
 芝麻小事	25	zhī ma xiǎo shì	trivial matter/trifle
+芝麻开门	162	zhī ma kāi mén	open sesame
 芝麻油	170	zhī ma yóu	sesame oil
 芝麻綠豆	21	zhī ma lǜ dòu	trivial/minute (size)
 芝麻绿豆	21	zhī ma lǜ dòu	trivial/minute (size)
 芝麻菜	0	zhī ma cài	(botany) arugula; rocket; roquette (subspecies Eruca vesicaria sativa)
 芝麻酱	123	zhī ma jiàng	sesame paste
 芝麻醬	123	zhī ma jiàng	sesame paste
+芝麻開門	162	zhī ma kāi mén	open sesame
 芝麻餅	0	zhī ma bǐng	sesame biscuit
 芝麻饼	0	zhī ma bǐng	sesame biscuit
 芞	0	qì	a kind of aromatic herb (old)
@@ -83909,7 +84031,6 @@
 芦沟桥	95	Lú gōu Qiáo	variant of 卢沟桥 Lúgōu Qiáo
 芦洞	91	Lú dòng	Rodong or Nodong, series of North Korean medium-range missiles
 芦洲	117	Lú zhōu	Luzhou or Luchou city in New Taipei City 新北市 Xīnběishì, Taiwan
-芦洲市	0	Lú zhōu shì	Luzhou or Luchou city in New Taipei City 新北市 Xīnběishì, Taiwan
 芦淞	0	Lú sōng	see 芦淞区 Lúsōng Qū
 芦淞区	42	Lú sōng Qū	Lusong, a district of Zhuzhou City 株洲市 Zhūzhōu Shì, Hunan
 芦溪	22	Lú xī	see 芦溪县 Lúxī Xiàn
@@ -84321,7 +84442,9 @@
 苔	0	tāi	used in 舌苔 shétāi	tái	moss; lichen; liverwort
 苔原	186	tái yuán	tundra
 苔藓	661	tái xiǎn	moss
+苔藓植物	68	tái xiǎn zhí wù	bryophyte
 苔蘚	661	tái xiǎn	moss
+苔蘚植物	68	tái xiǎn zhí wù	bryophyte
 苕	0	sháo	see 红苕 hóngsháo	tiáo	reed grass/Chinese trumpet vine (Campsis grandiflora) (old)
 苗	0	Miáo	surname Miao/Miao ethnic group	miáo	young plant; seedling/(bound form) young animal raised for farming or aquaculture (e.g. 鱼苗 yúmiáo)/(bound form) offspring; descendant/(bound form) sign or indication of sth (e.g. 苗头 miáotou, 矿苗 kuàngmiáo)/(bound form) vaccine
 苗圃	776	Miáo Pǔ	Miao Pu (1977–), Chinese actress	miáo pǔ	plant nursery/seedbed
@@ -84467,7 +84590,8 @@
 苧麻	331	zhù má	(botany) ramie (Boehmeria nivea)/the fiber of this plant
 苩	0	pā	old variant of 葩 pā
 苪	0	bǐng	bright/shining, splendid
-苫	0	shān	straw mat/thatch
+苫	0	shān	a mat or covering made of woven straw, reeds etc	shàn	to cover with a woven mat, tarpaulin etc/Taiwan pr. shān
+苫布	16	shàn bù	tarpaulin
 苯	0	běn	benzene/benzol (chemistry)
 苯丙氨酸	117	běn bǐng ān suān	phenylalanine (Phe), an essential amino acid
 苯丙胺	63	běn bǐng àn	(chemistry) amphetamine (C9H13N)
@@ -84873,8 +84997,8 @@
 草木鳥獸	0	cǎo mù niǎo shòu	flora and fauna
 草木鸟兽	0	cǎo mù niǎo shòu	flora and fauna
 草本植物	692	cǎo běn zhí wù	herbaceous plant
-草泥馬	2570	cǎo ní mǎ	see 肏你媽 càonǐmā (near homophone of 肏你媽 càonǐmā used to avoid Internet censorship)
-草泥马	2570	cǎo ní mǎ	see 肏你妈 càonǐmā (near homophone of 肏你妈 càonǐmā used to avoid Internet censorship)
+草泥馬	2570	cǎo ní mǎ	see 肏你媽 càonǐmā (near homophone used to avoid Internet censorship)/(Internet slang) fictional alpaca-like animal; by extension, an actual alpaca
+草泥马	2570	cǎo ní mǎ	see 肏你妈 càonǐmā (near homophone used to avoid Internet censorship)/(Internet slang) fictional alpaca-like animal; by extension, an actual alpaca
 草满囹圄	0	cǎo mǎn líng yǔ	lit. jails overgrown with grass (idiom); fig. peaceful society
 草滿囹圄	0	cǎo mǎn líng yǔ	lit. jails overgrown with grass (idiom); fig. peaceful society
 草爬子	0	cǎo pá zi	tick (zoology)
@@ -85015,7 +85139,6 @@
 荚果	170	jiá guǒ	seed pod/legume
 荛	0	ráo	fuel/grass
 荜	0	bì	bean/pulse
-荜门圭窦	0	bì mén guī dòu	wicker door, hole window (idiom); fig. wretched hovel/living in poverty
 荝	0	cè	plant genus Aconitum, aka monkshood or wolf's bane (used as poison and medicine)/Taiwan pr. zé
 荞	0	qiáo	common mallow (Malva sinensis)/used in 荞麦 qiáomài
 荞麦	1288	qiáo mài	buckwheat
@@ -85167,6 +85290,8 @@
 荷蘭語	1096	Hé lán yǔ	Dutch (language)
 荷蘭豆	50	hé lán dòu	snow pea
 荷蘭豬	17	Hé lán zhū	guinea pig
+荷載	776	hè zài	load/to carry a load; to bear a burden or responsibility
+荷载	776	hè zài	load/to carry a load; to bear a burden or responsibility
 荷重	129	hè zhòng	weight load/load capacity
 荷馬	2455	Hé mǎ	Homer, poet of ancient Greece
 荷马	2455	Hé mǎ	Homer, poet of ancient Greece
@@ -85539,6 +85664,7 @@
 菜式	263	cài shì	dish (food prepared according to a specific recipe)
 菜心	148	cài xīn	choy sum/Chinese flowering cabbage/stem of any Chinese cabbage
 菜板	29	cài bǎn	chopping board; cutting board/CL: 张 zhāng
+菜椒	0	cài jiāo	bell pepper; sweet pepper
 菜油	191	cài yóu	rapeseed oil; canola oil
 菜燕	0	cài yàn	agar-agar
 菜牛	25	cài niú	beef cattle (grown for meat)
@@ -85551,6 +85677,7 @@
 菜系	513	cài xì	(regional) cuisine
 菜肴	4266	cài yáo	vegetable and meat dishes; dish
 菜脯	17	cài fǔ	dried, pickled white radish
+菜腿	0	cài tuǐ	(slang) weak cyclist
 菜色	794	cài sè	dish/lean and hungry look (resulting from vegetarian diet)/emaciated look (from malnutrition)
 菜花	380	cài huā	cauliflower/gonorrhea
 菜茹	0	cài rú	greens/green vegetables
@@ -85942,6 +86069,7 @@
 萬人塚	0	wàn rén zhǒng	mass grave; common grave
 萬人敵	39	wàn rén dí	a match for ten thousand enemies
 萬人空巷	87	wàn rén kōng xiàng	the multitudes come out from everywhere, emptying every alleyway (to celebrate)/the whole town turns out
+萬人迷	398	wàn rén mí	someone who attracts widespread adoration; (esp.) a heartthrob
 萬代千秋	0	wàn dài qiān qiū	after innumerable ages
 萬分痛苦	0	wàn fēn tòng kǔ	excruciating
 萬劫不復	617	wàn jié bù fù	consigned to eternal damnation/with no hope of reprieve
@@ -86149,9 +86277,9 @@
 葙	0	xiāng	see 青葙, feather cockscomb (Celosia argentea)
 葚	0	shèn	used in 桑葚 sāngshèn/also pr. rèn
 葛	0	Gě	surname Ge	gé	kudzu (Pueraria lobata)/hemp cloth
-葛优	479	Gě Yōu	Ge You (1957-), Chinese actor
+葛优	479	Gě Yōu	Ge You (1957–), Chinese actor
 葛优躺	0	Gě Yōu tǎng	see 北京瘫 Běijīngtān
-葛優	479	Gě Yōu	Ge You (1957-), Chinese actor
+葛優	479	Gě Yōu	Ge You (1957–), Chinese actor
 葛優躺	0	Gě Yōu tǎng	see 北京癱 Běijīngtān
 葛巾	0	gé jīn	hemp headcloth
 葛布	49	gé bù	hemp cloth
@@ -86842,7 +86970,6 @@
 蓼蓝	10	liǎo lán	indigo dye/Polygonum tinctorium
 蓼藍	10	liǎo lán	indigo dye/Polygonum tinctorium
 蓽	0	bì	bean/pulse
-蓽門圭竇	0	bì mén guī dòu	wicker door, hole window (idiom); fig. wretched hovel/living in poverty
 蓿	0	xù	clover/lucerne/Taiwan pr. sù
 蔀	0	bù	(literary) to cover; to shelter/(literary) 76 years (unit of time in ancient calendars)
 蔂	0	léi	basket for carrying earth/to entwine/creeper; bramble/(literary) basket for carrying soil
@@ -87498,7 +87625,7 @@
 藒	0	qiè	see 藒车 qièchē
 藒車	0	qiè chē	a variety of aromatic herb used as a fragrance or bug repeller (old)
 藒车	0	qiè chē	a variety of aromatic herb used as a fragrance or bug repeller (old)
-藓	0	xiǎn	moss/lichen/moss on damp walls/used erroneously for 蘇|苏
+藓	0	xiǎn	(bound form) moss
 藓苔	0	xiǎn tái	moss
 藕	0	ǒu	root of lotus
 藕断丝连	65	ǒu duàn sī lián	lit. lotus roots may break, but the fiber remains joined (idiom); lovers part, but still long for one another
@@ -87612,7 +87739,6 @@
 蘆根	28	lú gēn	reed rhizome (used in TCM)
 蘆洞	91	Lú dòng	Rodong or Nodong, series of North Korean medium-range missiles
 蘆洲	117	Lú zhōu	Luzhou or Luchou city in New Taipei City 新北市 Xīnběishì, Taiwan
-蘆洲市	0	Lú zhōu shì	Luzhou or Luchou city in New Taipei City 新北市 Xīnběishì, Taiwan
 蘆淞	0	Lú sōng	see 蘆淞區 Lúsōng Qū
 蘆淞區	42	Lú sōng Qū	Lusong, a district of Zhuzhou City 株洲市 Zhūzhōu Shì, Hunan
 蘆溝橋	95	Lú gōu Qiáo	variant of 盧溝橋 Lúgōu Qiáo
@@ -87702,7 +87828,7 @@
 蘗	0	bò	old variant of 檗 bò
 蘘	0	ráng	a kind of wild ginger
 蘘荷	0	ráng hé	myoga ginger (Zingiber mioga)
-蘚	0	xiǎn	moss/lichen/moss on damp walls/used erroneously for 蘇|苏
+蘚	0	xiǎn	(bound form) moss
 蘚苔	0	xiǎn tái	moss
 蘝	0	liǎn	variant of 蘞|蔹, trailing plant/liana/creeper/wild vine (Gynostemma pentaphyllum or Vitis pentaphylla)
 蘞	0	liǎn	trailing plant/liana/creeper/wild vine (Gynostemma pentaphyllum or Vitis pentaphylla)
@@ -87917,6 +88043,7 @@
 虚构	11749	xū gòu	to make up/fabrication/fictional/imaginary
 虚构小说	0	xū gòu xiǎo shuō	fiction
 虚标	0	xū biāo	to falsely or exaggeratedly label (a product)
+虚根	0	xū gēn	(math.) imaginary root
 虚汗	47	xū hàn	(TCM) sweating due to physical weakness
 虚火	110	xū huǒ	excess of internal heat due to poor general condition (TCM)/the prestige of another person, which one borrows for oneself
 虚电路	0	xū diàn lù	virtual circuit/VC
@@ -87978,6 +88105,7 @@
 虛文浮禮	0	xū wén fú lǐ	empty formality
 虛星	0	xū xīng	imaginary star (in astrology)
 虛有其表	76	xū yǒu qí biǎo	looks impressive but is worthless (idiom)/not as good as it looks/a reputation with no substance
+虛根	0	xū gēn	(math.) imaginary root
 虛榮	2138	xū róng	vanity
 虛榮心	1122	xū róng xīn	vanity
 虛構	11749	xū gòu	to make up/fabrication/fictional/imaginary
@@ -88246,7 +88374,7 @@
 蚰	0	yóu	see 蚰蜒 yóuyan
 蚰蜒	46	yóu yán	house centipede
 蚰蜒路	0	yóu yan lù	lit. centipede's path/fig. narrow winding road
-蚱	0	zhà	grasshopper
+蚱	0	zhà	used in 蚂蚱 màzha and 蚱蜢 zhàměng/used in 蚱蝉 zhàchán
 蚱虫	0	zhà chóng	grasshopper
 蚱蜢	229	zhà měng	grasshopper
 蚱蟲	0	zhà chóng	grasshopper
@@ -88550,7 +88678,7 @@
 蜃景	32	shèn jǐng	mirage
 蜅	0	fǔ	crab
 蜆	0	xiǎn	basket clam (clam of family Corbiculidae); (esp.) Corbicula leana 真蜆 zhēnxiǎn
-蜇	0	zhē	to sting	zhé	jellyfish
+蜇	0	zhē	to sting	zhé	used in 海蜇 hǎizhé
 蜈	0	wú	used in 蜈蚣 wúgōng
 蜈支洲岛	26	Wú zhī zhōu Dǎo	Wuzhizhou Island, Hainan
 蜈支洲島	26	Wú zhī zhōu Dǎo	Wuzhizhou Island, Hainan
@@ -88943,7 +89071,7 @@
 螺丝钻	0	luó sī zuàn	auger/gimlet/screwdriver (cocktail)
 螺刀	0	luó dāo	screwdriver
 螺号	28	luó hào	conch/shell as horn for signaling
-螺帽	174	luó mào	nut (female component of nut and bolt)
+螺帽	174	luó mào	nut (fastener)
 螺旋	5888	luó xuán	spiral/helix/screw
 螺旋体	117	luó xuán tǐ	Spirochaetes, phylum of extremophile bacteria/spiral-shaped bacterium, e.g. causing syphilis
 螺旋形	135	luó xuán xíng	spiral
@@ -88958,7 +89086,7 @@
 螺旋體	117	luó xuán tǐ	Spirochaetes, phylum of extremophile bacteria/spiral-shaped bacterium, e.g. causing syphilis
 螺旋麵	17	luó xuán miàn	fusilli (pasta)
 螺杆	257	luó gǎn	screw
-螺栓	871	luó shuān	bolt (male component of nut and bolt)
+螺栓	871	luó shuān	bolt (fastener)
 螺桨	0	luó jiǎng	propeller
 螺桿	257	luó gǎn	screw
 螺槳	0	luó jiǎng	propeller
@@ -89364,6 +89492,7 @@
 血濃於水	85	xuè nóng yú shuǐ	blood is thicker than water/fig. family ties are closer than social relations
 血牛	0	xuè niú	sb who sells one's blood for a living
 血田	0	xuè tián	field of blood/battlefield/hateful place/Aceldama (field bought by Judas Iscariot with his 30 pieces of silver in Matthew 27:7)
+血瘀	162	xuè yū	(TCM) blood stasis
 血瘤	0	xuè liú	blood tumor/angioma (tumor consisting of a mass of blood vessels)
 血癌	417	xuè ái	leukemia
 血皮菜	0	xuè pí cài	(Sichuan dialect) Okinawan spinach (Gynura bicolor)
@@ -89509,7 +89638,6 @@
 衍圣公府	0	Yǎn shèng gōng fǔ	the official residence of Confucius' descendants at Qufu 曲阜, Shandong
 衍声复词	0	yǎn shēng fù cí	compound word, such as 玫瑰 méiguī or 咖啡 kāfēi, whose meaning is unrelated to the individual characters (Note: These characters are often not used independently in modern Chinese.)
 衍射	1072	yǎn shè	(physics) to diffract
-衍射格子	0	yǎn shè gé zi	diffraction grating (physics)
 衍射角	0	yǎn shè jiǎo	angle of diffraction (physics)
 衍生	11220	yǎn shēng	to give rise to/to derive/derivative/derivation
 衍生产品	0	yǎn shēng chǎn pǐn	derivative product/derivative (in finance)
@@ -90351,6 +90479,7 @@
 褐鸦雀	0	hè yā què	(bird species of China) brown parrotbill (Paradoxornis unicolor)
 褒	0	bāo	to praise/to commend/to honor/(of clothes) large or loose
 褒义	155	bāo yì	commendatory sense/positive connotation
+褒义词	43	bāo yì cí	word with positive connotation
 褒呔	0	bāo tāi	bow tie (loanword) (Cantonese)
 褒姒	0	Bāo sì	Baosi, concubine of King You of Zhou 周幽王 Zhōu Yōuwáng and one of the famous Chinese beauties
 褒扬	851	bāo yáng	to praise
@@ -90358,6 +90487,7 @@
 褒禅山	11	Bāo chán Shān	Mt Baochan in Anhui/formerly known as Mt Hua 華山|华山
 褒禪山	11	Bāo chán Shān	Mt Baochan in Anhui/formerly known as Mt Hua 華山|华山
 褒義	155	bāo yì	commendatory sense/positive connotation
+褒義詞	43	bāo yì cí	word with positive connotation
 褒貶	372	bāo biǎn	to appraise/to pass judgment on/to speak ill of/praise and censure/appraisal
 褒贬	372	bāo biǎn	to appraise/to pass judgment on/to speak ill of/praise and censure/appraisal
 褓	0	bǎo	used in 襁褓 qiǎngbǎo/used in 褓姆 bǎomǔ and 褓母 bǎomǔ
@@ -90677,7 +90807,9 @@
 西西弗斯	0	Xī xī fú sī	Sisyphus
 西豐	158	Xī fēng	see 西豐縣 Xīfēng Xiàn
 西豐縣	89	Xī fēng Xiàn	Xifeng, a county in Tieling City 鐵嶺市 Tiělǐng Shì, Liaoning
+西貝貨	0	xī bèi huò	(coll.) a fake
 西貢	2344	Xī gòng	Saigon, capital of former South Vietnam/Sai Kung town in New Territories, Hong Kong
+西贝货	0	xī bèi huò	(coll.) a fake
 西贡	2344	Xī gòng	Saigon, capital of former South Vietnam/Sai Kung town in New Territories, Hong Kong
 西辽	380	Xī Liáo	Western Liao, Khitan kingdom of central Asia 1132-1218
 西遼	380	Xī Liáo	Western Liao, Khitan kingdom of central Asia 1132-1218
@@ -90745,12 +90877,12 @@
 覆盆子	214	fù pén zǐ	raspberry
 覆盖	40738	fù gài	to cover
 覆盖物	170	fù gài wù	mulch
-覆盖率	3090	fù gài lǜ	coverage
+覆盖率	3090	fù gài lǜ	coverage (proportion covered)
 覆盖面	1096	fù gài miàn	coverage
 覆膜	26	fù mó	membrane covering sth/coating
 覆蓋	40738	fù gài	to cover
 覆蓋物	170	fù gài wù	mulch
-覆蓋率	3090	fù gài lǜ	coverage
+覆蓋率	3090	fù gài lǜ	coverage (proportion covered)
 覆蓋面	1096	fù gài miàn	coverage
 覆轍	1445	fù zhé	the tracks of a cart that overturned/(fig.) a path that led to failure in the past
 覆辙	1445	fù zhé	the tracks of a cart that overturned/(fig.) a path that led to failure in the past
@@ -91261,7 +91393,6 @@
 訂製	741	dìng zhì	custom-made; made-to-order/to have sth custom made
 訂親	39	dìng qīn	variant of 定親 dìngqīn
 訂貨	2570	dìng huò	to order goods/to place an order
-訂費	0	dìng fèi	subscription (rate)
 訂購	9333	dìng gòu	to place an order/to subscribe
 訂金	871	dìng jīn	an initial payment/earnest money/deposit
 訂閱	10715	dìng yuè	subscription/to subscribe to
@@ -91464,8 +91595,7 @@
 詞綴	178	cí zhuì	prefix or suffix of a compound word/affix (linguistics)
 詞翰	0	cí hàn	book/written composition/(literary) penned words
 詞藻	479	cí zǎo	rhetoric/flowery language
-詞訟	20	cí sòng	lawsuit/legal case
-詞訟費	0	cí sòng fèi	legal fees/costs (of a lawsuit)
+詞訟	20	cí sòng	(dated) lawsuit; litigation
 詞項邏輯	0	cí xiàng luó ji	(philosophy) term logic; syllogistic logic
 詟	0	zhé	to be frightened
 詠	0	yǒng	to sing
@@ -91822,6 +91952,7 @@
 請柬	661	qǐng jiǎn	invitation card/written invitation
 請求寬恕	0	qǐng qiú kuān shù	to sue for mercy/to ask for forgiveness/begging for magnanimity
 請纓	269	qǐng yīng	to volunteer for military service/to offer oneself for an assignment
+請賞	38	qǐng shǎng	to ask for a reward
 請辭	1622	qǐng cí	to tender one's resignation
 諌	0	jiàn	variant of 谏 jiàn
 諍	0	zhèng	to admonish/to warn sb of their errors/to criticize frankly/Taiwan pr. zhēng
@@ -92315,6 +92446,7 @@
 讚嘆	3090	zàn tàn	to exclaim in admiration
 讚嘆不已	145	zàn tàn bù yǐ	(idiom) to be full of praise and admiration; to marvel endlessly; to be in awe
 讚揚	10715	zàn yáng	to praise/to approve of/to show approval
+讚歌	1072	zàn gē	song of praise; hymn
 讚美	12882	zàn měi	to admire/to praise/to eulogize
 讚美詩	776	zàn měi shī	(Christianity) hymn; psalm
 讚許	2138	zàn xǔ	to praise/to laud
@@ -92356,7 +92488,6 @@
 订立	9120	dìng lì	to conclude (treaty, contract, agreement etc)/to set up (a rule etc)
 订货	2570	dìng huò	to order goods/to place an order
 订购	9333	dìng gòu	to place an order/to subscribe
-订费	0	dìng fèi	subscription (rate)
 订金	871	dìng jīn	an initial payment/earnest money/deposit
 订阅	10715	dìng yuè	subscription/to subscribe to
 讣	0	fù	to report a bereavement/obituary
@@ -92577,8 +92708,7 @@
 词缀	178	cí zhuì	prefix or suffix of a compound word/affix (linguistics)
 词翰	0	cí hàn	book/written composition/(literary) penned words
 词藻	479	cí zǎo	rhetoric/flowery language
-词讼	20	cí sòng	lawsuit/legal case
-词讼费	0	cí sòng fèi	legal fees/costs (of a lawsuit)
+词讼	20	cí sòng	(dated) lawsuit; litigation
 词项逻辑	0	cí xiàng luó ji	(philosophy) term logic; syllogistic logic
 诎	0	qū	to bend/to yield/to exhaust/to stutter
 诏	0	zhào	(literary) to admonish/(bound form) imperial edict
@@ -92845,6 +92975,7 @@
 请柬	661	qǐng jiǎn	invitation card/written invitation
 请求宽恕	0	qǐng qiú kuān shù	to sue for mercy/to ask for forgiveness/begging for magnanimity
 请缨	269	qǐng yīng	to volunteer for military service/to offer oneself for an assignment
+请赏	38	qǐng shǎng	to ask for a reward
 请辞	1622	qǐng cí	to tender one's resignation
 诸	0	Zhū	surname Zhu	zhū	all/various
 诸事	617	zhū shì	everything/every matter
@@ -93229,8 +93360,6 @@
 豆滿江	0	Dòu mǎn jiāng	Dumangang, Korean name of Tumen river 圖們江 Túménjiāng in Jilin province, forming the eastern border between China and North Korea
 豆漿	1820	dòu jiāng	soy milk
 豆瓣	6607	Dòu bàn	Douban, a Chinese social networking website	dòu bàn	cotyledon of a bean or pea (i.e. either of the halves of a bean or pea)/thick bean sauce (abbr. for 豆瓣酱 dòubànjiàng)
-豆瓣網	0	Dòu bàn Wǎng	Douban, PRC social networking website
-豆瓣网	0	Dòu bàn Wǎng	Douban, PRC social networking website
 豆瓣菜	12	dòu bàn cài	watercress (Nasturtium officinale)
 豆瓣酱	98	dòu bàn jiàng	sticky chili bean sauce/doubanjiang
 豆瓣醬	98	dòu bàn jiàng	sticky chili bean sauce/doubanjiang
@@ -93262,9 +93391,9 @@
 豆蔻	389	dòu kòu	cardamom (Elettaria cardamomum)/fig. a girl's teenage years/maidenhood/a budding beauty
 豆蔻年华	35	dòu kòu nián huá	(idiom) (of a girl) 13 or 14 years old; early teens; adolescence
 豆蔻年華	35	dòu kòu nián huá	(idiom) (of a girl) 13 or 14 years old; early teens; adolescence
-豆薯	20	dòu shǔ	yam bean (Pachyrhizus erosus), a vine with sweet edible root
-豆薯属	0	dòu shǔ shǔ	yam bean/Pachyrhizus genus
-豆薯屬	0	dòu shǔ shǔ	yam bean/Pachyrhizus genus
+豆薯	20	dòu shǔ	yam bean (Pachyrhizus erosus)
+豆薯属	0	dòu shǔ shǔ	genus Pachyrhizus
+豆薯屬	0	dòu shǔ shǔ	genus Pachyrhizus
 豆蟹	0	dòu xiè	pea crab (Pinnotheres pisum)
 豆袋弹	0	dòu dài dàn	bean bag round
 豆袋彈	0	dòu dài dàn	bean bag round
@@ -93328,7 +93457,7 @@
 豐唇	110	fēng chún	to augment lip volume (through cosmetic surgery or injections)/plump lips
 豐城	794	Fēng chéng	see 豐城市 Fēngchéng Shì
 豐城市	102	Fēng chéng Shì	Fengcheng, a county-level city in Yichun City 宜春市 Yíchūn Shì, Jiangxi
-豐富	109648	fēng fù	to enrich/rich/plentiful/abundant
+豐富	109648	fēng fù	rich; plentiful; abundant/to enrich
 豐富多彩	2138	fēng fù duō cǎi	richly colorful
 豐寧	170	Fēng níng	see 豐寧滿族自治縣 Fēngníng Mǎnzú Zìzhìxiàn
 豐寧縣	33	Fēng níng Xiàn	see 豐寧滿族自治縣 Fēngníng Mǎnzú Zìzhìxiàn
@@ -93470,7 +93599,7 @@
 豬扒	63	zhū pá	see 豬排 zhūpái
 豬拱菌	0	zhū gǒng jūn	Chinese truffle
 豬排	363	zhū pái	pork ribs/pork chop
-豬朋狗友	48	zhū péng gǒu yǒu	dissolute companions/disreputable comrades
+豬朋狗友	48	zhū péng gǒu yǒu	see 狐朋狗友 húpénggǒuyǒu
 豬柳	12	zhū liǔ	pork fillet
 豬欄	74	zhū lán	pigsty; pigpen
 豬水泡病	0	zhū shuǐ pào bìng	swine vesicular disease (SVD)
@@ -93830,7 +93959,6 @@
 貯木場	23	zhù mù chǎng	lumber yard
 貯水處	0	zhù shuǐ chù	reservoir
 貯熱	0	zhù rè	to conserve heat
-貯物	0	zhù wù	storage
 貯藏	1862	zhù cáng	to store up/to hoard/deposits
 貰	0	shì	to borrow/to buy on credit/to rent out
 貲	0	zī	to estimate/to fine (archaic)/variant of 資 zī
@@ -93871,6 +93999,7 @@
 貶斥	288	biǎn chì	to demote/to denounce
 貶稱	0	biǎn chēng	derogatory term/to refer to disparagingly (as)
 貶義	871	biǎn yì	derogatory sense/negative connotation
+貶義詞	525	biǎn yì cí	word with negative connotation
 貶職	65	biǎn zhí	to demote
 貶詞	13	biǎn cí	derogatory term/expression of censure
 貶謫	162	biǎn zhé	to banish from the court; to relegate
@@ -93889,6 +94018,7 @@
 貸款人	550	dài kuǎn rén	the lender
 貸款率	0	dài kuǎn lǜ	lending interest rate
 貸記	65	dài jì	to credit
+貸記卡	42	dài jì kǎ	credit card
 貺	0	kuàng	to bestow/to confer
 費勁	2089	fèi jìn	to require effort/strenuous
 費勁兒	32	fèi jìn r	erhua variant of 費勁 fèijìn
@@ -94039,6 +94169,7 @@
 賊禿	0	zéi tū	(derog.) Buddhist monk
 賊窩	79	zéi wō	thieves' lair
 賊船	107	zéi chuán	pirate ship/fig. venture of dubious merit/criminal gang/reactionary faction
+賊贓	89	zéi zāng	stolen property
 賊頭賊腦	23	zéi tóu zéi nǎo	lit. to behave like a thief/furtive/underhand
 賌	0	gāi	old variant of 赅 gāi
 賏	0	yìng	pearls or shells strung together
@@ -94063,7 +94194,7 @@
 賓客盈門	0	bīn kè yíng mén	guests filled the hall (idiom); a house full of distinguished visitors
 賓川	100	Bīn chuān	see 賓川縣 Bīnchuān Xiàn
 賓川縣	115	Bīn chuān Xiàn	Binchuan, a county in Dali Bai Autonomous Prefecture 大理白族自治州 Dàlǐ Báizú Zìzhìzhōu, Yunnan
-賓州	2630	Bīn zhōu	Pennsylvania/abbr. for 賓夕法尼亞州|宾夕法尼亚州
+賓州	2630	Bīn zhōu	Pennsylvania (abbr. for 賓夕法尼亞州 Bīnxīfǎníyà Zhōu)
 賓得	76	Bīn dé	Pentax, Japanese optics company
 賓朋	72	bīn péng	guests/invited friends
 賓朋滿座	0	bīn péng mǎn zuò	guests filled all the seats (idiom); a house full of distinguished visitors
@@ -94200,7 +94331,7 @@
 質譜儀	282	zhì pǔ yí	mass spectrometer
 質量保障	0	zhì liàng bǎo zhàng	quality assurance (QA)
 質鋪	0	zhì pù	pawn shop
-賫	0	jī	to present (a gift)/to harbor (a feeling)
+賫	0	jī	variant of 齎 jī
 賬	0	zhàng	account/bill/debt/CL: 本 běn, 筆 bǐ
 賬冊	245	zhàng cè	an account book/a ledger/a bill
 賬單	3981	zhàng dān	bill
@@ -94643,6 +94774,7 @@
 贫雇农	44	pín gù nóng	poor peasants (in Marxism)
 贬	0	biǎn	to diminish/to demote/to reduce or devaluate/to disparage/to censure/to depreciate
 贬义	871	biǎn yì	derogatory sense/negative connotation
+贬义词	525	biǎn yì cí	word with negative connotation
 贬低	4898	biǎn dī	to belittle/to disparage/to play down/to demean/to degrade/to devalue
 贬值	10233	biǎn zhí	to become devaluated/to devaluate/to depreciate
 贬多于褒	0	biǎn duō yú bāo	to get more criticism than praise
@@ -94669,7 +94801,6 @@
 贮木场	23	zhù mù chǎng	lumber yard
 贮水处	0	zhù shuǐ chù	reservoir
 贮热	0	zhù rè	to conserve heat
-贮物	0	zhù wù	storage
 贮藏	1862	zhù cáng	to store up/to hoard/deposits
 贯	0	guàn	to pierce through/to pass through/to be stringed together/string of 1000 cash
 贯串	468	guàn chuàn	to pierce through/to string together
@@ -94755,6 +94886,7 @@
 贷款人	550	dài kuǎn rén	the lender
 贷款率	0	dài kuǎn lǜ	lending interest rate
 贷记	65	dài jì	to credit
+贷记卡	42	dài jì kǎ	credit card
 贸	0	mào	commerce/trade
 贸易	107152	mào yì	(commercial) trade/CL: 个 gè
 贸易中心	186	mào yì zhōng xīn	trade center/shopping mall
@@ -94833,6 +94965,7 @@
 贼秃	0	zéi tū	(derog.) Buddhist monk
 贼窝	79	zéi wō	thieves' lair
 贼船	107	zéi chuán	pirate ship/fig. venture of dubious merit/criminal gang/reactionary faction
+贼赃	89	zéi zāng	stolen property
 贽	0	zhì	gifts to superiors
 贾	0	Jiǎ	surname Jia	gǔ	merchant/to buy
 贾伯斯	229	Jiǎ bó sī	Jobs (name)/see also 史提夫·贾伯斯 Shǐtífū·Jiǎbósī, Steve Jobs
@@ -94929,7 +95062,7 @@
 赌资	155	dǔ zī	gambling money
 赌钱	1950	dǔ qián	to gamble
 赌鬼	72	dǔ guǐ	gambling addict
-赍	0	jī	to present (a gift)/to harbor (a feeling)/(literary) to harbor (a feeling)/(literary) to present as a gift
+赍	0	jī	(literary) to harbor (a feeling)/(literary) to present as a gift
 赍恨	0	jī hèn	to have a gnawing regret
 赎	0	shú	to redeem/to ransom
 赎价	32	shú jià	price paid to redeem an object/(religion) price paid to redeem sb/ransom
@@ -95063,6 +95196,7 @@
 赞成票	1259	zàn chéng piào	affirmative vote
 赞扬	10715	zàn yáng	to praise/to approve of/to show approval
 赞普	309	zàn pǔ	(historical) Tsenpo, title of the ruler of the Tibetan Empire
+赞歌	1072	zàn gē	song of praise; hymn
 赞比亚	3715	Zàn bǐ yà	Zambia
 赞皇	74	Zàn huáng	see 赞皇县 Zànhuáng Xiàn
 赞皇县	123	Zàn huáng Xiàn	Zanhuang, a county in Shijiazhuang City 石家庄市 Shíjiāzhuāng Shì, Hebei
@@ -95173,10 +95307,10 @@
 赤膊上阵	148	chì bó shàng zhèn	lit. to go into battle bare-breasted (idiom)/fig. to go all out/to come out in the open
 赤膊上陣	148	chì bó shàng zhèn	lit. to go into battle bare-breasted (idiom)/fig. to go all out/to come out in the open
 赤膽忠心	52	chì dǎn zhōng xīn	lit. red-bellied devotion (idiom); wholehearted loyalty/to serve sb with body and soul
-赤藓糖醇	0	chì xiǎn táng chún	erythritol, a sugar alcohol
-赤藓醇	0	chì xiǎn chún	erythritol, a sugar alcohol
-赤蘚糖醇	0	chì xiǎn táng chún	erythritol, a sugar alcohol
-赤蘚醇	0	chì xiǎn chún	erythritol, a sugar alcohol
+赤藓糖醇	0	chì xiǎn táng chún	erythritol
+赤藓醇	0	chì xiǎn chún	erythritol
+赤蘚糖醇	0	chì xiǎn táng chún	erythritol
+赤蘚醇	0	chì xiǎn chún	erythritol
 赤衛軍	49	Chì wèi jūn	Red Guards
 赤衛隊	309	Chì wèi duì	Red Guards
 赤裸	3631	chì luǒ	naked/bare
@@ -95365,7 +95499,6 @@
 赵元任	170	Zhào Yuán rèn	Yuen Ren Chao (1892-1982), Chinese-American linguist
 赵公元帅	0	Zhào gōng yuán shuài	Marshal Zhao, aka Zhao Gongming or Zhao Xuantan, God of Wealth in the Chinese folk tradition and Taoism
 赵公明	46	Zhào Gōng míng	Zhao Gongming, God of Wealth in the Chinese folk tradition and Taoism
-赵军	209	Zhào jūn	army of Zhao 趙國|赵国 during the Warring States
 赵匡胤	447	Zhào Kuāng yìn	Zhao Kuangyin, personal name of founding Song emperor Song Taizu 宋太祖 (927-976)
 赵县	186	Zhào Xiàn	Zhao County or Zhaoxian, a county in Shijiazhuang City 石家庄市 Shíjiāzhuāng Shì, Hebei
 赵国	2344	Zhào Guó	Zhao, one of the seven states during the Warring States Period of Chinese history (475-220 BC)
@@ -95446,6 +95579,7 @@
 起早贪黑	145	qǐ zǎo tān hēi	to be industrious, rising early and going to bed late
 起泡	398	qǐ pào	to bubble/to foam/to blister/to sprout boils (on one's body)/sparkling (wine etc)
 起泡沫	41	qǐ pào mò	to emit bubbles/to bubble/to foam (with rage)/to seethe
+起泡酒	0	qǐ pào jiǔ	sparkling wine
 起皱纹	0	qǐ zhòu wén	to shrivel
 起皺紋	0	qǐ zhòu wén	to shrivel
 起磁	0	qǐ cí	magnetization/to magnetize
@@ -95656,7 +95790,6 @@
 趙縣	186	Zhào Xiàn	Zhao County or Zhaoxian, a county in Shijiazhuang City 石家莊市 Shíjiāzhuāng Shì, Hebei
 趙翼	12	Zhào Yì	Zhao Yi (1727-1814), Qing dynasty poet and historian, one of Three great poets of the Qianlong era 乾嘉三大家
 趙薇	1820	Zhào Wēi	Zhao Wei or Vicky Zhao (1976-), Chinese film star
-趙軍	209	Zhào jūn	army of Zhao 趙國|赵国 during the Warring States
 趙雲	1698	Zhào Yún	Zhao Yun (-229), general of Shu in Romance of the Three Kingdoms
 趙高	102	Zhào Gāo	Zhao Gao (?-207 BC), one of the most vile, corrupt and powerful eunuchs in Chinese history, responsible for the fall of Qin Dynasty
 趟	0	tāng	to wade/to trample/to turn the soil	tàng	classifier for times, round trips or rows/a time/a trip
@@ -96073,6 +96206,7 @@
 跳蛛	0	tiào zhū	jumping spider; salticid (family Salticidae)
 跳視	0	tiào shì	to saccade
 跳视	0	tiào shì	to saccade
+跳越	81	tiào yuè	to jump over (an obstacle etc)
 跳跃	6607	tiào yuè	to jump/to leap/to bound/to skip
 跳跳糖	0	tiào tiào táng	Pop Rocks/popping candy
 跳踉	0	tiào liáng	variant of 跳梁 tiàoliáng
@@ -96689,6 +96823,7 @@
 軍團菌病	0	jūn tuán jūn bìng	legionnaires' disease
 軍妓	50	jūn jì	military prostitute
 軍嫂	132	jūn sǎo	wife of a serviceman; soldier's wife
+軍旗	912	jūn qí	military flag
 軍曹魚	0	jūn cáo yú	cobia or black kingfish (Rachycentron canadum)
 軍棋	76	jūn qí	land battle chess, Chinese board game similar to Stratego
 軍犬	245	jūn quǎn	military dog
@@ -98263,8 +98398,8 @@
 迫击炮	2399	pǎi jī pào	mortar (weapon)/Taiwan pr. pòjípào
 迫在眉睫	1862	pò zài méi jié	pressing in on one's eyelashes (idiom); imminent
 迫擊炮	2399	pǎi jī pào	mortar (weapon)/Taiwan pr. pòjípào
-迫胁	0	pò xié	to coerce/fig. narrow
-迫脅	0	pò xié	to coerce/fig. narrow
+迫胁	0	pò xié	see 胁迫 xiépò
+迫脅	0	pò xié	see 脅迫 xiépò
 迭	0	dié	alternately/repeatedly
 迭代	2042	dié dài	to iterate/(literary) to alternate
 迭起	309	dié qǐ	continuously arising/to arise repeatedly
@@ -98290,7 +98425,7 @@
 迴旋餘地	81	huí xuán yú dì	room to maneuver; leeway; latitude
 迴盪	1288	huí dàng	to resound/to reverberate/to echo
 迴紋針	27	huí wén zhēn	paper clip
-迴轉壽司	0	huí zhuǎn shòu sī	conveyor belt sushi (restaurant)
+迴轉壽司	0	huí zhuǎn shòu sī	conveyor belt sushi
 迴避	13490	huí bì	to shun/to avoid (sb)/to skirt/to evade (an issue)/to step back/to withdraw/to recuse (a judge etc)
 迶	0	yòu	to walk
 迷	0	mí	to bewilder/crazy about/fan/enthusiast/lost/confused
@@ -98582,9 +98717,9 @@
 逆断层	0	nì duàn céng	reverse fault (geology)/compression fault, where one block pushes over the other at dip of less than 45 degrees
 逆斷層	0	nì duàn céng	reverse fault (geology)/compression fault, where one block pushes over the other at dip of less than 45 degrees
 逆旅	23	nì lǚ	guest-house/inn
-逆时针	490	nì shí zhēn	anticlockwise/counterclockwise
+逆时针	490	nì shí zhēn	counterclockwise
 逆映射	0	nì yìng shè	inverse map (math.)
-逆時針	490	nì shí zhēn	anticlockwise/counterclockwise
+逆時針	490	nì shí zhēn	counterclockwise
 逆来顺受	575	nì lái shùn shòu	to resign oneself to adversity (idiom); to grin and bear it/to submit meekly to insults, maltreatment, humiliation etc
 逆水	98	nì shuǐ	against the current/upstream
 逆水行舟	85	nì shuǐ xíng zhōu	lit. navigating a boat against the current (idiom)/fig. in a tough environment (one needs to work hard)
@@ -98697,9 +98832,9 @@
 透视画法	33	tòu shì huà fǎ	perspective drawing
 透视装	251	tòu shì zhuāng	see-through clothing
 透辟	63	tòu pì	penetrating/incisive
-透过	52481	tòu guò	to pass through/to penetrate/by means of/via
+透过	52481	tòu guò	to pass through; to penetrate/by means of; via
 透通性	0	tòu tōng xìng	transparency (networking)
-透過	52481	tòu guò	to pass through/to penetrate/by means of/via
+透過	52481	tòu guò	to pass through; to penetrate/by means of; via
 透鏡	2089	tòu jìng	lens (optics)
 透镜	2089	tòu jìng	lens (optics)
 透闢	63	tòu pì	penetrating/incisive
@@ -100914,10 +101049,9 @@
 醟	0	yòng	to drink to excess/dissolute
 醡	0	zhà	press for extracting wine
 醢	0	hǎi	minced meat/pickled meat
-醣	0	táng	carbohydrate/old variant of 糖 táng
-醣类	0	táng lèi	carbohydrate
+醣	0	táng	carbohydrate; saccharide
 醣苷	0	táng gān	(Tw) glycoside
-醣類	0	táng lèi	carbohydrate
+醣類	1175	táng lèi	carbohydrates
 醨	0	lí	dregs of wine
 醪	0	láo	wine or liquor with sediment
 醪糟	63	láo zāo	sweet fermented rice/glutinous rice wine
@@ -100991,6 +101125,7 @@
 采茶	457	cǎi chá	to pick tea leaves
 采蘭贈芍	0	cǎi lán zèng sháo	(lit.) to pluck orchids and gift peonies (idiom)/(fig.) (of lovers) to exchange presents
 采蘭贈藥	0	cǎi lán zèng yào	see 采蘭贈芍 cǎilánzèngsháo
+采蜜	55	cǎi mì	(of bees) to gather nectar/(of people) to collect honey
 采邑	275	cài yì	fief
 釉	0	yòu	glaze (of porcelain)
 释俗	0	shì sú	to explain in simple terms
@@ -101151,6 +101286,7 @@
 野径	0	yě jìng	country path/track in the wilderness
 野徑	0	yě jìng	country path/track in the wilderness
 野心	9550	yě xīn	ambition/wild schemes/careerism
+野心勃勃	1000	yě xīn bó bó	(idiom) highly ambitious
 野性	2138	yě xìng	wild nature/unruliness
 野战	6457	yě zhàn	battlefield operation/paintball
 野战军	4266	yě zhàn jūn	field army
@@ -101180,7 +101316,7 @@
 野獸	15488	yě shòu	beast/wild animal
 野甘蓝	0	yě gān lán	European wild cabbage (Brassica oleracea)
 野甘藍	0	yě gān lán	European wild cabbage (Brassica oleracea)
-野生	20417	yě shēng	wild/undomesticated
+野生	20417	yě shēng	(of animals, plants etc) wild
 野生动物	6166	yě shēng dòng wù	wild animal
 野生動物	6166	yě shēng dòng wù	wild animal
 野生植物	214	yě shēng zhí wù	plants in the wild
@@ -101758,6 +101894,7 @@
 鉤織	0	gōu zhī	to crochet
 鉤花	0	gōu huā	to crochet
 鉤針	166	gōu zhēn	crochet hook/crochet needle
+鉤體病	0	gōu tǐ bìng	(medicine) leptospirosis
 鉥	0	shù	acmite
 鉦	0	zhēng	gong used to halt troops
 鉧	0	mǔ	used in 鈷鉧 gǔmǔ
@@ -101887,8 +102024,8 @@
 銖	0	zhū	twenty-fourth part of a tael (2 or 3 grams)
 銘	0	míng	to engrave/inscribed motto
 銘刻	724	míng kè	a carved inscription
-銘心刻骨	11	míng xīn kè gǔ	lit. etched into one's heart and bones (idiom)/fig. etched in one's memory; remembered with gratitude as long as one lives
-銘心鏤骨	0	míng xīn lòu gǔ	engraved in one's heart and carved in one's bones (idiom); to remember a benefactor as long as one lives/undying gratitude
+銘心刻骨	11	míng xīn kè gǔ	see 刻骨銘心 kègǔmíngxīn
+銘心鏤骨	0	míng xīn lòu gǔ	see 刻骨銘心 kègǔmíngxīn
 銘文	2239	míng wén	inscription
 銘牌	324	míng pái	nameplate/data plate (on a machine)
 銘瑄	13	Míng xuān	MaxSun, PRC company specializing in video and computer display
@@ -102255,7 +102392,9 @@
 鍇	0	kǎi	high quality iron
 鍈	0	yīng	(onom.) ring/tinkle
 鍉	0	dī	spoon/key
-鍊	0	liàn	variant of 鏈 liàn, chain/variant of 煉 liàn
+鍊	0	liàn	to refine; to temper (variant of 煉 liàn)/to polish (wording)/(bound form) chain (variant of 鏈 liàn) (In Taiwan, 鍊 is often preferred for physical chains, e.g. 項鍊 xiàngliàn and 鐵鍊 tiěliàn.)
+鍊句	0	liàn jù	to polish one's phrasing
+鍊字	13	liàn zì	to craft one's words
 鍋	0	guō	pot; pan; wok; cauldron/pot-shaped thing/CL: 口 kǒu, 隻 zhī
 鍋台	21	guō tái	top of a kitchen range
 鍋墊	0	guō diàn	trivet/pot-holder
@@ -102271,7 +102410,7 @@
 鍋蓋頭	55	guō gài tóu	bowl cut (hairstyle)
 鍋貼	120	guō tiē	fried dumpling/potsticker
 鍋鏟	98	guō chǎn	wok spatula; cooking spatula
-鍋駝機	0	guō tuó jī	portable steam engine
+鍋駝機	0	guō tuó jī	(historical) steam-powered unit with an integrated boiler, used to drive machinery
 鍍	0	dù	to plate (with gold, silver etc)/(prefix) -plated
 鍍上	71	dù shàng	to plate (with gold, silver etc)
 鍍層	200	dù céng	the coating of sth that has been chrome-plated or copper-plated etc
@@ -102432,7 +102571,7 @@
 鏇工	0	xuàn gōng	lathe operator/spinning wheel worker
 鏇床	0	xuàn chuáng	lathe
 鏇木	0	xuàn mù	wood turning/woodwork lathe
-鏈	0	liàn	chain/cable (unit of length: 100 fathoms, about 185 m)/chain (unit of length: 66 feet, about 20 m)/to chain/to enchain
+鏈	0	liàn	(bound form) chain/cable length (nautical unit equal to 185.2 m)
 鏈子	1622	liàn zi	chain
 鏈式反應	224	liàn shì fǎn yìng	chain reaction
 鏈接	104713	liàn jiē	to link; to catenate/link (on a web page); hyperlink
@@ -102547,9 +102686,9 @@
 鐩	0	suì	(literary) brass mirror used to light a fire by focusing the sun's rays
 鐫	0	juān	to engrave (on wood or stone)/to inscribe
 鐫刻	708	juān kè	to engrave
-鐫心銘骨	0	juān xīn míng gǔ	etched in one's bones and heart (idiom); ever-present memory (esp. resentment)
+鐫心銘骨	0	juān xīn míng gǔ	see 刻骨銘心 kègǔmíngxīn
 鐫鏤	0	juān lòu	to engrave
-鐫骨銘心	0	juān gǔ míng xīn	etched in one's bones and heart (idiom); ever-present memory (esp. resentment)
+鐫骨銘心	0	juān gǔ míng xīn	see 刻骨銘心 kègǔmíngxīn
 鐫黜	0	juān chù	to dismiss an official
 鐮	0	lián	(bound form) sickle
 鐮倉	115	Lián cāng	Kamakura (city in Japan)
@@ -102604,7 +102743,6 @@
 鐵窗	417	tiě chuāng	window with an iron grating (apartment etc)/barred window of a prison cell
 鐵窗生活	0	tiě chuāng shēng huó	time served in prison/prison life
 鐵箍	27	tiě gū	iron hoop
-鐵箱	28	tiě xiāng	metal trunk/metal box/a safe
 鐵粉	257	tiě fěn	(slang) hardcore fan (abbr. for 鐵桿粉絲 tiěgǎnfěnsī)
 鐵絲	1585	tiě sī	iron wire/CL: 根 gēn/subway enthusiast (abbr. for 地鐵粉絲 dìtiěfěnsī)/railway enthusiast (abbr. for 鐵路粉絲 tiělùfěnsī)
 鐵絲網	2138	tiě sī wǎng	wire netting/CL: 道 dào
@@ -102742,8 +102880,8 @@
 鑽洞	209	zuān dòng	to bore/to burrow/to crawl through a tunnel
 鑽營	182	zuān yíng	toadying for personal gain/to curry favor/to study in great depth
 鑽版	0	zuān bǎn	to cut a woodblock (e.g. for printing)
-鑽牛角	0	zuān niú jiǎo	lit. honing a bull's horn; fig. to waste time on an insoluble or insignificant problem/to bash one's head against a brick wall/a wild goose chase/a blind alley/to split hairs/same as idiom 鑽牛角尖|钻牛角尖
-鑽牛角尖	407	zuān niú jiǎo jiān	lit. to penetrate into a bull's horn (idiom); fig. to waste time on an insoluble or insignificant problem/to bash one's head against a brick wall/a wild goose chase/a blind alley/to split hairs
+鑽牛角	0	zuān niú jiǎo	see 鑽牛角尖 zuānniújiǎojiān
+鑽牛角尖	407	zuān niú jiǎo jiān	to obsess over an insoluble or trivial problem; to get excessively hung up on details or particular issues
 鑽眼	18	zuān yǎn	to drill a hole/drilling
 鑽石	17378	zuàn shí	diamond/CL: 顆 kē
 鑽石婚	0	zuàn shí hūn	diamond wedding
@@ -102961,6 +103099,7 @@
 钨	0	wū	tungsten (chemistry)
 钩	0	gōu	to hook/to sew/to crochet/hook/check mark or tick/window catch
 钩住	66	gōu zhù	to hook onto/to hitch onto/to catch onto
+钩体病	0	gōu tǐ bìng	(medicine) leptospirosis
 钩儿	0	gōu r	erhua variant of 钩 gōu
 钩吻	0	gōu wěn	heartbreak grass (Gelsemium elegans)
 钩嘴林鵙	0	gōu zuǐ lín jú	(bird species of China) large woodshrike (Tephrodornis virgatus)
@@ -103040,8 +103179,8 @@
 钻桌子	0	zuān zhuō zi	to crawl under a table (e.g. as a forfeit for losing a bet or card game); to hide under a table
 钻洞	209	zuān dòng	to bore/to burrow/to crawl through a tunnel
 钻版	0	zuān bǎn	to cut a woodblock (e.g. for printing)
-钻牛角	0	zuān niú jiǎo	lit. honing a bull's horn; fig. to waste time on an insoluble or insignificant problem/to bash one's head against a brick wall/a wild goose chase/a blind alley/to split hairs/same as idiom 鑽牛角尖|钻牛角尖
-钻牛角尖	407	zuān niú jiǎo jiān	lit. to penetrate into a bull's horn (idiom); fig. to waste time on an insoluble or insignificant problem/to bash one's head against a brick wall/a wild goose chase/a blind alley/to split hairs
+钻牛角	0	zuān niú jiǎo	see 钻牛角尖 zuānniújiǎojiān
+钻牛角尖	407	zuān niú jiǎo jiān	to obsess over an insoluble or trivial problem; to get excessively hung up on details or particular issues
 钻眼	18	zuān yǎn	to drill a hole/drilling
 钻石	17378	zuàn shí	diamond/CL: 颗 kē
 钻石婚	0	zuàn shí hūn	diamond wedding
@@ -103102,7 +103241,6 @@
 铁窗	417	tiě chuāng	window with an iron grating (apartment etc)/barred window of a prison cell
 铁窗生活	0	tiě chuāng shēng huó	time served in prison/prison life
 铁箍	27	tiě gū	iron hoop
-铁箱	28	tiě xiāng	metal trunk/metal box/a safe
 铁粉	257	tiě fěn	(slang) hardcore fan (abbr. for 铁杆粉丝 tiěgǎnfěnsī)
 铁罐	182	tiě guàn	metal pot
 铁腕	724	tiě wàn	iron fist (of the state)
@@ -103266,8 +103404,8 @@
 铬	0	gè	chromium (chemistry)
 铭	0	míng	to engrave/inscribed motto
 铭刻	724	míng kè	a carved inscription
-铭心刻骨	11	míng xīn kè gǔ	lit. etched into one's heart and bones (idiom)/fig. etched in one's memory; remembered with gratitude as long as one lives
-铭心镂骨	0	míng xīn lòu gǔ	engraved in one's heart and carved in one's bones (idiom); to remember a benefactor as long as one lives/undying gratitude
+铭心刻骨	11	míng xīn kè gǔ	see 刻骨铭心 kègǔmíngxīn
+铭心镂骨	0	míng xīn lòu gǔ	see 刻骨铭心 kègǔmíngxīn
 铭文	2239	míng wén	inscription
 铭牌	324	míng pái	nameplate/data plate (on a machine)
 铭瑄	13	Míng xuān	MaxSun, PRC company specializing in video and computer display
@@ -103388,7 +103526,7 @@
 铻	0	wú	hoe
 铼	0	lái	rhenium (chemistry)
 铽	0	tè	terbium (chemistry)
-链	0	liàn	chain/cable (unit of length: 100 fathoms, about 185 m)/chain (unit of length: 66 feet, about 20 m)/to chain/to enchain
+链	0	liàn	(bound form) chain/cable length (nautical unit equal to 185.2 m)
 链子	1622	liàn zi	chain
 链式反应	224	liàn shì fǎn yìng	chain reaction
 链接	104713	liàn jiē	to link; to catenate/link (on a web page); hyperlink
@@ -103467,7 +103605,7 @@
 锅碗瓢盆	123	guō wǎn piáo pén	kitchen utensils (literary)
 锅贴	120	guō tiē	fried dumpling/potsticker
 锅铲	98	guō chǎn	wok spatula; cooking spatula
-锅驼机	0	guō tuó jī	portable steam engine
+锅驼机	0	guō tuó jī	(historical) steam-powered unit with an integrated boiler, used to drive machinery
 锆	0	gào	zirconium (chemistry)
 锆合金	0	gào hé jīn	zircaloy
 锆石	372	gào shí	zircon (colored crystal of zirconium silicate ZrSiO4)
@@ -103718,9 +103856,9 @@
 镋	0	tǎng	ancient weapon resembling a pitchfork
 镌	0	juān	to engrave (on wood or stone)/to inscribe
 镌刻	708	juān kè	to engrave
-镌心铭骨	0	juān xīn míng gǔ	etched in one's bones and heart (idiom); ever-present memory (esp. resentment)
+镌心铭骨	0	juān xīn míng gǔ	see 刻骨铭心 kègǔmíngxīn
 镌镂	0	juān lòu	to engrave
-镌骨铭心	0	juān gǔ míng xīn	etched in one's bones and heart (idiom); ever-present memory (esp. resentment)
+镌骨铭心	0	juān gǔ míng xīn	see 刻骨铭心 kègǔmíngxīn
 镌黜	0	juān chù	to dismiss an official
 镍	0	niè	nickel (chemistry)
 镍箔	0	niè bó	nickel sheet/CL: 张 zhāng
@@ -104076,6 +104214,7 @@
 門檻	14791	mén kǎn	doorstep/sill/threshold/fig. knack or trick (esp. scheme to get sth cheaper)
 門洞	479	mén dòng	passageway/archway
 門碰	0	mén pèng	doorstop
+門窗	3548	mén chuāng	doors and windows
 門縫	372	mén fèng	slight gap between a door and its frame
 門薩	112	Mén sà	Mensa (loanword)
 門診	5012	mén zhěn	outpatient service
@@ -104586,7 +104725,6 @@
 關東地震	0	Guān dōng dì zhèn	Kantō earthquake of 1923, magnitude 8.2, that killed 200,000 people in the Tokyo area
 關東煮	28	Guān dōng zhǔ	oden, Japanese dish made with boiled eggs, processed fish cakes, daikon radish, tofu etc in a kelp-based broth
 關棧	18	guān zhàn	bonded warehouse
-關棧費	0	guān zhàn fèi	bonding fee
 關涉	389	guān shè	to relate (to)/to concern/to involve/connection/relationship
 關漢卿	224	Guān Hàn qīng	Guan Hanqing (c. 1235-c. 1300), Yuan dynasty dramatist in the 雜劇|杂剧 tradition of musical comedy, one of the Four Great Yuan dramatists 元曲四大家
 關禁閉	275	guān jìn bì	to put in detention (a soldier, a pupil)
@@ -104649,6 +104787,7 @@
 门槛	14791	mén kǎn	doorstep/sill/threshold/fig. knack or trick (esp. scheme to get sth cheaper)
 门洞	479	mén dòng	passageway/archway
 门碰	0	mén pèng	doorstop
+门窗	3548	mén chuāng	doors and windows
 门缝	372	mén fèng	slight gap between a door and its frame
 门萨	112	Mén sà	Mensa (loanword)
 门诊	5012	mén zhěn	outpatient service
@@ -104882,7 +105021,7 @@
 闸道	13	zhá dào	(computing) gateway (Tw)
 闸门	4074	zhá mén	sluice gate
 闸阀	55	zhá fá	gate valve; sluice valve
-闹	0	nào	noisy/cacophonous/to make noise/to disturb/to vent (feelings)/to fall ill/to have an attack (of sickness)/to go in (for some activity)/to joke
+闹	0	nào	noisy; boisterous/bustling; lively/to make noise/to cause a disturbance/to express; to vent (feelings)/to experience (an illness, disaster, famine etc)/to fool around/to engage in (an activity, often vigorously or disruptively)
 闹事	3802	nào shì	to cause trouble/to create a disturbance
 闹僵	74	nào jiāng	(of a relationship or situation) to become strained and tense
 闹别扭	589	nào biè niu	to be difficult with sb/to provoke disagreement/at loggerheads/to fall out with
@@ -105152,13 +105291,13 @@
 防损	0	fáng sǔn	loss prevention
 防損	0	fáng sǔn	loss prevention
 防晒	1622	fáng shài	sunburn protection
-防晒油	66	fáng shài yóu	sunscreen/sunblock
+防晒油	66	fáng shài yóu	sunscreen; sunblock
 防晒霜	1148	fáng shài shuāng	suntan lotion/sunscreen cream
 防暑降温	34	fáng shǔ jiàng wēn	to prevent heatstroke and reduce temperature
 防暑降溫	34	fáng shǔ jiàng wēn	to prevent heatstroke and reduce temperature
 防暴盾	0	fáng bào dùn	riot shield
 防曬	1622	fáng shài	sunburn protection
-防曬油	66	fáng shài yóu	sunscreen/sunblock
+防曬油	66	fáng shài yóu	sunscreen; sunblock
 防曬霜	1148	fáng shài shuāng	suntan lotion/sunscreen cream
 防杜	0	fáng dù	to prevent
 防毒围裙	0	fáng dú wéi qún	protective apron
@@ -105226,6 +105365,7 @@
 阳春白雪	68	yáng chūn bái xuě	melodies of the elite in the state of Chu 楚国 Chǔguó/highbrow art and literature
 阳朔	490	Yáng shuò	see 阳朔县 Yángshuò Xiàn
 阳朔县	166	Yáng shuò Xiàn	Yangshuo, a county in Guilin City 桂林市 Guìlín Shì, Guangxi
+阳桃	0	yáng táo	variant of 杨桃 yángtáo
 阳沟	28	yáng gōu	open drainage channel; ditch
 阳泉	1514	Yáng quán	see 阳泉市 Yángquán Shì
 阳泉市	275	Yáng quán Shì	Yangquan, prefecture-level city in Shanxi Province 山西省 Shānxī Shěng
@@ -105529,8 +105669,8 @@
 阿森	457	Ā sēn	Assen, city in the Netherlands
 阿森松岛	72	Ā sēn sōng Dǎo	Ascension Island
 阿森松島	72	Ā sēn sōng Dǎo	Ascension Island
-阿森納	4266	Ā sēn nà	Arsenal Football Club
-阿森纳	4266	Ā sēn nà	Arsenal Football Club
+阿森納	4266	Ā sēn nà	Arsenal Football Club (London, England)
+阿森纳	4266	Ā sēn nà	Arsenal Football Club (London, England)
 阿榮旗	107	Ā róng qí	Arun banner or Arongqi county in Hulunbuir 呼倫貝爾 Hūlúnbèi'ěr, Inner Mongolia
 阿洛菲	12	Ā luò fēi	Alofi, capital of Niue
 阿混	0	ā hùn	(dialect) idler/loafer
@@ -105687,7 +105827,6 @@
 陈	0	Chén	surname Chen/Chen (c. 1045 – 479 BC), a Zhou dynasty state/Chen (557–589), one of the Southern Dynasties 南朝 Nán Cháo	chén	(bound form) to lay out; to exhibit; to display/(bound form) to narrate; to state; to explain; to tell/old; stale
 陈书	14	Chén shū	History of Chen of the Southern Dynasties, ninth of the 24 dynastic histories 二十四史 Èrshísì Shǐ, compiled by Yao Silian 姚思廉 Yáo Sīlián in 636 during Tang dynasty, 36 scrolls
 陈云	5495	Chén Yún	Chen Yun (1905-1995), communist leader and economist
-陈云林	105	Chén Yún lín	Chen Yunlin (1941-), chairman of PRC Association for Relations Across the Taiwan Straits (ARATS) 海峡两岸关系协会 Hǎixiá Liǎng'àn Guānxi Xiéhuì (2008-2013)
 陈仁锡	0	Chén Rén xī	Chen Renxi (1581-1636), late Ming scholar and prolific author
 陈仓	380	Chén cāng	ancient name of Baoji City 宝鸡市 Bǎojī Shì, Shaanxi/Chencang district of Baoji City
 陈仓区	0	Chén cāng Qū	Chencang, a district of Baoji City 宝鸡市 Bǎojī Shì, Shaanxi
@@ -106092,7 +106231,6 @@
 陳醋	24	chén cù	mature vinegar
 陳陳相因	13	chén chén xiāng yīn	(idiom) to slavishly follow old patterns; to stick to outdated conventions
 陳雲	5495	Chén Yún	Chen Yun (1905-1995), communist leader and economist
-陳雲林	105	Chén Yún lín	Chen Yunlin (1941-), chairman of PRC Association for Relations Across the Taiwan Straits (ARATS) 海峽兩岸關係協會 Hǎixiá Liǎng'àn Guānxi Xiéhuì (2008-2013)
 陳露	34	Chén Lù	Lu Chen (1976–), Chinese figure skater, 1995 world champion
 陳香梅	60	Chén Xiāng méi	Chen Xiangmei (1925–2018), also known as Anna Chennault, Chinese-American writer and Republican politician, wife of Claire Lee Chennault 陳納德 Chénnàdé
 陴	0	pí	parapet
@@ -106140,7 +106278,7 @@
 陶艺	490	táo yì	ceramic art
 陶藝	490	táo yì	ceramic art
 陶行知	398	Táo Xíng zhī	Tao Xingzhi (1891-1946), Chinese educator and reformer
-陶醉	3020	táo zuì	to be infatuated with; to be drunk with; to be enchanted with; to revel in
+陶醉	3020	táo zuì	to be intoxicated with; to be enchanted by; to revel in
 陷	0	xiàn	pitfall/trap/to get stuck/to sink/to cave in/to frame (false charge)/to capture (a city in battle)/to fall (to the enemy)/defect
 陷于	5370	xiàn yú	caught in (a bad situation)/to fall into (trap etc)
 陷于瘫痪	0	xiàn yú tān huàn	to be paralyzed; to come to a standstill
@@ -106181,6 +106319,7 @@
 陽春白雪	68	yáng chūn bái xuě	melodies of the elite in the state of Chu 楚國 Chǔguó/highbrow art and literature
 陽朔	490	Yáng shuò	see 陽朔縣 Yángshuò Xiàn
 陽朔縣	166	Yáng shuò Xiàn	Yangshuo, a county in Guilin City 桂林市 Guìlín Shì, Guangxi
+陽桃	0	yáng táo	variant of 楊桃 yángtáo
 陽泉	1514	Yáng quán	see 陽泉市 Yángquán Shì
 陽泉市	275	Yáng quán Shì	Yangquan, prefecture-level city in Shanxi Province 山西省 Shānxī Shěng
 陽溝	28	yáng gōu	open drainage channel; ditch
@@ -107469,6 +107608,8 @@
 零亂	234	líng luàn	in disorder/a complete mess
 零件	9772	líng jiàn	part/component
 零備件	16	líng bèi jiàn	spare part/component
+零元購	0	líng yuán gòu	(slang) to shoplift
+零元购	0	líng yuán gòu	(slang) to shoplift
 零八宪章	0	Líng bā Xiàn zhāng	Charter 08, PRC pro-democracy petition of December 2008
 零八憲章	0	Líng bā Xiàn zhāng	Charter 08, PRC pro-democracy petition of December 2008
 零功率堆	0	líng gōng lǜ duī	zero power reactor
@@ -107522,6 +107663,8 @@
 零码	0	líng mǎ	(Tw) (fashion retailing) available only in a limited range of less popular sizes
 零碎	1950	líng suì	scattered and fragmentary/scraps/odds and ends
 零碼	0	líng mǎ	(Tw) (fashion retailing) available only in a limited range of less popular sizes
+零線	72	líng xiàn	(electrical engineering) neutral wire
+零线	72	líng xiàn	(electrical engineering) neutral wire
 零缺点	17	líng quē diǎn	zero defect/faultless/impeccable
 零缺點	17	líng quē diǎn	zero defect/faultless/impeccable
 零聲母	32	líng shēng mǔ	(Chinese linguistics) zero initial (the initial of a syllable that does not begin with a consonant)
@@ -107662,8 +107805,8 @@
 電唱盤	0	diàn chàng pán	gramophone/record player
 電唱頭	0	diàn chàng tóu	pickup (of a record player)
 電塔	120	diàn tǎ	electricity pylon/transmission tower
-電子伏	0	diàn zǐ fú	electron volt (unit of energy used in particle physics, approximately 10⁻¹⁹ joules)
-電子伏特	36	diàn zǐ fú tè	electronvolt (eV)
+電子伏	0	diàn zǐ fú	electron volt (eV)
+電子伏特	36	diàn zǐ fú tè	electron volt (eV)
 電子信箱	102	diàn zǐ xìn xiāng	e-mail inbox
 電子手帳	0	diàn zǐ shǒu zhàng	electronic organizer/PDA
 電子榨菜	0	diàn zǐ zhà cài	(slang) entertaining content such as Internet videos and TV shows that people watch while eating
@@ -107684,6 +107827,7 @@
 電桿	263	diàn gǎn	electric pole/telegraph pole
 電梯	18197	diàn tī	elevator/escalator/CL: 臺 tái, 部 bù
 電梯井	0	diàn tī jǐng	elevator shaft
+電棍	27	diàn gùn	stun baton
 電棒	110	diàn bàng	(coll.) flashlight/(Tw) stun baton/(Tw) hair iron; hair tongs
 電椅	324	diàn yǐ	electric chair (used to execute criminals)
 電池	25119	diàn chí	battery; electric cell/CL: 節 jié, 組 zǔ
@@ -107756,6 +107900,7 @@
 電鍍	933	diàn dù	to electroplate
 電鍵	25	diàn jiàn	electric key/switch
 電鏟	13	diàn chǎn	power shovel
+電鏡	83	diàn jìng	electron microscope (abbr. for 電子顯微鏡 diànzǐxiǎnwēijìng)
 電鑽	324	diàn zuàn	electric drill
 電閃	105	diàn shǎn	lightning flashes
 電閘	58	diàn zhá	electric switch/circuit breaker
@@ -107772,7 +107917,7 @@
 電驢	123	diàn lǘ	(slang) electric bicycle or scooter (moped-style)
 電驢子	0	diàn lǘ zi	(dialect) motorcycle
 電鰩	0	diàn yáo	(zoology) electric ray
-電鰻	200	diàn mán	electric eel
+電鰻	200	diàn mán	electric eel/often pr. diàn4man
 雾	0	wù	fog/mist/CL: 场 cháng, 阵 zhèn
 雾件	0	wù jiàn	vaporware
 雾凇	138	wù sōng	rime/hoarfrost
@@ -108536,8 +108681,8 @@
 面瓜	0	miàn guā	(dialect) pumpkin/(fig.) oaf
 面疙瘩	85	miàn gē da	dough dumpling
 面疱	71	miàn pào	acne
-面瘫	575	miàn tān	facial nerve paralysis
-面癱	575	miàn tān	facial nerve paralysis
+面瘫	575	miàn tān	facial paralysis
+面癱	575	miàn tān	facial paralysis
 面皰	71	miàn pào	acne
 面目可憎	112	miàn mù kě zēng	repulsive countenance/disgusting appearance
 面砖	62	miàn zhuān	facing brick; facade tile used to cover exterior walls
@@ -108772,6 +108917,7 @@
 韋伯	3981	Wéi bó	(surname) Weber; Webber; Webb	wéi bó	weber (unit of magnetic flux, Wb)
 韋利	182	Wéi lì	Waley or Whaley (name)/Arthur Waley (1889-1966), pioneer British sinologist
 韋德	4571	Wéi dé	Wade (name)/Sir Thomas Francis Wade (1818-1895), sinologist 威妥瑪 Wēi Tuǒmǎ
+韋恩圖	0	wéi ēn tú	Venn diagram
 韋慕庭	0	Wéi Mù tíng	Clarence Martin Wilbur (1908-1997), US Sinologist and Professor of Columbia University
 韋應物	62	Wéi Yìng wù	Wei Yingwu (c. 737 – c. 792), Tang dynasty poet
 韋斯卡	13	Wéi sī kǎ	Uesca or Huesca, Spain
@@ -108799,7 +108945,6 @@
 韓圓	60	hán yuán	variant of 韓元 hányuán
 韓寒	1023	Hán Hán	Han Han (1982-), PRC blogger, singer and professional rally driver
 韓式泡菜	0	Hán shì pào cài	kimchi
-韓彥直	13	Hán Yàn zhí	Han Yanzhi (1131-?), Song dynasty botanist, author of classification of orange trees 橘錄 júlù
 韓復榘	0	Hán Fù jǔ	Han Fuju (1890–1938), Nationalist Kuomintang (KMT) army general and governor of Shandong, executed by Chiang Kai-shek 蔣介石 Jiǎng Jièshí after he abandoned Jinan to the Japanese
 韓愈	813	Hán Yù	Han Yu (768-824), Tang dynasty essayist and poet, advocate of the classical writing 古文運動 gǔwényùndòng and neoclassical 復古 fùgǔ movements
 韓愛晶	0	Hán Ài jīng	Han Aijing (1945-), notorious red guard leader during Cultural Revolution, spent 15 years in prison for imprisoning and torturing political leaders
@@ -108825,6 +108970,7 @@
 韦尔瓦	14	Wéi ěr wǎ	Huelva, Spain
 韦应物	62	Wéi Yìng wù	Wei Yingwu (c. 737 – c. 792), Tang dynasty poet
 韦德	4571	Wéi dé	Wade (name)/Sir Thomas Francis Wade (1818-1895), sinologist 威妥玛 Wēi Tuǒmǎ
+韦恩图	0	wéi ēn tú	Venn diagram
 韦慕庭	0	Wéi Mù tíng	Clarence Martin Wilbur (1908-1997), US Sinologist and Professor of Columbia University
 韦斯卡	13	Wéi sī kǎ	Uesca or Huesca, Spain
 韦格纳	76	Wéi gé nà	Alfred Wegener (1880-1930), German meteorologist and geophysicist, the originator of the theory of continental drift/also written 魏格納|魏格纳
@@ -108850,7 +108996,6 @@
 韩复榘	0	Hán Fù jǔ	Han Fuju (1890–1938), Nationalist Kuomintang (KMT) army general and governor of Shandong, executed by Chiang Kai-shek 蒋介石 Jiǎng Jièshí after he abandoned Jinan to the Japanese
 韩寒	1023	Hán Hán	Han Han (1982-), PRC blogger, singer and professional rally driver
 韩式泡菜	0	Hán shì pào cài	kimchi
-韩彦直	13	Hán Yàn zhí	Han Yanzhi (1131-?), Song dynasty botanist, author of classification of orange trees 橘录 júlù
 韩愈	813	Hán Yù	Han Yu (768-824), Tang dynasty essayist and poet, advocate of the classical writing 古文运动 gǔwényùndòng and neoclassical 复古 fùgǔ movements
 韩昇洙	0	Hán Shēng zhū	Han Seung-soo (1936-), South Korean diplomat and politician, prime minister 2008-2009
 韩棒子	0	Hán bàng zi	Korean (derog.)
@@ -109253,7 +109398,7 @@
 頹唐	31	tuí táng	dispirited/depressed
 頹喪	98	tuí sàng	dejected/disheartened/listless
 頹圮	0	tuí pǐ	to collapse/dilapidated
-頹垣斷壁	0	tuí yuán duàn bì	see 斷壁頹垣 duànbìtuíyuán
+頹垣斷壁	0	tuí yuán duàn bì	see 斷壁殘垣 duànbìcányuán
 頹塌	0	tuí tā	to collapse
 頹壞	16	tuí huài	dilapidated/decrepit
 頹廢	1862	tuí fèi	decadent/dispirited/depressed/dejected
@@ -109328,7 +109473,6 @@
 顛倒黑白	490	diān dǎo hēi bái	lit. to invert black and white (idiom); to distort the truth deliberately/to misrepresent the facts/to invert right and wrong
 顛兒	166	diān r	(Beijing dialect) to skedaddle; to make oneself scarce
 顛兒丫子	0	diān r yā zi	see 顛兒 diānr
-顛兒面	0	diān r miàn	to lose face
 顛峰	263	diān fēng	variant of 巔峰 diānfēng
 顛撲不破	129	diān pū bù pò	solid; unbreakable/(fig.) irrefutable; incontrovertible; indisputable
 顛沛	162	diān pèi	to fall over; to stumble/(fig.) to suffer hardship; to be in desperate straits
@@ -109660,7 +109804,7 @@
 颓唐	31	tuí táng	dispirited/depressed
 颓圮	0	tuí pǐ	to collapse/dilapidated
 颓坏	16	tuí huài	dilapidated/decrepit
-颓垣断壁	0	tuí yuán duàn bì	see 断壁颓垣 duànbìtuíyuán
+颓垣断壁	0	tuí yuán duàn bì	see 断壁残垣 duànbìcányuán
 颓塌	0	tuí tā	to collapse
 颓废	1862	tuí fèi	decadent/dispirited/depressed/dejected
 颓废派	46	tuí fèi pài	decadents (of the Decadent movement of late 19th century Europe)
@@ -109736,7 +109880,6 @@
 颠倒黑白	490	diān dǎo hēi bái	lit. to invert black and white (idiom); to distort the truth deliberately/to misrepresent the facts/to invert right and wrong
 颠儿	166	diān r	(Beijing dialect) to skedaddle; to make oneself scarce
 颠儿丫子	0	diān r yā zi	see 颠儿 diānr
-颠儿面	0	diān r miàn	to lose face
 颠峰	263	diān fēng	variant of 巅峰 diānfēng
 颠扑不破	129	diān pū bù pò	solid; unbreakable/(fig.) irrefutable; incontrovertible; indisputable
 颠来倒去	14	diān lái dǎo qù	to harp on/over and over/merely ring changes on a few terms
@@ -109783,7 +109926,7 @@
 風和日暖	0	fēng hé rì nuǎn	gentle wind and warm sunshine (idiom)
 風喻	0	fēng yù	see 諷喻 fěngyù
 風噪	0	fēng zào	wind noise
-風圈	56	fēng quān	ring around the moon/lunar halo/solar halo
+風圈	56	fēng quān	solar or lunar halo/(meteorology) area around a tropical cyclone experiencing winds above a specified speed
 風塵	1122	fēng chén	windblown dust/hardships of travel/vicissitudes of life/prostitution
 風塵僕僕	93	fēng chén pú pú	lit. covered in dust (idiom)/fig. travel-worn
 風姿	347	fēng zī	good looks/good figure/graceful bearing/charm
@@ -109948,7 +110091,7 @@
 风和日暖	0	fēng hé rì nuǎn	gentle wind and warm sunshine (idiom)
 风喻	0	fēng yù	see 讽喻 fěngyù
 风噪	0	fēng zào	wind noise
-风圈	56	fēng quān	ring around the moon/lunar halo/solar halo
+风圈	56	fēng quān	solar or lunar halo/(meteorology) area around a tropical cyclone experiencing winds above a specified speed
 风声鹤唳	398	fēng shēng hè lì	lit. wind sighing and crane calling (idiom)/fig. to panic at the slightest move/to be jittery
 风姿	347	fēng zī	good looks/good figure/graceful bearing/charm
 风姿绰约	45	fēng zī chuò yuē	(idiom) graceful; lovely
@@ -110098,7 +110241,6 @@
 飛撾	0	fēi zhuā	ancient weapon with a tip like a grappling hook, thrown at enemy combatants in order to capture them
 飛散	182	fēi sàn	(of smoke) to disperse; to dissipate/(of birds) to fly away in all directions
 飛機杯	0	fēi jī bēi	male masturbator (sex toy); artificial vagina
-飛機艙門	0	fēi jī cāng mén	airplane cabin door
 飛機餐	0	fēi jī cān	in-flight meal
 飛檐走壁	145	fēi yán zǒu bì	to leap onto roofs and vault over walls (usually associated with martial arts)
 飛毛腿	759	fēi máo tuǐ	swift feet/fleet-footed runner
@@ -110161,7 +110303,6 @@
 飞掠	331	fēi lüè	to fly past; to sweep past (at close range)/(of a spacecraft) to do a flyby (of a celestial body)
 飞散	182	fēi sàn	(of smoke) to disperse; to dissipate/(of birds) to fly away in all directions
 飞机杯	0	fēi jī bēi	male masturbator (sex toy); artificial vagina
-飞机舱门	0	fēi jī cāng mén	airplane cabin door
 飞机餐	0	fēi jī cān	in-flight meal
 飞来横祸	51	fēi lái hèng huò	sudden and unexpected disaster (idiom)
 飞檐走壁	145	fēi yán zǒu bì	to leap onto roofs and vault over walls (usually associated with martial arts)
@@ -110224,8 +110365,10 @@
 食尸鬼	0	shí shī guǐ	ghoul
 食屍鬼	0	shí shī guǐ	ghoul
 食慾	3631	shí yù	appetite
+食慾素	0	shí yù sù	orexin
 食槽	35	shí cáo	manger
 食欲	3631	shí yù	appetite
+食欲素	0	shí yù sù	orexin
 食火雞	25	shí huǒ jī	cassowary (genus Casuarius), large flightless bird native to northeastern Australia and New Guinea/CL: 隻 zhī
 食火鸡	25	shí huǒ jī	cassowary (genus Casuarius), large flightless bird native to northeastern Australia and New Guinea/CL: 只 zhī
 食物鏈	1413	shí wù liàn	food chain
@@ -110453,6 +110596,8 @@
 餐桌鹽	0	cān zhuō yán	table salt
 餐点	1148	cān diǎn	food/dish/meal
 餐牌	47	cān pái	menu
+餐补	0	cān bǔ	meal allowance
+餐補	0	cān bǔ	meal allowance
 餐車	1479	cān chē	dining car/diner
 餐车	1479	cān chē	dining car/diner
 餐酒館	0	cān jiǔ guǎn	(Tw) bistro
@@ -110953,6 +111098,7 @@
 香腺	0	xiāng xiàn	perfume gland/musk gland
 香艳	245	xiāng yàn	alluring/erotic/romantic
 香艷	245	xiāng yàn	alluring/erotic/romantic
+香芋	83	xiāng yù	ube; purple yam (Dioscorea alata)/taro (Colocasia esculenta)
 香茅	182	xiāng máo	lemongrass (Cymbopogon)
 香茅醇	0	xiāng máo chún	citronellol (chemistry)
 香荽	0	xiāng suī	coriander
@@ -111970,7 +112116,7 @@
 骂战	31	mà zhàn	war of words; exchange of verbal attacks
 骂架	0	mà jià	to have a shouting match; to exchange verbal abuse; to quarrel noisily
 骂街	257	mà jiē	to shout abuses in the street
-骂骂咧咧	501	mà ma liē liē	to swear while talking; to be foul-mouthed
+骂骂咧咧	501	mà ma liē liē	to grumble angrily; to curse and swear
 骃	0	yīn	iron-gray (horse)
 骄	0	jiāo	proud/arrogant
 骄人	398	jiāo rén	worthy of pride/impressive/enviable/to show contempt for others
@@ -112123,9 +112269,9 @@
 骨子裡	2239	gǔ zi lǐ	beneath the surface; fundamentally; at the deepest level
 骨子里	2239	gǔ zi lǐ	beneath the surface; fundamentally; at the deepest level
 骨干	11220	gǔ gàn	diaphysis (long segment of a bone)/fig. backbone
-骨干网路	0	gǔ gàn wǎng lù	backbone network
+骨干网	200	gǔ gàn wǎng	backbone network
 骨幹	11220	gǔ gàn	diaphysis (long segment of a bone)/fig. backbone
-骨幹網路	0	gǔ gàn wǎng lù	backbone network
+骨幹網	200	gǔ gàn wǎng	backbone network
 骨感	66	gǔ gǎn	bony; skinny
 骨折	6166	gǔ zhé	to suffer a fracture/(of a bone) to break/fracture
 骨料	76	gǔ liào	aggregate (sand or gravel used in concrete 混凝土)
@@ -112138,6 +112284,8 @@
 骨法	0	gǔ fǎ	bone structure and physiognomy/the strength observed in brushstrokes (Chinese calligraphy)
 骨灰	4266	gǔ huī	bone ash/cremation ashes; cremains
 骨灰盒	389	gǔ huī hé	box for bone ashes/funerary casket
+骨灰級	37	gǔ huī jí	(slang) die-hard; hardcore/(slang) top-tier; exceptionally experienced
+骨灰级	37	gǔ huī jí	(slang) die-hard; hardcore/(slang) top-tier; exceptionally experienced
 骨灰龕	0	gǔ huī kān	columbarium
 骨灰龛	0	gǔ huī kān	columbarium
 骨炭	19	gǔ tàn	bone black/animal charcoal
@@ -112664,6 +112812,7 @@
 鬍渣	13	hú zhā	see 鬍碴 húchā
 鬍碴	0	hú chā	beard stubble/Taiwan pr. húchá
 鬍茬	27	hú chá	beard stubble
+鬍青	0	hú qīng	beard shadow
 鬍髭	0	hú zī	beard and mustache
 鬍鬚	1585	hú xū	beard/CL: 根 gēn, 綹 liǔ
 鬎	0	là	bald/scabby
@@ -112710,7 +112859,7 @@
 鬥雞眼	44	dòu jī yǎn	cross-eye
 鬥雞走馬	0	dòu jī zǒu mǎ	cock-fighting and horse-racing (idiom); to gamble
 鬥霜傲雪	0	dòu shuāng ào xuě	see 欺霜傲雪 qīshuāng'àoxuě
-鬧	0	nào	noisy/cacophonous/to make noise/to disturb/to vent (feelings)/to fall ill/to have an attack (of sickness)/to go in (for some activity)/to joke
+鬧	0	nào	noisy; boisterous/bustling; lively/to make noise/to cause a disturbance/to express; to vent (feelings)/to experience (an illness, disaster, famine etc)/to fool around/to engage in (an activity, often vigorously or disruptively)
 鬧事	3802	nào shì	to cause trouble/to create a disturbance
 鬧僵	74	nào jiāng	(of a relationship or situation) to become strained and tense
 鬧劇	4677	nào jù	farce/CL: 場 chǎng, 齣 chū, 幕 mù
@@ -113285,7 +113434,7 @@
 鰹	0	jiān	bonito
 鰺	0	shēn	carangid (zoology)
 鰻	0	mán	(bound form) eel (Anguilla japonica)
-鰻魚	1905	mán yú	eel
+鰻魚	1905	mán yú	eel/often pr. mán4yu
 鰻鱺	457	mán lí	eel/Japanese freshwater eel (Anguilla japonica)
 鰼	0	xí	loach/mudfish
 鰽	0	qiú	herring
@@ -113630,7 +113779,7 @@
 鳖裙	0	biē qún	the edible gelatinous fringe of a softshell turtle's carapace
 鳖边	0	biē biān	(dialect) the edible gelatinous fringe of a softshell turtle's carapace
 鳗	0	mán	(bound form) eel (Anguilla japonica)
-鳗鱼	1905	mán yú	eel
+鳗鱼	1905	mán yú	eel/often pr. mán4yu
 鳗鲡	457	mán lí	eel/Japanese freshwater eel (Anguilla japonica)
 鳘	0	mǐn	cod
 鳙	0	yōng	see 鳙鱼 yōngyú
@@ -113823,7 +113972,6 @@
 鴛鴦	2884	yuān yāng	(bird species of China) mandarin duck (Aix galericulata)/(fig.) affectionate couple; happily married couple
 鴛鴦戲水	28	yuān yāng xì shuǐ	lit. mandarin ducks playing in the water/fig. to make love
 鴛鴦浴	65	yuān yāng yù	taking a bath together as a couple
-鴛鴦蝴蝶	33	yuān yang hú dié	Mandarin ducks and butterfly (i.e. love birds)/derogatory reference to populist and romantic writing around 1900
 鴛鴦鍋	16	yuān yang guō	"mandarin ducks" pot (hot pot with a divider, containing spicy soup on one side, mild soup on the other)
 鴜	0	cí	(a kind of waterbird)
 鴝	0	qú	(bound form, used in the names of various kinds of bird, esp. robins and redstarts)
@@ -114306,7 +114454,6 @@
 鸳鸯	2884	yuān yāng	(bird species of China) mandarin duck (Aix galericulata)/(fig.) affectionate couple; happily married couple
 鸳鸯戏水	28	yuān yāng xì shuǐ	lit. mandarin ducks playing in the water/fig. to make love
 鸳鸯浴	65	yuān yāng yù	taking a bath together as a couple
-鸳鸯蝴蝶	33	yuān yang hú dié	Mandarin ducks and butterfly (i.e. love birds)/derogatory reference to populist and romantic writing around 1900
 鸳鸯锅	16	yuān yang guō	"mandarin ducks" pot (hot pot with a divider, containing spicy soup on one side, mild soup on the other)
 鸴	0	xué	various species of finch (old)
 鸵	0	tuó	ostrich
@@ -116095,6 +116242,7 @@
 齊心合力	302	qí xīn hé lì	to work as one (idiom); united in a concerted effort/working hard together
 齊性	23	qí xìng	(math.) homogeneity/homogeneous
 齊放	214	qí fàng	broadside/simultaneous fired cannonade
+齊整	191	qí zhěng	see 整齊 zhěngqí
 齊書	0	Qí shū	History of Qi of the Southern Dynasties, seventh of the 24 dynastic histories 二十四史 Èrshísì Shǐ, compiled by Xiao Zixian 蕭子顯 Xiāo Zǐxiǎn in 537 during Liang of the Southern Dynasties 南朝梁 Náncháo Liáng, 59 scrolls/usually 南齊書 Nán Qíshū to distinguish from Northern Qi
 齊柏林	0	Qí bó lín	Zeppelin (name)/Graf Ferdinand von Zeppelin (1838-1917), inventor of the Zeppelin dirigible airship
 齊根	16	qí gēn	at the base/at the root/(of a leg) just below the crutch
@@ -116121,6 +116269,7 @@
 齊頭式	18	qí tóu shì	treating everyone the same, regardless of individual differences/one-size-fits-all approach/(typesetting) block paragraphs (no indenting, and blank space between each paragraph)
 齊魯	1738	Qí lǔ	alternative name for Shandong 山東 Shāndōng
 齊齊哈爾	1995	Qí qí hā ěr	see 齊齊哈爾市 Qíqíhā'ěr Shì
+齊齊整整	0	qí qí zhěng zhěng	see 整整齊齊 zhěngzhěngqíqí
 齋	0	zhāi	to fast or abstain from meat, wine etc/vegetarian diet/study room/building/to give alms (to a monk)
 齋堂	120	zhāi táng	dining hall in a Buddhist temple
 齋戒	1820	zhāi jiè	to observe a religious fast; to abstain from food or certain activities before a ritual
@@ -116165,6 +116314,7 @@
 齐心合力	302	qí xīn hé lì	to work as one (idiom); united in a concerted effort/working hard together
 齐性	23	qí xìng	(math.) homogeneity/homogeneous
 齐放	214	qí fàng	broadside/simultaneous fired cannonade
+齐整	191	qí zhěng	see 整齐 zhěngqí
 齐柏林	0	Qí bó lín	Zeppelin (name)/Graf Ferdinand von Zeppelin (1838-1917), inventor of the Zeppelin dirigible airship
 齐根	16	qí gēn	at the base/at the root/(of a leg) just below the crutch
 齐桓公	501	Qí Huán gōng	Duke Huan of Qi (reigned 685-643 BC), one of the Five Hegemons 春秋五霸
@@ -116186,6 +116336,7 @@
 齐集	309	qí jí	to gather together; to assemble (in one place)
 齐鲁	1738	Qí lǔ	alternative name for Shandong 山东 Shāndōng
 齐齐哈尔	1995	Qí qí hā ěr	see 齐齐哈尔市 Qíqíhā'ěr Shì
+齐齐整整	0	qí qí zhěng zhěng	see 整整齐齐 zhěngzhěngqíqí
 齑	0	jī	finely chopped meat or vegetables/powdered or fragmentary
 齑粉	19	jī fěn	fine powder/broken pieces
 齒	0	chǐ	(bound form) tooth/(bound form) to regard as worthy of mention
