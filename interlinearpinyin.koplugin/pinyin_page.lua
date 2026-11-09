@@ -76,7 +76,11 @@ function Page.collect(document, page)
                 if past_end >= Page.CONTEXT then break end
             end
         end
-        xp = we
+        -- Continue from this word's start, not its end: for CJK the end of one
+        -- character is exactly the start of the next, and next-word-start never
+        -- returns its own starting position, so stepping from `we` would skip
+        -- every other character. Stepping from `ws` works for spaced text too.
+        xp = ws
     end
     return items
 end

@@ -16,7 +16,8 @@ lua = LuaRuntime(unpack_returned_tuples=True)
 lua.globals().PLUGIN_DIR = plugin
 lua.execute(f'package.path = "{plugin}/?.lua;" .. package.path')
 try:
-    lua.execute(open(os.path.join(root, "tests", "test_resolve.lua"), encoding="utf-8").read())
+    for name in ("test_resolve.lua", "test_page.lua"):
+        lua.execute(open(os.path.join(root, "tests", name), encoding="utf-8").read())
 except Exception as e:  # noqa: BLE001
     print(e)
     sys.exit(1)
