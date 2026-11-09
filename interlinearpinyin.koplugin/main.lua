@@ -31,7 +31,7 @@ local InterlinearPinyin = WidgetContainer:extend{
     is_doc_only = true,
 }
 
-InterlinearPinyin.VERSION = "0.1.0"
+InterlinearPinyin.VERSION = "0.2.0"
 
 local PREFIX = "interlinearpinyin_"
 local THRESHOLDS = { 1500, 2500, 3500, 5000, 7000 }
