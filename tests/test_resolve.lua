@@ -35,6 +35,17 @@ local function readings(text, threshold)
     return table.concat(out, " ")
 end
 
+-- Parsing must not depend on the locale: "à" ends in byte 0xA0, which some
+-- C locales treat as a space.
+do
+    local syllables, freq = data:word("大宛")
+    assert(syllables and #syllables == 2 and syllables[1] == "dà" and syllables[2] == "yuān",
+        "大宛 parsed as " .. table.concat(syllables or {}, "|"))
+    assert(freq and freq > 0, "大宛 has no frequency")
+    syllables = data:word("刨子")
+    assert(syllables and #syllables == 2 and syllables[1] == "bào", "刨子 parsed wrongly")
+end
+
 local failures, passed = 0, 0
 local function expect(text, threshold, want)
     local got = readings(text, threshold)
@@ -69,6 +80,17 @@ expect("刨根问底，用刨子，刨根", 3500, "刨=páo 刨=bào")
 -- Only on-page occurrences count: one in the context before the page does not
 -- stop the first on-page one from being annotated.
 expect("饕|饕餮|", 3500, "饕=tāo 餮=tiè")
+
+-- Overlapping words of the same length: the more frequent one wins
+-- (宛如 over 大宛), not the leftmost.
+expect("声音很大宛如雷鸣", 2500, "宛=wǎn")
+expect("张骞出使大宛", 2500, "骞=qiān 宛=yuān")
+
+-- Neutral tones in CC-CEDICT (刺猬 cì wei) give way to the character's own tone.
+expect("一只刺猬", 3500, "猬=wèi")
+
+-- Words from pypinyin's phrase list that CC-CEDICT lacks or reads differently.
+expect("澹台灭明", 3500, "澹=tán")
 
 -- Punctuation breaks a word: 侥。幸 must not match 侥幸.
 expect("僬侥。幸", 3500, "僬=jiāo 侥=yáo")

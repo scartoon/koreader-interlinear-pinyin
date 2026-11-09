@@ -11,7 +11,8 @@ Status: **0.2.0**, tested on a Boox Go 7 (Android, 300 dpi) with KOReader v2026.
 ## What it does
 
 - Annotates only characters outside the N most common (choose 1,500 / 2,500 / 3,500 / 5,000 / 7,000; default 3,500). Simplified and traditional both work: a traditional character is ranked by its simplified form.
-- Picks the reading from the surrounding word when the character has more than one reading: 侥 is *jiǎo* in 侥幸 but *yáo* in 僬侥; 莞 is *guǎn* in 东莞 but *wǎn* in 莞尔. Otherwise it uses the character's most frequent reading.
+- Picks the reading from the surrounding word when the character has more than one reading: 侥 is *jiǎo* in 侥幸 but *yáo* in 僬侥; 莞 is *guǎn* in 东莞 but *wǎn* in 莞尔. When two words overlap (大宛 and 宛如 in 很大宛如雷鸣), the more common word wins. Otherwise it uses the character's most frequent reading.
+- Shows the character's own tone where everyday speech uses a neutral tone: 刺猬 gives *wèi* over 猬, not *wei*.
 - Annotates each character once per page: if 郡 appears five times on a page, only the first gets *jùn*. A repeat with a different reading is annotated again (刨 *páo* in 刨根, then *bào* in 刨子).
 - Makes room between lines only while it is on. Turning it off restores the book's own spacing (KOReader re-lays out the book, which takes a moment).
 
@@ -54,7 +55,7 @@ KOReader's rendering engine treats every CJK character as a one-character "word"
 Readings come from two tables in `interlinearpinyin.koplugin/data/`:
 
 - `chars.tsv`: every annotatable character with its frequency rank and default (most frequent) reading.
-- `words.tsv`: 2–4 character words containing a character with more than one reading. The longest word around a character decides its reading.
+- `words.tsv`: 2–4 character words containing a character with more than one reading, with each word's frequency. The longest word around a character decides its reading; among words of the same length, the more frequent one. The words come from CC-CEDICT and from pypinyin's phrase list, which adds names and literary words such as 冒顿 *mò dú* and 澹台 *tán tái*.
 
 Rebuild them with `tools/build_data.py` (instructions in the script).
 
@@ -87,7 +88,7 @@ The data files in `interlinearpinyin.koplugin/data/` are derived from:
 
 - **[CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)** (readings and words), © MDBG and contributors, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - **[wordfreq](https://github.com/rspeer/wordfreq)** by Robyn Speer (character frequencies), data under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- **[pypinyin](https://github.com/mozillazg/python-pinyin)** by mozillazg (fallback readings for characters CC-CEDICT lacks), MIT License.
+- **[pypinyin](https://github.com/mozillazg/python-pinyin)** by mozillazg (its phrase list, for words CC-CEDICT lacks; and fallback readings for characters CC-CEDICT lacks), MIT License.
 
 The data files are therefore distributed under **CC BY-SA 4.0**.
 

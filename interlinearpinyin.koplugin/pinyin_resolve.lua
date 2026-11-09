@@ -42,20 +42,25 @@ local function contiguous(items, a, b)
 end
 
 -- Reading of items[i] taken from the longest dictionary word around it, or nil.
+-- When several words of that length cover it (大宛 and 宛如 in 很大宛如), the
+-- more frequent word wins; the leftmost one on a tie.
 function Resolve.word_reading(data, items, i)
     local max_len = math.min(data.max_word_len or 4, 4)
     for len = max_len, 2, -1 do
+        local best, best_freq
         for start = i - len + 1, i do
             local stop = start + len - 1
             if contiguous(items, start, stop) then
                 local parts = {}
                 for k = start, stop do parts[#parts + 1] = items[k].text end
-                local syllables = data:word(table.concat(parts))
-                if syllables and #syllables == len then
-                    return syllables[i - start + 1]
+                local syllables, freq = data:word(table.concat(parts))
+                freq = freq or 0
+                if syllables and #syllables == len and (not best or freq > best_freq) then
+                    best, best_freq = syllables[i - start + 1], freq
                 end
             end
         end
+        if best then return best end
     end
     return nil
 end

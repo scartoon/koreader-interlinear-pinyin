@@ -5,8 +5,12 @@
 
 - CC-CEDICT, © MDBG and contributors, CC BY-SA 4.0 — https://www.mdbg.net/chinese/dictionary?page=cc-cedict
 - wordfreq data by Robyn Speer, CC BY-SA 4.0 — https://github.com/rspeer/wordfreq
-- pypinyin by mozillazg, MIT License — https://github.com/mozillazg/python-pinyin
+- pypinyin by mozillazg (character readings and its phrase list, `phrases_dict`), MIT License — https://github.com/mozillazg/python-pinyin
 
 Changes made: characters ranked by summed word frequency; default reading chosen by the
 frequency of the words using each reading; dictionary limited to 2–4 character words
-containing an annotatable polyphonic character; numbered pinyin converted to tone marks.
+containing an annotatable polyphonic character; numbered pinyin converted to tone marks;
+pypinyin phrases merged in (first reading of each syllable; where both sources have a word
+and disagree, CC-CEDICT is kept unless it differs only by a neutral tone); neutral tones on
+annotatable characters replaced by the character's toned reading with the same letters;
+each word's frequency (per billion words, from wordfreq) added as a third column.
