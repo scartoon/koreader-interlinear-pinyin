@@ -7,7 +7,7 @@
 - CC-CEDICT, © MDBG and contributors, CC BY-SA 4.0 — https://www.mdbg.net/chinese/dictionary?page=cc-cedict
 - wordfreq data by Robyn Speer, CC BY-SA 4.0 — https://github.com/rspeer/wordfreq
 - pypinyin by mozillazg (character readings and its phrase list, `phrases_dict`), MIT License — https://github.com/mozillazg/python-pinyin
-- the CPP polyphone dataset by Kyubyong Park and Seanie Lee (train split only), https://github.com/kakaobrain/g2pM — repository Apache-2.0, sentences from Chinese Wikipedia (CC BY-SA)
+- the CPP polyphone dataset by Kyubyong Park and Seanie Lee (train split only), https://github.com/kakaobrain/g2pM — repository Apache-2.0 with no separate licence for the sentences, which come from Chinese Wikipedia (CC BY-SA); the sentences themselves are not included
 
 Changes made: characters ranked by summed word frequency; default reading chosen by the
 frequency of the words using each reading; dictionary limited to 2–4 character words

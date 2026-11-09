@@ -102,7 +102,7 @@ python3 tools/learn_from_cpp.py                                     # rules.tsv,
 python3 tools/eval_readings.py                                      # CPP test split; tests/eval_cases.tsv must all pass
 ```
 
-The CPP dataset is downloaded when needed into `~/.cache/interlinear-pinyin/` and is not part of this repository (its sentences come from Chinese Wikipedia and no licence is stated for them). `learn_from_cpp.py` reads only its train split, `eval_readings.py` only its test split.
+The CPP dataset is downloaded when needed into `~/.cache/interlinear-pinyin/` and is not part of this repository. Its repository is Apache-2.0 but states no separate licence for the sentences, which according to the paper were collected from Chinese Wikipedia (whose text is CC BY-SA), so the sentences are not redistributed here; only rules and statistics learned from them are. `learn_from_cpp.py` reads only its train split, `eval_readings.py` only its test split.
 
 The tests run under LuaJIT, the Lua that KOReader uses. Some `lupa` builds (for example on Apple Silicon Macs) don't include LuaJIT; the runner then falls back to Lua 5.1, which LuaJIT is compatible with, and says so.
 
@@ -120,7 +120,7 @@ The data files in `interlinearpinyin.koplugin/data/` are derived from:
 - **[wordfreq](https://github.com/rspeer/wordfreq)** by Robyn Speer (character frequencies), data under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - **[pypinyin](https://github.com/mozillazg/python-pinyin)** by mozillazg (its phrase list, for words CC-CEDICT lacks; and fallback readings for characters CC-CEDICT lacks), MIT License.
 
-- **[CPP polyphone dataset](https://github.com/kakaobrain/g2pM)** by Kyubyong Park and Seanie Lee (Interspeech 2020; repository Apache-2.0, sentences from Chinese Wikipedia, CC BY-SA): its train split, for the context rules and confidence in `rules.tsv` and `uncertain.tsv`, and for checking default readings. The dataset itself is not included.
+- **[CPP polyphone dataset](https://github.com/kakaobrain/g2pM)** by Kyubyong Park and Seanie Lee (Interspeech 2020; repository Apache-2.0 with no separate licence for the sentences, which come from Chinese Wikipedia, CC BY-SA): its train split, for the context rules and confidence in `rules.tsv` and `uncertain.tsv`, and for checking default readings. The dataset itself is not included.
 
 The data files are therefore distributed under **CC BY-SA 4.0**.
 
