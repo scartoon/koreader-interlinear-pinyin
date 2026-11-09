@@ -65,18 +65,26 @@ Annotations for the on-page items.
 
   threshold: characters ranked above this (or unranked) are annotated.
 
+Each character is annotated only the first time it appears on the page with a
+given reading: later repeats are left bare, but a repeat with a different
+reading (刨 páo in 刨根, then bào in 刨子) is annotated again.
+
 Returns { {index=i, reading="tāo", rank=4396}, ... } in page order.
 ]]
 function Resolve.annotate(data, items, threshold)
-    local out = {}
+    local out, seen = {}, {}
     for i, item in ipairs(items) do
         if item.on_page ~= false and single_char(item.text) then
             local rank, reading = data:char(item.text)
             if rank and (rank == 0 or rank > threshold) then
                 reading = Resolve.word_reading(data, items, i) or reading
-                -- Rarity used to decide what to drop when a line is crowded:
-                -- unranked characters count as rarest.
-                out[#out + 1] = { index = i, reading = reading, rank = (rank == 0) and math.huge or rank }
+                local key = item.text .. "\t" .. reading
+                if not seen[key] then
+                    seen[key] = true
+                    -- Rarity used to decide what to drop when a line is crowded:
+                    -- unranked characters count as rarest.
+                    out[#out + 1] = { index = i, reading = reading, rank = (rank == 0) and math.huge or rank }
+                end
             end
         end
     end

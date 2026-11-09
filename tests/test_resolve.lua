@@ -59,7 +59,16 @@ expect("莞尔一笑", 2500, "莞=wǎn")
 expect("他住在东莞", 2500, "莞=guǎn")
 expect("吐蕃王朝", 2500, "蕃=bō")
 expect("刨根问底", 3500, "刨=páo")
-expect("用刨子刨平", 3500, "刨=bào 刨=bào")
+expect("用刨子刨平", 3500, "刨=bào")                 -- second 刨, same reading: not repeated
+
+-- Once per page: a repeated character is annotated only the first time,
+-- unless it has a different reading the second time.
+expect("饕餮之徒，饕餮之徒", 3500, "饕=tāo 餮=tiè")
+expect("刨根问底，用刨子", 3500, "刨=páo 刨=bào")
+expect("刨根问底，用刨子，刨根", 3500, "刨=páo 刨=bào")
+-- Only on-page occurrences count: one in the context before the page does not
+-- stop the first on-page one from being annotated.
+expect("饕|饕餮|", 3500, "饕=tāo 餮=tiè")
 
 -- Punctuation breaks a word: 侥。幸 must not match 侥幸.
 expect("僬侥。幸", 3500, "僬=jiāo 侥=yáo")
