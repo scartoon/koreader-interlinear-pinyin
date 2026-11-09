@@ -111,6 +111,47 @@ assert(Defs.describe(defs, g).word == nil, "contradicting word must not be shown
 g = { char = "饕", text = "tāo", context = { left = {}, right = {} } }
 assert(Defs.describe(defs, g).word == nil)
 
+-- CC-CEDICT gives many words a neutral tone: 鼓捣 is "gǔ dao" while 捣 is
+-- shown as dǎo. The word still counts, with CC-CEDICT's own pinyin.
+local function find(char, text, left, right)
+    return Defs.find_word(defs, { char = char, text = text, context = { left = left, right = right } })
+end
+local m = find("捣", "dǎo", { "鼓" }, { "回", "家", "点" })
+assert(m and m.word == "鼓捣" and m.pinyin == "gǔ dao", "neutral-tone word dropped")
+model = Defs.describe(defs, { char = "捣", text = "dǎo", context = { left = { "鼓" }, right = { "回", "家", "点" } } })
+assert(Defs.render(model):find("Word: 鼓捣  gǔ dao\nto tinker with"), Defs.render(model))
+-- ... but a toneless syllable with other letters is still a different reading.
+assert(find("捣", "tǎo", { "鼓" }, { "回" }) == nil, "dao must not match tǎo")
+assert(find("捣", "da", { "鼓" }, { "回" }) == nil, "dao must not match da")
+-- The comparison itself: neutral tone of the shown reading, ü kept, erhua never.
+assert(Defs.matches_shown("dao", "dǎo") and Defs.matches_shown("dǎo", "dǎo"))
+assert(not Defs.matches_shown("dǎo", "dao"), "a toned syllable must not match a toneless reading")
+assert(not Defs.matches_shown("dào", "dǎo"))
+assert(Defs.matches_shown("lü", "lǜ") and not Defs.matches_shown("lu", "lǜ"))
+assert(not Defs.matches_shown("r", "ér"))
+assert(Defs.pinyin_matches("gǔ dao", "gǔ dǎo") and not Defs.pinyin_matches("gǔ dao", "gǔ"))
+
+-- Uncertain pair (挑 is listed as tiǎo/tiāo): a word matches either half.
+m = find("挑", "tiǎo/tiāo", {}, { "选" })
+assert(m and m.word == "挑选" and m.pinyin == "tiāo xuǎn", "second half of a pair")
+m = find("挑", "tiǎo/tiāo", {}, { "战" })
+assert(m and m.word == "挑战" and m.pinyin == "tiǎo zhàn", "first half of a pair")
+assert(find("挑", "tiào/tiáo", {}, { "选" }) == nil, "neither half")
+
+-- The chosen reading also marks CC-CEDICT's neutral-tone form of it, for the
+-- character (瘩 dā: CC-CEDICT has dá and da) and for a word from words.tsv
+-- (一塌糊涂 yī tā hú tú: CC-CEDICT has yī tā hú tu), keeping CC-CEDICT's spelling.
+model = Defs.describe(defs, { char = "瘩", text = "dā", context = {} })
+assert(model.readings[1].pinyin == "da" and model.readings[1].chosen and #model.readings[1].senses > 0)
+assert(#model.readings == 2 and not model.readings[2].chosen)
+model = Defs.describe(defs, { char = "涂", text = "tú",
+    match = { word = "一塌糊涂", pinyin = "yī tā hú tú", others = {} } })
+assert(#model.word.groups == 1 and model.word.groups[1].chosen and model.word.groups[1].pinyin == "yī tā hú tu")
+text = Defs.render(model)
+assert(text:find("Word: 一塌糊涂  yī tā hú tú\n") and not text:find("tú   %(shown above%)"), text)
+-- An exact match wins over a neutral-tone one.
+assert(Defs.group({ { pinyin = "da", senses = { "x" } }, { pinyin = "dā", senses = { "y" } } }, { "dā" })[1].pinyin == "dā")
+
 -- Uncertain pair: both readings marked, most likely first.
 model = Defs.describe(defs, { char = "乘", text = "chéng/shèng", context = {} })
 assert(model.readings[1].pinyin == "chéng" and model.readings[1].chosen)

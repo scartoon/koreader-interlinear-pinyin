@@ -115,8 +115,50 @@ local function lower(s)
 end
 Defs.lower = lower
 
+-- Tone marks removed (after lower()); ü keeps its dots: "lǜ" -> "lü".
+local PLAIN = {
+    ["ā"] = "a", ["á"] = "a", ["ǎ"] = "a", ["à"] = "a", ["ē"] = "e", ["é"] = "e", ["ě"] = "e", ["è"] = "e",
+    ["ī"] = "i", ["í"] = "i", ["ǐ"] = "i", ["ì"] = "i", ["ō"] = "o", ["ó"] = "o", ["ǒ"] = "o", ["ò"] = "o",
+    ["ū"] = "u", ["ú"] = "u", ["ǔ"] = "u", ["ù"] = "u", ["ǖ"] = "ü", ["ǘ"] = "ü", ["ǚ"] = "ü", ["ǜ"] = "ü",
+}
+local function strip_tones(s)
+    return (s:gsub("[\195-\199][\128-\191]", PLAIN))
+end
+Defs.strip_tones = strip_tones
+
+-- Does a CC-CEDICT syllable stand for the reading shown above a character?
+-- Equal, or CC-CEDICT's neutral tone of it: words give 鼓捣 as "gǔ dao"
+-- where 捣 is shown as dǎo. Erhua "r" stands for no reading. Both lowercase.
+local function syllable_matches(syllable, shown)
+    if syllable == shown then return true end
+    return syllable ~= "r" and syllable == strip_tones(syllable) and syllable == strip_tones(shown)
+end
+
+-- The same for a whole reading ("gǔ dao" for "gǔ dǎo"), syllable by syllable.
+local function pinyin_matches(pinyin, shown)
+    if pinyin == shown then return true end
+    local a, b = split(pinyin, " "), split(shown, " ")
+    if #a ~= #b then return false end
+    for k = 1, #a do
+        if not syllable_matches(a[k], b[k]) then return false end
+    end
+    return true
+end
+Defs.pinyin_matches = pinyin_matches
+
+-- Is syllable one of the readings shown (text may be a pair "chéng/shèng")?
+local function matches_shown(syllable, text)
+    for reading in lower(text or ""):gmatch("[^/]+") do
+        if syllable_matches(syllable, reading) then return true end
+    end
+    return false
+end
+Defs.matches_shown = matches_shown
+
 -- Entries grouped by reading (case-insensitive: "Wǎn" surname and "wǎn"
 -- merge), the chosen readings first and marked, then CC-CEDICT's order.
+-- A chosen reading matches CC-CEDICT's own form of it (an exact match first,
+-- else a neutral-tone one: "dā" marks 瘩's "da"), which keeps its spelling.
 -- A chosen reading CC-CEDICT does not list is still shown, with no senses.
 local function group(entries, chosen)
     local groups, by_key = {}, {}
@@ -139,6 +181,14 @@ local function group(entries, chosen)
     for _, reading in ipairs(chosen or {}) do
         local key = lower(reading)
         local g = by_key[key]
+        if not g then
+            for _, candidate in ipairs(groups) do
+                if pinyin_matches(candidate.pinyin, key) then
+                    g = candidate
+                    break
+                end
+            end
+        end
         if not g then
             g = { pinyin = key, senses = {} }
             by_key[key] = g
@@ -171,7 +221,8 @@ end
 -- character, so the resolver never sees 饕餮). Run the resolver's own word
 -- matching (longest word, then most frequent) over CC-CEDICT's words in the
 -- same context, and keep the word only when its reading of this character
--- is the one shown above it.
+-- is the one shown above it (or either of a pair), or that reading's neutral
+-- tone (see syllable_matches).
 local function find_word(defs, gloss)
     local ctx = gloss.context
     if not ctx then return nil end
@@ -193,7 +244,7 @@ local function find_word(defs, gloss)
         return nil
     end
     local reading, word, _start, others = Resolve.word_reading(adapter, items, i)
-    if not reading or reading ~= lower(gloss.text or "") then return nil end
+    if not reading or not matches_shown(reading, gloss.text) then return nil end
     local function pinyin_of(w)
         local syllables = adapter:word(w)
         return syllables and table.concat(syllables, " ")
