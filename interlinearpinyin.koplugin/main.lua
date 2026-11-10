@@ -214,6 +214,13 @@ end
 -- for hold, hold_pan, swipe, double tap or two-finger gestures, so text
 -- selection is untouched. With the plugin or this option off, nothing is
 -- registered at all.
+--
+-- The companion plugin koreader-chinese-popup claims taps on every Chinese
+-- character with its own full-screen zone, "chinesepopup_tap". Listing it in
+-- `overrides` makes this zone run first whatever the plugin load order, so a
+-- tap on an annotated character opens this popup and any other tap falls
+-- through to that plugin. When that plugin is not installed, KOReader's
+-- dependency graph just keeps an empty placeholder for the id: no effect.
 local TAP_ZONE_ID = "interlinearpinyin_tap"
 
 function InterlinearPinyin:tapZone()
@@ -233,6 +240,7 @@ function InterlinearPinyin:tapZone()
             "readermenu_tap",
             "tap_forward",
             "tap_backward",
+            "chinesepopup_tap",
         },
         handler = function(ges) return self:onTapAnnotation(ges) end,
     }
